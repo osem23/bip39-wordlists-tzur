@@ -1,0 +1,87 @@
+{
+  "description": "BIP-39 mnemonic validation test cases. Use these to verify your mnemonic validation logic.",
+  "valid_mnemonics": {
+    "english": [
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+        "entropy_hex": "00000000000000000000000000000000",
+        "words": 12,
+        "note": "All-zero entropy, standard BIP-39 test vector"
+      },
+      {
+        "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo wrong",
+        "entropy_hex": "ffffffffffffffffffffffffffffffff",
+        "words": 12,
+        "note": "All-one entropy, standard BIP-39 test vector"
+      },
+      {
+        "mnemonic": "letter advice cage absurd amount doctor acoustic avoid letter advice cage above",
+        "entropy_hex": "80808080808080808080808080808080",
+        "words": 12,
+        "note": "Alternating bit pattern"
+      },
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon agent",
+        "entropy_hex": "000000000000000000000000000000000000000000000000",
+        "words": 18,
+        "note": "18-word all-zero entropy"
+      },
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon art",
+        "entropy_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+        "words": 24,
+        "note": "24-word all-zero entropy"
+      }
+    ]
+  },
+  "invalid_mnemonics": {
+    "wrong_checksum": [
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon",
+        "reason": "Invalid checksum — last word should be 'about', not 'abandon'"
+      },
+      {
+        "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo",
+        "reason": "Invalid checksum — last word should be 'wrong', not 'zoo'"
+      }
+    ],
+    "wrong_word_count": [
+      {
+        "mnemonic": "abandon abandon abandon",
+        "word_count": 3,
+        "reason": "BIP-39 requires 12, 15, 18, 21, or 24 words"
+      },
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon",
+        "word_count": 13,
+        "reason": "13 is not a valid BIP-39 word count"
+      }
+    ],
+    "unknown_words": [
+      {
+        "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon xyz",
+        "reason": "'xyz' is not in the BIP-39 English wordlist"
+      },
+      {
+        "mnemonic": "bitcoin abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+        "reason": "'bitcoin' is not in the BIP-39 English wordlist"
+      }
+    ],
+    "mixed_language": [
+      {
+        "mnemonic": "abandon ability ábaco abdomen able about above absent absorb abstract absurd abuse",
+        "reason": "Mixes English and Spanish words — mnemonics must use a single language"
+      }
+    ],
+    "empty_or_malformed": [
+      {
+        "mnemonic": "",
+        "reason": "Empty string"
+      },
+      {
+        "mnemonic": "  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  about  ",
+        "reason": "Excessive whitespace — implementations should trim and normalize spaces before validation"
+      }
+    ]
+  }
+}
