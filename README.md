@@ -1,54 +1,85 @@
 # BIP-39 Wordlists
 
-Strict, deterministic BIP-39 wordlists for 21 languages.
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 21 languages.
 
-Each file contains exactly 2048 words, one per line, UTF-8 encoded. Suitable for use in any BIP-39 compliant wallet implementation.
+Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
 ## Contents
 
+### Wordlists
+
 This repository contains three categories of wordlists:
 
-### Original Wordlists
+#### TZUR Original Wordlists
 
 These wordlists were created from scratch by the TZUR Wallet team. To our knowledge, no prior BIP-39 compliant wordlists existed for these languages before this work.
 
-| Language | File | Script |
-|----------|------|--------|
-| Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | Arabic |
-| Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | Latin |
-| Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | Hebrew |
-| Malay | [`wordlists/tzur-original/malay.txt`](wordlists/tzur-original/malay.txt) | Latin |
-| Thai | [`wordlists/tzur-original/thai.txt`](wordlists/tzur-original/thai.txt) | Thai |
-| Vietnamese | [`wordlists/tzur-original/vietnamese.txt`](wordlists/tzur-original/vietnamese.txt) | Latin (with diacritics) |
+| Language | Wordlist | Mapping | Script |
+|----------|----------|---------|--------|
+| Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
+| Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
+| Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | [`mappings/hebrew.json`](mappings/hebrew.json) | Hebrew |
+| Malay | [`wordlists/tzur-original/malay.txt`](wordlists/tzur-original/malay.txt) | [`mappings/malay.json`](mappings/malay.json) | Latin |
+| Thai | [`wordlists/tzur-original/thai.txt`](wordlists/tzur-original/thai.txt) | [`mappings/thai.json`](mappings/thai.json) | Thai |
+| Vietnamese | [`wordlists/tzur-original/vietnamese.txt`](wordlists/tzur-original/vietnamese.txt) | [`mappings/vietnamese.json`](mappings/vietnamese.json) | Latin (with diacritics) |
 
-### Community Wordlists
+#### Community Wordlists
 
 Wordlists assembled during development, sourced or adapted from community contributions. Attribution is noted where applicable.
 
-| Language | File | Notes |
-|----------|------|-------|
-| Dutch | [`wordlists/community/dutch.txt`](wordlists/community/dutch.txt) | Based on [OpenTaal BIP-39](https://github.com/OpenTaal/opentaal-bip39) |
-| German | [`wordlists/community/german.txt`](wordlists/community/german.txt) | |
-| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | Based on [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) |
-| Indonesian | [`wordlists/community/indonesian.txt`](wordlists/community/indonesian.txt) | Based on [perl-WordList-ID-BIP39](https://github.com/perlancar/perl-WordList-ID-BIP39) |
-| Russian | [`wordlists/community/russian.txt`](wordlists/community/russian.txt) | |
-| Turkish | [`wordlists/community/turkish.txt`](wordlists/community/turkish.txt) | |
+| Language | Wordlist | Mapping | Notes |
+|----------|----------|---------|-------|
+| Dutch | [`wordlists/community/dutch.txt`](wordlists/community/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | Based on [OpenTaal BIP-39](https://github.com/OpenTaal/opentaal-bip39) |
+| German | [`wordlists/community/german.txt`](wordlists/community/german.txt) | [`mappings/german.json`](mappings/german.json) | |
+| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Based on [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) |
+| Indonesian | [`wordlists/community/indonesian.txt`](wordlists/community/indonesian.txt) | [`mappings/indonesian.json`](mappings/indonesian.json) | Based on [perl-WordList-ID-BIP39](https://github.com/perlancar/perl-WordList-ID-BIP39) |
+| Russian | [`wordlists/community/russian.txt`](wordlists/community/russian.txt) | [`mappings/russian.json`](mappings/russian.json) | |
+| Turkish | [`wordlists/community/turkish.txt`](wordlists/community/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | |
 
-### Official BIP-39 Wordlists
+#### Official BIP-39 Wordlists
 
-Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Included here for completeness. These are not our work.
+Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Included here for completeness with mappings. These wordlists are not our work.
 
-| Language | File |
-|----------|------|
-| Chinese (Simplified) | [`wordlists/official-bip39/chinese_simplified.txt`](wordlists/official-bip39/chinese_simplified.txt) |
-| Chinese (Traditional) | [`wordlists/official-bip39/chinese_traditional.txt`](wordlists/official-bip39/chinese_traditional.txt) |
-| English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) |
-| French | [`wordlists/official-bip39/french.txt`](wordlists/official-bip39/french.txt) |
-| Italian | [`wordlists/official-bip39/italian.txt`](wordlists/official-bip39/italian.txt) |
-| Japanese | [`wordlists/official-bip39/japanese.txt`](wordlists/official-bip39/japanese.txt) |
-| Korean | [`wordlists/official-bip39/korean.txt`](wordlists/official-bip39/korean.txt) |
-| Portuguese | [`wordlists/official-bip39/portuguese.txt`](wordlists/official-bip39/portuguese.txt) |
-| Spanish | [`wordlists/official-bip39/spanish.txt`](wordlists/official-bip39/spanish.txt) |
+| Language | Wordlist | Mapping |
+|----------|----------|---------|
+| Chinese (Simplified) | [`wordlists/official-bip39/chinese_simplified.txt`](wordlists/official-bip39/chinese_simplified.txt) | [`mappings/chinese_simplified.json`](mappings/chinese_simplified.json) |
+| Chinese (Traditional) | [`wordlists/official-bip39/chinese_traditional.txt`](wordlists/official-bip39/chinese_traditional.txt) | [`mappings/chinese_traditional.json`](mappings/chinese_traditional.json) |
+| English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) | — (reference language) |
+| French | [`wordlists/official-bip39/french.txt`](wordlists/official-bip39/french.txt) | [`mappings/french.json`](mappings/french.json) |
+| Italian | [`wordlists/official-bip39/italian.txt`](wordlists/official-bip39/italian.txt) | [`mappings/italian.json`](mappings/italian.json) |
+| Japanese | [`wordlists/official-bip39/japanese.txt`](wordlists/official-bip39/japanese.txt) | [`mappings/japanese.json`](mappings/japanese.json) |
+| Korean | [`wordlists/official-bip39/korean.txt`](wordlists/official-bip39/korean.txt) | [`mappings/korean.json`](mappings/korean.json) |
+| Portuguese | [`wordlists/official-bip39/portuguese.txt`](wordlists/official-bip39/portuguese.txt) | [`mappings/portuguese.json`](mappings/portuguese.json) |
+| Spanish | [`wordlists/official-bip39/spanish.txt`](wordlists/official-bip39/spanish.txt) | [`mappings/spanish.json`](mappings/spanish.json) |
+
+### Mappings
+
+The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 20 non-English languages. Each mapping file includes:
+
+```json
+{
+  "language": "hebrew",
+  "word_count": 2048,
+  "description": "Bidirectional BIP-39 mapping between English and Hebrew",
+  "english_to_native": {
+    "abandon": "נטוש",
+    "ability": "יכולת",
+    ...
+  },
+  "native_to_english": {
+    "נטוש": "abandon",
+    "יכולת": "ability",
+    ...
+  }
+}
+```
+
+Mappings are derived from index positions: word at index N in any language maps to word at index N in English. This is deterministic and verifiable against the raw wordlists.
+
+**Use cases:**
+- Build a multi-language BIP-39 wallet without generating your own mappings
+- Display seed phrases in the user's native language
+- Accept seed input in any supported language and resolve to English for standard BIP-39 derivation
 
 ## Design Principles
 
@@ -69,19 +100,47 @@ Each wordlist in this repository satisfies:
 
 ## Usage
 
-These are raw wordlists. Load the appropriate file, split by newline, and index by position (0-2047). The word at index `i` corresponds to the 11-bit value `i` in BIP-39 entropy encoding.
+### Raw Wordlists
 
-```
+Load the appropriate file, split by newline, and index by position (0-2047). The word at index `i` corresponds to the 11-bit value `i` in BIP-39 entropy encoding.
+
+```python
 words = read("wordlists/official-bip39/english.txt").split("\n")
 assert len(words) == 2048
 mnemonic_word = words[entropy_bits]
+```
+
+### Mappings
+
+Load a mapping file and use it to translate between English and any supported language:
+
+```python
+import json
+
+mapping = json.load(open("mappings/hebrew.json"))
+
+# English to Hebrew (for display)
+hebrew_word = mapping["english_to_native"]["abandon"]  # "נטוש"
+
+# Hebrew to English (for restoration)
+english_word = mapping["native_to_english"]["נטוש"]  # "abandon"
+```
+
+```javascript
+const mapping = require('./mappings/hebrew.json');
+
+// English to Hebrew
+const hebrewWord = mapping.english_to_native['abandon']; // "נטוש"
+
+// Hebrew to English
+const englishWord = mapping.native_to_english['נטוש']; // "abandon"
 ```
 
 ## Security
 
 - This repository does **not** implement a wallet.
 - This repository does **not** generate seeds, derive keys, or sign transactions.
-- These wordlists are reference data only.
+- These wordlists and mappings are reference data only.
 - Use at your own risk. See [`DISCLAIMER.md`](DISCLAIMER.md).
 
 ## Validation
