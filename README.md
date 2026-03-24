@@ -105,7 +105,7 @@ Each wordlist in this repository satisfies:
 Load the appropriate file, split by newline, and index by position (0-2047). The word at index `i` corresponds to the 11-bit value `i` in BIP-39 entropy encoding.
 
 ```python
-words = read("wordlists/official-bip39/english.txt").split("\n")
+words = open("wordlists/official-bip39/english.txt").read().strip().split("\n")
 assert len(words) == 2048
 mnemonic_word = words[entropy_bits]
 ```

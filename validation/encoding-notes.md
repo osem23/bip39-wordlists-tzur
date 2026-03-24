@@ -60,6 +60,15 @@ The official BIP-39 Japanese wordlist uses full-width katakana. Ideographic spac
 
 CJK characters are generally stable under NFKD normalization. The primary concern is ensuring the correct variant (simplified vs. traditional) is used consistently.
 
+#### Hindi (Devanagari)
+
+Hindi uses the Devanagari script, which includes dependent vowel signs (matras), the nukta (dot below), and the virama (halant) for consonant clusters:
+
+- Nukta combinations (e.g., क़ = क + ़) may exist in precomposed or decomposed form. NFKD decomposes these.
+- Dependent vowels (e.g., कि, कु) are stored as consonant + vowel sign in Unicode, not as separate characters.
+- The virama (U+094D) joins consonants into conjuncts. Implementations must preserve these sequences exactly.
+- NFKD normalization should be applied consistently, as with all non-Latin scripts.
+
 #### Korean
 
 The official BIP-39 Korean wordlist uses Hangul syllable blocks. NFKD decomposes these into Jamo (individual consonant/vowel components). Implementations must handle this decomposition correctly.

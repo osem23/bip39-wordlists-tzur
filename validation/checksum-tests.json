@@ -77,10 +77,13 @@
       {
         "mnemonic": "",
         "reason": "Empty string"
-      },
+      }
+    ],
+    "edge_cases": [
       {
         "mnemonic": "  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  abandon  about  ",
-        "reason": "Excessive whitespace — implementations should trim and normalize spaces before validation"
+        "valid_after_normalization": true,
+        "reason": "Valid mnemonic with excessive whitespace. Implementations should trim and normalize spaces before validation. After normalization this is identical to the first valid test vector."
       }
     ]
   }
