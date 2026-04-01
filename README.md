@@ -1,8 +1,8 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 21 languages - including 6 languages (Arabic, Filipino, Hebrew, Malay, Thai, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 22 languages — including 7 languages (Arabic, Farsi, Filipino, Hebrew, Malay, Thai, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 21 languages.
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 22 languages.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -19,6 +19,7 @@ These wordlists were created from scratch by the TZUR Wallet team. To our knowle
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
+| **Farsi (Persian)** | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
 | Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | [`mappings/hebrew.json`](mappings/hebrew.json) | Hebrew |
 | Malay | [`wordlists/tzur-original/malay.txt`](wordlists/tzur-original/malay.txt) | [`mappings/malay.json`](mappings/malay.json) | Latin |
@@ -56,7 +57,7 @@ Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bi
 
 ### Mappings
 
-The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 20 non-English languages. Each mapping file includes:
+The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 21 non-English languages. Each mapping file includes:
 
 ```json
 {
@@ -151,6 +152,25 @@ The `validation/` directory contains:
 
 - `checksum-tests.json` — Valid and invalid mnemonic examples for testing
 - `encoding-notes.md` — UTF-8 and NFKD normalization guidance for non-Latin scripts
+
+## Why Farsi
+
+On April 1, 2026, Iran launched ballistic missiles at Tel Aviv. The founder of TZUR Wallet was in the shower when the alarm sounded. Between the sirens, an idea: if Iran is attacking Israel with missiles, Israel can answer with code. Code that helps the Iranian people — not the regime.
+
+80+ million Iranians live under hyperinflation, banking restrictions, and capital controls. Their currency collapses. Their savings evaporate. They cannot move money freely. Bitcoin is their exit — but no Bitcoin wallet has ever spoken their language.
+
+Until now.
+
+The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that an Iranian can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) to ensure zero ambiguity with Arabic, and has zero word overlap with the Arabic wordlist.
+
+An Israeli founder, under Iranian fire, building financial freedom tools for Iranian citizens. Not a marketing story. Just what happened.
+
+**کلیدهای شما. زبان شما. بیت‌کوین شما.**
+Your keys. Your language. Your Bitcoin.
+
+**آزادی مالی** — Financial freedom.
+
+---
 
 ## Contributing
 
