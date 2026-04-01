@@ -1,6 +1,6 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 22 languages — including 7 languages (Arabic, Farsi, Filipino, Hebrew, Malay, Thai, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 22 languages, including 7 languages (Arabic, Farsi, Filipino, Hebrew, Malay, Thai, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
 Strict, deterministic BIP-39 wordlists and bidirectional mappings for 22 languages.
 
@@ -47,7 +47,7 @@ Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bi
 |----------|----------|---------|
 | Chinese (Simplified) | [`wordlists/official-bip39/chinese_simplified.txt`](wordlists/official-bip39/chinese_simplified.txt) | [`mappings/chinese_simplified.json`](mappings/chinese_simplified.json) |
 | Chinese (Traditional) | [`wordlists/official-bip39/chinese_traditional.txt`](wordlists/official-bip39/chinese_traditional.txt) | [`mappings/chinese_traditional.json`](mappings/chinese_traditional.json) |
-| English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) | — (reference language) |
+| English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) | - (reference language) |
 | French | [`wordlists/official-bip39/french.txt`](wordlists/official-bip39/french.txt) | [`mappings/french.json`](mappings/french.json) |
 | Italian | [`wordlists/official-bip39/italian.txt`](wordlists/official-bip39/italian.txt) | [`mappings/italian.json`](mappings/italian.json) |
 | Japanese | [`wordlists/official-bip39/japanese.txt`](wordlists/official-bip39/japanese.txt) | [`mappings/japanese.json`](mappings/japanese.json) |
@@ -150,14 +150,14 @@ const englishWord = mapping.native_to_english['נטוש']; // "abandon"
 
 The `validation/` directory contains:
 
-- `checksum-tests.json` — Valid and invalid mnemonic examples for testing
-- `encoding-notes.md` — UTF-8 and NFKD normalization guidance for non-Latin scripts
+- `checksum-tests.json` -Valid and invalid mnemonic examples for testing
+- `encoding-notes.md` -UTF-8 and NFKD normalization guidance for non-Latin scripts
 
 ## Why Farsi
 
-On April 1, 2026, Iran launched ballistic missiles at Tel Aviv. The founder of TZUR Wallet was in the shower when the alarm sounded. Between the sirens, an idea: if Iran is attacking Israel with missiles, Israel can answer with code. Code that helps the Iranian people — not the regime.
+April 1, 2026. Passover eve. Iran fires five ballistic missiles with splitting warheads at Tel Aviv. The founder of TZUR Wallet is in the shower when the alarm goes off. Between the sirens, an idea: if Iran is attacking Israel with missiles, Israel can answer with code. Code that helps the Iranian people. Not the regime. The people.
 
-80+ million Iranians live under hyperinflation, banking restrictions, and capital controls. Their currency collapses. Their savings evaporate. They cannot move money freely. Bitcoin is their exit — but no Bitcoin wallet has ever spoken their language.
+80+ million Iranians live under hyperinflation, banking restrictions, and capital controls. Their currency collapses. Their savings evaporate. They cannot move money freely. Bitcoin is their exit. But no Bitcoin wallet has ever spoken their language.
 
 Until now.
 
@@ -168,7 +168,7 @@ An Israeli founder, under Iranian fire, building financial freedom tools for Ira
 **کلیدهای شما. زبان شما. بیت‌کوین شما.**
 Your keys. Your language. Your Bitcoin.
 
-**آزادی مالی** — Financial freedom.
+**آزادی مالی.** Financial freedom.
 
 ---
 
