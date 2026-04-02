@@ -156,15 +156,11 @@ The `validation/` directory contains:
 
 ## Why Farsi
 
-April 1, 2026. Passover eve. Iran fires five ballistic missiles with splitting warheads at Tel Aviv. The founder of TZUR Wallet is in the shower when the alarm goes off. Between the sirens, an idea: if Iran is attacking Israel with missiles, Israel can answer with code. Code that helps the Iranian people. Not the regime. The people.
+Over 110 million people speak Persian worldwide - across Iran, Afghanistan, Tajikistan, and diaspora communities on every continent. Until this project, no BIP-39 compliant wordlist existed for Persian speakers. No Bitcoin wallet allowed seed recovery in Farsi.
 
-80+ million Iranians live under hyperinflation, banking restrictions, and capital controls. Their currency collapses. Their savings evaporate. They cannot move money freely. Bitcoin is their exit. But no Bitcoin wallet has ever spoken their language.
+The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that a Persian speaker can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) to ensure zero ambiguity with Arabic, and has zero word overlap with the Arabic wordlist.
 
-Until now.
-
-The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that an Iranian can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) to ensure zero ambiguity with Arabic, and has zero word overlap with the Arabic wordlist.
-
-An Israeli founder, under Iranian fire, building financial freedom tools for Iranian citizens. Not a marketing story. Just what happened.
+Language is a barrier to financial sovereignty. This wordlist removes that barrier for 110 million people.
 
 **کلیدهای شما. زبان شما. بیت‌کوین شما.**
 Your keys. Your language. Your Bitcoin.
