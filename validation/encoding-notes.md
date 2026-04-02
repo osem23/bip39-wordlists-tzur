@@ -37,12 +37,24 @@ Arabic is also RTL with contextual letter shaping:
 - Hamza variations (أ إ ؤ ئ ء) are distinct characters.
 - No tashkeel (diacritics) are used in these wordlists.
 
+#### Farsi (Persian)
+
+Farsi uses the Arabic script extended with four additional characters: پ چ ژ گ.
+
+**Important: ZWNJ (Zero-Width Non-Joiner, U+200C).** The Farsi wordlist contains 556 ZWNJ characters across 534 of 2048 words. ZWNJ is linguistically correct in Farsi — it is used to prevent cursive joining between parts of compound words. This is standard Persian orthography, not an error.
+
+Implementers must be aware:
+
+- ZWNJ is an invisible character that will be **stripped by NFKD normalization**.
+- When performing word lookup or validation against the Farsi wordlist, implementations must compare using the **same form** — either both with ZWNJ or both without.
+- The recommended approach: strip ZWNJ from both the wordlist keys and user input before comparison, then use the original (ZWNJ-containing) form only for display.
+
 #### Thai
 
 Thai script does not use spaces between words in normal text, but each entry in the wordlist is a single word on its own line.
 
 - Thai characters include consonants, vowels (which may appear before, after, above, or below the consonant), and tone marks.
-- NFKD normalization for Thai is generally a no-op, but implementations should apply it consistently.
+- NFKD normalization affects 109 of 2048 Thai words (5.3%). Implementations must apply NFKD consistently.
 
 #### Vietnamese
 
@@ -73,6 +85,20 @@ Hindi uses the Devanagari script, which includes dependent vowel signs (matras),
 
 The official BIP-39 Korean wordlist uses Hangul syllable blocks. NFKD decomposes these into Jamo (individual consonant/vowel components). Implementations must handle this decomposition correctly.
 
+### NFKD Impact Summary
+
+| Language | Words affected by NFKD | % |
+|----------|----------------------|---|
+| Vietnamese | 2001 | 97.7% |
+| Turkish | 595 | 29.1% |
+| German | 185 | 9.0% |
+| Russian | 181 | 8.8% |
+| Arabic | 123 | 6.0% |
+| Farsi | 114 | 5.6% |
+| Thai | 109 | 5.3% |
+
+All other languages are NFKD-stable.
+
 ## Validation Checklist
 
 When integrating any wordlist:
@@ -81,5 +107,7 @@ When integrating any wordlist:
 2. Verify UTF-8 encoding without BOM.
 3. Verify no duplicate words exist.
 4. Verify no leading or trailing whitespace on any line.
-5. Apply NFKD normalization to mnemonics before seed derivation.
-6. Test round-trip: generate mnemonic, normalize, derive seed, verify against known test vectors.
+5. Strip `` from line endings if consuming on Windows or if `core.autocrlf` is enabled.
+6. For Farsi: decide on a ZWNJ strategy (strip for lookup, preserve for display) and apply consistently.
+7. Apply NFKD normalization to mnemonics before seed derivation.
+8. Test round-trip: generate mnemonic, normalize, derive seed, verify against known test vectors.
