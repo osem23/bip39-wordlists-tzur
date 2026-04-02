@@ -150,9 +150,9 @@ const englishWord = mapping.native_to_english['נטוש']; // "abandon"
 
 The `validation/` directory contains:
 
-- `validate_all.py` — Automated validation script. Checks all 22 wordlists (2048 words, no duplicates, UTF-8, no BOM, no whitespace) and all 21 mappings (bidirectional consistency, entry count, round-trip integrity). Run with `python3 validation/validate_all.py`.
-- `checksum-tests.json` — Valid and invalid mnemonic examples for testing.
-- `encoding-notes.md` — UTF-8 and NFKD normalization guidance for non-Latin scripts, including ZWNJ handling for Farsi and NFKD impact summary per language.
+- `validate_all.py` - Automated validation script. Checks all 22 wordlists (2048 words, no duplicates, UTF-8, no BOM, no whitespace) and all 21 mappings (bidirectional consistency, entry count, round-trip integrity). Run with `python3 validation/validate_all.py`.
+- `checksum-tests.json` - Valid and invalid mnemonic examples for testing.
+- `encoding-notes.md` - UTF-8 and NFKD normalization guidance for non-Latin scripts, including ZWNJ handling for Farsi and NFKD impact summary per language.
 
 ## Why Farsi
 

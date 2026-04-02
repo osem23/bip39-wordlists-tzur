@@ -26,14 +26,14 @@ Hebrew text is right-to-left (RTL). When processing Hebrew wordlists programmati
 
 - Do not rely on visual ordering in text editors. Use logical (memory) order.
 - Hebrew letters do not have case distinctions.
-- Be aware of final forms (e.g., כ/ך, מ/ם, נ/ן, פ/ף, צ/ץ) — these are distinct characters in Unicode and must not be conflated.
+- Be aware of final forms (e.g., כ/ך, מ/ם, נ/ן, פ/ף, צ/ץ) - these are distinct characters in Unicode and must not be conflated.
 - Niqqud (vowel diacritics) are not used in these wordlists. All words are unpointed.
 
 #### Arabic
 
 Arabic is also RTL with contextual letter shaping:
 
-- The same letter may appear differently depending on position (initial, medial, final, isolated). Unicode handles this at the rendering level — the underlying codepoints are the same.
+- The same letter may appear differently depending on position (initial, medial, final, isolated). Unicode handles this at the rendering level - the underlying codepoints are the same.
 - Hamza variations (أ إ ؤ ئ ء) are distinct characters.
 - No tashkeel (diacritics) are used in these wordlists.
 
@@ -41,12 +41,12 @@ Arabic is also RTL with contextual letter shaping:
 
 Farsi uses the Arabic script extended with four additional characters: پ چ ژ گ.
 
-**Important: ZWNJ (Zero-Width Non-Joiner, U+200C).** The Farsi wordlist contains 556 ZWNJ characters across 534 of 2048 words. ZWNJ is linguistically correct in Farsi — it is used to prevent cursive joining between parts of compound words. This is standard Persian orthography, not an error.
+**Important: ZWNJ (Zero-Width Non-Joiner, U+200C).** The Farsi wordlist contains 556 ZWNJ characters across 534 of 2048 words. ZWNJ is linguistically correct in Farsi - it is used to prevent cursive joining between parts of compound words. This is standard Persian orthography, not an error.
 
 Implementers must be aware:
 
 - ZWNJ is an invisible character that will be **stripped by NFKD normalization**.
-- When performing word lookup or validation against the Farsi wordlist, implementations must compare using the **same form** — either both with ZWNJ or both without.
+- When performing word lookup or validation against the Farsi wordlist, implementations must compare using the **same form** - either both with ZWNJ or both without.
 - The recommended approach: strip ZWNJ from both the wordlist keys and user input before comparison, then use the original (ZWNJ-containing) form only for display.
 
 #### Thai
