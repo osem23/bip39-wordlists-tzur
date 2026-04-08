@@ -158,7 +158,7 @@ The `validation/` directory contains:
 
 Over 110 million people speak Persian worldwide - across Iran, Afghanistan, Tajikistan, and diaspora communities on every continent. Until this project, no BIP-39 compliant wordlist existed for Persian speakers. No Bitcoin wallet allowed seed recovery in Farsi.
 
-The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that a Persian speaker can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) to ensure zero ambiguity with Arabic, and has zero word overlap with the Arabic wordlist.
+The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that a Persian speaker can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) for reliable Arabic/Farsi disambiguation. 39 Arabic-origin loanwords are shared between the two wordlists, but disambiguation is handled by detecting Farsi-specific characters rather than relying on word exclusivity.
 
 Language is a barrier to financial sovereignty. This wordlist removes that barrier for 110 million people.
 
