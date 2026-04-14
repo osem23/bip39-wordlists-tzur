@@ -1,8 +1,8 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 27 languages, including 12 languages (Arabic, Bengali, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 28 languages, including 12 languages (Arabic, Bengali, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 27 languages.
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 28 languages.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -52,6 +52,7 @@ Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bi
 |----------|----------|---------|
 | Chinese (Simplified) | [`wordlists/official-bip39/chinese_simplified.txt`](wordlists/official-bip39/chinese_simplified.txt) | [`mappings/chinese_simplified.json`](mappings/chinese_simplified.json) |
 | Chinese (Traditional) | [`wordlists/official-bip39/chinese_traditional.txt`](wordlists/official-bip39/chinese_traditional.txt) | [`mappings/chinese_traditional.json`](mappings/chinese_traditional.json) |
+| Czech | [`wordlists/official-bip39/czech.txt`](wordlists/official-bip39/czech.txt) | [`mappings/czech.json`](mappings/czech.json) |
 | English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) | - (reference language) |
 | French | [`wordlists/official-bip39/french.txt`](wordlists/official-bip39/french.txt) | [`mappings/french.json`](mappings/french.json) |
 | Italian | [`wordlists/official-bip39/italian.txt`](wordlists/official-bip39/italian.txt) | [`mappings/italian.json`](mappings/italian.json) |
@@ -62,7 +63,7 @@ Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bi
 
 ### Mappings
 
-The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 26 non-English languages. Each mapping file includes:
+The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 27 non-English languages. Each mapping file includes:
 
 ```json
 {
