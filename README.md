@@ -1,8 +1,8 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 24 languages, including 9 languages (Arabic, Farsi, Filipino, Hebrew, Malay, Polish, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 25 languages, including 10 languages (Arabic, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 24 languages.
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 25 languages.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -19,6 +19,7 @@ These wordlists were created from scratch by the TZUR Wallet team. To our knowle
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
+| **Estonian** | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
 | **Farsi (Persian)** | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
 | Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | [`mappings/hebrew.json`](mappings/hebrew.json) | Hebrew |
