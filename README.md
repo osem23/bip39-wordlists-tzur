@@ -1,8 +1,8 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 29 languages, including 13 languages (Arabic, Bengali, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 30 languages, including 14 languages (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 29 languages.
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 30 languages.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -20,6 +20,7 @@ These wordlists were created from scratch by the TZUR Wallet team. To our knowle
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
 | **Bengali** | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali (U+0980-U+09FF) |
+| **Danish** | [`wordlists/tzur-original/danish.txt`](wordlists/tzur-original/danish.txt) | [`mappings/danish.json`](mappings/danish.json) | Latin (with æ ø å) |
 | **Estonian** | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
 | **Farsi (Persian)** | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
@@ -64,7 +65,7 @@ Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bi
 
 ### Mappings
 
-The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 28 non-English languages. Each mapping file includes:
+The `mappings/` directory contains bidirectional English-to-native JSON mapping files for all 29 non-English languages. Each mapping file includes:
 
 ```json
 {
