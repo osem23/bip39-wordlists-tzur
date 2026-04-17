@@ -1,6 +1,6 @@
 # BIP-39 Wordlists
 
-> Most Bitcoin wallets only support seed phrases in English. This repository provides BIP-39 compliant wordlists in 31 languages, including 15 languages (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) that had no known BIP-39 wordlists before this work. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most wallets only support BIP-39 seed phrases in English. This repository provides BIP-39 compliant wordlists in 31 languages, including **20 original wordlists** built from scratch by the TZUR team. 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) had no known BIP-39 wordlist before this work. Works with any BIP-39 wallet across any cryptocurrency. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
 
 Strict, deterministic BIP-39 wordlists and bidirectional mappings for 31 languages.
 
