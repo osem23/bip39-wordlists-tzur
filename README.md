@@ -98,6 +98,7 @@ Mappings are derived from index positions: word at index N in any language maps 
 - **Strict BIP-39 compliance.** Every wordlist contains exactly 2048 words. No duplicates. No leading or trailing whitespace.
 - **Deterministic structure.** Same file, same content, every time. Files are plain text, one word per line, UTF-8 encoded with Unix line endings.
 - **Normalization awareness.** Non-Latin scripts require careful Unicode handling. See [`validation/encoding-notes.md`](validation/encoding-notes.md) for details on NFKD normalization and script-specific considerations.
+- **4-char prefix uniqueness is not guaranteed.** BIP-39 suggests the first 4 characters of each word be unique (for typo-tolerant autocomplete). The official Trezor wordlists mostly meet this, with documented exceptions (Spanish accents, French phonetics). TZUR Original wordlists prioritize meaningful ordinal pairing with English over 4-char uniqueness. Implementations relying on 4-char autocomplete should fall back to full-word matching.
 
 ## Wordlist Requirements
 
@@ -159,24 +160,9 @@ const englishWord = mapping.native_to_english['נטוש']; // "abandon"
 
 The `validation/` directory contains:
 
-- `validate_all.py` - Automated validation script. Checks all 22 wordlists (2048 words, no duplicates, UTF-8, no BOM, no whitespace) and all 21 mappings (bidirectional consistency, entry count, round-trip integrity). Run with `python3 validation/validate_all.py`.
+- `validate_all.py` - Automated validation script. Checks all 31 wordlists (2048 words, no duplicates, UTF-8, no BOM, no whitespace) and all 30 mappings (bidirectional consistency, entry count, round-trip integrity). Run with `python3 validation/validate_all.py`.
 - `checksum-tests.json` - Valid and invalid mnemonic examples for testing.
 - `encoding-notes.md` - UTF-8 and NFKD normalization guidance for non-Latin scripts, including ZWNJ handling for Farsi and NFKD impact summary per language.
-
-## Why Farsi
-
-Over 110 million people speak Persian worldwide - across Iran, Afghanistan, Tajikistan, and diaspora communities on every continent. Until this project, no BIP-39 compliant wordlist existed for Persian speakers. No Bitcoin wallet allowed seed recovery in Farsi.
-
-The Farsi BIP-39 wordlist in this repository is the world's first. 2048 Persian words, each a meaningful translation of its English BIP-39 counterpart, designed so that a Persian speaker can recover their Bitcoin wallet in their mother tongue. The wordlist uses Farsi-specific characters (پ چ ژ گ) for reliable Arabic/Farsi disambiguation. 39 Arabic-origin loanwords are shared between the two wordlists, but disambiguation is handled by detecting Farsi-specific characters rather than relying on word exclusivity.
-
-Language is a barrier to financial sovereignty. This wordlist removes that barrier for 110 million people.
-
-**کلیدهای شما. زبان شما. بیت‌کوین شما.**
-Your keys. Your language. Your Bitcoin.
-
-**آزادی مالی.** Financial freedom.
-
----
 
 ## Contributing
 

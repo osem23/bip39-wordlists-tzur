@@ -107,7 +107,7 @@ When integrating any wordlist:
 2. Verify UTF-8 encoding without BOM.
 3. Verify no duplicate words exist.
 4. Verify no leading or trailing whitespace on any line.
-5. Strip `` from line endings if consuming on Windows or if `core.autocrlf` is enabled.
+5. Strip `\r` (CR) from line endings if consuming on Windows or if `core.autocrlf` is enabled.
 6. For Farsi: decide on a ZWNJ strategy (strip for lookup, preserve for display) and apply consistently.
 7. Apply NFKD normalization to mnemonics before seed derivation.
 8. Test round-trip: generate mnemonic, normalize, derive seed, verify against known test vectors.

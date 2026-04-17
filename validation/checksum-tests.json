@@ -38,11 +38,11 @@
     "wrong_checksum": [
       {
         "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon",
-        "reason": "Invalid checksum — last word should be 'about', not 'abandon'"
+        "reason": "Invalid checksum -last word should be 'about', not 'abandon'"
       },
       {
         "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo",
-        "reason": "Invalid checksum — last word should be 'wrong', not 'zoo'"
+        "reason": "Invalid checksum -last word should be 'wrong', not 'zoo'"
       }
     ],
     "wrong_word_count": [
@@ -70,7 +70,7 @@
     "mixed_language": [
       {
         "mnemonic": "abandon ability ábaco abdomen able about above absent absorb abstract absurd abuse",
-        "reason": "Mixes English and Spanish words — mnemonics must use a single language"
+        "reason": "Mixes English and Spanish words -mnemonics must use a single language"
       }
     ],
     "empty_or_malformed": [
