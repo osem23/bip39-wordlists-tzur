@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use these wordlists in academic work or a software project, please cite this repository."
+title: "BIP-39 Wordlists (TZUR): 31 languages, including 15 first-known and 5 independently curated"
+abstract: >-
+  BIP-39 compliant wordlists and bidirectional English-to-native mappings for 31 languages.
+  Includes 20 original wordlists built from scratch by the TZUR team (15 of which had no
+  known BIP-39 wordlist before this work: Arabic, Bengali, Danish, Estonian, Farsi, Filipino,
+  Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), 1 community
+  wordlist (Hindi), and the 10 official BIP-39 wordlists for completeness. All wordlists
+  contain exactly 2048 words, are UTF-8 encoded, and validate round-trip through bidirectional
+  mappings. Compatible with any BIP-39 wallet across any cryptocurrency.
+type: dataset
+authors:
+  - name: "TZUR Wallet Team"
+    website: "https://tzur.live"
+version: "1.0.0"
+date-released: "2026-04-18"
+license: MIT
+url: "https://github.com/osem23/bip39-wordlists-tzur"
+repository-code: "https://github.com/osem23/bip39-wordlists-tzur"
+keywords:
+  - bip39
+  - wordlist
+  - mnemonic
+  - seed-phrase
+  - cryptocurrency
+  - bitcoin
+  - ethereum
+  - internationalization
+  - i18n
+  - hd-wallet
