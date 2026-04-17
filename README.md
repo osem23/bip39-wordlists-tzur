@@ -14,38 +14,38 @@ This repository contains three categories of wordlists:
 
 #### TZUR Original Wordlists
 
-These wordlists were created from scratch by the TZUR Wallet team. To our knowledge, no prior BIP-39 compliant wordlists existed for these languages before this work.
+These wordlists were created from scratch by the TZUR Wallet team. For most, no prior BIP-39 compliant wordlist existed. For German, Indonesian, and Russian, prior lists exist from other projects ([dys2p/wordlists-de](https://github.com/dys2p/wordlists-de), [perl-WordList-ID-BIP39](https://github.com/perlancar/perl-WordList-ID-BIP39), [Trezor python-mnemonic](https://github.com/trezor/python-mnemonic)); ours are independent alternatives, not derivatives.
 
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
-| **Bengali** | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali (U+0980-U+09FF) |
-| **Danish** | [`wordlists/tzur-original/danish.txt`](wordlists/tzur-original/danish.txt) | [`mappings/danish.json`](mappings/danish.json) | Latin (with æ ø å) |
-| **Estonian** | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
-| **Farsi (Persian)** | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
+| Bengali | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali (U+0980-U+09FF) |
+| Danish | [`wordlists/tzur-original/danish.txt`](wordlists/tzur-original/danish.txt) | [`mappings/danish.json`](mappings/danish.json) | Latin (with æ ø å) |
+| Estonian | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
+| Farsi (Persian) | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
+| German | [`wordlists/tzur-original/german.txt`](wordlists/tzur-original/german.txt) | [`mappings/german.json`](mappings/german.json) | Latin (with ä ö ü ß) |
 | Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | [`mappings/hebrew.json`](mappings/hebrew.json) | Hebrew |
+| Indonesian | [`wordlists/tzur-original/indonesian.txt`](wordlists/tzur-original/indonesian.txt) | [`mappings/indonesian.json`](mappings/indonesian.json) | Latin |
 | Malay | [`wordlists/tzur-original/malay.txt`](wordlists/tzur-original/malay.txt) | [`mappings/malay.json`](mappings/malay.json) | Latin |
-| **Polish** | [`wordlists/tzur-original/polish.txt`](wordlists/tzur-original/polish.txt) | [`mappings/polish.json`](mappings/polish.json) | Latin (with ą ć ę ł ń ó ś ź ż) |
-| **Romanian** | [`wordlists/tzur-original/romanian.txt`](wordlists/tzur-original/romanian.txt) | [`mappings/romanian.json`](mappings/romanian.json) | Latin (with ă â î ș ț, comma-below, not cedilla) |
-| **Swedish** | [`wordlists/tzur-original/swedish.txt`](wordlists/tzur-original/swedish.txt) | [`mappings/swedish.json`](mappings/swedish.json) | Latin (with å ä ö) |
+| Polish | [`wordlists/tzur-original/polish.txt`](wordlists/tzur-original/polish.txt) | [`mappings/polish.json`](mappings/polish.json) | Latin (with ą ć ę ł ń ó ś ź ż) |
+| Romanian | [`wordlists/tzur-original/romanian.txt`](wordlists/tzur-original/romanian.txt) | [`mappings/romanian.json`](mappings/romanian.json) | Latin (with ă â î ș ț, comma-below, not cedilla) |
+| Russian | [`wordlists/tzur-original/russian.txt`](wordlists/tzur-original/russian.txt) | [`mappings/russian.json`](mappings/russian.json) | Cyrillic |
+| Swedish | [`wordlists/tzur-original/swedish.txt`](wordlists/tzur-original/swedish.txt) | [`mappings/swedish.json`](mappings/swedish.json) | Latin (with å ä ö) |
 | Thai | [`wordlists/tzur-original/thai.txt`](wordlists/tzur-original/thai.txt) | [`mappings/thai.json`](mappings/thai.json) | Thai |
-| **Ukrainian** | [`wordlists/tzur-original/ukrainian.txt`](wordlists/tzur-original/ukrainian.txt) | [`mappings/ukrainian.json`](mappings/ukrainian.json) | Cyrillic (with ї є і ґ) |
-| **Urdu** | [`wordlists/tzur-original/urdu.txt`](wordlists/tzur-original/urdu.txt) | [`mappings/urdu.json`](mappings/urdu.json) | Perso-Arabic RTL (with ٹ ڈ ڑ ں ھ ے) |
+| Ukrainian | [`wordlists/tzur-original/ukrainian.txt`](wordlists/tzur-original/ukrainian.txt) | [`mappings/ukrainian.json`](mappings/ukrainian.json) | Cyrillic (with ї є і ґ) |
+| Urdu | [`wordlists/tzur-original/urdu.txt`](wordlists/tzur-original/urdu.txt) | [`mappings/urdu.json`](mappings/urdu.json) | Perso-Arabic RTL (with ٹ ڈ ڑ ں ھ ے) |
 | Vietnamese | [`wordlists/tzur-original/vietnamese.txt`](wordlists/tzur-original/vietnamese.txt) | [`mappings/vietnamese.json`](mappings/vietnamese.json) | Latin (with diacritics) |
 
 #### Community Wordlists
 
-Wordlists assembled during development, sourced or adapted from community contributions. Attribution is noted where applicable.
+Wordlists derived from, or selected from, existing community sources. Attribution is verified against the cited source.
 
 | Language | Wordlist | Mapping | Notes |
 |----------|----------|---------|-------|
-| Dutch | [`wordlists/community/dutch.txt`](wordlists/community/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | Based on [OpenTaal BIP-39](https://github.com/OpenTaal/opentaal-bip39) |
-| German | [`wordlists/community/german.txt`](wordlists/community/german.txt) | [`mappings/german.json`](mappings/german.json) | |
-| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Based on [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) |
-| Indonesian | [`wordlists/community/indonesian.txt`](wordlists/community/indonesian.txt) | [`mappings/indonesian.json`](mappings/indonesian.json) | Based on [perl-WordList-ID-BIP39](https://github.com/perlancar/perl-WordList-ID-BIP39) |
-| Russian | [`wordlists/community/russian.txt`](wordlists/community/russian.txt) | [`mappings/russian.json`](mappings/russian.json) | |
-| Turkish | [`wordlists/community/turkish.txt`](wordlists/community/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | |
+| Dutch | [`wordlists/community/dutch.txt`](wordlists/community/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | 2048 words selected from [OpenTaal](https://github.com/OpenTaal/opentaal-bip39) Dutch corpus |
+| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Based on [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) (98% match) |
+| Turkish | [`wordlists/community/turkish.txt`](wordlists/community/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | 2048 words selected from [c1982/bip39tr](https://github.com/c1982/bip39tr) Turkish corpus |
 
 #### Official BIP-39 Wordlists
 
