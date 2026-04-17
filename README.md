@@ -14,13 +14,14 @@ This repository contains three categories of wordlists:
 
 #### TZUR Original Wordlists
 
-These wordlists were created from scratch by the TZUR Wallet team. For most, no prior BIP-39 compliant wordlist existed. For German, Indonesian, and Russian, prior lists exist from other projects ([dys2p/wordlists-de](https://github.com/dys2p/wordlists-de), [perl-WordList-ID-BIP39](https://github.com/perlancar/perl-WordList-ID-BIP39), [Trezor python-mnemonic](https://github.com/trezor/python-mnemonic)); ours are independent alternatives, not derivatives.
+These wordlists were created from scratch by the TZUR Wallet team. For 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), no prior BIP-39 compliant wordlist existed before this work. For Dutch, German, Indonesian, Russian, and Turkish, prior BIP-39 lists exist from other projects; ours were created independently. Any vocabulary overlap with those reflects the natural frequency of common words in the language rather than derivation.
 
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
 | Bengali | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali (U+0980-U+09FF) |
 | Danish | [`wordlists/tzur-original/danish.txt`](wordlists/tzur-original/danish.txt) | [`mappings/danish.json`](mappings/danish.json) | Latin (with æ ø å) |
+| Dutch | [`wordlists/tzur-original/dutch.txt`](wordlists/tzur-original/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | Latin |
 | Estonian | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
 | Farsi (Persian) | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
@@ -33,19 +34,18 @@ These wordlists were created from scratch by the TZUR Wallet team. For most, no 
 | Russian | [`wordlists/tzur-original/russian.txt`](wordlists/tzur-original/russian.txt) | [`mappings/russian.json`](mappings/russian.json) | Cyrillic |
 | Swedish | [`wordlists/tzur-original/swedish.txt`](wordlists/tzur-original/swedish.txt) | [`mappings/swedish.json`](mappings/swedish.json) | Latin (with å ä ö) |
 | Thai | [`wordlists/tzur-original/thai.txt`](wordlists/tzur-original/thai.txt) | [`mappings/thai.json`](mappings/thai.json) | Thai |
+| Turkish | [`wordlists/tzur-original/turkish.txt`](wordlists/tzur-original/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | Latin (with ç ğ ı ö ş ü) |
 | Ukrainian | [`wordlists/tzur-original/ukrainian.txt`](wordlists/tzur-original/ukrainian.txt) | [`mappings/ukrainian.json`](mappings/ukrainian.json) | Cyrillic (with ї є і ґ) |
 | Urdu | [`wordlists/tzur-original/urdu.txt`](wordlists/tzur-original/urdu.txt) | [`mappings/urdu.json`](mappings/urdu.json) | Perso-Arabic RTL (with ٹ ڈ ڑ ں ھ ے) |
 | Vietnamese | [`wordlists/tzur-original/vietnamese.txt`](wordlists/tzur-original/vietnamese.txt) | [`mappings/vietnamese.json`](mappings/vietnamese.json) | Latin (with diacritics) |
 
 #### Community Wordlists
 
-Wordlists derived from, or selected from, existing community sources. Attribution is verified against the cited source.
+Wordlists derived from existing community sources. Attribution is verified against the cited source.
 
 | Language | Wordlist | Mapping | Notes |
 |----------|----------|---------|-------|
-| Dutch | [`wordlists/community/dutch.txt`](wordlists/community/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | 2048 words selected from [OpenTaal](https://github.com/OpenTaal/opentaal-bip39) Dutch corpus |
-| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Based on [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) (98% match) |
-| Turkish | [`wordlists/community/turkish.txt`](wordlists/community/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | 2048 words selected from [c1982/bip39tr](https://github.com/c1982/bip39tr) Turkish corpus |
+| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Derived from [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) (98% match) |
 
 #### Official BIP-39 Wordlists
 
