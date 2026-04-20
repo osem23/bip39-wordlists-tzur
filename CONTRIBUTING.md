@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are welcome. This repository exists to serve the Bitcoin community.
+The repository is public. If you want to contribute a correction or a new language, the process below is how it gets reviewed.
 
 ## New Language Wordlists
 
@@ -66,4 +66,4 @@ This checks all wordlists and mappings for compliance. Your PR must pass validat
 
 ## Code of Conduct
 
-Be respectful. This is a Bitcoin project. We're here to build, not to argue.
+Be respectful. Stay technical.

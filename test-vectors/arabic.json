@@ -1,0 +1,105 @@
+{
+  "language": "arabic",
+  "wordlist": "tzur-original/arabic.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي حول",
+      "passphrase": "TREZOR",
+      "seed": "e08baa2b697ad5923fc08e87e6b5a6c3ec371b31b053b44ddb7befa143c5377ce973a3ec877ccd9cf6f5b53be8c0da27bc412d89d939d3d44f85f9d8575876df"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "قانوني فائز يشكر سنة موجة نقانق قيمة مفيد قانوني فائز يشكر أصفر",
+      "passphrase": "TREZOR",
+      "seed": "ec81c721997df90199e8bf65320c4377a806ebb9c86e10c288221eacdfee383f26f37a99b661d73474c0bfee309ec83be4056abfc3e49a8904b1fd80d7d77cbe"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "رسالة نصيحة قفص سخيف مقدار دكتور سمعي تجنب رسالة نصيحة قفص اعلاه",
+      "passphrase": "TREZOR",
+      "seed": "89d3c74a807cbcc0c9d3227c3ba47598c07291f8aa7f05c929782a0df167dc3267a00ad9b6aeb7a0c3d2da83b11b1a5780c63da63760e7ad97947b34a7fa7e7f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة خاطئ",
+      "passphrase": "TREZOR",
+      "seed": "3e743da345ebe861bf0d3368696a30fdc4ebcb9e6eaaea5eff5d3f2a63da048824153c81f33bbbf8b08fbf9ee4ddeb05c0e24d2884919c647464f69de70f5a93"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي عميل",
+      "passphrase": "TREZOR",
+      "seed": "cfed10c60c7cc9bdfdfdc53db43ab9694f283a9ebb9554116efd04d55514f1f0669bd43249d8a5c2b56ea4bafb225d7ad0ad19bb888001eac90a52aee6bced8d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "قانوني فائز يشكر سنة موجة نقانق قيمة مفيد قانوني فائز يشكر سنة موجة نقانق حكيم",
+      "passphrase": "TREZOR",
+      "seed": "9e785c7c7e06da364dbe38944fd5f1718f1e34154ea6766674d290ecef5c4eb347b9912dd614e6d68d5a6ebbf521839c07d294ee25490ca8e792e725d2d2651b"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "رسالة نصيحة قفص سخيف مقدار دكتور سمعي تجنب رسالة نصيحة قفص سخيف مقدار دكتور سمعي تجنب رسالة دائما",
+      "passphrase": "TREZOR",
+      "seed": "a22ef217a7fb4b80461f197273c5606e79600eac9c43f83d2a493eef6a9ed0b64d59dbbe0b9f3ff3d74e64e651d34ed1c69a70b408b1e28a9e3ee29413707cd0"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة مخضرم",
+      "passphrase": "TREZOR",
+      "seed": "7c18f6f6c3bf4b70e7dc985e145bcf0a08c18a120e3be34fe5e25bc82d18f951d761f72817202dabb65eb703b63e93fd76270520550a04c12a02472c31b5a849"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي فن",
+      "passphrase": "TREZOR",
+      "seed": "9d5db62b4fd6aa7c7b42637c2e45ca232e0a2f85d8deb1856467841fb42d81a5ba2d6ec2417f5644bfa445e012b240776b2b00daffd168b80d465aa4ba451b61"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "قانوني فائز يشكر سنة موجة نقانق قيمة مفيد قانوني فائز يشكر سنة موجة نقانق قيمة مفيد قانوني فائز يشكر سنة موجة نقانق قيمة عنوان",
+      "passphrase": "TREZOR",
+      "seed": "d8de193e9c87bacd49ffbbddd728aad66b5f5982547a8274a7ecee742abb370d1a80080be843e4c3bffd856d12af2a1db4652fa196816aaf56f8eda1665599ca"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "رسالة نصيحة قفص سخيف مقدار دكتور سمعي تجنب رسالة نصيحة قفص سخيف مقدار دكتور سمعي تجنب رسالة نصيحة قفص سخيف مقدار دكتور سمعي بركة",
+      "passphrase": "TREZOR",
+      "seed": "eaae5c52ed7cfc8b6844beba2c3a40892ebe5538c8faee72691870623b5bc1a24b47cea16a0f5a2919c4b6ad48f6bbd7bc71d3e08b704bccbc2986352ede5ea5"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة حظيرة تصويت",
+      "passphrase": "TREZOR",
+      "seed": "8e5b0dfc2a6b455c894761f3770c2d38fc469cf0d0571d5972027180fd9668b28c382afc38a16256953c58faa6bde9eb963465b403de7a895b780899b39b63e4"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي حول",
+      "passphrase": "",
+      "seed": "8f305361e053c5f81ac5f714abc3b9b07cfe9e289727b6048a9d2ff9e9fe309d9bf76f241a5978a943b4c575b8b9ba1a2215c92c313ea3752f8dd1a885126a29"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي تخلي فن",
+      "passphrase": "",
+      "seed": "160f1e01ce9d40f514b74d89602eeaca7fb8e66ff967b7256babcae40bb1e5f199ba8aa9f593fa7435e079c21883a33532b0abb229f1f4fa73133a732f41c372"
+    }
+  ]
+}

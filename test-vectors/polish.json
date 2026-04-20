@@ -1,0 +1,105 @@
+{
+  "language": "polish",
+  "wordlist": "tzur-original/polish.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić około",
+      "passphrase": "TREZOR",
+      "seed": "6c842ad2282bd2a8e3d9df5010b8962045d578df08ac55f7278b695a16e3196c3c2d5a7a74f951397ccd78bdec808aa5e658a5448db00a52d117505be505551d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "legalny zwycięzca dziękować rok fala kiełbasa wartość użyteczny legalny zwycięzca dziękować żółty",
+      "passphrase": "TREZOR",
+      "seed": "90bd74e46729cdd74b11a04f77027b697e9426a6eb53b9231bcb4599e8edc7b1b44c5c34b11037f44ca4cc7efa8028b5db52d80104e12accfb0fe25393d6795c"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "list rada klatka absurdalny ilość lekarz akustyczny unikać list rada klatka powyżej",
+      "passphrase": "TREZOR",
+      "seed": "6cd2423e1a2d53d341ea3e2d02ffb0d4323b18ef440e9eac94a015a44189240a8efadd031c14e896a196b391018d49f7e2696a20bec6b15f1dbe9b8091e589d8"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zły",
+      "passphrase": "TREZOR",
+      "seed": "c624761b3529d9282728febd960ac24d9ab519bfd0cb7525507638d927b84c1cae2e86ca2d5e7ab6daa97150f15037836355f27486a9c1c9ae5d2a670e546f6e"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić agent",
+      "passphrase": "TREZOR",
+      "seed": "fa65ceffbbd423ffc14d4b9ea9c8eb6d155cdd46c3657218835501f3b004ecbe57d1d89b3a509b7c0a66d90fb2bce6e03ce591caf3787243e9be412c38553b93"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "legalny zwycięzca dziękować rok fala kiełbasa wartość użyteczny legalny zwycięzca dziękować rok fala kiełbasa mądry",
+      "passphrase": "TREZOR",
+      "seed": "9785f2f171a3a4a21de176a0a1e38bfe836e02a6c62c93b7d4ed7ed06e70c8ce5ba4323b2cc7e02a98048be9ab0ec997eff89593d163d5dab273b8241eac09e2"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "list rada klatka absurdalny ilość lekarz akustyczny unikać list rada klatka absurdalny ilość lekarz akustyczny unikać list zawsze",
+      "passphrase": "TREZOR",
+      "seed": "77e7128460706a026e92cc791990671c390e49a677052194cd6ec29d93edd5245d019a1cd0694ad5482958ed5bc30d9e99ccf5ccd037c79ddb4a4018fd0eac6d"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo weteran",
+      "passphrase": "TREZOR",
+      "seed": "661c7ee22bf651184c5346112384074c62ff5f08c4de4438fff98792152f40a3e18a1f0156622999085b26c55b20695daf2c17c26bc1aedca3ed04fad5dbcbda"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić sztuka",
+      "passphrase": "TREZOR",
+      "seed": "66a1529432de533eb5aea3c5719f5a690290c94e8d6e68cac5eaf7f9457909ac66a4ce52996382b754711eea5ffdfeff678b903be4f1a7f4b13cd6189a4c0b8d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "legalny zwycięzca dziękować rok fala kiełbasa wartość użyteczny legalny zwycięzca dziękować rok fala kiełbasa wartość użyteczny legalny zwycięzca dziękować rok fala kiełbasa wartość tytuł",
+      "passphrase": "TREZOR",
+      "seed": "fc3b9a793ee0241f1474701b9a0f308d49e0d228b710b8ca07e2408f6f2e8e74d9622b950ae82f83938aaaa90fea32780162fc5f7af458d12d4db59ebfc6a0f1"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "list rada klatka absurdalny ilość lekarz akustyczny unikać list rada klatka absurdalny ilość lekarz akustyczny unikać list rada klatka absurdalny ilość lekarz akustyczny błogosławić",
+      "passphrase": "TREZOR",
+      "seed": "28cf4a2ba40b0790d41da9ba7905a50501f5b56f2bce33f24e2ba49bd1c57ffc7b37b4b713d895d52758924364d6f17a815508d527ee7ae999003781c83fbd93"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo głosować",
+      "passphrase": "TREZOR",
+      "seed": "c0dd681f6780480795440a15a8a59a9a17fb520f3d20404526cf3c25e9a20ac1eed4a35e70a73de766bfedfe2466fb011e99c0f9c77347dc11a822d550652346"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić około",
+      "passphrase": "",
+      "seed": "f27884ff927492b542faa5d6d6f6d3a55db86a90385cec5848d8b9029dcca834bfe95d1bd6a1ead6f93efe5a6a8dcaff34f80391aa42a530bb92c2ddd498ac6b"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić porzucić sztuka",
+      "passphrase": "",
+      "seed": "557ac295f2d870ada62b76ea8d878b51468147b7848b4f7a1c7ab3eb5e216b016dd719a61dfd4dd8d7214253614dc131663027f79f9bc5b3dd9ab555e30936fb"
+    }
+  ]
+}

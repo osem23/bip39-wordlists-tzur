@@ -6,6 +6,8 @@ Checks:
   - Each wordlist has exactly 2048 words
   - No duplicate words within a wordlist
   - No leading or trailing whitespace
+  - **No embedded whitespace within a word** (loss-of-funds class under
+    space-tokenized paper-backup restore)
   - UTF-8 encoding
   - NFKD normalization stability
   - Mapping files have correct word count and bidirectional consistency
@@ -75,6 +77,16 @@ def validate_wordlist(path: Path):
         # Leading/trailing whitespace
         if word != word.strip():
             error(f"{name}: Line {i + 1} has leading/trailing whitespace: '{word}'")
+
+        # Embedded whitespace inside a word is a loss-of-funds class bug:
+        # BIP-39 mnemonics are space-tokenized on paper-backup restore, so a
+        # single wordlist entry containing an internal space fragments into
+        # multiple "words" during restore and the seed becomes unrecoverable.
+        # Check for ASCII space, tab, and the ideographic space (used in the
+        # canonical Japanese BIP-39 wordlist context but never inside a single
+        # entry).
+        if any(ch in word for ch in (" ", "\t", "\u3000")):
+            error(f"{name}: Line {i + 1} contains embedded whitespace (loss-of-funds class): '{word}'")
 
         # Duplicates
         if word in seen:

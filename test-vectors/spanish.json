@@ -1,0 +1,105 @@
+{
+  "language": "spanish",
+  "wordlist": "official-bip39/spanish.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco abierto",
+      "passphrase": "TREZOR",
+      "seed": "29a2ee16de47d07025de37e7d9c596869439f9bcd26a702d2bae64db2bf0f68383841c5444b5b3bd39dd720d2ebe59969e110e5955c8e6d32c6c3294fd87439b"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "ligero vista talar yogur venta queso yacer trozo ligero vista talar zafiro",
+      "passphrase": "TREZOR",
+      "seed": "1580aa5d5d67057b3a0a12253c283b93921851555529d0bbe9634349d641029216f791ddce3527819d44d833a0df3500b15fd8ba4cae7ca24e1464b9167de633"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "lino admitir bolero abrir álbum dejar acelga aprender lino admitir bolero abogado",
+      "passphrase": "TREZOR",
+      "seed": "a89366f7f9c4bd98afca8edf1242507506562b8eb8a3a60468cafcb6f3037aba1e4d9a7497f6d49fa94aca87c95703873741441a719325af371f8eda9b59dc83"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo yodo",
+      "passphrase": "TREZOR",
+      "seed": "a9d1f751178872cc53fc5433e9b2a97526448adc4b824cedeadd8a127c2416481345dfbef2bfc78275f3498e40b4e8e2e00560100e543aba3f324e752f032bc9"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco afición",
+      "passphrase": "TREZOR",
+      "seed": "6c9f21d46c56f723cd734e308f10ebf44b5b92a2e0d80fd66a2952b8d37af5219e0b93c59e1d8e63b47ac657ec2c524e5fb951d87cac824f84a3ac6264b7aaac"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "ligero vista talar yogur venta queso yacer trozo ligero vista talar yogur venta queso vivero",
+      "passphrase": "TREZOR",
+      "seed": "913617dc21198a8877d974cfa6325bdd0e70cc2e362284b9df0902472693899ff1cc84e6e004113fd4a6258785485b888ec1479eee2e8336b2843ce45e2f18a8"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "lino admitir bolero abrir álbum dejar acelga aprender lino admitir bolero abrir álbum dejar acelga aprender lino alacrán",
+      "passphrase": "TREZOR",
+      "seed": "f799e5c2782b50d0eb1d25b5f94984c5b4037ade236c6aa3b48b3df01b703d8ede5f94555f4e78f87a642a9676ba052865418c469c5739b3e93acc528fad30b7"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo urgente",
+      "passphrase": "TREZOR",
+      "seed": "821b5a0fe32952286bde7b75bf747d925db6c023f59aceba65c4eb140927ddf1b71140c0f8b372cded9f78485a4f5285904208f0d854182d9c7b21f66b930b16"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ancla",
+      "passphrase": "TREZOR",
+      "seed": "f600536eca941ed937318828e9ebab24b3b571558250e7a8342fc3cf16c458b2d7b36c36155a86cc308f7bef6d87b05d5dbe347f1a83c3dfbabd89e9c45b7883"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "ligero vista talar yogur venta queso yacer trozo ligero vista talar yogur venta queso yacer trozo ligero vista talar yogur venta queso yacer teatro",
+      "passphrase": "TREZOR",
+      "seed": "3d2a3aec779195f2628e800879d600cfaf2d7fcfa998657068db53906a00608fcc94fc78ceab8c97d6191389c4e468815ea0d11ffa4280c34c3cf17721a27c73"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "lino admitir bolero abrir álbum dejar acelga aprender lino admitir bolero abrir álbum dejar acelga aprender lino admitir bolero abrir álbum dejar acelga aumento",
+      "passphrase": "TREZOR",
+      "seed": "dd095dddb50de059f5cb6932d529ad37dd32d40f72da3d0c7671ffc6bd967b4392fe233e5e9a4d9e5e60413160ae215e34375db85e95ccbab4fd4712f32216ab"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo zurdo varón",
+      "passphrase": "TREZOR",
+      "seed": "deea21c6902df5ef4a8efab8e14de53004c68817ea3de421cdd184f4159a6e9947376ed794c3ce67534f37f80b46674e85335555b5c53f44fdfef27991fedc0e"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco abierto",
+      "passphrase": "",
+      "seed": "fdfe9b7c7a5e5079bb36d6381838867a34358db0a0307d060adbaf5edadb08b0a87c06ede1a96afd8566ef499792ffcbd37f43f6f554fa344138660eacdefcf8"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ábaco ancla",
+      "passphrase": "",
+      "seed": "1e0de8aa97db3c7988f692d9c6151968be89debdbd71b1e34cab15d15ec10eed33412891129e1274fb84624565fd835f7e56df22a997439fca3da05c9c82a156"
+    }
+  ]
+}

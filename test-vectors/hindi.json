@@ -1,0 +1,105 @@
+{
+  "language": "hindi",
+  "wordlist": "community/hindi.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल लेखक",
+      "passphrase": "TREZOR",
+      "seed": "abf42c481b2831f426b6abc24e8bb2a31e07cf5f6472c359acd188ed2682269bb3b5634288c6dee52c3a1b3e5df1c674bf62dc19716a868edc47913abd45eedf"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा अविकल उँडेलना ढकना ऊष्मा ढेर पारस",
+      "passphrase": "TREZOR",
+      "seed": "2ca4e0794ad53670e6eccab92c98fdca8db06734b81955df84c1c294d94882917e38f3f4aacb3d9dc6824d060db72baae242be19949de44e21b1742bd3233e36"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न चरवाहा उदास मेरुदंड नज़रबंद रंगना",
+      "passphrase": "TREZOR",
+      "seed": "f5179329578ad0e08b25cf668ec62c7f5e8ccf00598e2ee374cb904e42aa3fed5c8fbf9745b98dbd8b561bd675ae7ba176a99cdf2b86a1d0079dd2a428948375"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा सुरमा",
+      "passphrase": "TREZOR",
+      "seed": "e4a132f94dee6549662a138e7c28f2e028c5cd2be6b85a99dfdb4dad756e374126be675465f2571250b9c9b3d508ff82212a3c41b69d0ad6577d2a1c1c9eed35"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल पंथ",
+      "passphrase": "TREZOR",
+      "seed": "a1c0b384ad0a67e9ab159aa64cac29d47d0cff8c9e2e628255f16ba7263409fab9d5ff9bceae14b6808f0255a93f7905c766a17114a2bdb94bd477b85088f88d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा अविकल उँडेलना ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा बेचना",
+      "passphrase": "TREZOR",
+      "seed": "a1b711155ab0580baaea854c2948c4fb0181e4a1eef8d84df5c0db33c4857fd879e223b83af7e95aa973e9d0624f0618c4c01443862d7165ae06cb16a2f829b6"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न चरवाहा उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न चरवाहा उदास उभरना",
+      "passphrase": "TREZOR",
+      "seed": "6c64a7ff0ebdeb0432f3d32bbedf2446bcd2c77579ccf67a2676a81d4c846f1a09679073b57d9dc1442a23b70d51f0e8fd1c6ef1905e375199a83f0d21cca5e0"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा स्वागत",
+      "passphrase": "TREZOR",
+      "seed": "e87316565c6aa1a937228b29b1a317a55d9bf3d0e853565f8bcc95c7292fe6ae2f6464ea3ea964b1c5452257e43079ba2b9b762af3cb12fdeee61146b8902e95"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नायक",
+      "passphrase": "TREZOR",
+      "seed": "65a4b248409466100fdf5c46eea2f0bc796af585feaa498a02e034b440bf1f204e494b93006b370352c40b1d46483d40665f02070faaa649578d7edf8ef042d9"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा अविकल उँडेलना ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा अविकल उँडेलना ढकना ऊष्मा ढेर स्तोत्र चुटकुला बुरादा अविकल कारावास",
+      "passphrase": "TREZOR",
+      "seed": "0ee43b87b3d3bdbd31cae99d1f7f3b221415c9f7fc28d00a3264f7ec3b0215fd1ba3fcc0325c857237761e7df91fb56e2d7d0867cff5f38e09c6ca0b9d04e734"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न चरवाहा उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न चरवाहा उदास मेरुदंड नज़रबंद आकर्षक दंगल जनतंत्र नग्न प्रचुर",
+      "passphrase": "TREZOR",
+      "seed": "5aa9c566ebf5734d86def092cf35b5a7f91034f3551653f27a5dbe80eecf3a26aeb7ff7e901728b5b15c957c7022b3e303eba6fa62e14bb682f6e4c12976def9"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा वसुन्धरा समारोह",
+      "passphrase": "TREZOR",
+      "seed": "1a83f32a008130bbc72530f5ef42eb2364799461e1f5db1641c13121ad1fb2454c94785b60bf0e8571431910d051145890ed37a15c03c81f1377217aa5e0a148"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल लेखक",
+      "passphrase": "",
+      "seed": "819e3dcd2c76e32b214bc6104c85f61c18fce741b8b4b82685fbf7c8cc21f1aea93e8ff3372b487a088af1b4c6f21b9d4a798979c41e5bc22c9d4dc4353d0e36"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नकल नायक",
+      "passphrase": "",
+      "seed": "0f8c552826fc02cc9f0611e966aab9f5dad96bc1bb9a93a7dbeebaa8821d7b77d293dcfef3df9469d27d96aceedca86f0ebd987d94c2d67c829bd4614dfd62e7"
+    }
+  ]
+}

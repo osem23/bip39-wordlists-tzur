@@ -9,7 +9,8 @@ IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE LIABLE FOR 
 - These wordlists are provided for **research, development, and reference purposes**.
 - This repository does **not** implement seed generation, key derivation, transaction signing, or any wallet functionality.
 - Incorrect use of BIP-39 mnemonics can result in **permanent and irreversible loss of funds**.
-- It is the sole responsibility of the implementer to verify correctness, validate checksums, and ensure compliance with the BIP-39 specification before using any wordlist in a production system.
+- It is the sole responsibility of the implementer to verify correctness, validate checksums, and ensure compliance with the canonical [BIP-39 specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) before using any wordlist in a production system.
+- Consumers can verify structural integrity and bidirectional round-trip consistency with the included [`validation/validate_all.py`](validation/validate_all.py) script before integrating.
 - No guarantee is made regarding the linguistic accuracy, completeness, or suitability of any wordlist for any particular purpose.
 
 ## Cryptographic Software Notice

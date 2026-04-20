@@ -1,0 +1,105 @@
+{
+  "language": "vietnamese",
+  "wordlist": "tzur-original/vietnamese.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi về",
+      "passphrase": "TREZOR",
+      "seed": "2ff8540989572876a236f4a62a29d57154a6db3d017086a43ce069bff1eac78b01581b6bb9c37575e209dec1c1246e1755e3ea1fad98d01bea1d49389fa66429"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "pháplý ngườithắng cảmơn năm sóngbiển xúcxích đánggiá hữuích pháplý ngườithắng cảmơn vàngươm",
+      "passphrase": "TREZOR",
+      "seed": "0a603ffe1ff7e81ca0b475ead24e5d592b3e04890823cd6386fb8a5051699fa0cdd5318411a84ebf4b300c486f94c5f81881cd0fa6420f4898cdc6cc11e80a80"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh tránh láthư lờikhuyên lồng trên",
+      "passphrase": "TREZOR",
+      "seed": "75858b47fb9a80398c4948e9e798d34004ba576f14da27c0babd6617bdc0a3d64f985159bf88f00b35cee1ac251864b4f4f5cf2c39d4513d06c27e48bf0bcaed"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú saiquấy",
+      "passphrase": "TREZOR",
+      "seed": "fef0cc3189def25bf29747149a92796cc01deecd2a79e3a6eeec584b3b35856a1839fda37e17c578ee2ffe2dcd8cc6cd3cdf6450ffc681126019810e5cc81c14"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi điệpviên",
+      "passphrase": "TREZOR",
+      "seed": "513825357a213d529269f525d31a92554e2ed8cc88ceae5beec096b8b5ea4ed9d3760506211bc62b57d5837ee8ae5ae83f9254c961308a1e0ade5c2f9054f544"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "pháplý ngườithắng cảmơn năm sóngbiển xúcxích đánggiá hữuích pháplý ngườithắng cảmơn năm sóngbiển xúcxích khônngoan",
+      "passphrase": "TREZOR",
+      "seed": "6aa73e109d95edc5301e48730a594092718c6dceb33e1d16d16c6144c530e072b7ddbcf27236d7cbb9134317004e94b74ce2724c3695b35aababeaf712bda787"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh tránh láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh tránh láthư luônluôn",
+      "passphrase": "TREZOR",
+      "seed": "41a4ddc79591fdd4ecb4218ffc2e06ba4d79ffca2c5ec6e3ea30f289db840c2729bb0496926b9c52f823996796f45e717e9707ec6834c493a08793e7671bd300"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú cựuchiến",
+      "passphrase": "TREZOR",
+      "seed": "e05073c37b99666618025f8640672893f03c467e693df4adeb44506ff2ec0917045642c10f3e6371028453406788eecd291dc1c6c58906ed6732ae822c10c208"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi nghệthuật",
+      "passphrase": "TREZOR",
+      "seed": "2ac00fb03487b1bfb8b7094102a56bb7df5716cc10498cd37bdc67975a1afb292432cbd6ee7c7d6861b7daaa1ff8c6a20a05caf488dddb010bc897d3417a5845"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "pháplý ngườithắng cảmơn năm sóngbiển xúcxích đánggiá hữuích pháplý ngườithắng cảmơn năm sóngbiển xúcxích đánggiá hữuích pháplý ngườithắng cảmơn năm sóngbiển xúcxích đánggiá tiêuđề",
+      "passphrase": "TREZOR",
+      "seed": "48a5e85e2a902685c6249d646c4ee99dcf081c422565e58bf3ca62d8f1eca15403654d65c7adb8a72e5144ccaa1b3300b407b7550294530fad365bd48974eb66"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh tránh láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh tránh láthư lờikhuyên lồng vôlý sốlượng bácsĩ âmthanh banphước",
+      "passphrase": "TREZOR",
+      "seed": "efa49eb338858f0b4144468796b9e7786a093be4b1f75a1ec860a2e89c3e2e50307de19a15e479c0741d955018dbc840910d4a46c29f2d3e335937e293834310"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú vườnthú biểuquyết",
+      "passphrase": "TREZOR",
+      "seed": "36b15312a6d3b0545ebc5cbe60ff15ed61a04209ec4c914e52d27d112a62e26b55d974d624ea019f1f61b738ae0da0ce0b36a129000a83e697fc06e007b0d262"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi về",
+      "passphrase": "",
+      "seed": "e4cc0508e74b82bb5a26b778f8ad3876dac63a94f9fe1dc35c18c041bb7cfea548165a574fa2889c2178076c902abc6a581f3f192b4fb606532af81d405ee4cc"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi bỏrơi nghệthuật",
+      "passphrase": "",
+      "seed": "c247a185dc76aac8361ff3bc6d2d4ba33b14d96213858d86543f65922d1803dd92b5aac89423d16dc50f0ed99d7eef8edc205d5ae78b98199df4a10bd9345703"
+    }
+  ]
+}

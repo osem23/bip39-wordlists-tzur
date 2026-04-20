@@ -1,0 +1,105 @@
+{
+  "language": "malay",
+  "wordlist": "tzur-original/malay.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tentang",
+      "passphrase": "TREZOR",
+      "seed": "360aa518d7fca245f00eed7449d0aeb7023d0479cb5128c2d0512899e5bf2a45cde0fc8f8356d27bc8ed80999d7623df02c34cc2bfc75c6443a847be3ce2b0ad"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "undangundang pemenang syukur tahun ombak sosej bernilai berguna undangundang pemenang syukur kuning",
+      "passphrase": "TREZOR",
+      "seed": "5bfcedfe1a35736f7f51324d82fe2b6966675ab609adca1e34c8809374a9419f70c6711f8158275c199af1d3363eac0c0bb1cdb36ab00677cf11b328913ef8db"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "surat nasihat sangkar karut kuantiti doktor akustik elak surat nasihat sangkar atas",
+      "passphrase": "TREZOR",
+      "seed": "c36986a1492e16d149c98f93a3d04dd2e94d22c5f35ee4935778ab43c409ac97748c3beec90d46003392852c0166e4e54a57d67bd74514c533fecb64106da4d0"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo salah",
+      "passphrase": "TREZOR",
+      "seed": "4d88239e4a5115b87975c50f804b0c720d5babaa71448418c38525644326a8079b6155cf2d01a0031f6d68bee9de9cb04695d1ec1dc373737ab58876b7e686fb"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan ejen",
+      "passphrase": "TREZOR",
+      "seed": "c98bfe5aae2f49ed10d7c0becbf8e9fb07e737c90c3098d4bbc2456609d6627a16ae8e8d99e57b17df60fbcbe601a4b44a3f7561a583fb12c2c69408eb01866b"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "undangundang pemenang syukur tahun ombak sosej bernilai berguna undangundang pemenang syukur tahun ombak sosej bijaksana",
+      "passphrase": "TREZOR",
+      "seed": "ba637c490a69ba1f52bb2c83eee27ce9e2e13da17f09601f4df92a8bd56b8d1b46d6a3473f12405ec50df34a1cb94dcd273d53764d604408ac20319b5a5eac00"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "surat nasihat sangkar karut kuantiti doktor akustik elak surat nasihat sangkar karut kuantiti doktor akustik elak surat sentiasa",
+      "passphrase": "TREZOR",
+      "seed": "bd66760ea57ac60d352937312823868d68ceb95005bd4148e8ad35650fc72735cf1a0e50b32b4c905f6e920454165a8333d43c43466e2269ecbb1a49b42f6151"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veteran",
+      "passphrase": "TREZOR",
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan seni",
+      "passphrase": "TREZOR",
+      "seed": "5cd1687e699a9aec3b44c5b776fea91673460c9822649c413ae5ad776967ed4947119e2c21177fcd8a5153280d6cdbd7ab94adc6557fd260cc0de3d860248120"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "undangundang pemenang syukur tahun ombak sosej bernilai berguna undangundang pemenang syukur tahun ombak sosej bernilai berguna undangundang pemenang syukur tahun ombak sosej bernilai tajuk",
+      "passphrase": "TREZOR",
+      "seed": "50fc83285de8ec1050b826e25f16ad7e66a47d98eb51ee9e26b02ffd2b722753a545a68c23fd705e070486ad31c88a5ae5391ffd818773c2e0476e368047a591"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "surat nasihat sangkar karut kuantiti doktor akustik elak surat nasihat sangkar karut kuantiti doktor akustik elak surat nasihat sangkar karut kuantiti doktor akustik berkat",
+      "passphrase": "TREZOR",
+      "seed": "907bc16f50e0ad2b14ece4319bbe6d8d0d0b215ee8d5f22831e92fddfa595f5569956a1e161f9399b6cce1bbe2ba3ea4e8029d18d03eef59efe6dda276430ede"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo undi",
+      "passphrase": "TREZOR",
+      "seed": "1aa9442adcafd849c4d769fa606a39ff851c656a105b524aa224b39e9d33a4e57cce83d8f6dd21e3e63fc16a12c2cb887d8624750d84e7b85de7e1a832eff6ed"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tentang",
+      "passphrase": "",
+      "seed": "6cbfd3692dc4d8f124c4d96244d250ff5d94ef2dcbc918702cc91649248aa3f7ede78c185abf013258672699d79a00cac7434029f2008615203f828703ff7e5c"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan tinggalkan seni",
+      "passphrase": "",
+      "seed": "75206abfbf965f8b931a8abcf4de8cba2436110bfb68c424da5abd6eaae30a98bf4c3b047cfb8d419d181f0f8b68dfc429f505209d37c8a31030007021b5b69a"
+    }
+  ]
+}

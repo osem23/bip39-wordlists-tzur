@@ -1,0 +1,105 @@
+{
+  "language": "estonian",
+  "wordlist": "tzur-original/estonian.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama umbes",
+      "passphrase": "TREZOR",
+      "seed": "b9a570cb00549f46e2e9691788a1f7fb3ba6acf3d5bb8fb562b448b7c5ac7f759ce1e0ac29f2dda7d6a00eec1e4eee073163e0f704582d8375507429931e21b5"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "seaduslik võitja tänama aasta laineta vorst väärtus kasulik seaduslik võitja tänama kollane",
+      "passphrase": "TREZOR",
+      "seed": "f76db30c09331048d2646bad4d536b3ff5d271fdb4cd3c713e73e0f1a9afe303a1e5e9ef748e09f495094b12ea2861ced1d7ac0d092553a20474318bf806679e"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "kiri nõuanne puur absurdne kogus arst akustiline vältima kiri nõuanne puur peal",
+      "passphrase": "TREZOR",
+      "seed": "c26c080bdd33a2c3411c2bad2b282b32841238694fd534b4acea84e46956db121de2249deddd3cc1402b88af6f497e76f9586f36ddb4f520d32a2f8aed6031c6"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed ekslik",
+      "passphrase": "TREZOR",
+      "seed": "708783b53d810877d5248c52115c7ee235cce3ac60dd462d5e4456e322b9893f331f1ecf79df7be9cd39074992df5043f62102bb4d11ace30c761de4348a3095"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama agent",
+      "passphrase": "TREZOR",
+      "seed": "c4b2e5b604504e5be60d694b8cacb402f271c1889dee9a89f9ae59bdf0aabb03600f18467997cf0cde52c2a85bd71c9772d44a6b9e2511b49a74a54e9f1aaece"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "seaduslik võitja tänama aasta laineta vorst väärtus kasulik seaduslik võitja tänama aasta laineta vorst tark",
+      "passphrase": "TREZOR",
+      "seed": "7e9ab36877d4ae03d3b59555cfb0c00e6958bc01ce60a389cbbbb607234a1038e2a91f2f54c53bb16e154e2e4ec4e672580f5f58d6dd4a008449d8f664a9bcee"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "kiri nõuanne puur absurdne kogus arst akustiline vältima kiri nõuanne puur absurdne kogus arst akustiline vältima kiri alati",
+      "passphrase": "TREZOR",
+      "seed": "af11ee55f0388ecd8414e1bd0f92197bc2ceefe036f4f5f78f00b214d9b17edd7fd6dc2cf70b33711a33cccb59ae70401c83d83b25bcd7fbdeb10d80c9f4b1f0"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed veteran",
+      "passphrase": "TREZOR",
+      "seed": "ed1af7daf70203598300936634e31bb6807575fdf688c4372f1c681ff013cee72a2ad7629eabcfd74fc78b47fd6dc330443e1b07465d35ccf38dcf2bb2cadf60"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama kunst",
+      "passphrase": "TREZOR",
+      "seed": "bc42610605393af9192ea98989a2a3575371345d187cde525a135399ba36f50fc274653aa3c097f8b453469ca15307252c1de42bfc69d376d7416baecb195a9b"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "seaduslik võitja tänama aasta laineta vorst väärtus kasulik seaduslik võitja tänama aasta laineta vorst väärtus kasulik seaduslik võitja tänama aasta laineta vorst väärtus pealkiri",
+      "passphrase": "TREZOR",
+      "seed": "8c3dd7f5bc8ed2f5be4109568ab4e4b988e8088507852e24b093547137cde32015bddf391c0d716c27c88a09641893b4c690adabc1eb5348687236f5ff6e613f"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "kiri nõuanne puur absurdne kogus arst akustiline vältima kiri nõuanne puur absurdne kogus arst akustiline vältima kiri nõuanne puur absurdne kogus arst akustiline õnnistama",
+      "passphrase": "TREZOR",
+      "seed": "3b12e435d50c9c21d39cb96e9993c1bc13e408fd215744e0f2638a0563b12c0fa4ef36384923e02e8fff744be28d85ee08f2ce70a5d97c0691be74b87ec80e4c"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed loomaaed hääletama",
+      "passphrase": "TREZOR",
+      "seed": "c88c4e7e212df8c511880e76a1ceaff155972aa7f7eb29182bab94d99cbab93ebf4c1928786165b6a9cc57ea9b924033326a82bf4f586626f3603cc37811144f"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama umbes",
+      "passphrase": "",
+      "seed": "22858810c570f4e1968cdb4720415289accef7936a903731094147f6515c635bcd5cfd6b8034936b441dcae2bf5d971fc1fa3c3bc6b0e3ed567f0c87f60cfb17"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama hülgama kunst",
+      "passphrase": "",
+      "seed": "0669dcc8ac2f4e09cff02f005d354d642221d3ab3ca7b476a5337ea436949740cbca1722235fbb513b91e4731444b644fe437b8fb6be49951f7cdcea4b43a947"
+    }
+  ]
+}

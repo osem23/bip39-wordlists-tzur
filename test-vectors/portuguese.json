@@ -1,0 +1,105 @@
+{
+  "language": "portuguese",
+  "wordlist": "official-bip39/portuguese.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abater",
+      "passphrase": "TREZOR",
+      "seed": "ab9742b024a1e8bd241b76f8b3a157e9d442da60277bc8f36b8b23afe163de79414fb49fd1a8dd26f4ea7f0dc965c760b3b80727557bdca61e1f0b0f069952f2"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xingar",
+      "passphrase": "TREZOR",
+      "seed": "298d1614ff06ae803709f5be5331135cb74e6cc77fa09e07a3e887c2e370401f9a73a409dadf58b5a5197b27ffb3fa5dd528aad9a1a8750d7669ce950ee60c2c"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abduzir",
+      "passphrase": "TREZOR",
+      "seed": "800fd4e7691fbc3ceed246c211a38949c3607fe269a35829e40ca9d3e26515a4ebd64d8bfe9b66b49543fe9dab78bde7cb7102968ce669f55293bcc02e26ba0e"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido xeque",
+      "passphrase": "TREZOR",
+      "seed": "7fb404372815ea28ef97a64249acd71a293ea0437b3dac8f7e193a10f3584e2055753cc8d6f025229f65e61318fc4e10d4017bd3cc3496f535eca3247d26acd6"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate acumular",
+      "passphrase": "TREZOR",
+      "seed": "81c66b6789e8b91c169335be4436fd9736ca9c06425acd09b0525e1d6836383130f7f7d31378aaef8b7109503972f40d42f6c6b9f99765827bea762515d3404d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar virtude",
+      "passphrase": "TREZOR",
+      "seed": "b2ec61449d52a58be15943870100373adc0efcfa62d43ceab982adedc0b39d5e28ad731116fadd254cce9d7a5b5f225305c9e8c8fd47089b93252372645db481"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador afastar",
+      "passphrase": "TREZOR",
+      "seed": "0f637bf3a487c26fb73f6a464f62ef1f6ca73a6ae083e220374c82881bf4ed2dafd874956ce368c4441e6269759c5864197e87421fbcdb7f6d63df17b4f7df81"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido turma",
+      "passphrase": "TREZOR",
+      "seed": "7093f7031cff03edc3a38edb221293edaba280c7aeaf51508cfc4824edfe4cc74edaad25b734f11b74da30ea48f1b7c9f960ece6c18c2c908d3d6b845f01bfef"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate alinhar",
+      "passphrase": "TREZOR",
+      "seed": "8fe67c9f53a30f75513830e18f6bd0950354297a4977393fae3577363393e679cc13452bcfc9460b28a913ab8de9efc55f5901d1ba77e5eec791afd967768607"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar volumoso sucata",
+      "passphrase": "TREZOR",
+      "seed": "feac9ad4e1a4a4399a7d57fe47bf64b404a7588eca1025abfa299365f7a75639317e2c89a94812db33405aa0213846bfd6d53dfd02743e2cf3b6984eb9fcf19f"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre asilado",
+      "passphrase": "TREZOR",
+      "seed": "32c8feae6a0bee33166468a770cb28459727e10f4f5ffef64977d5ef52a68ec51d832751a10c025058612ab256052cdfa9d8c5c87560de0453efe5a7d4597771"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido validade",
+      "passphrase": "TREZOR",
+      "seed": "739a6edd208d09e28fa97f8e8709aaf185e173125b1b427c04d1539173c88b78e81610a759e14f97a2038dcdc2c466a072788e3d7c88cc9bf36b96cb29510e77"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abater",
+      "passphrase": "",
+      "seed": "27d75c14dc6727f0ef475a82b7c6903b74b706310784ca8eb9e605b5c1828bf55960de685cfebeab3ad9485c71cc737a5476b56a18d338513e328987306820ba"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate alinhar",
+      "passphrase": "",
+      "seed": "b2bcf5fc13330f221305a8abfb409b9739630a978d697fdc8c92152969633cb433e8bc678617a007ebc75459bb57662e296808fa15e07650c628816ecd04b2b7"
+    }
+  ]
+}

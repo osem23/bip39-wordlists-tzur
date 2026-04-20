@@ -1,0 +1,105 @@
+{
+  "language": "filipino",
+  "wordlist": "tzur-original/filipino.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan tungkol",
+      "passphrase": "TREZOR",
+      "seed": "fe5843d485f6cba679644c8a104a405def68e4e15ff894450c8ba442a6ade9a769704f748e2de44ba79ae428dd4ca86867814d2e2f94a4ec8d721e25d65a9286"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "legal ganador pasalamat taon daluyong longganisa kahalagahan kapakipakinabang legal ganador pasalamat dilaw",
+      "passphrase": "TREZOR",
+      "seed": "bdb62779941bd4536628b4ac61d37471a9c9d9a36037d54a214b75fb2814cdfb965670dcce432f137d3f18f5ef55c6b16df32a0d06026659070ce56022d0e6a4"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "liham payo hawla katawatawa halaga doktor akustiko iwas liham payo hawla itaas",
+      "passphrase": "TREZOR",
+      "seed": "d103b62e684f003233f531ec9a357d9bd0f3b1c3986dbd32464fe586e4c97ee9556a9f31dc31ff8ef5a0fb9116bf1890c57b9f7b59b9adbaefbe4ef1d6405d27"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo mali",
+      "passphrase": "TREZOR",
+      "seed": "917d6a71f4a2d06a5ac812999c3806b321da407c1265265e83e3b9bbc2db78a97c1aa89ea4c4c8e86e538a2193cb8d58c6d973250371b2dbde77a554e184582f"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan ahente",
+      "passphrase": "TREZOR",
+      "seed": "b5c7872012ba26bcf486497bd65a8988af2c65bd5438c7a77bbc7e7b04f71dc429ff93751fb6c8f4f5de66772e940c482cb0a64a3c2bed728fd604cc4fece5b7"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "legal ganador pasalamat taon daluyong longganisa kahalagahan kapakipakinabang legal ganador pasalamat taon daluyong longganisa marunong",
+      "passphrase": "TREZOR",
+      "seed": "38de1bf337efc6606230c7eda7fa337d1da14e72f9e333c05f99c403a71d88041b411a04d36951353bf9928c7ca81d710b3321fb88589af5d778a68baff45a5e"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "liham payo hawla katawatawa halaga doktor akustiko iwas liham payo hawla katawatawa halaga doktor akustiko iwas liham lagi",
+      "passphrase": "TREZOR",
+      "seed": "709bd95c9c623a8152b85bb39276ae5a0f6038f88ddccae75408d9f6f12f64e1dfcd41b096b818d7e5ad07fe8daef7f8c8f271fff1b010bd83012b224bd42a0e"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo beterano",
+      "passphrase": "TREZOR",
+      "seed": "dd6363e34918c659865b6a87ffabd954aff9939a8f7f56f75eb87871fbd15e15db3b92a6b39a374088db77d1bd2ebe6816cc4cc941f179132fc5ca6d92deb719"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan sining",
+      "passphrase": "TREZOR",
+      "seed": "660ebdd74a837112ca663235d8dc66f741bd1ac7f1db77297fb364d4392b4361d9d269a49cb8b38fa39b5cd729c83e3d258003b80c8a1a1d580b3441268187fa"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "legal ganador pasalamat taon daluyong longganisa kahalagahan kapakipakinabang legal ganador pasalamat taon daluyong longganisa kahalagahan kapakipakinabang legal ganador pasalamat taon daluyong longganisa kahalagahan pamagat",
+      "passphrase": "TREZOR",
+      "seed": "f67d055b64860ca89ee30f507be9e5dbab5193e30eb21b9715120ae7b8e15aa884006c5a89e1f9d8da710845d58e21d6e571441bf456e27ccd94bba303d29139"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "liham payo hawla katawatawa halaga doktor akustiko iwas liham payo hawla katawatawa halaga doktor akustiko iwas liham payo hawla katawatawa halaga doktor akustiko basbas",
+      "passphrase": "TREZOR",
+      "seed": "d1506fb9926dcd61d4c33ca67fc5c4af4f4e4725a9cae9cf03a088ade6063b7c870d54c74da0a933a44e6709a13af23a733d90c217f6f0f7713147086ac21830"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo boto",
+      "passphrase": "TREZOR",
+      "seed": "48db757f287444a1e5a73fed818e423dd4fce6f31cfce6bf00661a83bfeeea9fe2ddaa471ff1045f9e60eb724ee10670e2120f71fd842b33bff5472352ccb6a3"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan tungkol",
+      "passphrase": "",
+      "seed": "7f58391a9c3ad07e7b063c15471f693abcd97ad16c585027cbf194a4fe2df6699c4a11a40c03dc53cac75022744aa3b2e0ee13c46016f133f6d87c51ed192164"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan iwan sining",
+      "passphrase": "",
+      "seed": "92904e5890ba6fbd6900c4edd8d21763b58ff9776a910c11dc2becf597cd56d24e9ca6f4df157053711985c41051c2bd8ef66b5d9015f53495c067bad1daba5a"
+    }
+  ]
+}

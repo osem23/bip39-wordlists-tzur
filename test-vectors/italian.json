@@ -1,0 +1,105 @@
+{
+  "language": "italian",
+  "wordlist": "official-bip39/italian.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abete",
+      "passphrase": "TREZOR",
+      "seed": "d2ae4bbd4efc4aba345b66dc2bfa4ea280d85810945ba4e100707694d5731c5a42ac0d0308ba9ad176966879328f1aa014fbcbeb46d671d9475c38254bf1eeb7"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zircone",
+      "passphrase": "TREZOR",
+      "seed": "f8c609647319a50116e9b7d1a0ec5535c6d08d6c958911fd2c8b2dfd55a61e63e9c6c60c22b5c3aec725acb41980e63cb3ed75fb80648092dee1bbbeab476a6d"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura abisso",
+      "passphrase": "TREZOR",
+      "seed": "4025269bc4f7550bbc3c61592944946b0d4ac855a5e4582bf86069cc0c9429455cc40d84ba215ed1cec28e27ffc88460c38b9c4e8c486ae878d7c85e95b222bf"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zerbino",
+      "passphrase": "TREZOR",
+      "seed": "24182cf43f956410b5def9df90e3db0d6f3199c2ebd26e7ddef888ee3bece9101d132e449bb9e1c23dd9ccc6131d2f649c021ee591e88cef8d17cb434ef69efb"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco agitare",
+      "passphrase": "TREZOR",
+      "seed": "2161a4b869f98778b6321714e2502adb11ea120c12163b46fa34e36442ad1981b911a2f9ec82b497e7cd206fa7af2f21a94bb6e4a90159965854784e1558658b"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare vivido",
+      "passphrase": "TREZOR",
+      "seed": "2a7351f252234b95340b8a1e61594c5be06bbc4461cbfa2ac97883255de9a95e659094e18d51df22b72dbc63898a9464de0778526d4e53f38b76a836b7cd4d6b"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare allievo",
+      "passphrase": "TREZOR",
+      "seed": "cfb1f800cd5a0f7a8cffb12231fc61739f5f87c963ead5e205dd48221c3417eb1173d3209d9a8ffc4f00ab291bc22c1480b4a0a4fdeef9a1f3916d0ccbed5591"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa vacante",
+      "passphrase": "TREZOR",
+      "seed": "576fa10b95fe23a2e2f82062e6ee950a8d7d85152c6748d53f8919f879b899d30a8cad64e6c3f3991f9cca9cfcc5c962baa0ac8672283e01e14b897b6979150a"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco angelo",
+      "passphrase": "TREZOR",
+      "seed": "84055239f41c182bbfe6ede6db2e8bc4a97cf86746643b7ea6910c71d67bb2a678a97ecd378cfbf59e30db720b1cfde0faaee73afd3c5deef2188e307d04442c"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare zattera tarpare",
+      "passphrase": "TREZOR",
+      "seed": "f0e226efcd929216020a9e8f879f06b146d28fecd2856bd401a62ecc0ece8bc6ea717e3f9df523a6a00bd4ca8965e0498d63e779e3156dbf174ebac74ad7be31"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico baco",
+      "passphrase": "TREZOR",
+      "seed": "ef549c1e44a7b183031b41f9f692795406de605e43ecc628911a38d7c92f392660c48313a08cf1a055a420d4a8c6b12bef7ff354c903303bc3a5dc12948ff5be"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa vedetta",
+      "passphrase": "TREZOR",
+      "seed": "5089f33aee7852d86a01e8afbfdc8a0ad5af51538e62e3f007d098fa4fc9817ddc990fa87b7235273798e2df52228b62738df923bc2d711fed9cc0558b3ebfec"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abete",
+      "passphrase": "",
+      "seed": "9c010f0a2aeb286c2f3d1750795677697c4c350cc1b8539f54655b5ebdf42a5b9726ba0092b6579e792e8118f53a62b0d74fc878dff2c96dd2549df86810b61c"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco angelo",
+      "passphrase": "",
+      "seed": "cbda07ec2ff567c93b1777de30b468da16768d053d2fc1b9f206b10106bfa0744bfa469554ec40ead097f9ede9b77192562ce16ef89290b33de8971befe9053f"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "language": "romanian",
+  "wordlist": "tzur-original/romanian.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon despre",
+      "passphrase": "TREZOR",
+      "seed": "79db16c452347fb01ea92206f5d5c46e968a40c62945636587cacc1dea030e2d84085c4e246dd6dc356fe49134f9bb28bb6b5ad7d6dabba99b3ddb47df087642"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "legal câștigător mulțumi an undă cârnat valoare util legal câștigător mulțumi galben",
+      "passphrase": "TREZOR",
+      "seed": "674d55263495529af7f542c9ca270a9073011206fb8838edb4bb0a8fd0170a22889d877e2d492faa179505edcaade9f47604f00ae8764da219e2d4cf9696c144"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "scrisoare sfat cușcă absurd sumă doctor acustic evitare scrisoare sfat cușcă deasupra",
+      "passphrase": "TREZOR",
+      "seed": "95aaded2bf6d3347c18efff01cb05067747430e6daba8c06852dfef31d5c8933baa6e71b8f7aa0072236b05edf52564cfa11d03daa50f4a7ccaf54ce06b3a267"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo greșit",
+      "passphrase": "TREZOR",
+      "seed": "08883f8234fa57c89fb8e39b3302e77ecc4b5c923ab9a8c823725920e1bcc3fc520c827173292e06200a06d7c0e567323995d92a7e745a054d1d8de1ea87b32d"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon agent",
+      "passphrase": "TREZOR",
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "legal câștigător mulțumi an undă cârnat valoare util legal câștigător mulțumi an undă cârnat înțelept",
+      "passphrase": "TREZOR",
+      "seed": "00659605005206410d31032436e5b45d4cd45198621ea8e281080c0184afecd461f8b24ddd3f583f4fa0cd5dd308efa7d67aec7e6b53a4318442e4ce21f921b5"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "scrisoare sfat cușcă absurd sumă doctor acustic evitare scrisoare sfat cușcă absurd sumă doctor acustic evitare scrisoare mereu",
+      "passphrase": "TREZOR",
+      "seed": "a71ec7345a8f53eaee8dea2376320c6446a8d1bac01753890941946be0ae7e79cfee85ae260a0c30cb6f2f8a8876c29f868fd65990abaa0d36763a9c5c9b6489"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veteran",
+      "passphrase": "TREZOR",
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon artă",
+      "passphrase": "TREZOR",
+      "seed": "799b2836afb43cb3b22f598d7dee2d48a2581536dcb44b7c7a3cd123fff850c6dedfce1edc144973905dda31ab7afb01a754aec638204e1c4b4a6db44db89a01"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "legal câștigător mulțumi an undă cârnat valoare util legal câștigător mulțumi an undă cârnat valoare util legal câștigător mulțumi an undă cârnat valoare titlu",
+      "passphrase": "TREZOR",
+      "seed": "1d17998d21bedfde468f9891f7dd50a6505828fb1b13e5e68a5f9d072fe84137f1c9b923ca9af1860708c41e1b9f39c81f18bc56d3f9cb005e8e49b440c9cf35"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "scrisoare sfat cușcă absurd sumă doctor acustic evitare scrisoare sfat cușcă absurd sumă doctor acustic evitare scrisoare sfat cușcă absurd sumă doctor acustic binecuvântare",
+      "passphrase": "TREZOR",
+      "seed": "3b8f1330c0ad85086ae674dd570f4a3c49064f9111c495d6e52f2b63f6ce17a9fd80d1bec18b2bffa290950b5cb09d940d7bb161c8360c25ed0637e1602e4932"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo vota",
+      "passphrase": "TREZOR",
+      "seed": "16bbc50cadb2a4a975c2029610e9cf8c3756dcb0568f5d7053d90e305819ad196f7b0857301a24dacdc8a96049059ce7be9f8ac89a706bb0d5c1f23c6a01cc6d"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon despre",
+      "passphrase": "",
+      "seed": "2e1ecabe28bd72d77bd655948bad3de16b4a1f94f91ec707246ecc7a28fd4d65f7a2198f085cf9657d4ce8f585fa57b20d10c8db7226ff1a6c52b42bdcddfa07"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon artă",
+      "passphrase": "",
+      "seed": "39b617a99562d96fd5fe517c711032144d5a2948451124cac3b0936607d0edc34d82cb363eccce24b56fe1cc6c8e7161f8d360c774ceacb778b38d6afd1126f0"
+    }
+  ]
+}

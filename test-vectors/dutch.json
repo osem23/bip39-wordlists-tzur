@@ -1,0 +1,105 @@
+{
+  "language": "dutch",
+  "wordlist": "tzur-original/dutch.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten omtrent",
+      "passphrase": "TREZOR",
+      "seed": "151d335675c81c627bfd39a7ab8d7d905298b2805da1d1ab09bbb68ba4572ff86648c6123dbeb21ebde16ef9b74448ffe0f7ad4800975c5cedec8920c76f89d2"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "legaal winnaar bedanken jaar golf worst waarde nuttig legaal winnaar bedanken geel",
+      "passphrase": "TREZOR",
+      "seed": "9fac96335aff98f02ad4f75cdf8e8599e778ff96313a160bb51c6780cc294cfb51224480ae9313faf469505a16fdc6a1f7db9b1fd971b94c92f28ae3e9b698ac"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "brief advies kooi absurd bedrag dokter akoestisch vermijden brief advies kooi boven",
+      "passphrase": "TREZOR",
+      "seed": "800e3f3df7f24cc1ad472bd23a857b735d6ec431a7f8366bb5f66fc33be112eb57571c5b3430020c27ad9d06f2132d4645c3f73bd9d997491c76e79465d2ffb0"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin verkeerd",
+      "passphrase": "TREZOR",
+      "seed": "21c32089b4efab19f50d351e8d81cece9c0f4bfaf074b4c3f60ae62a1c4e9c247dac8d43abe4057c8f05881ef5093b1c9bd56fdfad85ef86dbcbed77883fe465"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten agent",
+      "passphrase": "TREZOR",
+      "seed": "c8be085fb4164f279df8816ced302da003df03d32a804e0cd13024fc56bf93442f49ef0bfd44eb8a70c0b965113bdbd5185717348df711cfc5fecd97d61a8271"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "legaal winnaar bedanken jaar golf worst waarde nuttig legaal winnaar bedanken jaar golf worst wijs",
+      "passphrase": "TREZOR",
+      "seed": "18d1dc0f47d8219389eba1afad4b11a1afd38d7fcc019229d760734a3b35de92689a522e6162ba35f9e0500173c2cf3e7ff480aa93ea73d30e62778b662668dd"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "brief advies kooi absurd bedrag dokter akoestisch vermijden brief advies kooi absurd bedrag dokter akoestisch vermijden brief altijd",
+      "passphrase": "TREZOR",
+      "seed": "866fd20a36cc5b2c12442350b15a332c40452c76256433cba88c3a8e26adf9c2921b4802622cc4a0a5ea6b02a55cfb15a66fd7b0818ee5fa9c6c9bb9f4ff9cd2"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin veteraan",
+      "passphrase": "TREZOR",
+      "seed": "b42cfcd0494c2c1f5798e7d02479499d87dfe77fa323a15f11fa9af0c7ff92c00659967f7405ef17d5fa33b8c68ce308841dafdd54b8265582258085ffa7d061"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten kunst",
+      "passphrase": "TREZOR",
+      "seed": "3ecb0fe2c08fd19b977b549bb64a6a604164240a900eca482d331c0fdddf8114e71e569e645c935d50b11311d27092d6dcdf65b09c28b462a06e07dad2a979f1"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "legaal winnaar bedanken jaar golf worst waarde nuttig legaal winnaar bedanken jaar golf worst waarde nuttig legaal winnaar bedanken jaar golf worst waarde titel",
+      "passphrase": "TREZOR",
+      "seed": "8565243e7c1b052dc9511b85c7c95dec41f315a478ab09f79cd40ae22ea2e102c8992c94fc3bb7f9b5e43a4fbb01f7c1c4e1b8b568b82bca11b0ef54cfa510ad"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "brief advies kooi absurd bedrag dokter akoestisch vermijden brief advies kooi absurd bedrag dokter akoestisch vermijden brief advies kooi absurd bedrag dokter akoestisch zegenen",
+      "passphrase": "TREZOR",
+      "seed": "805c8a1a062c00d3389ba85848eddb966ca61a1e6436ece6576baf7ca6844368d270f73dc55c792d63bcf4d91caae8feae0cd112340da9040fc175dc6b873f12"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin dierentuin stemmen",
+      "passphrase": "TREZOR",
+      "seed": "765442c9ae6124168b03813994dddeca7f20b0101fc2aea49d552713cc05a0dd572c4cd4918c901dcc71b028e2525428e32f5855926802e246ba9bf954c6cf0e"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten omtrent",
+      "passphrase": "",
+      "seed": "a2321b782a75ac079d01a44ae48ec4551bf766cc89b881d3445579a2773e37634c1108646c411256636fbb3c335feab15cbb86b57b6ebcd01e7cb8eeba338d44"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten verlaten kunst",
+      "passphrase": "",
+      "seed": "36e0140dce5fb9e30421335ced7e192d103c138d71a04977fb0f742272729363c58a4ef869f90e3d9b8ee7c0cb540113252f2058adbc694b322474f908534412"
+    }
+  ]
+}

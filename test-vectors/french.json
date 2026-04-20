@@ -1,0 +1,105 @@
+{
+  "language": "french",
+  "wordlist": "official-bip39/french.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abeille",
+      "passphrase": "TREZOR",
+      "seed": "3bf3366c40256d7e2fca716fddf8673425c7c7e444af290ee1edf1bbf095e6e78a7190253f3e46f1e2069345d4b05ac17b242faa225c0a3e4d268976744e0698"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "implorer visage sonnette voyage véloce pourpre volaille tribunal implorer visage sonnette voyelle",
+      "passphrase": "TREZOR",
+      "seed": "ab9180b7dfdde74e5cf8781e5692e2c0b55afa8bc1987fa8e14e3fb83c88b195c53e9f939f8febc33d2958f5fcd8add57843cb318d8886130ef9c9879c826357"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "indexer acompte bolide abrasif agréable dédale abusif appuyer indexer acompte bolide abolir",
+      "passphrase": "TREZOR",
+      "seed": "0c1ece83a464688d74744723d609e30e191d05ab8c082cf34bb2405bc4363dbcf6a9f83707b577d230728b3943920f876ec844e86dd0d117152c23802d25be3f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie voter",
+      "passphrase": "TREZOR",
+      "seed": "7d2f168ce71ba3e40e74baf47a072a94e49973c0dbdb33a62b3a285ab167c704a85d6ce0d15cc6a4dd3bf1311334ee0d290ae7d20115863d5f5633b8dfacf2d4"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser adéquat",
+      "passphrase": "TREZOR",
+      "seed": "93d81d146eccb7c624cc25daa4cd52736d64bdc0fe020940157e73c108a87ee34d94d7e9554e02ea0f9a7ea5574426220bae7c4959c197a6c9e2318cb252683c"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "implorer visage sonnette voyage véloce pourpre volaille tribunal implorer visage sonnette voyage véloce pourpre visuel",
+      "passphrase": "TREZOR",
+      "seed": "bf244a0e371362c29d5127ef572c4bf573e50940ee4afadd9c4311d2cb3271f26af3c926cebd1f397a82d9ab68455d25a8b39a89ff013c9d3f53df44ba46098f"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "indexer acompte bolide abrasif agréable dédale abusif appuyer indexer acompte bolide abrasif agréable dédale abusif appuyer indexer agencer",
+      "passphrase": "TREZOR",
+      "seed": "b039606212ccadb0d05c7a0c08605c5137028d0253d26b9ad6ee113f9595700d9834b2eec8b224975a6d9585d7ad39e962036edcf07d5b125b0fc225d519982f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie unanime",
+      "passphrase": "TREZOR",
+      "seed": "44d174cd3e6c4b0e5126525625d5a82fbc5f0eb8e675ba162530aa4e861df807bf2bc6564a77d319042afda1d7b50894111237647d97b8e69d72093f1634fc6b"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser anaphore",
+      "passphrase": "TREZOR",
+      "seed": "0f3eec3279b55f3cacdbf1aef705a086078d7eb8048e402202572e7038e9487e39104b4794e88a42192af030a176b034fa36ca6641fb8128fd23c30806b96c23"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "implorer visage sonnette voyage véloce pourpre volaille tribunal implorer visage sonnette voyage véloce pourpre volaille tribunal implorer visage sonnette voyage véloce pourpre volaille studieux",
+      "passphrase": "TREZOR",
+      "seed": "8f12b35fe92a7586dfbdab9721a91300d0dbe3185d0943021667e62fd5a643e0cf2443e544738c5234009aa50faac0dbb123ac847c31dc25d875c56fe39c6186"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "indexer acompte bolide abrasif agréable dédale abusif appuyer indexer acompte bolide abrasif agréable dédale abusif appuyer indexer acompte bolide abrasif agréable dédale abusif axiome",
+      "passphrase": "TREZOR",
+      "seed": "53ab1d10dc8de3a80171b5f00495a3b49e2c5afd486f8111b1afd0ad24f43eb0aab4acab1d4c51126beea32405947924c237157b29dca69fcf64eb635708895f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie zoologie valable",
+      "passphrase": "TREZOR",
+      "seed": "b5e96f552ba44ec827c1bc5ef362e8cea68dd6f36f2c8640aeb171cf9b66198fbdf155fdbcf7dc505431068f972a92442f33cda0065afc1e9a7f5f7097ea6c6a"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abeille",
+      "passphrase": "",
+      "seed": "01051dcfa9e1695ca99d1bd2a3304d073c00d275ad5a389d0579a13f4f8e90e512f0c5839764179926bf51961d84c3bf3e20404298065998c60e43e4ec7985b6"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser abaisser anaphore",
+      "passphrase": "",
+      "seed": "b14dbc7e4e7d3b5312014da8d2d13fde24936c2e766f3fbc306a944e3648a649a83c8ab4d06a775f43c2ef3df02e8df0e814c310cde0104cde00f1f672355a5c"
+    }
+  ]
+}

@@ -1,8 +1,22 @@
 # BIP-39 Wordlists
 
-> Most wallets only support BIP-39 seed phrases in English. This repository provides BIP-39 compliant wordlists in 31 languages, including **20 original wordlists** built from scratch by the TZUR team. 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) had no known BIP-39 wordlist before this work. Works with any BIP-39 wallet across any cryptocurrency. Built and maintained by the team behind [TZUR Wallet](https://tzur.live).
+> Most wallets only support BIP-39 seed phrases in English. This repository provides BIP-39 compliant wordlists in 31 languages, including **20 original wordlists** built from scratch by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://tzur.live) and founder of [BlockSight.Live](https://blocksight.live). 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) had no prior BIP-39 wordlist known at time of publication. The English wordlist works with any BIP-39 wallet. The 30 native-language wordlists currently work with TZUR Wallet; other wallets can integrate them using the provided mappings.
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 31 languages.
+## Why this exists
+
+BIP-39 ships canonical wordlists in 10 languages: English, Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese.
+
+Those 10 cover approximately 35% of the world by native language.
+
+The remaining 65%, roughly 5 billion people, have no canonical BIP-39 wordlist in their language.
+
+This repository ships BIP-39 compliant wordlists for 31 languages. Seeds commit to canonical English. Keys derive via PBKDF2 on the English form. The native-language wordlists are a display and input layer over that floor.
+
+A seed phrase in Bengali is the same key as in English.
+
+## How the wordlists are built
+
+Strict, deterministic BIP-39 wordlists and bidirectional mappings for 31 languages. Each TZUR Original wordlist is built by translating the canonical English BIP-39 wordlist into the target language and storing an index-paired mapping. A seed phrase generated against any language remains recoverable as English (and therefore portable to any BIP-39 wallet) via the mapping.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -14,7 +28,7 @@ This repository contains three categories of wordlists:
 
 #### TZUR Original Wordlists
 
-These wordlists were created from scratch by the TZUR Wallet team. For 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), no prior BIP-39 compliant wordlist existed before this work. For Dutch, German, Indonesian, Russian, and Turkish, prior BIP-39 lists exist from other projects; ours were created independently. Any vocabulary overlap with those reflects the natural frequency of common words in the language rather than derivation.
+These wordlists were created from scratch by [osem23](https://github.com/osem23), builder of TZUR Wallet. For 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), no prior BIP-39 compliant wordlist was known to us at time of publication. For Dutch, German, Indonesian, Russian, and Turkish, prior BIP-39 lists exist from other projects; ours were created independently. Any vocabulary overlap with those reflects the natural frequency of common words in the language rather than derivation.
 
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
@@ -98,7 +112,7 @@ Mappings are derived from index positions: word at index N in any language maps 
 - **Strict BIP-39 compliance.** Every wordlist contains exactly 2048 words. No duplicates. No leading or trailing whitespace.
 - **Deterministic structure.** Same file, same content, every time. Files are plain text, one word per line, UTF-8 encoded with Unix line endings.
 - **Normalization awareness.** Non-Latin scripts require careful Unicode handling. See [`validation/encoding-notes.md`](validation/encoding-notes.md) for details on NFKD normalization and script-specific considerations.
-- **4-char prefix uniqueness is not guaranteed.** BIP-39 suggests the first 4 characters of each word be unique (for typo-tolerant autocomplete). The official Trezor wordlists mostly meet this, with documented exceptions (Spanish accents, French phonetics). TZUR Original wordlists prioritize meaningful ordinal pairing with English over 4-char uniqueness. Implementations relying on 4-char autocomplete should fall back to full-word matching.
+- **4-char prefix uniqueness is not guaranteed.** BIP-39 suggests the first 4 characters of each word be unique (for typo-tolerant autocomplete). The official Trezor wordlists mostly meet this, with documented exceptions (Spanish accents, French phonetics). Implementations relying on 4-char autocomplete should fall back to full-word matching.
 
 ## Wordlist Requirements
 
@@ -156,6 +170,24 @@ const englishWord = mapping.native_to_english['נטוש']; // "abandon"
 - These wordlists and mappings are reference data only.
 - Use at your own risk. See [`DISCLAIMER.md`](DISCLAIMER.md).
 
+## Known Limitations
+
+This work is shared as-is. Use it, fork it, or ignore it. The limitations below are worth knowing before integration.
+
+- **Native-speaker review is incomplete.** Hebrew has full native-speaker review. The other 19 TZUR Original wordlists were built through translation, structural validation, and a three-layer translation-accuracy audit (mechanical validation + back-translation via Google + forward-translation via Microsoft Azure, each paired with an LLM verdict layer). See [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md) for the methodology and per-language refinement counts. Native-speaker review is the gold standard for idiom, register, and cultural neutrality; contributions land via PR.
+- **Cross-wallet portability depends on integration.** The English BIP-39 wordlist works with any BIP-39 wallet. The 30 native-language wordlists currently work with TZUR Wallet. Other wallets can integrate them using the mappings in this repository; until they do, a seed phrase generated in a native language is TZUR-portable only.
+- **"No prior known wordlist" is a best-effort claim.** The 15 languages described as having no prior BIP-39 wordlist were researched at time of publication. If a pre-existing wordlist surfaces, it will be acknowledged and linked here.
+- **No external cryptographic or linguistic audit.** Validation in this repository is automated (format, encoding, round-trip integrity) and includes the two-engine translation-accuracy audit described in `docs/CONSTRUCTION.md`. Independent third-party review has not been performed.
+
+Corrections and independent reviews land via issues and PRs.
+
+## Documentation
+
+- [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). How the 20 TZUR Original wordlists were built, disambiguation rules, review status per language, reproducibility statement.
+- [`validation/encoding-notes.md`](validation/encoding-notes.md). UTF-8, NFKD normalization, ZWNJ handling for Farsi, and per-language normalization impact.
+- [`test-vectors/`](test-vectors/). BIP-39 conformance test vectors per language. Integrators should reproduce every vector in the target language's file before shipping.
+- [`examples/`](examples/). Minimal reference decoders in Python, JavaScript, and Swift. Each converts a native mnemonic to its English form and derives the BIP-39 seed. All three produce byte-identical seeds.
+
 ## Validation
 
 The `validation/` directory contains:
@@ -166,13 +198,7 @@ The `validation/` directory contains:
 
 ## Contributing
 
-Contributions are welcome, particularly:
-
-- New language wordlists that follow the requirements above
-- Corrections to existing wordlists (with justification)
-- Additional test vectors
-
-Please open an issue before submitting a PR for new languages.
+The repository is public. If you want to contribute a correction, a new language, or additional test vectors, see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the process.
 
 ## License
 
@@ -180,4 +206,4 @@ Please open an issue before submitting a PR for new languages.
 
 ---
 
-Maintained by the team behind [TZUR Wallet](https://github.com/osem23).
+Maintained by [osem23](https://github.com/osem23). Builder of [TZUR Wallet](https://tzur.live). Founder of [BlockSight.Live](https://blocksight.live).

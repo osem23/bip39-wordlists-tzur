@@ -1,0 +1,105 @@
+{
+  "language": "chinese_traditional",
+  "wordlist": "official-bip39/chinese_traditional.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 在",
+      "passphrase": "TREZOR",
+      "seed": "7f7c7f91ef81f0fb6a3b95b346c50e6472c1d554f8ba90637bad8afce4a4de87c322c1acafa2f6f5e9a8f9b2d2c40e9d389efdc2adbe4445c21a0939fb39e91f"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "槍 疫 黴 嘗 倆 鬧 餓 賢 槍 疫 黴 卿",
+      "passphrase": "TREZOR",
+      "seed": "f38af46f6bc3222b0f5aa14dd5b8b506e51131510f2450ec9fb52c28617cfa59d436055fe542e25dfa01415639d2171e41796f169f8bbc18516941dfdee8fb72"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "壤 對 據 人 三 談 我 表 壤 對 據 不",
+      "passphrase": "TREZOR",
+      "seed": "33f373da1a6b4300dad5cc70d2329ed614512e3c8a423673c294110521326ca66753b9663bdd7c844f17d81609a410a61809dd5113823009f729e2f2f940cab9"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 邏",
+      "passphrase": "TREZOR",
+      "seed": "cfd5f4fa6f2a422811951739b1dad9f5291f9cbc977a14ae9dd35dc8ab17aeec9ee6f1455b20f881838f4f945850765dd002a9abcdbe7be002ffcdaf6f63fdaa"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 動",
+      "passphrase": "TREZOR",
+      "seed": "717f4f70c7550da57e42c6b49ac47b5bad3249605ed2f869900596c2de7653a8528380e5c31709ed9c2d19b868bc530158712e97276886b4863d036177bcab33"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "槍 疫 黴 嘗 倆 鬧 餓 賢 槍 疫 黴 嘗 倆 鬧 沫",
+      "passphrase": "TREZOR",
+      "seed": "263e6588236779f5afb09ce09780f9ab98a2e16534df295bd4154c37f1a8ff250c260027ac6142c9c5ac80855fd1a3988105327e169f3d3f7e2228bd7f2378eb"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "壤 對 據 人 三 談 我 表 壤 對 據 人 三 談 我 表 壤 民",
+      "passphrase": "TREZOR",
+      "seed": "d29225f73231521784d98820ebf0ae4d827c5a9e0c0f8845fd63866cdc70b3a40a2281f3f6c6181c5a53e440528dbf83947a4b2056749cb9cc9c83dcd5c91b0f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 躺",
+      "passphrase": "TREZOR",
+      "seed": "11b29a59f6f49553de667b728445eb5f2ea91998ed5cd4574ca2e5355e63bd6f3199d1a8acef411d05289f965d130f80f1e54b43239035f26807f8e9e64413d0"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 性",
+      "passphrase": "TREZOR",
+      "seed": "1981c3e3ddfd80f6e9ee1c5ef27ba2697df3d1468496f1d56ae3d8e0b3f0677bbbdfca954e48eb86fe6a36fc0f597bf18ea00248757a01e82182badff94abbbd"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "槍 疫 黴 嘗 倆 鬧 餓 賢 槍 疫 黴 嘗 倆 鬧 餓 賢 槍 疫 黴 嘗 倆 鬧 餓 搭",
+      "passphrase": "TREZOR",
+      "seed": "fd50ad67903b2046356e67e55d67309b6f0ccd7c23bfefd049a5b8a40d56c507d73a5517e2d2785f024a7794854594aaad845dd0fbd0432c25a96f2a7181a2cc"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "壤 對 據 人 三 談 我 表 壤 對 據 人 三 談 我 表 壤 對 據 人 三 談 我 五",
+      "passphrase": "TREZOR",
+      "seed": "d029fc9737b801cb4f9aadf5feed02a117b76ead7058e055cc39cb44864023eb492e6a15c68569d6a03a5b11bf15a456c64e1781a553589b47ab569801239a00"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 佳",
+      "passphrase": "TREZOR",
+      "seed": "8e6607a07fa664d6e4ead23fcc08caf72216d6f078c3b2e5be94e4b6e8d64c784d36bf9b70144fa05840e9a49899128111be5093a2b552b6ab76c0906e9b0e65"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 在",
+      "passphrase": "",
+      "seed": "c015b86e4b208402bb0bdd0febb746708b869bb6e433cb227fd66d444f3ccdc360fee9ca9271014c2a684df380fcc40bd80a37eaa41a8061a52a18d319cdd899"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 性",
+      "passphrase": "",
+      "seed": "bc2bac655c789079ec34be4ac7d8b1fa184d5e72b67592b759bf708198a00d0f0fa2664af6215cc5f8ac810d5cdd4d5aee96ef46d54de69e198373e44af953ac"
+    }
+  ]
+}

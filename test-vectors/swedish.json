@@ -1,0 +1,105 @@
+{
+  "language": "swedish",
+  "wordlist": "tzur-original/swedish.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "överge överge överge överge överge överge överge överge överge överge överge omkring",
+      "passphrase": "TREZOR",
+      "seed": "78f2f7ffd32f6c03aed5d2911882db22f3a824094725f81d32829330f783a9e03058481db96012606d56b66e237b44a538781fba2beed5108c4785fa177d7ead"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "laglig vinnare tacka år våg korv värde användbar laglig vinnare tacka gul",
+      "passphrase": "TREZOR",
+      "seed": "79f56d5e048e164e28022fcbf3fdb73a4dc422754e108f84e54052fcf8bcd5bdf6bed99f5a12db55d43e4832b80ffcb3c0fae24436a346eceb062aa151afa216"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "brev råd bur absurd mängd doktor akustisk undvika brev råd bur ovanför",
+      "passphrase": "TREZOR",
+      "seed": "e1676cdc319f57ab300e5b12e4976d1b7a7b716b3c739f6484d0ce7dcb24bfbb053932e05bf38ba80eb2793ce871dbfc440e0764be2dc3cb748ca688c21ea82f"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark felaktig",
+      "passphrase": "TREZOR",
+      "seed": "4ca63763bf1afad6b32ff8295f5dd89f9cf893fc9ea7ad5b64251e1936b1f1e7af66ebc21d13bd8e4147ce7c07cc2e7d9aadb10e64edea15506463e56d3818c2"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge agent",
+      "passphrase": "TREZOR",
+      "seed": "ee090c3e0c297cff057d6cc652552c0221362bf86fed0e6f63c34ff64fdd58512e663dc850ac574b3476f17f85f7ae5d077ff1bd740d861c86407d3840e53820"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "laglig vinnare tacka år våg korv värde användbar laglig vinnare tacka år våg korv vis",
+      "passphrase": "TREZOR",
+      "seed": "17e7ada18ffd185a6ed649878fc7fb7c7efbceaf0fd7658008a306ee919e1cf255495848e1c6e8ed34de0820bf2f05729e17b68e137473f96dc2c51d4961109b"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "brev råd bur absurd mängd doktor akustisk undvika brev råd bur absurd mängd doktor akustisk undvika brev alltid",
+      "passphrase": "TREZOR",
+      "seed": "7239dcc1e1719b8b02f80ddb63cb4d726ac48ba451b0d0efb0aabb86349d1c7aec6704bc7651c43df29cac5eedfc2e8fe34c511c18aa44c82c1b443b095b3ceb"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark veteran",
+      "passphrase": "TREZOR",
+      "seed": "1511293dd368a1fe2fd77a2fb72eb6c4c139dfcc3fe117b748f3bb55adc058e481a8e8b6ffa7825fac3708901c3a11c9ee4f17ad263dfdc8153b08baaa946c17"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge konst",
+      "passphrase": "TREZOR",
+      "seed": "0e2d5699d94f2ce0be31130c83d850d112cddb1f4c38f6ae2553dc737cf3c32d0e9b72290388332bba719d49a029b540753d9cdc6cdad6ef62ab81f270d8b9fb"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "laglig vinnare tacka år våg korv värde användbar laglig vinnare tacka år våg korv värde användbar laglig vinnare tacka år våg korv värde titel",
+      "passphrase": "TREZOR",
+      "seed": "0faf3e9560ef86d4e13a09ea35ccb72fcc280b59dcbaff09e3223f5686feaa61e568d4a103d4090c7246e3c18fefd01307a17207c47cf8f80ac128978f2bb21d"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "brev råd bur absurd mängd doktor akustisk undvika brev råd bur absurd mängd doktor akustisk undvika brev råd bur absurd mängd doktor akustisk välsigna",
+      "passphrase": "TREZOR",
+      "seed": "b7c03cf7aaea17d7cba82f261fa39fd6e2d70b133f706cce748e5808cc5f820fe623bb475eff458dbf0fbe84dcb01d6025e27d6d766169e3d57eb2e018a271df"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark djurpark rösta",
+      "passphrase": "TREZOR",
+      "seed": "55d38e1eb6723c477995bf65299d073f8a18d5f3658cdeb0d7889e0a395cc0a907f55903a8488f27e379060068c6dfb0979d2f906f6443d19b6db74ea0b88ecb"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "överge överge överge överge överge överge överge överge överge överge överge omkring",
+      "passphrase": "",
+      "seed": "307e7700563e7e51cc9ebc882a5bdb3fe116019576fda003d3bb8b2da2c5e87839f10c57348347435e7408c47e1b1ec698aeb4232fe5ee4d23bbf0747d288ad7"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge överge konst",
+      "passphrase": "",
+      "seed": "8815afc88e80a16e0b5931ac11c2abb33b4fabcf0e079c1289996789e50ce56d8a9d8776f04672c5bf6d48d53b730bf9364f66d714b76d55be9f36429c4eac44"
+    }
+  ]
+}

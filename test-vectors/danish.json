@@ -1,0 +1,105 @@
+{
+  "language": "danish",
+  "wordlist": "tzur-original/danish.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade omkring",
+      "passphrase": "TREZOR",
+      "seed": "815e9276423b7f631811cf90369272e47d998cc075a3376303c122ef3764dce6b5ce1e566c807c17d8dac8459e2307e48adb7ab96418f64f03b4cc167efcf2e8"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "lovlig vinder takke år bølge pølse værd nyttig lovlig vinder takke gul",
+      "passphrase": "TREZOR",
+      "seed": "481ff581cfb1bd638ca0b7235583f46d459e815ec122ffafd824037a390ea64419aff4857d0c1476145aa6a37469335c62218dba9bdbb052a977f4e22ba20ed3"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "brev råd bur absurd mængde læge akustisk undgå brev råd bur ovenover",
+      "passphrase": "TREZOR",
+      "seed": "bf0384567db3c64ab0f21fa381f34a7f467c4681611abe95231fbb5bee7d9c3f6d329571ce3fa0e014825a12b90ee2e3254bf74e9d3d13637fe59b2444c6bec3"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo forkert",
+      "passphrase": "TREZOR",
+      "seed": "23b331427a08cd6187f82faf3a15963004928fa3d633d32bb65ed6878ffbff6d4143f95821dd2a7939de18ef5e74a52a050fbb1e1f4ad626b2ec111e3b53c0ea"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade agent",
+      "passphrase": "TREZOR",
+      "seed": "70767f180e492b737689e92a0746e8d572a798bdb1f201a9514f6004b95a1d60b506ac67b03709232e3d61d53da5f7a1e07fc840ed62d34ae35521568def3429"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "lovlig vinder takke år bølge pølse værd nyttig lovlig vinder takke år bølge pølse vis",
+      "passphrase": "TREZOR",
+      "seed": "c37a2af8a7435ad869d8efe3f2ced943d39471131eaa9d6220173c4b0d536f4f77471a66dd38b4b6b0a33d63e7713565972b3ed59f4e8cf40740585e1ca3f01f"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "brev råd bur absurd mængde læge akustisk undgå brev råd bur absurd mængde læge akustisk undgå brev altid",
+      "passphrase": "TREZOR",
+      "seed": "fcd110d6876dbc34d54c17ace8dee00db5cee4aa521d7e43bc13dd1263ef1f88a75018330450447b34c8303c645c8e4ea7870801ca38429cbf24b04e1ed6eb9d"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veteran",
+      "passphrase": "TREZOR",
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade kunst",
+      "passphrase": "TREZOR",
+      "seed": "4a02e9f5190f34e3ca878853ae166897a9dabb9cab4baa65d46b5c82e962c01398196b5e82a747b15d32d4f89e5573221c1b2890b85c682eec80eb074ff2f92c"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "lovlig vinder takke år bølge pølse værd nyttig lovlig vinder takke år bølge pølse værd nyttig lovlig vinder takke år bølge pølse værd titel",
+      "passphrase": "TREZOR",
+      "seed": "54f049e8287bbeeccf610af5840d1861d5e779c8e7b71db02cd2176cc460cade102c75826c584a848aaf3fa2369693e0c01e05d447a1503615600a3aaf1f5075"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "brev råd bur absurd mængde læge akustisk undgå brev råd bur absurd mængde læge akustisk undgå brev råd bur absurd mængde læge akustisk velsigne",
+      "passphrase": "TREZOR",
+      "seed": "e5f296a5dda3de140356eb53aab9a89abb54649b1a465608eafc28024eada9ad7444572e29c9dcd800e118a09ced1e260a8612b61bdfbd1bf5ada2ea7bdb5941"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo stemme",
+      "passphrase": "TREZOR",
+      "seed": "0eb02216b7acfd8a7d946bece76e17eee9df9c0cded15e047db239af2c3e2c6ae78b1f6803f7fb5eda9d43a970dc6fc18c068dff6b08c5990c022abed08dcee5"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade omkring",
+      "passphrase": "",
+      "seed": "d7d7ed58d0d144d7e7b9350b5fb338918e6672ef411c02c578af967a0b82becc9dd3d6bc39b9018de0a71e4e2f2c3e1e8c16552a28fbafa0ea6b9986e616ec77"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade forlade kunst",
+      "passphrase": "",
+      "seed": "d8aa506163f38ef7239dc9b77689243eb0348aa91dace6a983e195c8ea37ae7a543af09f2d8a7a24040ef6641ab7528c2fbeddd9b632f3e6705cceba297cc066"
+    }
+  ]
+}

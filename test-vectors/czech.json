@@ -1,0 +1,105 @@
+{
+  "language": "czech",
+  "wordlist": "official-bip39/czech.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace agrese",
+      "passphrase": "TREZOR",
+      "seed": "872501bed75c98fbf943a67907bf394995f337e9adfa23687282d1135c262421715a0bcccfe2d3f5f8b72c8e2fa12a7a7267f8047b744557f4a9d49d11ccc75f"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubr",
+      "passphrase": "TREZOR",
+      "seed": "68e1bd31ed5f20c9ab108c03b524e85209b0b27af80cb5d48fa71d03dbb528b73c2349bb8576f9b68825272984061594f520e54605a4898ba61c433d06bf5de7"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma akce",
+      "passphrase": "TREZOR",
+      "seed": "067089f8edbbb8bc8ab6d0f3e29f250d136955745797a20b63fd4372627c51c4576ebd5fb6c6d4825d21f448cc24b342ce3b0117fedf41369cb5a6be77494aa7"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zticha",
+      "passphrase": "TREZOR",
+      "seed": "04d0a733d43c640a4492b670a9549c60a358a681891cc2337a01a3c8288cd2941b7e057dbcf2dffd1e614cf5fcc9d38d9228fbd3ea5ceb508b8aacac5f35ccd9"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace balonek",
+      "passphrase": "TREZOR",
+      "seed": "b5eb0b74cb5f2c616e7136182597ab61dd94594d22f15ce6c94e04eb7336a56d3e445ec1279c1f04b861de5f7c6b2fc95227db53be4996de3ba87d6d76b09098"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zobrazit",
+      "passphrase": "TREZOR",
+      "seed": "14bafa535e64b3aa4766e61f9c69dd5e16442bbb301aee7d79ed942d68f86af3cb75c84b9ab077f0fad3f05be38cffb367e0414890423d35b25ddba4c3139416"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance butik obvinit bezinka",
+      "passphrase": "TREZOR",
+      "seed": "1843be39a115dad287e10d256d2e9bb81244cefda2b7ead8a762f53033512abc7b6db26e2ebe8053fb82e313c24bcf62ae84ba4aa2900ca0fcdcb1affc38887a"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zajistit",
+      "passphrase": "TREZOR",
+      "seed": "0424e8a22e8c56b114691300e27e088fcf32febf9d8afff83d0e0b27c70835be1af3c2937c927efb0c2ced1878c4e99c4927c9c76aaf4f8ea13bfd2dfefc50dc"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace branka",
+      "passphrase": "TREZOR",
+      "seed": "dd2a9f662649585707dadc6e8b2df2c0e0e2691d53bacea2212aff4063ab4fdc79b703a7ce6744da31cd2ee12e56b9ee0f430a238b892fa660ed0ce879f2c472"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zrcadlo veskrze",
+      "passphrase": "TREZOR",
+      "seed": "f4e4e2d8817cbb3925d6a0e8a2a466dbe1353a5885ec203030722607b8b5f229c71066c18681fda4291d0e323e4f6ba099b5b7efff442adfa14124fd07147fa8"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance cihla",
+      "passphrase": "TREZOR",
+      "seed": "bb8b82baced0db7764e102d1d1f68035269e84ec6c1ed0e09b2a31094330967aff9e1a490a407fef736fb8719c60bfb8cb0be9b27fce97c3b619409c195e2f1d"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zavolat",
+      "passphrase": "TREZOR",
+      "seed": "3991e1ccc78af78d58cae577b786f7c950e1f23311d0c5f6d51b884d6142a6b4fc91a227c895313bf3d35731682678653101f51546717d60438d54dead32f834"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace agrese",
+      "passphrase": "",
+      "seed": "c1e6342228919bb2110b9a56e38cf13012923fe04f37fdcb33a4afdb45d4e0c3d586ec3e946a73687299fa6f0c95f88d9dba8290852f2982449a9df26a7b20f3"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace branka",
+      "passphrase": "",
+      "seed": "7a5b3b71af74d80feb27e236156c71e5020145e3ffc09aabd60a654a200dd83e1d593424a12b6fb5b073afe7720a669aa2c28826e60397659faa924cb4942a17"
+    }
+  ]
+}

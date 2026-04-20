@@ -1,0 +1,105 @@
+{
+  "language": "turkish",
+  "wordlist": "tzur-original/turkish.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek hakkında",
+      "passphrase": "TREZOR",
+      "seed": "f8c9a3776839dad917599b61e627e8ffadfb069aaffd53a63e3e2c55d369fee7211fdd5e9ffe23a4e88eba98539c14484c94e07f110d58026b4a4e3ba9e3fb12"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "yasal kazanan teşekkür yıl kabarma sosis değer yararlı yasal kazanan teşekkür sarı",
+      "passphrase": "TREZOR",
+      "seed": "a4c19881173390978a506a603d65eabd8c7adbfbd68db78cfa70d0d30efa8870fd9cea0d725429fdfede0c132c8db8d86830fa6961fd8888b528dfa4b31bc429"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "mektup tavsiye kafes saçma miktar doktor akustik kaçınmak mektup tavsiye kafes yukarıda",
+      "passphrase": "TREZOR",
+      "seed": "c77f927c2e32176901fe84b6fa9ca8b95f22d28ba89867493b1d7261892d7d24d0891e476183ffe6bd57244136e5e721b912f31d814d47028792c0616c71d6ac"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hatalı",
+      "passphrase": "TREZOR",
+      "seed": "65223fa314fca424797a061570647407f548cc4513f7a650ceaa12119ab3df15e72712e26643d7d766003dbf34c5f61e1fb90ff3b48d9d14fd0b66fc4fdb0b39"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek ajan",
+      "passphrase": "TREZOR",
+      "seed": "10add74d5857ac387c23e35d9aca9113a190bfbf7f8014c406315cef305ad13981d56ba315524e67700a337403ed54b0a7552935154bc3031654ee3963be622d"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "yasal kazanan teşekkür yıl kabarma sosis değer yararlı yasal kazanan teşekkür yıl kabarma sosis bilge",
+      "passphrase": "TREZOR",
+      "seed": "13a5719a43dfdc7118fb3ff2affc900c4e85c0f34fe0cb51f83dcd6746e4476586cc01400fab9baf291cfa054f9f69f3a0cfe83218e071be37d66d605cd01317"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "mektup tavsiye kafes saçma miktar doktor akustik kaçınmak mektup tavsiye kafes saçma miktar doktor akustik kaçınmak mektup daima",
+      "passphrase": "TREZOR",
+      "seed": "bb96cffae6ba9d911c49775e1e261f9bfa28c2172a5bfd5aee3c796de854852f7e1b82d801c475e84bf6129083793c3d4d6d192548b090aa9f97b0888f2a7248"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat gazi",
+      "passphrase": "TREZOR",
+      "seed": "1f0072a2accd2c81c0dc45f63712c82940a7d86a2f2b9ad4a0c18943c822afa18d9a96a8c19b4d73ad0ed01e254653a51352e9500ae5b90f0790e9995a7e3848"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek sanat",
+      "passphrase": "TREZOR",
+      "seed": "c59751e9b8066a735caa0850450cf22774abd27938c1536600b6a963bc6e78f2d4aea0179aa0edd380fee90ac130891486a64cd641ab264fb792ffd61b640dc7"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "yasal kazanan teşekkür yıl kabarma sosis değer yararlı yasal kazanan teşekkür yıl kabarma sosis değer yararlı yasal kazanan teşekkür yıl kabarma sosis değer başlık",
+      "passphrase": "TREZOR",
+      "seed": "2b2ab169493d40418f1361dfdf51c82e19da01f12d461d7c5b2dd3bfdb1adea9a26a2de75812740f072f2c411442834e5cac7d87eb841660a9ed46f24bcee757"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "mektup tavsiye kafes saçma miktar doktor akustik kaçınmak mektup tavsiye kafes saçma miktar doktor akustik kaçınmak mektup tavsiye kafes saçma miktar doktor akustik kutsamak",
+      "passphrase": "TREZOR",
+      "seed": "0a81fa300076e7bd8cb67c1fe73dbaca171cbac663becfecb283798c03d3db173d30ba2e1773b7dda9cee9c287455f8cf347a179444980d0424c0f472038cbfe"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat hayvanat oylamak",
+      "passphrase": "TREZOR",
+      "seed": "790342bdf83eb895c827a09491f4f2d3fc7825e56d29f0dabed91f999c33c8ff06ee794da036608540c243040fb7427e7dd0549e14909a43b59e3ce7b5cad9ab"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek hakkında",
+      "passphrase": "",
+      "seed": "5928f236647e9c441a9da87193ae51ebb5e22fa27a451f368ee5a012355ab15c21cf9b7a9d58ff1200fda48b273602b889babe503d277f2656fe18e76e428f8c"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek terketmek sanat",
+      "passphrase": "",
+      "seed": "4ca890b403a614d07b6702048b115a90641b9374a83b7fa63e8ff4d4992db78cb10cd030da4c61632be08668e003f2524acaa8ffeadf1b12a64dcdace7e1f4cd"
+    }
+  ]
+}

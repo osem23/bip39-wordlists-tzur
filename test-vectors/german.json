@@ -1,0 +1,105 @@
+{
+  "language": "german",
+  "wordlist": "tzur-original/german.txt",
+  "vector_count": 14,
+  "vectors": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen über",
+      "passphrase": "TREZOR",
+      "seed": "efe21e4666dcf9cca31198b0c05962bd23f30ff1e7c78e0e72cd51039ec4d3060d972670826005aa83c2b4ba2b99d0fdbd115a2cc86c701a7ce643f8405d8bb6"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 12,
+      "mnemonic": "rechtlich sieger danken jahr welle wurst wert nützlich rechtlich sieger danken gelb",
+      "passphrase": "TREZOR",
+      "seed": "944146dcbc3ff7fe9ae08855fc312f1d0ab4e2faa3ac294f578fb6c4d62123994b2d6762db2b07946a8b8dd5f2ac906242263b26b06db001ca56af98b96e9148"
+    },
+    {
+      "entropy": "80808080808080808080808080808080",
+      "word_count": 12,
+      "mnemonic": "brief ratschlag käfig absurd menge arzt akustisch vermeiden brief ratschlag käfig oben",
+      "passphrase": "TREZOR",
+      "seed": "b320005c2fd2cab64fe26b4e3e52bf56dd4c706c06e3a04e414532be8669ff4e31d8d8eb18b5230c42bd2fc8f4788fb094ab4c7fb253a9a85e8c645b1b8e0946"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "word_count": 12,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo verkehrt",
+      "passphrase": "TREZOR",
+      "seed": "aee9bdad2323ec582436954057554dd81430e4b9c0262dc77e17eb9bb33525e408b070d374139031c3cdde4b1145b241295263726dfb33e4f9abfed3a722113a"
+    },
+    {
+      "entropy": "000000000000000000000000000000000000000000000000",
+      "word_count": 18,
+      "mnemonic": "verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen agent",
+      "passphrase": "TREZOR",
+      "seed": "a03e55d98c3917124cba74a5b68f91cbc7b048b174ff2e5ca64b80f249cfae25acd40442395aef5b0a9661794c96f4775b64784357e018c44a47c51fc969d737"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 15,
+      "mnemonic": "rechtlich sieger danken jahr welle wurst wert nützlich rechtlich sieger danken jahr welle wurst weise",
+      "passphrase": "TREZOR",
+      "seed": "298dd59bbd5b19de0f542281bf01b200a25f7aaf4d039f2f99f56b2da9658f0f70dfeff9ed655adfa2aa6d7f1791e6a397c47248a0b4e4d5bd255630d7e16557"
+    },
+    {
+      "entropy": "808080808080808080808080808080808080808080808080",
+      "word_count": 18,
+      "mnemonic": "brief ratschlag käfig absurd menge arzt akustisch vermeiden brief ratschlag käfig absurd menge arzt akustisch vermeiden brief immer",
+      "passphrase": "TREZOR",
+      "seed": "41e7057d17868a1c5e2106e24835b74fa0487dffaac755c3ec8cf81a4565362b8637c58761209c3c483e586b6a9e25f1cf6bbb5f54818e5ac891ac755956a0f5"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 21,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veteran",
+      "passphrase": "TREZOR",
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen kunst",
+      "passphrase": "TREZOR",
+      "seed": "87a65171bce6065ded21ea52bd89ffecd9dc01194d16093b650f45e28548520feb9fc0684912c57983c44b093be9b5157783aac38f0f8e24dd9fcecfc86a2ff2"
+    },
+    {
+      "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+      "word_count": 24,
+      "mnemonic": "rechtlich sieger danken jahr welle wurst wert nützlich rechtlich sieger danken jahr welle wurst wert nützlich rechtlich sieger danken jahr welle wurst wert titel",
+      "passphrase": "TREZOR",
+      "seed": "d51673e69639e3f36cc55ed8cbb70b79242ff4eada393ac55883103e461b303b2e5d4272a39fd887ff69bf8454dd4a686a49047190f22967efe116dd00e63f3e"
+    },
+    {
+      "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
+      "word_count": 24,
+      "mnemonic": "brief ratschlag käfig absurd menge arzt akustisch vermeiden brief ratschlag käfig absurd menge arzt akustisch vermeiden brief ratschlag käfig absurd menge arzt akustisch segnen",
+      "passphrase": "TREZOR",
+      "seed": "2918b07e29b06865077d1ac2e9dd16e11f152b1ee4d1acbaed82fb1d1809b9209304463f564945d4b8784313b335e5dca166c58bd1d6a849e853c2bc4f17e9e5"
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "word_count": 24,
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo abstimmen",
+      "passphrase": "TREZOR",
+      "seed": "966928ba4d8dd0e740c7b711a24d8a878ce438fc54d40238665b09069533c344256452e18c8e04c535111855c361cc866fb86cc380162678f8ec32aded36c13f"
+    },
+    {
+      "entropy": "00000000000000000000000000000000",
+      "word_count": 12,
+      "mnemonic": "verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen über",
+      "passphrase": "",
+      "seed": "07586459f4efa399179ce5f7f741c4ef5768ca33db4b6c6b48ca940dc36387e19d1d92554e468750e43e1b4708f1b8eb879787ac2a66c83b6618f4a1b4b51918"
+    },
+    {
+      "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
+      "word_count": 24,
+      "mnemonic": "verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen verlassen kunst",
+      "passphrase": "",
+      "seed": "4caa7357eb9aa2e780047632373c545d38677b9d39c8d88e315df8f9ecbdbb23ff0338380564a8f4f78f053a74b41d5e428af9ea8557f767678751638a3dba42"
+    }
+  ]
+}
