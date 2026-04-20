@@ -33,13 +33,13 @@ awansować
 rada
 aerobowy
 sprawa
-pozwolić sobie
+pozwolić
 przestraszony
 znowu
 wiek
 agent
-zgadzać się
-przed siebie
+zgadzać
+wprzód
 zamiar
 powietrze
 lotnisko
@@ -53,7 +53,7 @@ wszystko
 zaułek
 pozwalać
 prawie
-sam jeden
+sam
 alfa
 już
 także
@@ -71,7 +71,7 @@ gniew
 kąt
 wściekły
 zwierzę
-kostka stopy
+kostka
 ogłaszać
 roczny
 kolejny
@@ -82,7 +82,7 @@ niepokój
 jakikolwiek
 osobno
 przeprosiny
-pojawiać się
+pojawiać
 jabłko
 zatwierdzać
 kwiecień
@@ -90,7 +90,7 @@ kwiecień
 arktyczny
 obszar
 arena
-spierać się
+spierać
 ramię
 uzbrojony
 zbroja
@@ -103,7 +103,7 @@ strzała
 sztuka
 artefakt
 artysta
-dzieło sztuki
+dzieło
 pytać
 aspekt
 napaść
@@ -147,7 +147,7 @@ banan
 baner
 bar
 ledwo
-targować się
+targować
 beczka
 podstawa
 podstawowy
@@ -157,12 +157,12 @@ plaża
 fasola
 piękno
 ponieważ
-stawać się
+stawać
 wołowina
 przed
 zaczynać
-zachowywać się
-z tyłu
+zachowywać
+za
 wierzyć
 poniżej
 pas
@@ -190,7 +190,7 @@ ponury
 błogosławić
 ślepy
 krew
-kwiat drzewa
+rozkwit
 bluzka
 niebieski
 rozmazywać
@@ -297,7 +297,7 @@ sufit
 seler
 cement
 spis
-wiek stulecie
+stulecie
 płatki
 niewątpliwy
 krzesło
@@ -314,7 +314,7 @@ sprawdzać
 ser
 kucharz
 czereśnia
-klatka piersiowa
+piersiowa
 kurczak
 wódz
 dziecko
@@ -327,7 +327,7 @@ kawał
 ubijać
 cygaro
 cynamon
-koło okrąg
+krąg
 obywatel
 miasto
 cywilny
@@ -342,7 +342,7 @@ sprytny
 kliknąć
 klient
 klif
-wspinać się
+wspinać
 klinika
 spinacz
 zegar
@@ -375,7 +375,7 @@ koncert
 prowadzić
 potwierdzać
 kongres
-łączyć się
+podłączać
 rozważać
 kontrola
 przekonywać
@@ -467,7 +467,7 @@ dostarczać
 upadek
 zaprzeczenie
 dentysta
-odmawiać
+zaprzeczać
 odjeżdżać
 zależeć
 depozyt
@@ -486,13 +486,13 @@ rozwijać
 urządzenie
 poświęcać
 diagram
-tarcza telefonu
+cyferblat
 diament
 pamiętnik
-kostka do gry
+kości
 diesel
 dieta
-różnić się
+różnić
 cyfrowy
 godność
 dylemat
@@ -500,7 +500,7 @@ kolacja
 dinozaur
 bezpośredni
 brud
-nie zgadzać się
+sprzeciwiać
 odkrywać
 choroba
 danie
@@ -511,7 +511,7 @@ odległość
 odwracać
 dzielić
 rozwód
-zawroty głowy
+zawroty
 lekarz
 dokument
 pies
@@ -541,7 +541,7 @@ upuszczać
 bęben
 suchy
 kaczka
-głupi niemy
+głupi
 wydma
 podczas
 kurz
@@ -579,7 +579,7 @@ inaczej
 wyruszać
 ucieleśniać
 obejmować
-wyłaniać się
+wyłaniać
 emocja
 zatrudniać
 wzmacniać
@@ -595,11 +595,11 @@ egzekwować
 angażować
 silnik
 ulepszać
-cieszyć się
+cieszyć
 zaciągać
 wystarczająco
 wzbogacać
-zapisywać się
+zapisywać
 zapewniać
 wchodzić
 cały
@@ -649,11 +649,11 @@ przedłużać
 dodatkowy
 oko
 brew
-tkanina materiał
+tekstylia
 twarz
 wydział
 blaknąć
-słaby blady
+słaby
 wiara
 upadać
 fałszywy
@@ -669,12 +669,12 @@ gruby
 fatalny
 ojciec
 zmęczenie
-wina
+usterka
 ulubiony
 cecha
 luty
 federalny
-opłata honorarium
+honorarium
 karmić
 czuć
 żeński
@@ -711,7 +711,7 @@ smak
 zbiegać
 lot
 przerzucać
-unosić się
+bujać
 stado
 podłoga
 kwiat
@@ -769,16 +769,16 @@ odzież
 gaz
 westchnąć
 brama
-zbierać się
+gromadzić
 miernik
-wpatrywać się
+wpatrywać
 ogólny
 geniusz
 gatunek
 delikatny
 autentyczny
 gest
-duch
+zjawa
 olbrzym
 prezent
 chichotać
@@ -792,7 +792,7 @@ zerknąć
 szkło
 ślizgać
 przebłysk
-kula ziemska
+ziemska
 mrok
 chwała
 rękawiczka
@@ -827,7 +827,7 @@ chrząknięcie
 strażnik
 zgadywać
 przewodnik
-poczucie winy
+wina
 gitara
 pistolet
 siłownia
@@ -869,7 +869,7 @@ hokej
 trzymać
 dziura
 wakacje
-pusty wydrążony
+wydrążony
 dom
 miód
 kaptur
@@ -882,7 +882,7 @@ gospodarz
 hotel
 godzina
 unosić
-centrum piasty
+centrum
 olbrzymi
 człowiek
 skromny
@@ -891,7 +891,7 @@ sto
 głodny
 polować
 płotek
-spieszyć się
+spieszyć
 ranić
 mąż
 hybryda
@@ -931,16 +931,16 @@ kontuzja
 więzień
 wewnętrzny
 niewinny
-wejście dane
+dane
 śledztwo
 obłąkany
 owad
-wewnątrz środek
+wnętrze
 inspirować
 instalować
 nienaruszony
 zainteresowanie
-do wnętrza
+do
 inwestować
 zapraszać
 wciągać
@@ -949,7 +949,7 @@ wyspa
 izolować
 zagadnienie
 pozycja
-kość słoniowa
+słoniowa
 kurtka
 jaguar
 słoik
@@ -992,12 +992,12 @@ pukać
 wiedzieć
 laboratorium
 etykieta
-praca robocza
+robocza
 drabina
 dama
 jezioro
 lampa
-język
+mowa
 laptop
 duży
 później
@@ -1012,16 +1012,16 @@ warstwa
 leniwy
 lider
 liść
-uczyć się
+uczyć
 opuszczać
 wykład
 lewy
 noga
 legalny
 legenda
-wolny czas
+wolny
 cytryna
-pożyczać komuś
+użyczać
 długość
 soczewka
 lampart
@@ -1049,7 +1049,7 @@ jaszczurka
 pożyczka
 homar
 lokalny
-zamek kłódka
+kłódka
 logika
 samotny
 długi
@@ -1059,15 +1059,15 @@ głośny
 salon
 miłość
 lojalny
-szczęśliwy los
+pomyślny
 bagaż
-drewno tarcicowe
+tarcicowe
 księżycowy
 obiad
 luksus
-tekst piosenki
+piosenki
 maszyna
-szalony nieprzytomny
+zwariowany
 magia
 magnes
 pokojówka
@@ -1082,7 +1082,7 @@ mandat
 mango
 rezydencja
 instrukcja
-klon drzewo
+klon
 marmur
 marzec
 margines
@@ -1090,13 +1090,13 @@ morski
 rynek
 małżeństwo
 maska
-masa tłum
-mistrz pan
+masowy
+pan
 mecz
 materiał
 matematyka
 macierz
-sprawa rzecz
+kwestia
 maksimum
 labirynt
 łąka
@@ -1113,10 +1113,10 @@ pamięć
 wspominać
 menu
 miłosierdzie
-łączyć scalać
+scalać
 zasługa
 wesoły
-siatka oczko
+oczko
 wiadomość
 metal
 metoda
@@ -1156,8 +1156,8 @@ ruch
 motor
 góra
 mysz
-ruszać się
-kino film
+ruszać
+kino
 dużo
 muffinka
 muł
@@ -1183,12 +1183,12 @@ szyja
 potrzebować
 negatywny
 zaniedbanie
-żaden z dwóch
+żaden
 siostrzeniec
 nerw
 gniazdo
-sieć rybacka
-sieć komputerowa
+niewód
+sieć
 neutralny
 nigdy
 nowiny
@@ -1200,36 +1200,36 @@ hałas
 kandydat
 makaron
 normalny
-północ strona
+nord
 nos
-godny uwagi
+godny
 notatka
 nic
 zauważyć
 powieść
 teraz
 jądrowy
-liczba numer
+liczba
 pielęgniarka
 orzech
 dąb
-słuchać być posłusznym
-obiekt przedmiot
+słuchać
+obiekt
 zobowiązywać
 niejasny
 obserwować
 uzyskiwać
 oczywisty
-wydarzać się
+wydarzać
 ocean
 październik
-zapach woń
-poza zasięgiem
+zapach
+wyłączony
 oferta
 biuro
 często
 olej
-w porządku
+okej
 stary
 oliwka
 olimpijski
@@ -1237,12 +1237,12 @@ pomijać
 raz
 jeden
 cebula
-internet online
-tylko jedynie
+internet
+tylko
 otwarty
 opera
 opinia
-przeciwstawiać się
+oponować
 opcja
 pomarańcza
 orbita
@@ -1250,15 +1250,15 @@ sad
 rozkaz
 zwyczajny
 narząd
-wschód orient
+orient
 oryginalny
 sierota
 struś
 inny
-na zewnątrz
+plenerowy
 zewnętrzny
-produkcja wyjście
-na dworze
+produkcja
+dworze
 owal
 piekarnik
 ponad
@@ -1270,9 +1270,9 @@ ozon
 pakt
 wiosło
 strona
-para dwójka
+dwójka
 pałac
-dłoń wewnętrzna
+palma
 panda
 panel
 panika
@@ -1286,13 +1286,13 @@ przyjęcie
 mijać
 łata
 ścieżka
-cierpliwy pacjent
+cierpliwy
 patrol
 wzór
 pauza
 brukować
 płatność
-pokój spokój
+pokój
 orzeszek
 gruszka
 chłop
@@ -1315,7 +1315,7 @@ piknik
 obrazek
 kawałek
 świnia
-gołąb miejski
+gołębica
 pigułka
 pilot
 różowy
@@ -1328,7 +1328,7 @@ miejsce
 planeta
 plastik
 talerz
-bawić się
+bawić
 proszę
 obiecywać
 skubać
@@ -1340,21 +1340,21 @@ punkt
 polarny
 słup
 policja
-staw oczko wodne
+staw
 kucyk
 basen
 popularny
 porcja
-pozycja miejsce
+stanowisko
 możliwy
-poczta urząd
+urząd
 ziemniak
 ceramika
 bieda
 proszek
 moc
 praktyka
-chwała pochwała
+pochwała
 przewidywać
 woleć
 przygotowywać
@@ -1363,7 +1363,7 @@ obecny
 zapobiegać
 cena
 duma
-główny pierwszy
+naczelny
 drukować
 priorytet
 więzienie
@@ -1372,28 +1372,28 @@ nagroda
 problem
 proces
 produkować
-zysk dochód
+intrata
 program
-projekt plan
+plan
 promować
 poświadczenie
 własność
 prosperować
 chronić
 dumny
-dostarczać dawać
+udostępniać
 publiczny
 pudding
 ciągnąć
 miazga
 puls
 dynia
-uderzenie pięścią
-uczeń źrenica
+uderzenie
+uczeń
 szczeniak
 zakup
 czystość
-cel zamiar
+cel
 portmonetka
 pchać
 kłaść
@@ -1415,15 +1415,15 @@ radar
 radio
 szyna
 deszcz
-podnosić wznieść
+wznieść
 wiec
 pochylnia
 ranczo
 losowy
 zasięg
-szybki nagły
+błyskawiczny
 rzadki
-tempo stawka
+tempo
 raczej
 kruk
 nieobrobiony
@@ -1433,15 +1433,15 @@ prawdziwy
 powód
 buntownik
 odbudowywać
-przypomnieć sobie
+przypomnieć
 otrzymywać
 przepis
 nagrywać
 recyklować
 redukować
-odbijać odzwierciedlać
+odzwierciedlać
 reformować
-odmawiać przyjęcia
+odmawiać
 region
 żałować
 regularny
@@ -1452,49 +1452,49 @@ ulga
 polegać
 pozostawać
 pamiętać
-przypominać komuś
+przypominać
 usuwać
 renderować
 odnawiać
 czynsz
-otwierać ponownie
+otwierać
 naprawa
 powtarzać
 zastępować
 raport
 wymagać
 ratować
-przypominać z wyglądu
-opierać się stawiać opór
+upodabniać
+opierać
 zasób
-odpowiedź reakcja
+reakcja
 rezultat
-przechodzić na emeryturę
+przechodzić
 odwrót
 wracać
-zjazd spotkanie
+zjazd
 odsłaniać
 recenzja
-nagroda wynagrodzenie
+wynagrodzenie
 rytm
 żebro
 wstążka
 ryż
 bogaty
-jazda konna
-grzbiet grań
+jazda
+grzbiet
 karabin
 prawidłowy
 sztywny
 pierścień
 zamieszki
-zmarszczka fala
+zmarszczka
 ryzyko
 rytuał
 rywal
 rzeka
 droga
-piec obiad
+prażyć
 robot
 solidny
 rakieta
@@ -1513,7 +1513,7 @@ niegrzeczny
 dywanik
 reguła
 biec
-pas startowy
+startowy
 wiejski
 smutny
 siodło
@@ -1522,10 +1522,10 @@ bezpieczny
 żagiel
 sałatka
 łosoś
-salon fryzjerski
+fryzjerski
 sól
 salut
-taki sam
+identyczny
 próbka
 piasek
 zadowalać
@@ -1551,7 +1551,7 @@ skrypt
 szorować
 morze
 szukać
-pora roku sezon
+pora
 siedzenie
 drugi
 sekret
@@ -1559,8 +1559,8 @@ sekcja
 bezpieczeństwo
 nasienie
 poszukiwać
-segment odcinek
-wybierać selekcjonować
+segment
+selekcjonować
 sprzedawać
 seminarium
 senior
@@ -1569,18 +1569,18 @@ zdanie
 seria
 usługa
 sesja
-osiedlać się
+osiedlać
 konfiguracja
 siedem
 cień
-trzon szyb
+trzon
 płytki
 udział
 szopa
 muszla
 szeryf
 tarcza
-zmiana przesunięcie
+zmiana
 lśnić
 statek
 dreszcz
@@ -1588,16 +1588,16 @@ szok
 but
 strzelać
 sklep
-krótki niski
+niski
 bark
 popychać
 krewetka
-wzruszać ramionami
+wzruszać
 tasować
 nieśmiały
 rodzeństwo
-chory słaby
-strona bok
+niezdrowy
+bok
 oblężenie
 wzrok
 znak
@@ -1614,8 +1614,8 @@ siostra
 umieszczać
 sześć
 rozmiar
-jeździć na łyżwach
-szkic rysunek
+jeździć
+rysunek
 narciarstwo
 umiejętność
 skóra
@@ -1629,27 +1629,27 @@ plasterek
 zjeżdżać
 nieznaczny
 smukły
-hasło slogan
+hasło
 szczelina
 powolny
 breja
-mały drobny
-mądry bystry
+drobny
+bystry
 uśmiech
 dym
 gładki
 przekąska
-wąż gad
+wąż
 pstryknąć
 węszyć
 śnieg
 mydło
-piłka nożna
+nożna
 społeczny
 skarpeta
 soda
 miękki
-słoneczny solarny
+słoneczny
 żołnierz
 stały
 rozwiązanie
@@ -1658,12 +1658,12 @@ ktoś
 piosenka
 wkrótce
 przepraszam
-rodzaj sortować
+sortować
 dusza
 dźwięk
 zupa
 źródło
-południe strona
+południe
 przestrzeń
 zapasowy
 przestrzenny
@@ -1672,13 +1672,13 @@ przemawiać
 specjalny
 prędkość
 zaklęcie
-wydawać pieniądze
+wydawać
 sfera
 przyprawa
 pająk
 szpic
 kręcić
-duch osobowy
+duch
 rozłam
 psuć
 sponsor
@@ -1687,20 +1687,20 @@ sport
 plamka
 rozpylać
 rozprzestrzeniać
-wiosna sprężyna
+wiosna
 szpieg
 kwadrat
 ściskać
 wiewiórka
-stabilny stajnia
+stabilny
 stadion
 personel
-etap scena
+etap
 schody
 pieczątka
 stać
-zaczynać start
-stan państwowy
+start
+stan
 zostawać
 stek
 stal
@@ -1710,7 +1710,7 @@ stereo
 patyk
 nadal
 żądło
-zapas giełda
+zapas
 żołądek
 kamień
 taboret
@@ -1718,14 +1718,14 @@ opowieść
 kuchenka
 strategia
 ulica
-uderzać strajk
+uderzać
 silny
-zmagać się
+zmagać
 student
 rzeczy
-potykać się
+potykać
 styl
-temat przedmiot
+przedmiot
 zgłaszać
 metro
 sukces
@@ -1738,13 +1738,13 @@ garnitur
 lato
 słońce
 pogodny
-zachód słońca
+zachód
 super
-dostawa zaopatrzenie
+dostawa
 najwyższy
 pewny
 powierzchnia
-gwałtowny wzrost
+gwałtowny
 niespodzianka
 otaczać
 ankieta
@@ -1756,9 +1756,9 @@ zamiana
 rój
 przysięgać
 słodki
-szybki chyży
+chyży
 pływać
-huśtać się
+huśtać
 przełącznik
 miecz
 symbol
@@ -1766,16 +1766,16 @@ objaw
 syrop
 system
 stół
-sprzęt atak
-znaczek etykietka
+sprzęt
+znaczek
 ogon
 talent
 rozmowa
-czołg zbiornik
+czołg
 taśma
-cel zamierzenie
+zamierzenie
 zadanie
-smak kubek
+gust
 tatuaż
 taksówka
 nauczać
@@ -1799,7 +1799,7 @@ rzecz
 ten
 myśl
 trzy
-prosperować rozkwitać
+rozkwitać
 rzucać
 kciuk
 grzmot
@@ -1807,7 +1807,7 @@ bilet
 przypływ
 tygrys
 przechylać
-drewno budulcowe
+budulcowe
 czas
 maleńki
 czubek
@@ -1818,15 +1818,15 @@ toast
 tytoń
 dzisiaj
 maluch
-palec u stopy
+paluch
 razem
 toaleta
 żeton
 pomidor
 jutro
-ton dźwięku
-język anatomia
-dziś wieczór
+ton
+język
+dziś
 narzędzie
 ząb
 szczyt
@@ -1834,28 +1834,28 @@ temat
 przewracać
 pochodnia
 tornado
-żółw lądowy
+żółwica
 rzut
-suma całkowita
+suma
 turysta
-w stronę
+stronę
 wieża
 miasteczko
 zabawka
-tor ślad
+tor
 handel
-ruch uliczny
+uliczny
 tragiczny
 pociąg
 transfer
 pułapka
-śmieci odpadki
+odpadki
 podróżować
 taca
-traktować częstować
+traktować
 drzewo
 trend
-próba sądowa
+próba
 plemię
 sztuczka
 spust
@@ -1864,7 +1864,7 @@ wycieczka
 trofeum
 kłopot
 ciężarówka
-prawdziwy autentyczny
+realny
 naprawdę
 trąbka
 zaufanie
@@ -1872,30 +1872,30 @@ prawda
 próbować
 tuba
 czesne
-spadać koziołek
+spadać
 tuńczyk
 tunel
 indyk
-obracać skręcać
-żółw wodny
+skręcać
+żółw
 dwanaście
 dwadzieścia
 dwukrotnie
 bliźniak
 skręt
 dwa
-typ rodzaj
+typ
 typowy
 brzydki
 parasol
 niezdolny
 nieświadomy
 wujek
-odkrywać tajemnicę
-pod spodem
+odsłonić
+pod
 cofać
 niesprawiedliwy
-rozwijać rozkładać
+rozkładać
 nieszczęśliwy
 mundur
 unikalny
@@ -1905,12 +1905,12 @@ nieznany
 odblokować
 dopóki
 niezwykły
-odsłaniać ujawniać
+obnażać
 aktualizacja
 ulepszenie
 podtrzymywać
-na czymś
-wyższy górny
+nad
+górny
 zdenerwowany
 miejski
 ponaglać
@@ -1920,16 +1920,16 @@ zużyty
 użyteczny
 bezużyteczny
 zwykły
-narzędzie użytkowe
-wolny pusty
-próżnia odkurzacz
+użytkowe
+nieobsadzony
+próżnia
 mglisty
-ważny poprawny
+ważny
 dolina
 zawór
 furgonetka
 znikać
-para opary
+opary
 różnorodny
 rozległy
 skarbiec
@@ -1937,7 +1937,7 @@ pojazd
 aksamit
 sprzedawca
 przedsięwzięcie
-miejsce wydarzenia
+lokal
 czasownik
 weryfikować
 wersja
@@ -1945,13 +1945,13 @@ bardzo
 naczynie
 weteran
 wykonalny
-żywy tętniący
+żywy
 zaciekły
 zwycięstwo
 wideo
 widok
 wioska
-zabytkowy rocznik
+zabytkowy
 skrzypce
 wirtualny
 wirus
@@ -1959,20 +1959,20 @@ wiza
 odwiedzać
 wzrokowy
 istotny
-żywy barwny
-głosowy wokalny
+barwny
+głosowy
 głos
-próżnia nieważny
+nieważny
 wulkan
-objętość głośność
+objętość
 głosować
-rejs podróż
-wynagrodzenie pensja
+wyprawa
+pensja
 wóz
 czekać
 spacerować
 ściana
-orzech włoski
+włoski
 chcieć
 wojna
 ciepły
@@ -1981,24 +1981,24 @@ myć
 osa
 marnować
 woda
-fala machać
+fala
 sposób
 bogactwo
 broń
-nosić ubranie
+nosić
 łasica
 pogoda
-pajęczyna sieć
+pajęczyna
 wesele
 weekend
 dziwny
 witamy
-zachód strona
+okcydent
 mokry
 wieloryb
 co
 pszenica
-koło pojazdu
+koło
 kiedy
 gdzie
 bicz
@@ -2028,14 +2028,14 @@ wełna
 słowo
 pracować
 świat
-martwić się
+martwić
 wartość
 owijać
 wrak
-zapasy mocować się
+zapasy
 nadgarstek
 pisać
-zły niepoprawny
+zły
 podwórko
 rok
 żółty

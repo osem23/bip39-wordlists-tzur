@@ -32,8 +32,8 @@ täiskasvanu
 edasiliikumine
 nõuanne
 aeroobne
-asi suhe
-endale lubama
+suhe
+jaksama
 hirmunud
 uuesti
 vanus
@@ -48,16 +48,16 @@ häire
 album
 alkohol
 valvas
-võõras olend
+võõras
 kõik
-tänav kitsas
+allee
 lubama
 peaaegu
 üksinda
 alfa
 juba
 samuti
-muutma teiseks
+muundama
 alati
 amatöör
 hämmastav
@@ -74,17 +74,17 @@ loom
 pahkluu
 teatama
 iga-aastane
-teine veel
+teine
 vastus
 antenn
-antiikese
+antiikne
 ärevus
 mistahes
 lahus
 vabandus
 ilmuma
 õun
-heaks kiitma
+heaks
 aprill
 kaar
 arktiline
@@ -114,9 +114,9 @@ astma
 sportlane
 aatom
 ründama
-osa võtma
+osalema
 hoiak
-ligi tõmbama
+meelitama
 oksjon
 audit
 august
@@ -135,16 +135,16 @@ kohutav
 ebamugav
 telg
 beebi
-vallaline mees
+vallaline
 peekon
-märk rinnas
+rinnamärk
 kott
 tasakaal
 rõdu
 pall
 bambus
 banaan
-lipp reklaam
+bänner
 baar
 vaevalt
 tingima
@@ -157,7 +157,7 @@ rand
 uba
 ilu
 kuna
-saama milleski
+saama
 loomaliha
 enne
 alustama
@@ -183,7 +183,7 @@ sünd
 mõru
 must
 tera
-süüks panema
+süüks
 tekk
 plahvatus
 sünge
@@ -195,7 +195,7 @@ pluus
 sinine
 hägustama
 punastama
-laud puit
+laud
 paat
 keha
 keema
@@ -203,25 +203,25 @@ pomm
 luu
 boonus
 raamat
-hoogu andma
+hoogu
 piir
 igav
-laenama võtma
+laenama
 ülemus
-põhi all
+põhi
 põrkuma
 kast
 poiss
-sulg kandiline
+sulg
 aju
 kaubamärk
 messing
 vapper
 leib
-kerge tuul
+tuuleke
 telliskivi
 sild
-lühike kokkuvõte
+lühike
 ere
 tooma
 reibas
@@ -237,7 +237,7 @@ semu
 eelarve
 pühvel
 ehitama
-sibul lamp
+lambipirn
 mass
 kuul
 kimp
@@ -261,7 +261,7 @@ helistama
 rahulik
 kaamera
 laager
-saama võimalus
+võima
 kanal
 tühistama
 komm
@@ -269,10 +269,10 @@ kahur
 kanuu
 lõuend
 kanjon
-suuteline tegutsema
+oskuslik
 pealinn
 kapten
-auto sõiduk
+kupee
 süsinik
 kaart
 last
@@ -283,13 +283,13 @@ juhtum
 sularaha
 kasiino
 loss
-vabaõhuline
+vabaaja
 kass
 kataloog
 püüdma
 kategooria
 kari
-kinni püütud
+kinni
 põhjus
 ettevaatus
 koobas
@@ -372,14 +372,14 @@ koomiks
 ühine
 firma
 kontsert
-läbi viima
+läbi
 kinnitama
 kongress
-ühendust looma
+ühendust
 kaaluma
 kontroll
 veenma
-süüa tegema
+süüa
 jahe
 vask
 koopia
@@ -408,7 +408,7 @@ hull
 koor
 krediit
 oja
-meeskond laeval
+laevkond
 ritsikas
 kuritegu
 krõbe
@@ -432,7 +432,7 @@ kapp
 uudishimulik
 vool
 kardin
-kõver joon
+kõver
 padi
 komme
 armas
@@ -462,7 +462,7 @@ defineerima
 trotsima
 kraad
 viivitus
-kohale toimetama
+kohale
 nõudma
 häving
 eitamine
@@ -477,7 +477,7 @@ tuletama
 kirjeldama
 kõrb
 kujundus
-laud töö
+büroo
 meeleheide
 hävitama
 detail
@@ -486,7 +486,7 @@ arendama
 seade
 pühenduma
 skeem
-ketas numbri
+ketas
 teemant
 päevik
 täring
@@ -500,7 +500,7 @@ dilemma
 dinosaurus
 otsene
 mustus
-mitte nõustuma
+eriarvamus
 avastama
 haigus
 roog
@@ -508,7 +508,7 @@ vallandama
 korralagedus
 kuvama
 vahemaa
-kõrvale juhtima
+suunama
 jagama
 lahutus
 peapööritus
@@ -524,7 +524,7 @@ doonor
 uks
 annus
 topelt
-tuvi valge
+tuvi
 mustand
 draakon
 draama
@@ -537,11 +537,11 @@ trell
 jooma
 tilkuma
 sõitma
-maha kukkuma
+tilk
 trumm
 kuiv
 part
-rumal tumm
+rumal
 luide
 vältel
 tolm
@@ -566,7 +566,7 @@ harima
 pingutus
 muna
 kaheksa
-kumbki kahest
+kumbki
 küünarnukk
 vanem
 elektriline
@@ -576,19 +576,19 @@ elevant
 lift
 eliit
 teisiti
-teele asuma
+teele
 kehastama
 kallistama
-esile kerkima
+esile
 emotsioon
-tööle võtma
+tööle
 volitama
 tühi
 võimaldama
 seadustama
 ots
 lõputu
-toetama avalikult
+toetama
 vaenlane
 energia
 jõustama
@@ -596,16 +596,16 @@ kaasama
 mootor
 täiustama
 nautima
-nimekirja astuma
+värbama
 piisavalt
 rikastama
-sisse kirjutama
+registreerima
 tagama
 sisenema
 terve
 sissepääs
 ümbrik
-osa sarjast
+episood
 võrdne
 varustama
 ajastu
@@ -622,14 +622,14 @@ igavene
 eetika
 tõend
 kurjus
-esile kutsuma
+äratama
 arenema
 täpne
 näide
 liig
 vahetus
-põnevil olema
-välja jätma
+põnevil
+välja
 vabandust
 teostama
 harjutus
@@ -642,7 +642,7 @@ eksootiline
 laiendama
 ootama
 aeguma
-lahti seletama
+lahti
 paljastama
 väljendama
 pikendama
@@ -661,7 +661,7 @@ kuulsus
 perekond
 kuulus
 fänn
-uhke kaunis
+toretsev
 fantaasia
 talu
 mood
@@ -674,13 +674,13 @@ lemmik
 omadus
 veebruar
 föderaalne
-tasu teenuse
+lõiv
 söötma
 tundma
 naissoost
-aed tara
+tara
 festival
-tooma järele
+järele
 palavik
 vähe
 kiud
@@ -696,12 +696,12 @@ peen
 sõrm
 lõpetama
 tuli
-kindel seisukoht
+vankumatu
 esimene
 fiskaalne
 kala
 sobima
-vorm kehaline
+vorm
 parandama
 lipp
 leek
@@ -710,9 +710,9 @@ lame
 maitse
 pagema
 lend
-pöörama ümber
-ujuma pinnal
-kari lambaid
+keerutama
+pinnal
+lambakari
 põrand
 lill
 vedelik
@@ -746,7 +746,7 @@ sõber
 konn
 esikülg
 pakane
-kulmu kortsutama
+kulmu
 külmutatud
 puuvili
 kütus
@@ -760,14 +760,14 @@ võit
 galaktika
 galerii
 mäng
-lõhe tühik
+lõhe
 garaaž
 prügi
 aed
 küüslauk
 rõivas
 gaas
-ahmima õhku
+ahmima
 värav
 kogunema
 mõõdik
@@ -787,13 +787,13 @@ kaelkirjak
 tüdruk
 andma
 rõõmus
-pilk kiire
+pilk
 jõllitama
 klaas
 libisema
 silmapilgutus
 maakera
-sünguski
+süngus
 hiilgus
 sõrmkinnas
 helendama
@@ -807,11 +807,11 @@ gorilla
 evangeelium
 klatš
 valitsema
-pidulik kleit
+pidukleit
 haarama
 armulikkus
-tera vilja
-andma luba
+vilja
+luba
 viinamari
 rohi
 raskusjõud
@@ -845,7 +845,7 @@ saagikoristus
 müts
 omama
 kull
-oht risk
+hädaoht
 pea
 tervis
 süda
@@ -855,7 +855,7 @@ kõrgus
 tere
 kiiver
 aitama
-kana kodu
+emalind
 kangelane
 peidetud
 kõrge
@@ -882,7 +882,7 @@ peremees
 hotell
 tund
 hõljuma
-keskus sõlm
+keskus
 tohutu
 inimene
 tagasihoidlik
@@ -892,13 +892,13 @@ näljane
 jahtima
 tõke
 kiirustama
-haiget tegema
-abikaasa mees
+haiget
+abikaasa
 hübriid
 jää
 ikoon
 idee
-tuvastama isikut
+isikut
 jõude
 ignoreerima
 haige
@@ -906,13 +906,13 @@ ebaseaduslik
 tõbi
 pilt
 jäljendama
-tohutu suur
+mõõtmatu
 immuunne
 mõju
-peale suruma
+kehtestama
 parendama
 impulss
-toll pikkus
+toll
 hõlmama
 sissetulek
 suurenemine
@@ -921,9 +921,9 @@ osutama
 sisetingimustes
 tööstus
 imik
-peale suruma kahju
+määrama
 informeerima
-sisse hingama
+hingama
 pärima
 alg
 süstima
@@ -943,20 +943,20 @@ huvi
 sisse
 investeerima
 kutsuma
-hõlmama kaasama
+puudutama
 raud
 saar
 isoleerima
-teema küsimus
-ese nimekirjas
+teema
+ese
 elevandiluu
-jopee
+jope
 jaaguar
 purk
 džäss
 armukade
 teksad
-tarrelis
+tarretis
 ehiskivi
 töö
 liituma
@@ -969,16 +969,16 @@ hüppama
 džungel
 noorem
 kolu
-just praegu
+just
 känguru
-terav tundmus
-hoidma endale
+terav
+säilitama
 ketšup
 võti
-jalaga lööma
+löök
 titt
 neer
-laad tüüp
+laad
 kuningriik
 suudlus
 komplekt
@@ -992,12 +992,12 @@ koputama
 teadma
 labor
 silt
-töö füüsiline
+rügamine
 redel
 daam
 järv
 lamp
-keel kõne
+keel
 sülearvuti
 suur
 hiljem
@@ -1010,18 +1010,18 @@ muru
 kohtuasi
 kiht
 laisk
-juht liider
-leht puust
+juht
+leht
 õppima
-jätma maha
+jätma
 loeng
 vasak
-jalg kehaosa
+säär
 seaduslik
 legend
-vaba aeg
+vaba
 sidrun
-laenama andma
+laenutama
 pikkus
 lääts
 leopard
@@ -1040,7 +1040,7 @@ jäse
 piirang
 link
 lõvi
-vedelik aine
+aine
 loend
 väike
 elama
@@ -1055,23 +1055,23 @@ loogika
 pikk
 silmus
 loterii
-vali hääl
+vali
 puhkeruum
 armastus
 ustav
-õnne saatuslik
+õnne
 pagas
 ehituspuit
-kuu oma
-lõuna söök
+kuu
+lõuna
 luksus
 laulusõnad
 masin
-hull peaga
+pöörane
 maagia
 magnet
 toatüdruk
-post kiri
+post
 peamine
 suurem
 tegema
@@ -1080,7 +1080,7 @@ mees
 haldama
 mandaat
 mango
-suur maja
+häärber
 juhend
 vaher
 marmor
@@ -1090,13 +1090,13 @@ mere
 turg
 abielu
 mask
-hulk suur
-meister peremees
+hulk
+ülem
 matš
 materjal
 matemaatika
 maatriks
-asi oluline
+oluline
 maksimum
 labürint
 heinamaa
@@ -1112,11 +1112,11 @@ liige
 mälu
 mainima
 menüü
-arm halastus
+arm
 liitma
 teene
 lõbus
-võrkvõrk
+silmusvõrk
 sõnum
 metall
 meetod
@@ -1131,35 +1131,35 @@ vähemik
 minut
 ime
 peegel
-hädamaa
-mööda laskma
-viga inimlik
+viletsus
+mööda
+eksimus
 segama
 segatud
 segu
 mobiilne
 mudel
-muutma osaliselt
+kohendama
 emme
 hetk
 monitor
 ahv
 koletis
-kuu kalender
-kuu taevas
+kalendrikuu
+kuukera
 moraalne
 rohkem
 hommik
 sääsk
 ema
 liikumine
-mootor suur
+jõumasin
 mägi
 hiir
 liikuma
 kinofilm
 palju
-kohuke
+muffin
 muul
 korrutama
 lihas
@@ -1168,7 +1168,7 @@ seen
 muusika
 peab
 vastastikune
-ise ennast
+ise
 mõistatus
 müüt
 naiivne
@@ -1183,14 +1183,14 @@ kael
 vajama
 negatiivne
 hooletus
-kumbki mitte
+ükski
 vennapoeg
 närv
 pesa
-võrk kala
-võrk arvuti
+võrk
+arvutivõrk
 neutraalne
-mitte kunagi
+kunagi
 uudised
 järgmine
 tore
@@ -1200,41 +1200,41 @@ müra
 kandidaat
 nuudlid
 normaalne
-põhi ilmakaar
+ilmakaar
 nina
 märkimisväärne
 märge
-mitte midagi
+midagi
 märkama
 romaan
 praegu
 tuuma
 number
-õde meditsiin
+meditsiiniõde
 pähkel
 tamm
-sõna kuulama
-objekt ese
+kuulama
+objekt
 kohustama
 ebaselge
 vaatlema
-saama kätte
+kätte
 ilmne
 juhtuma
 ookean
 oktoober
 lõhn
-välja lülitatud
+lülitatud
 pakkumus
 kontor
 sageli
 õli
-korras olgu
+korras
 vana
 oliiv
 olümpia
-välja jätma sõna
-üks kord
+välistama
+kord
 üks
 sibul
 võrgus
@@ -1242,15 +1242,15 @@ ainult
 avatud
 ooper
 arvamus
-vastu seisma
-valik suvand
+vastu
+suvand
 apelsin
 orbiit
 viljapuuaed
 käsk
 tavaline
 elund
-ida suund
+suund
 originaalne
 vaeslaps
 jaanalind
@@ -1260,9 +1260,9 @@ väline
 väljund
 väljas
 ovaalne
-ahi küpsetus
-üle kohal
-oma omand
+praeahi
+kohal
+oma
 omanik
 hapnik
 auster
@@ -1270,7 +1270,7 @@ osoon
 pakt
 aer
 lehekülg
-paar kaks
+duo
 palee
 peopesa
 panda
@@ -1284,7 +1284,7 @@ park
 papagoi
 pidu
 möödama
-lapp paranduseks
+lapp
 rada
 patsient
 patrull
@@ -1294,7 +1294,7 @@ sillutama
 makse
 rahu
 maapähkel
-pirn vili
+pirn
 talupoeg
 pelikan
 pastakas
@@ -1303,7 +1303,7 @@ pliiats
 inimesed
 pipar
 täiuslik
-luba tegevuseks
+tegevuseks
 isik
 lemmikloom
 telefon
@@ -1312,8 +1312,8 @@ fraas
 füüsiline
 klaver
 piknik
-pilt kujutav
-tükk väike
+kujutav
+osake
 siga
 linnatuvi
 pill
@@ -1322,9 +1322,9 @@ roosa
 teerajaja
 toru
 revolver
-kõrgus heli
+helikõrgus
 pitsa
-koht paik
+koht
 planeet
 plastik
 taldrik
@@ -1336,15 +1336,15 @@ pistik
 sukelduma
 luuletus
 poeet
-punkt koht
+punkt
 polaarne
-post lipp
+mast
 politsei
 tiik
 ponihobune
 bassein
 populaarne
-osa suur
+portsjon
 positsioon
 võimalik
 postitus
@@ -1357,10 +1357,10 @@ praktika
 kiitus
 ennustama
 eelistama
-ette valmistama
+ettevalmistama
 praegune
 kena
-ära hoidma
+takistama
 hind
 uhkus
 esmane
@@ -1380,8 +1380,8 @@ tõestus
 omand
 õitsema
 kaitsma
-uhke olema
-pakkuma andma
+uhke
+pakkuma
 avalik
 puding
 tõmbama
@@ -1389,12 +1389,12 @@ viljaliha
 pulss
 kõrvits
 rusikalöök
-õpilane silmas
+õpilane
 kutsikas
 ost
 puhtus
 eesmärk
-rahakott naiste
+rahakott
 lükkama
 panema
 pusle
@@ -1415,7 +1415,7 @@ radar
 raadio
 rööbas
 vihm
-tõstma üles
+üles
 miiting
 kaldtee
 rantšo
@@ -1423,57 +1423,57 @@ juhuslik
 ulatus
 kiirenev
 haruldane
-määr tempo
+määr
 pigem
 ronk
 toores
 habemenuga
 valmis
 päris
-põhjus alus
+motiiv
 mässaja
-üles ehitama uuesti
+taastama
 meenutama
-vastu võtma
+võtma
 retsept
 salvestama
 taaskäitlema
 vähendama
 peegeldama
 reformima
-keelduma vastu võtmast
+võtmast
 piirkond
 kahetsema
 regulaarne
-tagasi lükkama
+tagasilükkama
 lõõgastuma
 vabastama
 leevendus
 toetuma
-jääma paigale
+jääma
 mäletama
-meelde tuletama
+meeldetuletama
 eemaldama
-teostama kunst
+kujundama
 uuendama
 üür
-uuesti avama
+taasavama
 remont
 kordama
 asendama
 raport
-nõudma vajadust
+vajadust
 päästma
-meenutama välimuselt
-vastu panema
+sarnanema
+vastutõrkuma
 ressurss
-vastus reaktsioon
+reaktsioon
 tulemus
-pensionile jääma
+pensionile
 taandumine
-tagasi tulema
+tagastama
 taaskohtumine
-avaldama saladust
+avaldama
 ülevaade
 autasu
 rütm
@@ -1481,27 +1481,27 @@ ribi
 pael
 riis
 rikas
-sõitma ratsa
-hari mäe
+ratsa
+seljandik
 vintpüss
 õigepoolne
 jäik
 sõrmus
 rahutus
-laine väike
+laine
 risk
 rituaal
 rivaal
 jõgi
-tee maantee
+tee
 röstima
 robot
-tugev vastupidav
+vastupidav
 rakett
 romantika
 katus
 algaja
-ruum tuba
+ruum
 roos
 pöörlema
 karedas
@@ -1510,7 +1510,7 @@ marsruut
 kuninglik
 kumm
 ebaviisakas
-matt väike
+matt
 reegel
 jooksma
 stardirada
@@ -1521,10 +1521,10 @@ kurbus
 ohutu
 puri
 salat
-lõhe kala
+lõhekala
 ilusalong
 sool
-salveeritud
+tervitama
 sama
 proov
 liiv
@@ -1537,7 +1537,7 @@ säästma
 skaala
 skaneerima
 hirmutama
-pillama laiali
+pillama
 stseen
 kava
 kool
@@ -1553,31 +1553,31 @@ meri
 otsima
 aastaaeg
 iste
-teine järjekorras
+järjekorras
 saladus
 sektsioon
 turvalisus
 seeme
-otsima leida
+leida
 segment
-valima selekteerima
+selekteerima
 müüma
 seminar
-vanem seenior
-meel tunne
+seenior
+meel
 lause
 seeria
 teenus
 sessioon
-asuma elama
+asuma
 seadistus
 seitse
 vari
 võll
 madal
-jagama osa
+jaotama
 kuur
-karp merel
+karp
 šerif
 kilp
 nihe
@@ -1588,15 +1588,15 @@ värisemine
 king
 tulistama
 pood
-lühike madal
+lühendatud
 õlg
-lükkama jõuga
+tõukama
 krevett
-õlgu kehitama
-segama kaarte
+õlakehitus
+kaarte
 häbelik
-õeli vend
-haige nõrk
+õdevend
+nõrk
 külg
 piiramine
 nägemine
@@ -1626,30 +1626,30 @@ virutama
 magama
 sale
 viil
-libisema alla
-väike ebaoluline
+alla
+ebaoluline
 kõhn
 loosung
-pesa vahe
+vahe
 aeglane
 lobjakas
-väike suuruselt
-tark nutikas
+suuruselt
+taibukas
 naeratus
 suits
 sile
 suupiste
 madu
-sõrme klõps
+krõksatama
 nuusutama
 lumi
 seep
 jalgpall
 sotsiaalne
 sokk
-mahl limonaad
+limonaad
 pehme
-päikese solaar
+päikese
 sõdur
 tahke
 lahendus
@@ -1657,14 +1657,14 @@ lahendama
 keegi
 laul
 varsti
-vabandust tunnen
+tunnen
 sort
 hing
 heli
 supp
 allikas
-lõuna ilmakaar
-ruum kosmos
+lõunamaine
+kosmos
 varu
 ruumiline
 kudema
@@ -1672,13 +1672,13 @@ rääkima
 eriline
 kiirus
 loits
-kulutama raha
+kulutama
 sfäär
 vürts
 ämblik
 naast
 keerlema
-vaim isik
+vaim
 lõhenema
 rikkuma
 sponsor
@@ -1687,21 +1687,21 @@ sport
 laik
 pihustama
 levitama
-kevad vedru
+kevad
 nuhk
 ruut
 pigistama
 orav
-tall stabiilne
+tall
 staadion
 personal
-etapp lava
+etapp
 trepp
 pitser
 seisma
-alustama start
-riik seisund
-jääma kohale
+start
+seisund
+viibima
 praad
 teras
 vars
@@ -1710,30 +1710,30 @@ stereo
 kepp
 siiski
 nõelus
-tagavara börs
+tagavara
 kõht
 kivi
 taburet
 lugu
-pliit köök
+pliit
 strateegia
 tänav
-lööma streik
+lööma
 tugev
-võitlema rasket
+võitlema
 üliõpilane
 kraam
 komistama
 stiil
-teema aine
-esitama dokumenti
+ainevaldkond
+esitama
 metroo
 edu
 selline
 äkiline
 kannatama
 suhkur
-pakkuma mõtet
+soovitama
 ülikond
 suvi
 päike
@@ -1742,18 +1742,18 @@ päikeseloojang
 super
 varustus
 kõrgeim
-kindel veendunud
+veendunud
 pind
-järsk tõus
+järsk
 üllatus
 ümbritsema
 küsitlus
 kahtlustama
-alal hoidma
+alal
 neelama
 soo
-vahetus kaup
-parv putukad
+vahetama
+parv
 vanduma
 magus
 kärme
@@ -1765,17 +1765,17 @@ sümbol
 sümptom
 siirup
 süsteem
-laud mööbel
-varustus rünnak
-silt väike
+mööbel
+rünnakvarustus
+märgis
 saba
 anne
 rääkimine
-tank mahuti
+tank
 teip
 sihtmärk
 ülesanne
-maitse keele
+keele
 tätoveering
 takso
 õpetama
@@ -1789,17 +1789,17 @@ termin
 test
 tekst
 tänama
-see üks
-teema lugu
+too
+süžee
 siis
 teooria
 seal
 nemad
 asi
-see käes
+see
 mõte
 kolm
-edenema õitsema
+edenema
 viskama
 pöial
 äike
@@ -1810,7 +1810,7 @@ kallutama
 ehituspalk
 aeg
 tillukene
-ots tipp
+tipp
 väsinud
 pabersalvrätik
 pealkiri
@@ -1824,25 +1824,25 @@ tualett
 žetoon
 tomat
 homme
-toon heli
-keel suus
-täna õhtul
+toon
+suus
+õhtul
 tööriist
 hammas
 ülaosa
-teema arutelu
-kummuli ajama
+valdkond
+kummuli
 tõrvik
 tornaado
-kilpkonn maa
+maakilpkonn
 vise
-kogu summa
+kogu
 turist
 suunas
 torn
 linnake
 mänguasi
-rada jälg
+jälg
 kaubandus
 liiklus
 traagiline
@@ -1853,67 +1853,67 @@ prügijäätmed
 reisima
 kandik
 kohtlema
-puu taim
+puu
 trend
 kohtuistung
 hõim
 trikk
 päästik
 pügama
-reis lühike
+reis
 trofee
 mure
 veok
-õige tõeline
+tõeline
 tõeliselt
 trompet
 usaldus
 tõde
 proovima
-toru õhuke
+tuub
 õppemaks
 kukerpall
 tuunikala
 tunnel
 kalkun
 pöörama
-kilpkonn vees
+kilpkonn
 kaksteist
 kakskümmend
-kaks korda
+kaksikord
 kaksik
 keerd
 kaks
-tüüp liik
+tüüp
 tüüpiline
 inetu
 vihmavari
 võimetu
 teadmatus
 onu
-avastama salajase
+salajase
 all
-tühistama toiming
+tagasivõtma
 ebaaus
-lahti voltima
+avanema
 õnnetu
 vormiriietus
 unikaalne
 üksus
 universum
 teadmatu
-lahti lukustama
+avama
 kuni
 ebatavaline
-kate maha võtma
+ilmutama
 uuendus
-uuendus parem
-seisma põhimõttes
-peal millegi
+moderniseerima
+põhimõttes
+millegi
 ülemine
 ärritunud
 linnaline
-tungivalt paluma
+tungivalt
 kasutamine
 kasutama
 kasutatud
@@ -1921,8 +1921,8 @@ kasulik
 kasutu
 harilik
 kommunaal
-vaba tühi
-vaakum tolmuimeja
+asustamata
+vaakum
 ähmane
 kehtiv
 org
@@ -1937,15 +1937,15 @@ sõiduk
 samet
 müüja
 ettevõtmine
-ürituse koht
+toimumiskoht
 tegusõna
-kontrollima tõesust
+tõesust
 versioon
 väga
 anum
 veteran
 elujõuline
-elav ere
+elav
 tige
 võidukäik
 video
@@ -1962,17 +1962,17 @@ eluline
 ergas
 vokaalne
 hääl
-tühine kehtetu
+tühine
 vulkaan
-maht helitugevus
+maht
 hääletama
-reis merel
-palk tasu
+merereis
+palk
 vankri
-ootel olema
+ootel
 jalutama
 sein
-kreeka pähkel
+kreekapähkel
 tahtma
 sõjategevus
 soe
@@ -1981,38 +1981,38 @@ pesema
 herilane
 raiskama
 vesi
-laine laineta
-viis moodus
+laineta
+viis
 rikkus
 relv
-kandma riideid
+riideid
 nirk
 ilm
 ämblikuvõrk
 pulm
 nädalavahetus
 veider
-tere tulemast
-lääne pool
+tulemast
+lääne
 märg
 vaal
 mis
 nisu
-ratas sõiduki
+vankriratas
 millal
 kus
 piits
 sosin
 lai
 laius
-naine abielu
+naine
 metsik
 tahe
 võitma
 aken
 vein
 tiib
-silmapilgutus silmaga
+silmaga
 võitja
 talv
 traat
@@ -2021,7 +2021,7 @@ tark
 soov
 tunnistaja
 hunt
-naine isik
+emand
 imestus
 puit
 vill
@@ -2035,7 +2035,7 @@ laevavrakk
 maadlema
 randmeluu
 kirjutama
-vale ekslik
+ekslik
 õu
 aasta
 kollane
