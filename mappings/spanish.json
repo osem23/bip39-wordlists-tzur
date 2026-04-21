@@ -1,7 +1,7 @@
 {
   "language": "spanish",
   "word_count": 2048,
-  "description": "Index-paired translation between English BIP-39 and TZUR Original Spanish.",
+  "description": "Bidirectional BIP-39 mapping between English and Spanish",
   "pairing_type": "translation",
   "english_to_native": {
     "abandon": "abandonar",
@@ -1172,7 +1172,7 @@
     "museum": "museo",
     "mushroom": "hongo",
     "music": "música",
-    "must": "imperar",
+    "must": "menester",
     "mutual": "mutuo",
     "myself": "yo",
     "mystery": "misterio",
@@ -3222,7 +3222,7 @@
     "museo": "museum",
     "hongo": "mushroom",
     "música": "music",
-    "imperar": "must",
+    "menester": "must",
     "mutuo": "mutual",
     "yo": "myself",
     "misterio": "mystery",

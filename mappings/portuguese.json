@@ -1,7 +1,7 @@
 {
   "language": "portuguese",
   "word_count": 2048,
-  "description": "Index-paired translation between English BIP-39 and TZUR Original Portuguese.",
+  "description": "Bidirectional BIP-39 mapping between English and Portuguese",
   "pairing_type": "translation",
   "english_to_native": {
     "abandon": "abandonar",
@@ -1324,7 +1324,7 @@
     "pigeon": "pombo",
     "pill": "pílula",
     "pilot": "piloto",
-    "pink": "roseta",
+    "pink": "rosado",
     "pioneer": "pioneiro",
     "pipe": "tubulação",
     "pistol": "pistola",
@@ -3374,7 +3374,7 @@
     "pombo": "pigeon",
     "pílula": "pill",
     "piloto": "pilot",
-    "roseta": "pink",
+    "rosado": "pink",
     "pioneiro": "pioneer",
     "tubulação": "pipe",
     "pistola": "pistol",

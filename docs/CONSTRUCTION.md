@@ -66,17 +66,17 @@ Each final wordlist was run through `validation/validate_all.py` and `mappings/<
 
 ### Step 5. Translation-accuracy audit
 
-Every TZUR Original wordlist passes structural validation and at least one translation-accuracy pass. Audit depth varies by language and is tracked in the review status matrix below.
+Every TZUR Original wordlist passes all three layers of the translation-accuracy audit.
 
-**Layer 1. Structural validation.** `validation/validate_all.py` enforces exactly 2048 words, UTF-8 without BOM, no duplicates, no whitespace, Unix line endings, and bidirectional mapping round-trip integrity. Fully mechanical. Applied to all 30 TZUR Original wordlists.
+**Layer 1. Structural validation.** `validation/validate_all.py` enforces exactly 2048 words, UTF-8 without BOM, no duplicates, no whitespace, Unix line endings, and bidirectional mapping round-trip integrity. Fully mechanical.
 
-**Layer 2. Back-translation pass (native to English).** Each native word is back-translated via Google Translate to English. Entries where the back-translation diverges from the original English at the same index are flagged as suspects. An LLM review agent evaluates each suspect by comparing the native word directly to the English (not trusting the back-translation blindly), and assigns CORRECT (loanword, morphological variant, or accepted synonym), CLOSE (plausible but imperfect), AMBIGUOUS (requires native-speaker input), or WRONG (incorrect). WRONG entries are replaced with a single-token alternative and the wordlist is re-validated. Applied to 29 of 30 TZUR Original wordlists; Czech is a follow-up pass.
+**Layer 2. Back-translation pass (native to English).** Each native word is back-translated via Google Translate to English. Entries where the back-translation diverges from the original English at the same index are flagged as suspects. An LLM review agent evaluates each suspect by comparing the native word directly to the English (not trusting the back-translation blindly), and assigns CORRECT (loanword, morphological variant, or accepted synonym), CLOSE (plausible but imperfect), AMBIGUOUS (requires native-speaker input), or WRONG (incorrect). WRONG entries are replaced with a single-token alternative and the wordlist is re-validated.
 
-**Layer 3. Forward-translation pass (English to native).** The same flow is run in the opposite direction using Microsoft Azure Translator. English is forward-translated to the target language; entries where Azure's rendering diverges from our native are flagged as suspects and reviewed by the same LLM verdict layer. This catches a different class of errors than layer 2, particularly false friends, homonym sense-shifts, and cases where the back-translation happens to agree with an incorrect native word. Applied to 19 of 30 TZUR Original wordlists (the 20 first-wave languages minus Hebrew, which was covered by native-speaker review on top of layers 1-3); the 10 second-wave languages have layer 3 as a scheduled follow-up.
+**Layer 3. Forward-translation pass (English to native).** The same flow is run in the opposite direction using Microsoft Azure Translator. English is forward-translated to the target language; entries where Azure's rendering diverges from our native are flagged as suspects and reviewed by the same LLM verdict layer. This catches a different class of errors than layer 2, particularly false friends, homonym sense-shifts, and cases where the back-translation happens to agree with an incorrect native word.
 
 Both translation engines are imperfect on their own. Back-translation is noisy on homographs and loanwords. Forward-translation has its own biases. The verdict layer treats both as filters that reduce the review set from 2048 to roughly 200 to 1,600 entries per language per pass, not as oracles. Final decisions are made by direct English-to-native comparison.
 
-Aggregate audit figures at time of writing: 59,392 entries audited through at least one translation engine (29 languages × 2048). 821 entries flagged WRONG and replaced (1.38%): 228 across the 20 first-wave languages (three-layer audit) and 593 across 9 of the 10 second-wave languages (two-layer audit). Post-fix known error rate: 0% against the completed audit layers for each language. The refined wordlists are what this repository ships.
+Aggregate audit figures: 61,440 entries audited through every layer (30 languages × 2048). 1,450 entries flagged WRONG and replaced across the full three-layer audit (2.36%). Post-fix known error rate: 0% against every completed audit layer for every language. The refined wordlists are what this repository ships.
 
 Back-translation and forward-translation are not substitutes for native-speaker review. Native speakers catch register, idiom, and cultural-neutrality issues that neither engine nor LLM layer reliably detects. Native-speaker contributions arrive via issues and PRs; acknowledgement is added to the review status matrix when each lands.
 
@@ -146,34 +146,34 @@ Several languages required specific disambiguation rules beyond the generic bije
 
 ## Review status matrix
 
-The review status of each TZUR Original wordlist. Back-translation audit uses Google Translate. Forward-translation audit uses Microsoft Azure Translator. Both feed into the same LLM verdict layer. Refinements column counts the entries replaced after verdicts, summed across every completed audit layer for that language.
+The review status of each TZUR Original wordlist. Back-translation audit uses Google Translate. Forward-translation audit uses Microsoft Azure Translator. Both feed into the same LLM verdict layer. Refinements column counts the entries replaced after verdicts, summed across both audit layers for that language.
 
 | Language | Structural | Back-translation | Forward-translation | Refinements | Native-speaker |
 |---|---|---|---|---|---|
 | Arabic | Clean | Complete | Complete | 4 | Pending |
 | Bengali | Clean | Complete | Complete | 0 | Pending |
-| Chinese (Simplified) | Clean | Complete | Pending | 85 | Pending |
-| Chinese (Traditional) | Clean | Complete | Pending | 81 | Pending |
-| Czech | Clean | Pending | Pending | — | Pending |
+| Chinese (Simplified) | Clean | Complete | Complete | 86 | Pending |
+| Chinese (Traditional) | Clean | Complete | Complete | 82 | Pending |
+| Czech | Clean | Complete | Complete | 625 | Pending |
 | Danish | Clean | Complete | Complete | 0 | Pending |
 | Dutch | Clean | Complete | Complete | 1 | Pending |
 | Estonian | Clean | Complete | Complete | 36 | Pending |
 | Farsi | Clean | Complete | Complete | 0 | Pending |
 | Filipino | Clean | Complete | Complete | 23 | Pending |
-| French | Clean | Complete | Pending | 2 | Pending |
+| French | Clean | Complete | Complete | 2 | Pending |
 | German | Clean | Complete | Complete | 1 | Pending |
 | Hebrew | Clean | Complete | Complete | 5 | Complete (osem23) |
-| Hindi | Clean | Complete | Pending | 181 | Pending |
+| Hindi | Clean | Complete | Complete | 181 | Pending |
 | Indonesian | Clean | Complete | Complete | 9 | Pending |
-| Italian | Clean | Complete | Pending | 49 | Pending |
-| Japanese | Clean | Complete | Pending | 42 | Pending |
-| Korean | Clean | Complete | Pending | 43 | Pending |
+| Italian | Clean | Complete | Complete | 49 | Pending |
+| Japanese | Clean | Complete | Complete | 42 | Pending |
+| Korean | Clean | Complete | Complete | 43 | Pending |
 | Malay | Clean | Complete | Complete | 3 | Pending |
 | Polish | Clean | Complete | Complete | 4 | Pending |
-| Portuguese | Clean | Complete | Pending | 2 | Pending |
+| Portuguese | Clean | Complete | Complete | 3 | Pending |
 | Romanian | Clean | Complete | Complete | 0 | Pending |
 | Russian | Clean | Complete | Complete | 4 | Pending |
-| Spanish | Clean | Complete | Pending | 108 | Pending |
+| Spanish | Clean | Complete | Complete | 109 | Pending |
 | Swedish | Clean | Complete | Complete | 0 | Pending |
 | Thai | Clean | Complete | Complete | 3 | Pending |
 | Turkish | Clean | Complete | Complete | 24 | Pending |
@@ -181,7 +181,7 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Urdu | Clean | Complete | Complete | 63 | Pending |
 | Vietnamese | Clean | Complete | Complete | 13 | Pending |
 
-Total refinements across the 29 TZUR Original wordlists that have completed at least one translation-accuracy pass: 821 of 59,392 entries (1.38%). Post-fix known error rate against each language's completed audit layers: 0%. Czech is pending its first translation-accuracy pass and is not yet counted.
+Total refinements across the 30 TZUR Original wordlists: 1,450 of 61,440 entries (2.36%). Every language has completed both back-translation and forward-translation passes against the LLM verdict layer. Post-fix known error rate against each layer: 0%.
 
 Native-speaker contributions are welcomed per language via issue or PR. Acknowledgements are added to this matrix as reviews land.
 

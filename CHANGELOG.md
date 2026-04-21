@@ -5,9 +5,9 @@ All notable changes to this repository are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased — 2026-04-21
+## Unreleased — 2026-04-22
 
-Unified display wordlists at 30 TZUR Original translations. Tag `v1.0.0` remains pinned to its original commit; these changes sit on `main` above the tag.
+Unified display wordlists at 30 TZUR Original translations and completed the three-layer translation-accuracy audit across every language. Tag `v1.0.0` remains pinned to its original commit; these changes sit on `main` above the tag.
 
 ### Changed
 
@@ -18,8 +18,8 @@ Unified display wordlists at 30 TZUR Original translations. Tag `v1.0.0` remains
 
 ### Added
 
-- `docs/canonical-vs-tzur.md`. Per-language side-by-side diff showing how many positions differ between the canonical BIP-39 wordlist and the TZUR Original translation, with the first 30 entries for each of the 9 languages that have a canonical counterpart.
-- Back-translation and LLM-verdict audit applied to 9 of the 10 new TZUR Originals (Spanish, French, Italian, Portuguese, Japanese, Korean, Simplified Chinese, Traditional Chinese, Hindi). Czech is the tenth; its translation-accuracy audit is scheduled as a follow-up pass.
+- `docs/canonical-vs-tzur.md`. Word-set comparison showing, for each of the 9 languages that have a canonical counterpart, how many tokens appear in both files, only in canonical, and only in the TZUR Original.
+- Full three-layer translation-accuracy audit completed for every TZUR Original wordlist. Layer 1 is structural validation; layer 2 is back-translation via Google Translate with an LLM verdict layer; layer 3 is forward-translation via Microsoft Azure Translator with the same LLM verdict layer. 1,450 WRONG-flagged entries across the 30 languages have been replaced with collision-free single-token alternatives. Post-fix known error rate against each layer is 0%.
 
 ### Structural
 

@@ -1,7 +1,7 @@
 {
   "language": "chinese_simplified",
   "word_count": 2048,
-  "description": "Index-paired translation between English BIP-39 and TZUR Original Simplified Chinese.",
+  "description": "Bidirectional BIP-39 mapping between English and Chinese Simplified",
   "pairing_type": "translation",
   "english_to_native": {
     "abandon": "放弃",
@@ -326,7 +326,7 @@
     "child": "孩子",
     "chimney": "烟囱",
     "choice": "抉择",
-    "choose": "选择动词",
+    "choose": "选择",
     "chronic": "慢性的",
     "chuckle": "轻笑",
     "chunk": "大块",
@@ -2376,7 +2376,7 @@
     "孩子": "child",
     "烟囱": "chimney",
     "抉择": "choice",
-    "选择动词": "choose",
+    "选择": "choose",
     "慢性的": "chronic",
     "轻笑": "chuckle",
     "大块": "chunk",
