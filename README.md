@@ -184,6 +184,7 @@ Corrections and independent reviews land via issues and PRs.
 ## Documentation
 
 - [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). How the 20 TZUR Original wordlists were built, disambiguation rules, review status per language, reproducibility statement.
+- [`docs/BIP-display-layer-wordlists.md`](docs/BIP-display-layer-wordlists.md). Informational BIP draft describing the convention this repository implements: a native-language display wordlist is index-parallel to the canonical English BIP-39 wordlist, used by wallet software for rendering and input while the English mnemonic remains the sole PBKDF2 input.
 - [`validation/encoding-notes.md`](validation/encoding-notes.md). UTF-8, NFKD normalization, ZWNJ handling for Farsi, and per-language normalization impact.
 - [`test-vectors/`](test-vectors/). BIP-39 conformance test vectors per language. Integrators should reproduce every vector in the target language's file before shipping.
 - [`examples/`](examples/). Minimal reference decoders in Python, JavaScript, and Swift. Each converts a native mnemonic to its English form and derives the BIP-39 seed. All three produce byte-identical seeds.
