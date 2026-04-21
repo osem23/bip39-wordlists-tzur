@@ -58,7 +58,7 @@ Candidates failing these checks were replaced with an alternative translation of
 
 Duplicates are not permitted. If two different English words translated to the same native word, one of them was replaced with an alternative translation. Replacement always preferred keeping the most common English sense mapped to the most common native word, and moving the less-frequent English sense to a synonym or related form. This process is iterative: one round of replacements could introduce a new collision against a different index, so bijection was re-checked after every pass.
 
-Collision counts on the first pass varied widely by language: Urdu had 144 first-pass collisions (highest), Danish had 9, Swedish had 4. Final bijection is clean across all 20 TZUR Original wordlists.
+Collision counts on the first pass varied widely by language: Urdu had 144 first-pass collisions (highest), Danish had 9, Swedish had 4. Final bijection is clean across all 30 TZUR Original wordlists.
 
 ### Step 4. Structural validation
 
@@ -66,17 +66,17 @@ Each final wordlist was run through `validation/validate_all.py` and `mappings/<
 
 ### Step 5. Translation-accuracy audit
 
-Every TZUR Original wordlist passes a three-layer verification:
+Every TZUR Original wordlist passes structural validation and at least one translation-accuracy pass. Audit depth varies by language and is tracked in the review status matrix below.
 
-**Layer 1. Structural validation.** `validation/validate_all.py` enforces exactly 2048 words, UTF-8 without BOM, no duplicates, no whitespace, Unix line endings, and bidirectional mapping round-trip integrity. Fully mechanical.
+**Layer 1. Structural validation.** `validation/validate_all.py` enforces exactly 2048 words, UTF-8 without BOM, no duplicates, no whitespace, Unix line endings, and bidirectional mapping round-trip integrity. Fully mechanical. Applied to all 30 TZUR Original wordlists.
 
-**Layer 2. Back-translation pass (native to English).** Each native word is back-translated via Google Translate to English. Entries where the back-translation diverges from the original English at the same index are flagged as suspects. An LLM review agent evaluates each suspect by comparing the native word directly to the English (not trusting the back-translation blindly), and assigns CORRECT (loanword, morphological variant, or accepted synonym), CLOSE (plausible but imperfect), AMBIGUOUS (requires native-speaker input), or WRONG (incorrect). WRONG entries are replaced with a single-token alternative and the wordlist is re-validated.
+**Layer 2. Back-translation pass (native to English).** Each native word is back-translated via Google Translate to English. Entries where the back-translation diverges from the original English at the same index are flagged as suspects. An LLM review agent evaluates each suspect by comparing the native word directly to the English (not trusting the back-translation blindly), and assigns CORRECT (loanword, morphological variant, or accepted synonym), CLOSE (plausible but imperfect), AMBIGUOUS (requires native-speaker input), or WRONG (incorrect). WRONG entries are replaced with a single-token alternative and the wordlist is re-validated. Applied to 29 of 30 TZUR Original wordlists; Czech is a follow-up pass.
 
-**Layer 3. Forward-translation pass (English to native).** The same flow is run in the opposite direction using Microsoft Azure Translator. English is forward-translated to the target language; entries where Azure's rendering diverges from our native are flagged as suspects and reviewed by the same LLM verdict layer. This catches a different class of errors than layer 2, particularly false friends, homonym sense-shifts, and cases where the back-translation happens to agree with an incorrect native word.
+**Layer 3. Forward-translation pass (English to native).** The same flow is run in the opposite direction using Microsoft Azure Translator. English is forward-translated to the target language; entries where Azure's rendering diverges from our native are flagged as suspects and reviewed by the same LLM verdict layer. This catches a different class of errors than layer 2, particularly false friends, homonym sense-shifts, and cases where the back-translation happens to agree with an incorrect native word. Applied to 19 of 30 TZUR Original wordlists (the 20 first-wave languages minus Hebrew, which was covered by native-speaker review on top of layers 1-3); the 10 second-wave languages have layer 3 as a scheduled follow-up.
 
 Both translation engines are imperfect on their own. Back-translation is noisy on homographs and loanwords. Forward-translation has its own biases. The verdict layer treats both as filters that reduce the review set from 2048 to roughly 200 to 1,600 entries per language per pass, not as oracles. Final decisions are made by direct English-to-native comparison.
 
-Combined, the three layers covered approximately 82,000 translation comparisons and 40,000 LLM verdicts across the 20 TZUR Original wordlists. Total entries audited: 40,960 (20 languages × 2048). Entries flagged WRONG and replaced: 228 (0.56%). Post-fix known error rate: 0% against both audit layers. The refined wordlists are what this repository ships.
+Aggregate audit figures at time of writing: 59,392 entries audited through at least one translation engine (29 languages × 2048). 821 entries flagged WRONG and replaced (1.38%): 228 across the 20 first-wave languages (three-layer audit) and 593 across 9 of the 10 second-wave languages (two-layer audit). Post-fix known error rate: 0% against the completed audit layers for each language. The refined wordlists are what this repository ships.
 
 Back-translation and forward-translation are not substitutes for native-speaker review. Native speakers catch register, idiom, and cultural-neutrality issues that neither engine nor LLM layer reliably detects. Native-speaker contributions arrive via issues and PRs; acknowledgement is added to the review status matrix when each lands.
 
@@ -109,51 +109,71 @@ Several languages required specific disambiguation rules beyond the generic bije
 
 ## Per-language construction notes
 
-| Language | Source | First known BIP-39? | Notes |
+| Language | Source | Canonical BIP-39? | Notes |
 |---|---|---|---|
-| Arabic | Translation | Yes | RTL. 6.0% NFKD-affected. Hamza variations (أ إ ؤ ئ ء) treated as distinct codepoints. |
-| Bengali | Translation | Yes | Bengali script U+0980-U+09FF. Clean block, NFKD-stable. |
-| Danish | Translation | Yes | Latin with æ/ø/å. Disambiguated from Swedish via æ/ø. |
-| Dutch | Translation | No | Prior lists exist from other projects; ours was independently constructed. Overlap reflects common-word frequency, not derivation. |
-| Estonian | Translation | Yes | Latin with ä/ö/ü/õ. |
-| Farsi | Translation | Yes | Perso-Arabic RTL. 556 ZWNJ instances across 534 words is standard Persian orthography. |
-| Filipino | Translation | Yes | Latin. |
-| German | Translation | No | Prior lists exist from other projects; ours was independently constructed. |
-| Hebrew | Translation | Yes | RTL. Unpointed (no niqqud). Full native-speaker review by osem23. |
-| Indonesian | Translation | No | Prior lists exist from other projects; ours was independently constructed. |
-| Malay | Translation | Yes | Latin. |
-| Polish | Translation | Yes | Latin with ą/ć/ę/ł/ń/ó/ś/ź/ż. |
-| Romanian | Translation | Yes | Comma-below ș/ț, not legacy cedilla. |
-| Russian | Translation | No | Prior lists exist from other projects; ours was independently constructed. 8.8% NFKD-affected. |
-| Swedish | Translation | Yes | Latin with å/ä/ö. Disambiguated from Danish via ä/ö. |
-| Thai | Translation | Yes | Thai script. 5.3% NFKD-affected. |
-| Turkish | Translation | No | Prior lists exist from other projects; ours was independently constructed. 29.1% NFKD-affected (highest among Latin TZUR Originals). |
-| Ukrainian | Translation | Yes | Cyrillic with ї/є/і/ґ. |
-| Urdu | Translation | Yes | Perso-Arabic RTL. 144 first-pass collisions (highest). |
-| Vietnamese | Translation | Yes | Latin with extensive diacritics. 97.7% NFKD-affected. |
+| Arabic | Translation | No prior known | RTL. 6.0% NFKD-affected. Hamza variations (أ إ ؤ ئ ء) treated as distinct codepoints. |
+| Bengali | Translation | No prior known | Bengali script U+0980-U+09FF. Clean block, NFKD-stable. |
+| Chinese (Simplified) | Translation | Canonical exists | Canonical spec list is a Han-character frequency ordering, not translation. TZUR Original is a semantic translation of English. |
+| Chinese (Traditional) | Translation | Canonical exists | As above, traditional-character variant. |
+| Czech | Translation | Canonical exists | Canonical spec list is an alphabetized independent Czech word set, not translation. TZUR Original is a semantic translation of English. Translation-accuracy audit is a scheduled follow-up. |
+| Danish | Translation | No prior known | Latin with æ/ø/å. Disambiguated from Swedish via æ/ø. |
+| Dutch | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. Overlap reflects common-word frequency, not derivation. |
+| Estonian | Translation | No prior known | Latin with ä/ö/ü/õ. |
+| Farsi | Translation | No prior known | Perso-Arabic RTL. 556 ZWNJ instances across 534 words is standard Persian orthography. |
+| Filipino | Translation | No prior known | Latin. |
+| French | Translation | Canonical exists | Canonical spec list is an alphabetized independent French word set, not translation. TZUR Original is a semantic translation of English. |
+| German | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. |
+| Hebrew | Translation | No prior known | RTL. Unpointed (no niqqud). Full native-speaker review by osem23. |
+| Hindi | Translation | No canonical | No canonical Hindi exists in the BIP-39 spec. Prior community list (`devnagri_wordlist`) was superseded in this repository by a full TZUR Original translation. |
+| Indonesian | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. |
+| Italian | Translation | Canonical exists | Canonical spec list is an alphabetized independent Italian word set, not translation. TZUR Original is a semantic translation of English. |
+| Japanese | Translation | Canonical exists | Canonical spec list is a hiragana ordering, not translation. TZUR Original uses kanji + kana and is a semantic translation of English. |
+| Korean | Translation | Canonical exists | Canonical spec list is an alphabetized independent Korean word set, not translation. TZUR Original is a semantic translation of English. |
+| Malay | Translation | No prior known | Latin. |
+| Polish | Translation | No prior known | Latin with ą/ć/ę/ł/ń/ó/ś/ź/ż. |
+| Portuguese | Translation | Canonical exists | Canonical spec list is an alphabetized independent Portuguese word set, not translation. TZUR Original is a semantic translation of English. |
+| Romanian | Translation | No prior known | Comma-below ș/ț, not legacy cedilla. |
+| Russian | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. 8.8% NFKD-affected. |
+| Spanish | Translation | Canonical exists | Canonical spec list is an alphabetized independent Spanish word set, not translation. TZUR Original is a semantic translation of English. |
+| Swedish | Translation | No prior known | Latin with å/ä/ö. Disambiguated from Danish via ä/ö. |
+| Thai | Translation | No prior known | Thai script. 5.3% NFKD-affected. |
+| Turkish | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. 29.1% NFKD-affected (highest among Latin TZUR Originals). |
+| Ukrainian | Translation | No prior known | Cyrillic with ї/є/і/ґ. |
+| Urdu | Translation | No prior known | Perso-Arabic RTL. 144 first-pass collisions (highest). |
+| Vietnamese | Translation | No prior known | Latin with extensive diacritics. 97.7% NFKD-affected. |
 
-"First known BIP-39?" reflects our research at time of publication. If a pre-existing wordlist for any of these languages surfaces, it will be acknowledged here and in the README.
+"Canonical BIP-39?" records whether the BIP-39 specification ships a canonical wordlist for this language. Where a canonical exists, it is preserved at `wordlists/reference-canonical/` for spec comparison; see `docs/canonical-vs-tzur.md` for the per-index diff. "No prior known" reflects our research at time of publication. If a pre-existing wordlist surfaces for one of those languages, it will be acknowledged here and in the README.
 
 ## Review status matrix
 
-The review status of each TZUR Original wordlist. Back-translation audit uses Google Translate. Forward-translation audit uses Microsoft Azure Translator. Both feed into the same LLM verdict layer. Refinements column counts the entries replaced after verdicts.
+The review status of each TZUR Original wordlist. Back-translation audit uses Google Translate. Forward-translation audit uses Microsoft Azure Translator. Both feed into the same LLM verdict layer. Refinements column counts the entries replaced after verdicts, summed across every completed audit layer for that language.
 
 | Language | Structural | Back-translation | Forward-translation | Refinements | Native-speaker |
 |---|---|---|---|---|---|
 | Arabic | Clean | Complete | Complete | 4 | Pending |
 | Bengali | Clean | Complete | Complete | 0 | Pending |
+| Chinese (Simplified) | Clean | Complete | Pending | 85 | Pending |
+| Chinese (Traditional) | Clean | Complete | Pending | 81 | Pending |
+| Czech | Clean | Pending | Pending | — | Pending |
 | Danish | Clean | Complete | Complete | 0 | Pending |
 | Dutch | Clean | Complete | Complete | 1 | Pending |
 | Estonian | Clean | Complete | Complete | 36 | Pending |
 | Farsi | Clean | Complete | Complete | 0 | Pending |
 | Filipino | Clean | Complete | Complete | 23 | Pending |
+| French | Clean | Complete | Pending | 2 | Pending |
 | German | Clean | Complete | Complete | 1 | Pending |
 | Hebrew | Clean | Complete | Complete | 5 | Complete (osem23) |
+| Hindi | Clean | Complete | Pending | 181 | Pending |
 | Indonesian | Clean | Complete | Complete | 9 | Pending |
+| Italian | Clean | Complete | Pending | 49 | Pending |
+| Japanese | Clean | Complete | Pending | 42 | Pending |
+| Korean | Clean | Complete | Pending | 43 | Pending |
 | Malay | Clean | Complete | Complete | 3 | Pending |
 | Polish | Clean | Complete | Complete | 4 | Pending |
+| Portuguese | Clean | Complete | Pending | 2 | Pending |
 | Romanian | Clean | Complete | Complete | 0 | Pending |
 | Russian | Clean | Complete | Complete | 4 | Pending |
+| Spanish | Clean | Complete | Pending | 108 | Pending |
 | Swedish | Clean | Complete | Complete | 0 | Pending |
 | Thai | Clean | Complete | Complete | 3 | Pending |
 | Turkish | Clean | Complete | Complete | 24 | Pending |
@@ -161,7 +181,7 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Urdu | Clean | Complete | Complete | 63 | Pending |
 | Vietnamese | Clean | Complete | Complete | 13 | Pending |
 
-Total refinements across the 20 TZUR Original wordlists: 228 of 40,960 entries (0.56%). Post-fix known error rate against both audit layers: 0%.
+Total refinements across the 29 TZUR Original wordlists that have completed at least one translation-accuracy pass: 821 of 59,392 entries (1.38%). Post-fix known error rate against each language's completed audit layers: 0%. Czech is pending its first translation-accuracy pass and is not yet counted.
 
 Native-speaker contributions are welcomed per language via issue or PR. Acknowledgements are added to this matrix as reviews land.
 

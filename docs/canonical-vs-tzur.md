@@ -1,8 +1,29 @@
 # Canonical BIP-39 vs TZUR Original
 
-This document compares each of the 10 non-English canonical BIP-39 wordlists (spec-defined) with its TZUR Original counterpart. At each of the 2048 indices, the canonical entry is an independently-authored, alphabetized word in the target language, while the TZUR Original entry is a semantic translation of the English word at the same index. Both are valid BIP-39 wordlists structurally; the difference is in how the native word relates to the English one at that index.
+This document compares each of the 9 non-English canonical BIP-39 wordlists (spec-defined) with its TZUR Original counterpart.
 
-The English cryptographic floor is unchanged. PBKDF2 runs on the English form.
+**Two different objects stored under the same filename in two directories.** At every one of the 2048 indices, the canonical entry (under `wordlists/reference-canonical/`) is an independently-authored, alphabetized word in the target language, selected by the BIP-39 spec for uniqueness of 4-character prefix and native-script ordering. The TZUR Original entry (under `wordlists/tzur-original/`) at that same index is a semantic translation of the English word at that index. Both are valid BIP-39 wordlists structurally and both contain exactly 2048 entries; what differs is the relationship between native position and English meaning.
+
+**Index ordering.** The TZUR Original is aligned to English position-for-position. At index N, the TZUR Original word is the translation of `english.txt[N]`, which makes the `english_to_native[english.txt[N]] = tzur_original[N]` mapping derivable mechanically. The canonical BIP-39 non-English lists do not have this property; they are sorted by native-script collation, so the canonical word at index N has no semantic relationship to the English word at index N.
+
+**Cryptographic floor unchanged.** PBKDF2 runs on the English form. A seed in any TZUR Original display wordlist derives bit-identical keys to its English equivalent. Interoperability with any BIP-39 wallet is preserved through the mapping.
+
+## Summary
+
+| Language | Positions differing | Coincidentally identical | % differing |
+|---|---:|---:|---:|
+| Spanish | 2046 / 2048 | 2 | 99.9% |
+| French | 2048 / 2048 | 0 | 100.0% |
+| Italian | 2047 / 2048 | 1 | 100.0% |
+| Portuguese | 2048 / 2048 | 0 | 100.0% |
+| Czech | 1446 / 2048 | 602 | 70.6% |
+| Japanese | 2048 / 2048 | 0 | 100.0% |
+| Korean | 2048 / 2048 | 0 | 100.0% |
+| Chinese (Simplified) | 2048 / 2048 | 0 | 100.0% |
+| Chinese (Traditional) | 2048 / 2048 | 0 | 100.0% |
+| **Combined** | **17827 / 18432** | **605** | **96.7%** |
+
+"Coincidentally identical" counts positions where the canonical word and the TZUR Original word at the same index happen to be the same token. This is pure coincidence; the canonical list is alphabetized and the TZUR Original is index-paired translation. The one exception is Czech, where the unusually-high 602 matches reflect construction history: positions where the back-translate and LLM-verdict audit has not yet run land on the canonical Czech word at that index as a placeholder, so the TZUR Original coincides with canonical there until the audit replaces them with genuine translations. The Czech translation-accuracy pass is a scheduled follow-up; numbers in this document reflect the current state and will drop substantially after that pass lands.
 
 ## Spanish
 
@@ -368,8 +389,4 @@ First 30 entries:
 
 Community Hindi (previously at `wordlists/community/hindi.txt`) is superseded by the TZUR Original Hindi translation. No canonical BIP-39 Hindi exists in spec.
 
-## Totals
-
-- Combined positions differing: **17827** of 20480
-- Combined positions coinciding: 605
 

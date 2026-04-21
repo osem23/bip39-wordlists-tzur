@@ -1,16 +1,21 @@
 cff-version: 1.2.0
 message: "If you use these wordlists in academic work or a software project, please cite this repository."
-title: "BIP-39 Wordlists (TZUR): 31 languages, including 15 with no prior known BIP-39 wordlist"
+title: "BIP-39 Display Wordlists (TZUR): 30 native-language index-paired translations of the canonical English BIP-39 wordlist"
 abstract: >-
-  BIP-39 compliant wordlists and bidirectional English-to-native mappings for 31 languages.
-  Includes 20 original wordlists built from scratch by osem23 (15 of which had no
-  prior BIP-39 wordlist known to us at time of publication: Arabic, Bengali, Danish, Estonian,
-  Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese),
-  1 community wordlist (Hindi), and the 10 official BIP-39 wordlists for completeness. All
-  wordlists contain exactly 2048 words, are UTF-8 encoded, and validate round-trip through
-  bidirectional mappings. The English wordlist works with any BIP-39 wallet; the 30
-  native-language wordlists currently work with TZUR Wallet and become cross-wallet portable
-  as other wallets integrate them via the provided mappings.
+  BIP-39 compliant display wordlists and bidirectional English-to-native mappings for
+  30 non-English languages, each an index-paired semantic translation of the canonical
+  English BIP-39 wordlist. Built by osem23, builder of TZUR Wallet. 15 of the 30 had no
+  prior BIP-39 wordlist known at time of publication (Arabic, Bengali, Danish, Estonian,
+  Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu,
+  Vietnamese). The 10 canonical BIP-39 wordlists defined by the specification (Spanish,
+  French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional
+  Chinese, plus English) are preserved under wordlists/reference-canonical/ for spec
+  comparison; they are independent alphabetized lists in their respective languages, not
+  semantic translations of English. All 31 wordlists contain exactly 2048 words, are
+  UTF-8 encoded, and validate round-trip through bidirectional mappings. The English
+  wordlist works with any BIP-39 wallet; the 30 native-language display wordlists
+  currently work with TZUR Wallet and become cross-wallet portable as other wallets
+  integrate the provided mappings.
 type: dataset
 authors:
   - name: "osem23"
