@@ -162,7 +162,7 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Filipino | Clean | Complete | Complete | 23 | Pending |
 | French | Clean | Complete | Complete | 2 | Pending |
 | German | Clean | Complete | Complete | 1 | Pending |
-| Hebrew | Clean | Complete | Complete | 5 | Complete (osem23) |
+| Hebrew | Clean | Complete | Complete | 5 | Complete (native he) |
 | Hindi | Clean | Complete | Complete | 181 | Pending |
 | Indonesian | Clean | Complete | Complete | 9 | Pending |
 | Italian | Clean | Complete | Complete | 49 | Pending |
@@ -170,10 +170,10 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Korean | Clean | Complete | Complete | 43 | Pending |
 | Malay | Clean | Complete | Complete | 3 | Pending |
 | Polish | Clean | Complete | Complete | 4 | Pending |
-| Portuguese | Clean | Complete | Complete | 3 | Pending |
+| Portuguese | Clean | Complete | Complete | 3 | Peer-reviewed (native pt-BR) |
 | Romanian | Clean | Complete | Complete | 0 | Pending |
 | Russian | Clean | Complete | Complete | 4 | Pending |
-| Spanish | Clean | Complete | Complete | 109 | Pending |
+| Spanish | Clean | Complete | Complete | 109 | Peer-reviewed (native es-AR) |
 | Swedish | Clean | Complete | Complete | 0 | Pending |
 | Thai | Clean | Complete | Complete | 3 | Pending |
 | Turkish | Clean | Complete | Complete | 24 | Pending |
