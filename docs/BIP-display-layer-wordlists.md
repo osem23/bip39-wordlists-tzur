@@ -1,7 +1,7 @@
 <pre>
   BIP: ?
   Layer: Applications
-  Title: Native-language display wordlists for BIP-39 mnemonics
+  Title: Multilingual mnemonic display and input conventions
   Author: Daniel Osemberg <ceo@blocksight.live>
   Discussions-To:
   Comments-Summary: No comments yet.
@@ -15,7 +15,7 @@
 
 ## Abstract
 
-This document describes a convention for *native-language display wordlists* that accompany a BIP-39 English mnemonic. A display wordlist is a 2048-entry list in a target language, index-parallel to the canonical English BIP-39 wordlist, used by wallet software to render and accept the seed phrase in the user's native language without changing the mnemonic that is fed to PBKDF2.
+This document specifies a convention for rendering and accepting BIP-39 mnemonics in a user's native language via a *display wordlist*: a 2048-entry list in the target language, index-parallel to the canonical English BIP-39 wordlist.
 
 The seed of record remains the canonical English BIP-39 mnemonic. A display wordlist is a UX layer; it adds no new cryptographic surface, and any seed produced under this convention remains restorable in any BIP-39 wallet using its English form.
 
@@ -58,16 +58,16 @@ A display wordlist MUST:
 
 A display wordlist SHOULD:
 
-1. Maximize 4-character prefix uniqueness within the constraints of the target script. Realized uniqueness varies widely across scripts; wallets relying on prefix-based autocomplete fall back to full-word matching for any wordlist below 2048/2048 unique prefixes.
+1. Maximize 4-character prefix uniqueness within the constraints of the target script. Realized uniqueness varies widely across scripts; wallets relying on prefix-based autocomplete fall back to full-word matching whenever prefix uniqueness is below 2048/2048.
 2. Be reviewed by a fluent native speaker of the target language before publication. Native-speaker review catches register, idiom, and cultural-neutrality issues that mechanical validation cannot.
 
-Note on ordering: a display wordlist is stored in index-parallel order with the canonical English wordlist, not sorted by native-language collation. Those two orderings are mutually exclusive unless the English wordlist happens to be sorted by the target collation, which it is not. Lookup efficiency is provided by a hashmap over the 2048-entry native-to-English mapping; sorting by native collation is not a requirement of this convention.
+Note on ordering: a display wordlist is stored in index-parallel order with the canonical English wordlist, not sorted by native-language collation. The two orderings coincide only when the English wordlist happens to match the target script's collation, which is never the case in practice. Lookup efficiency is provided by a hashmap over the 2048-entry native-to-English mapping; sorting by native collation is not a requirement of this convention.
 
 ### Input parsing
 
 A wallet that accepts a display mnemonic on restore tokenizes it on whitespace before lookup:
 
-1. Tokenize on Unicode whitespace (matching `.whitespacesAndNewlines` semantics) plus the ideographic space (`U+3000`) used by the official Japanese BIP-39 mnemonic.
+1. Tokenize on Unicode whitespace (characters with the Unicode `White_Space` property) plus the ideographic space (`U+3000`) used by the official Japanese BIP-39 mnemonic.
 2. Normalize every token and the display wordlist to the same Unicode form (NFC) before comparison. Mismatched normalization between input and wordlist causes silent lookup failures on precomposed/decomposed accent pairs.
 3. Preserve Zero-Width Non-Joiner characters (`U+200C`) during tokenization of languages that use them (Persian/Farsi contains ZWNJ in a significant fraction of its entries). Strip ZWNJ for index lookup only when the wordlist's stored entries have been stripped; otherwise preserve ZWNJ in both directions. The choice MUST be consistent with how the wordlist was authored.
 4. Look up each token in the display wordlist's `native_to_english` mapping.
@@ -76,7 +76,7 @@ A wallet that accepts a display mnemonic on restore tokenizes it on whitespace b
 
 ### Validation
 
-Authors of a display wordlist verify the structural requirements above before publishing. A reference validator at `validation/validate_all.py` in the reference registry enforces every MUST clause mechanically: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace inside any entry, NFC form, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status) are not enforced by the validator and are tracked separately in the registry's construction notes.
+Every MUST clause above is mechanically enforceable. A reference validator at `validation/validate_all.py` in the reference registry checks each: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace inside any entry, NFC form, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status) are not enforced by the validator and are tracked separately in the registry's construction notes.
 
 ## Backwards Compatibility
 
@@ -84,7 +84,7 @@ Seeds produced under this convention are bit-identical to seeds produced by any 
 
 ## Reference Implementation
 
-- **Wordlist registry.** <https://github.com/osem23/bip39-wordlists-tzur>, `main` branch. Ships 30 index-paired display wordlists with bidirectional mappings, the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison, and a reference validator at `validation/validate_all.py`. Tag `v1.0` pins an earlier snapshot for citation continuity.
+- **Wordlist registry.** <https://github.com/osem23/bip39-wordlists-tzur>, `main` branch. Ships 30 index-paired display wordlists with bidirectional mappings at `wordlists/tzur-original/`, the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison, and a reference validator at `validation/validate_all.py`. Tag `v1.0` pins a stable snapshot for citation continuity.
 - **Construction notes.** `docs/CONSTRUCTION.md` documents disambiguation rules, per-language notes, the three-layer translation-accuracy audit (structural validation, back-translation via Google Translate with LLM verdict, forward-translation via Microsoft Azure Translator with LLM verdict), and the review status matrix.
 - **Canonical comparison.** `docs/canonical-vs-tzur.md` reports the word-set overlap between the 9 canonical non-English BIP-39 wordlists and their TZUR Original counterparts. The two are independent sources: Korean canonical and TZUR Original share zero tokens; Japanese shares 11; Latin-script languages share 400 to 700.
 - **Example decoders.** `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift`. Each resolves a display mnemonic to its canonical English form, applies NFKD, and derives the BIP-39 seed via PBKDF2. All three produce byte-identical seeds for the same input.
@@ -114,7 +114,7 @@ The 4-character prefix uniqueness recommendation from the original BIP-39 specif
 
 Native-speaker review is recommended (SHOULD) rather than required (MUST) because its absence is a UX risk, not a cryptographic risk. The worst case is a poorly-chosen native word that a future PR can correct; no funds are at stake.
 
-The 9 non-English canonical BIP-39 wordlists are alphabetized independent word selections, not translations of the English list, so they cannot serve as a display layer over an English mnemonic without the user facing semantically unrelated tokens at each index. This convention does not replace those wordlists; it sits parallel to them and fills the role they do not fill. The reference registry preserves the canonical wordlists at `wordlists/reference-canonical/` for anyone who needs to cite or compare against the spec, and ships the display-layer wordlists separately at `wordlists/tzur-original/`.
+The 9 non-English canonical BIP-39 wordlists are alphabetized independent word selections, not translations of the English list, so they cannot serve as a display layer over an English mnemonic without the user facing semantically unrelated tokens at each index. This convention does not replace those wordlists; it sits parallel to them and fills the role they do not fill.
 
 ## Security Considerations
 
