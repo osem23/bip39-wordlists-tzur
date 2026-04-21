@@ -4,7 +4,7 @@ This document compares each of the 9 non-English canonical BIP-39 wordlists (spe
 
 **Two different objects stored under the same filename in two directories.** The canonical entry (under `wordlists/reference-canonical/`) is an independently-authored, alphabetized word in the target language, selected by the BIP-39 spec for uniqueness of 4-character prefix and native-script ordering. The TZUR Original entry (under `wordlists/tzur-original/`) is a semantic translation of the English BIP-39 word at the same index. Both are valid BIP-39 wordlists structurally and both contain exactly 2048 entries; what differs is which native words are in the list.
 
-**Index ordering.** The TZUR Original is aligned to English position-for-position, so the mapping `english_to_native[english.txt[N]] = tzur_original[N]` is derivable mechanically. The canonical BIP-39 non-English lists are not — they are sorted by native-script collation, so the canonical word at index N has no semantic tie to the English word at index N.
+**Index ordering.** The TZUR Original is aligned to English position-for-position, so the mapping `english_to_native[english.txt[N]] = tzur_original[N]` is derivable mechanically. The canonical BIP-39 non-English lists are not. They are sorted by native-script collation, so the canonical word at index N has no semantic tie to the English word at index N.
 
 **Cryptographic floor unchanged.** PBKDF2 runs on the English form. A seed in any TZUR Original display wordlist derives bit-identical keys to its English equivalent. Interoperability with any BIP-39 wallet is preserved through the mapping.
 
@@ -27,7 +27,7 @@ How many distinct tokens the two files share at all, regardless of where each ap
 
 Reading the figures:
 
-- **Korean: 0 shared.** The canonical spec list is alphabetized Korean common words. The TZUR Original is a semantic translation of the English BIP-39 vocabulary. The two sets are disjoint — every one of the 2048 tokens appears in exactly one list.
+- **Korean: 0 shared.** The canonical spec list is alphabetized Korean common words. The TZUR Original is a semantic translation of the English BIP-39 vocabulary. The two sets are disjoint: every one of the 2048 tokens appears in exactly one list.
 - **Japanese: 11 shared.** Same reason as Korean, but hiragana-only canonical versus kanji + kana TZUR Original leaves minimal incidental overlap.
 - **Chinese (Simplified 75, Traditional 45).** The canonical lists are single-character frequency-ordered dictionaries, while the TZUR Original is multi-character semantic translation. Overlap is the set of simple words (e.g., translation, language, action) that appear in both spaces.
 - **Latin-script languages (Spanish, French, Italian, Portuguese).** 400-700 shared tokens reflects common-word overlap: the canonical list samples frequent single-morpheme native words, and the TZUR Original often lands on the same common native word when translating a common English concept.

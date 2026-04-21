@@ -5,9 +5,9 @@ All notable changes to this repository are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased — 2026-04-22
+## Unreleased. 2026-04-22
 
-Unified display wordlists at 30 TZUR Original translations and completed the three-layer translation-accuracy audit across every language. Tag `v1.0.0` remains pinned to its original commit; these changes sit on `main` above the tag.
+Unified display wordlists at 30 TZUR Original translations and completed the three-layer translation-accuracy audit across every language. Tag `v1.0` remains pinned to its original commit; these changes sit on `main` above the tag.
 
 ### Changed
 
@@ -30,7 +30,7 @@ Unified display wordlists at 30 TZUR Original translations and completed the thr
 
 The previous Hindi list was sourced from `devnagri_wordlist` with attribution. Seeds generated against that list in any prior-state wallet remain restorable via the English form, which is unchanged. The current Hindi TZUR Original replaces the community list in this repository; wallets that want Hindi-to-Hindi restore paths across both versions should keep both mappings on hand.
 
-## [1.0.0] - 2026-04-18
+## [1.0] - 2026-04-18
 
 First public release.
 
@@ -62,4 +62,4 @@ BIP-39 compliant wordlists and bidirectional English-to-native mappings for **31
 - 4-char prefix uniqueness is not guaranteed for TZUR Original wordlists. Implementations relying on 4-char autocomplete should fall back to full-word matching.
 - This repository does not implement a wallet and does not generate seeds, derive keys, or sign transactions. See `DISCLAIMER.md`.
 
-[1.0.0]: https://github.com/osem23/bip39-wordlists-tzur/releases/tag/v1.0.0
+[1.0]: https://github.com/osem23/bip39-wordlists-tzur/releases/tag/v1.0

@@ -20,7 +20,7 @@ type: dataset
 authors:
   - name: "osem23"
     website: "https://github.com/osem23"
-version: "1.0.0"
+version: "1.0"
 date-released: "2026-04-18"
 license: MIT
 url: "https://github.com/osem23/bip39-wordlists-tzur"
