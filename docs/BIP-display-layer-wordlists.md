@@ -19,7 +19,7 @@ The seed of record remains the canonical English BIP-39 mnemonic. A display word
 
 ## Motivation
 
-A wallet that wants to show or accept the seed phrase in a language other than the eleven currently shipped with BIP-39 has two practical options: ship a parallel display wordlist that maps to English position-for-position, or expect the user to memorize a phrase in a language they may not speak. Many multilingual wallets already do the former internally. This document specifies the format and the integrity rules so that such display wordlists are interoperable across wallets and so that the cryptographic chain remains identical to a single-language BIP-39 implementation.
+A wallet that wants to show or accept the seed phrase in a language other than the eleven currently shipped with BIP-39 has two practical options: ship a parallel display wordlist that maps to English position-for-position, or ask the user to write down and later transcribe an English phrase in a language they may not read. The latter is error-prone at the point of backup. A single misspelling on paper, or a single mis-read during restore, fails the BIP-39 checksum and can render the seed unrecoverable. Many multilingual wallets already solve this internally by rendering the mnemonic in the user's native script. This document specifies the format and the integrity rules so that such display wordlists are interoperable across wallets and so that the cryptographic chain remains identical to a single-language BIP-39 implementation.
 
 ## Specification
 
