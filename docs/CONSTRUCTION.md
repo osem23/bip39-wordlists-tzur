@@ -153,7 +153,7 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Arabic | Clean | Complete | Complete | 4 | Pending |
 | Bengali | Clean | Complete | Complete | 0 | Pending |
 | Chinese (Simplified) | Clean | Complete | Complete | 86 | Pending |
-| Chinese (Traditional) | Clean | Complete | Complete | 82 | Pending |
+| Chinese (Traditional) | Clean | Complete | Complete | 1,037 | Pending |
 | Czech | Clean | Complete | Complete | 625 | Pending |
 | Danish | Clean | Complete | Complete | 0 | Pending |
 | Dutch | Clean | Complete | Complete | 1 | Pending |
@@ -181,7 +181,7 @@ The review status of each TZUR Original wordlist. Back-translation audit uses Go
 | Urdu | Clean | Complete | Complete | 63 | Pending |
 | Vietnamese | Clean | Complete | Complete | 13 | Pending |
 
-Total refinements across the 30 TZUR Original wordlists: 1,450 of 61,440 entries (2.36%). Every language has completed both back-translation and forward-translation passes against the LLM verdict layer. Post-fix known error rate against each layer: 0%.
+Total refinements across the 30 TZUR Original wordlists: 2,405 of 61,440 entries (3.91%). Every language has completed both back-translation and forward-translation passes against the LLM verdict layer. Post-fix known error rate against each layer: 0%. The Traditional Chinese count (1,037) includes 82 translation-accuracy verdict replacements plus 955 script-normalization refinements: OpenCC (s2t) conversion of every Simplified-character entry to its Traditional-character equivalent, followed by 4 manual collision resolutions where two Simplified-distinct entries collapsed to the same Traditional form.
 
 Native-speaker contributions are welcomed per language via issue or PR. Acknowledgements are added to this matrix as reviews land.
 

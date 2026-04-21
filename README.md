@@ -4,6 +4,7 @@ Index-paired, audited, multi-script display wordlists for BIP-39 mnemonics in 30
 
 ![Languages](https://img.shields.io/badge/Languages-30-blue)
 ![Entries audited](https://img.shields.io/badge/Entries%20audited-61%2C440-blue)
+![Refinements applied](https://img.shields.io/badge/Refinements%20applied-2%2C405-blue)
 ![Known errors post-audit](https://img.shields.io/badge/Known%20errors%20post--audit-0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Tag](https://img.shields.io/badge/Tag-v1.0-informational)
@@ -20,7 +21,7 @@ Built by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://t
 
 ## Audit and Validation
 
-Every TZUR Original wordlist passes three validation layers. Aggregate: 61,440 entries audited (30 languages × 2048). 1,450 entries flagged WRONG and replaced after LLM verdict review (2.36%). Post-fix known error rate: 0% against every completed audit layer for every language.
+Every TZUR Original wordlist passes three validation layers. Aggregate: 61,440 entries audited (30 languages × 2048). 1,450 entries flagged WRONG by translation-accuracy verdicts and replaced. An additional script-normalization pass against the Traditional Chinese wordlist replaced 955 simplified-character entries with their Traditional-character equivalents. Total refinements: 2,405. Post-fix known error rate: 0% against every completed audit layer for every language.
 
 Method:
 
@@ -35,7 +36,7 @@ Per-language status:
 | Arabic | Clean | Complete | Complete | 4 | Pending |
 | Bengali | Clean | Complete | Complete | 0 | Pending |
 | Chinese (Simplified) | Clean | Complete | Complete | 86 | Pending |
-| Chinese (Traditional) | Clean | Complete | Complete | 82 | Pending |
+| Chinese (Traditional) | Clean | Complete | Complete | 1,037 | Pending |
 | Czech | Clean | Complete | Complete | 625 | Pending |
 | Danish | Clean | Complete | Complete | 0 | Pending |
 | Dutch | Clean | Complete | Complete | 1 | Pending |
