@@ -98,7 +98,7 @@ def main() -> None:
 
     english = native_to_english(mnemonic, language)
     # Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
-    # not on the native-language display form. See docs/BIP-display-layer-wordlists.md.
+    # not on the native-language display form. See docs/BIP-multilingual-mnemonics.md.
     seed = mnemonic_to_seed(english, passphrase)
 
     print(json.dumps({

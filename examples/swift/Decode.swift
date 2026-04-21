@@ -158,7 +158,7 @@ do {
 
     let english = try nativeToEnglish(mnemonic, language: language)
     // Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
-    // not on the native-language display form. See docs/BIP-display-layer-wordlists.md.
+    // not on the native-language display form. See docs/BIP-multilingual-mnemonics.md.
     let seed = mnemonicToSeed(english, passphrase: passphrase)
 
     let obj: [String: Any] = [

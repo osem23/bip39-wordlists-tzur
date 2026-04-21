@@ -79,7 +79,7 @@ function main() {
   const passphrase = passArg ?? "";
   const english = nativeToEnglish(mnemonicArg, language);
   // Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
-  // not on the native-language display form. See docs/BIP-display-layer-wordlists.md.
+  // not on the native-language display form. See docs/BIP-multilingual-mnemonics.md.
   const seed = mnemonicToSeed(english, passphrase).toString("hex");
 
   console.log(JSON.stringify({

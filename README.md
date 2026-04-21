@@ -42,7 +42,7 @@ This repository implements the display-layer convention explicitly: the native w
 
 ## Informational BIP Proposal
 
-> This repository is the reference implementation for [`docs/BIP-display-layer-wordlists.md`](docs/BIP-display-layer-wordlists.md), an Informational BIP draft specifying the native-language display wordlist convention. The seed of record remains the canonical English mnemonic. Display wordlists are a UX layer with no new cryptographic surface. The draft defines MUST/SHOULD rules for wordlist structure, input parsing, test vectors, and security considerations.
+> This repository is the reference implementation for [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md), an Informational BIP draft specifying the native-language display wordlist convention. The seed of record remains the canonical English mnemonic. Display wordlists are a UX layer with no new cryptographic surface. The draft defines MUST/SHOULD rules for wordlist structure, input parsing, test vectors, and security considerations.
 
 ## Audit and Validation
 
@@ -172,7 +172,7 @@ Each mapping file contains `language`, `word_count`, `description`, `pairing_typ
 
 ## Documentation
 
-- [`docs/BIP-display-layer-wordlists.md`](docs/BIP-display-layer-wordlists.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, test vectors, security considerations.
+- [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, test vectors, security considerations.
 - [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Construction methodology, disambiguation rules, per-language construction notes, review status matrix, reproducibility statement.
 - [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Word-set difference between canonical BIP-39 and TZUR Original for the nine languages with a canonical counterpart.
 - [`validation/encoding-notes.md`](validation/encoding-notes.md). UTF-8, NFKD normalization, ZWNJ handling for Farsi, per-language normalization impact.
