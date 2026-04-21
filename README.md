@@ -15,6 +15,30 @@ This repository publishes 30 TZUR Original BIP-39 display wordlists in non-Engli
 
 Built by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://tzur.live) and founder of [BlockSight.Live](https://blocksight.live). TZUR Wallet ships these wordlists to iOS; any BIP-39 wallet can integrate them using the bidirectional mappings in [`mappings/`](mappings/).
 
+## Why this exists
+
+The BIP-39 specification ships canonical wordlists for 10 languages (English plus Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese). The non-English wordlists are **not translations of the English list**. They are independent wordlists in each language, selected for 4-char prefix uniqueness and common vocabulary, then alphabetized by native-script collation.
+
+That is a valid design choice and the spec is explicit about it for readers who look closely. In practice most readers do not, and reasonably assume the Spanish word at index 5 is the Spanish translation of the English word at index 5. It is not. At most indices the two have no semantic relationship at all.
+
+The data makes the gap explicit (per-language numbers in [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md)):
+
+| Language | Shared tokens between canonical and TZUR Original |
+|---|---:|
+| Korean | 0 of 2048 |
+| Japanese | 11 of 2048 |
+| Chinese (Traditional) | 45 of 2048 |
+| Chinese (Simplified) | 75 of 2048 |
+| Czech | 303 of 2048 |
+| Italian | 430 of 2048 |
+| Portuguese | 423 of 2048 |
+| French | 495 of 2048 |
+| Spanish | 705 of 2048 |
+
+Korean is the clean case: the canonical spec list and a semantic translation share zero tokens. Japanese, Chinese, and the Latin-script languages land where you would expect from independent common-word sampling.
+
+This repository implements the display-layer convention explicitly: the native word at index N is a semantic translation of the English word at index N. Seeds still commit to canonical English; PBKDF2 still runs on the English form. Native-language wordlists are a UX layer over that cryptographic floor, not a parallel cryptographic artifact. The canonical non-English wordlists are preserved at [`wordlists/reference-canonical/`](wordlists/reference-canonical/) so anyone who needs to cite or compare against the spec can do so.
+
 ## Informational BIP Proposal
 
 > This repository is the reference implementation for [`docs/BIP-display-layer-wordlists.md`](docs/BIP-display-layer-wordlists.md), an Informational BIP draft specifying the native-language display wordlist convention. The seed of record remains the canonical English mnemonic. Display wordlists are a UX layer with no new cryptographic surface. The draft defines MUST/SHOULD rules for wordlist structure, input parsing, test vectors, and security considerations.
