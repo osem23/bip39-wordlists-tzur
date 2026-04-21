@@ -34,24 +34,16 @@ let wordlistsDir = repoRoot.appendingPathComponent("wordlists")
 
 // MARK: - Language catalog
 
+// English is the canonical BIP-39 source; all 30 non-English languages ship
+// as TZUR Original display wordlists (index-paired translations of English).
 let languageToPath: [String: String] = {
-    var map: [String: String] = [
-        "english":              "official-bip39/english.txt",
-        "chinese_simplified":   "official-bip39/chinese_simplified.txt",
-        "chinese_traditional":  "official-bip39/chinese_traditional.txt",
-        "czech":                "official-bip39/czech.txt",
-        "french":               "official-bip39/french.txt",
-        "italian":              "official-bip39/italian.txt",
-        "japanese":             "official-bip39/japanese.txt",
-        "korean":               "official-bip39/korean.txt",
-        "portuguese":           "official-bip39/portuguese.txt",
-        "spanish":              "official-bip39/spanish.txt",
-        "hindi":                "community/hindi.txt",
-    ]
+    var map: [String: String] = ["english": "reference-canonical/english.txt"]
     let tzur = [
-        "arabic", "bengali", "danish", "dutch", "estonian", "farsi", "filipino",
-        "german", "hebrew", "indonesian", "malay", "polish", "romanian", "russian",
-        "swedish", "thai", "turkish", "ukrainian", "urdu", "vietnamese",
+        "arabic", "bengali", "chinese_simplified", "chinese_traditional", "czech",
+        "danish", "dutch", "estonian", "farsi", "filipino", "french", "german",
+        "hebrew", "hindi", "indonesian", "italian", "japanese", "korean", "malay",
+        "polish", "portuguese", "romanian", "russian", "spanish", "swedish",
+        "thai", "turkish", "ukrainian", "urdu", "vietnamese",
     ]
     for lang in tzur {
         map[lang] = "tzur-original/\(lang).txt"
@@ -165,7 +157,9 @@ do {
     let passphrase = args.count >= 4 ? args[3] : ""
 
     let english = try nativeToEnglish(mnemonic, language: language)
-    let seed = mnemonicToSeed(mnemonic, passphrase: passphrase)
+    // Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
+    // not on the native-language display form. See docs/BIP-display-layer-wordlists.md.
+    let seed = mnemonicToSeed(english, passphrase: passphrase)
 
     let obj: [String: Any] = [
         "language":          language,

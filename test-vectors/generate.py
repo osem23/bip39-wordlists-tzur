@@ -67,43 +67,18 @@ CANONICAL_ENTROPY = [
 ]
 
 
-# Mapping of our language keys to the on-disk wordlist paths.
-LANGUAGES = {
-    # Official BIP-39
-    "english":              "official-bip39/english.txt",
-    "chinese_simplified":   "official-bip39/chinese_simplified.txt",
-    "chinese_traditional":  "official-bip39/chinese_traditional.txt",
-    "czech":                "official-bip39/czech.txt",
-    "french":               "official-bip39/french.txt",
-    "italian":              "official-bip39/italian.txt",
-    "japanese":             "official-bip39/japanese.txt",
-    "korean":               "official-bip39/korean.txt",
-    "portuguese":           "official-bip39/portuguese.txt",
-    "spanish":              "official-bip39/spanish.txt",
-    # Community
-    "hindi":                "community/hindi.txt",
-    # TZUR Original
-    "arabic":               "tzur-original/arabic.txt",
-    "bengali":              "tzur-original/bengali.txt",
-    "danish":               "tzur-original/danish.txt",
-    "dutch":                "tzur-original/dutch.txt",
-    "estonian":             "tzur-original/estonian.txt",
-    "farsi":                "tzur-original/farsi.txt",
-    "filipino":             "tzur-original/filipino.txt",
-    "german":               "tzur-original/german.txt",
-    "hebrew":               "tzur-original/hebrew.txt",
-    "indonesian":           "tzur-original/indonesian.txt",
-    "malay":                "tzur-original/malay.txt",
-    "polish":               "tzur-original/polish.txt",
-    "romanian":             "tzur-original/romanian.txt",
-    "russian":              "tzur-original/russian.txt",
-    "swedish":              "tzur-original/swedish.txt",
-    "thai":                 "tzur-original/thai.txt",
-    "turkish":              "tzur-original/turkish.txt",
-    "ukrainian":            "tzur-original/ukrainian.txt",
-    "urdu":                 "tzur-original/urdu.txt",
-    "vietnamese":           "tzur-original/vietnamese.txt",
-}
+# Mapping of language keys to on-disk wordlist paths.
+# English is the canonical BIP-39 source. All 30 non-English languages ship
+# as TZUR Original display wordlists (index-paired translations of English).
+LANGUAGES = {"english": "reference-canonical/english.txt"}
+for _slug in [
+    "arabic", "bengali", "chinese_simplified", "chinese_traditional", "czech",
+    "danish", "dutch", "estonian", "farsi", "filipino", "french", "german",
+    "hebrew", "hindi", "indonesian", "italian", "japanese", "korean", "malay",
+    "polish", "portuguese", "romanian", "russian", "spanish", "swedish",
+    "thai", "turkish", "ukrainian", "urdu", "vietnamese",
+]:
+    LANGUAGES[_slug] = f"tzur-original/{_slug}.txt"
 
 
 def load_words(rel_path: str) -> list[str]:
@@ -145,13 +120,23 @@ def mnemonic_to_seed(mnemonic: str, passphrase: str) -> bytes:
     return hashlib.pbkdf2_hmac("sha512", norm_mnemonic, norm_salt, 2048, 64)
 
 
-def generate_for_language(language: str, rel_path: str) -> dict:
+def generate_for_language(
+    language: str,
+    rel_path: str,
+    english_words: list[str],
+) -> dict:
     words = load_words(rel_path)
     vectors = []
     for entropy_hex, passphrase in CANONICAL_ENTROPY:
         indices = entropy_to_indices(entropy_hex)
         mnemonic = indices_to_mnemonic(indices, words, language)
-        seed = mnemonic_to_seed(mnemonic, passphrase)
+        # Display-layer convention: PBKDF2 runs on the canonical English
+        # mnemonic for every display language. The native mnemonic above is
+        # the user-facing rendering; the seed is derived from the English form
+        # reached via index substitution. This is the property that makes
+        # every display language's seed match English for the same entropy.
+        english_mnemonic = indices_to_mnemonic(indices, english_words, "english")
+        seed = mnemonic_to_seed(english_mnemonic, passphrase)
         vectors.append({
             "entropy": entropy_hex,
             "word_count": len(indices),
@@ -168,8 +153,9 @@ def generate_for_language(language: str, rel_path: str) -> dict:
 
 
 def main() -> None:
+    english_words = load_words(LANGUAGES["english"])
     for language, rel_path in LANGUAGES.items():
-        payload = generate_for_language(language, rel_path)
+        payload = generate_for_language(language, rel_path, english_words)
         out_path = OUT_DIR / f"{language}.json"
         out_path.write_text(
             json.dumps(payload, ensure_ascii=False, indent=2) + "\n",

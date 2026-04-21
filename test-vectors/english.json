@@ -1,6 +1,6 @@
 {
   "language": "english",
-  "wordlist": "official-bip39/english.txt",
+  "wordlist": "reference-canonical/english.txt",
   "vector_count": 14,
   "vectors": [
     {

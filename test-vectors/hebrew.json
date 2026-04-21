@@ -8,98 +8,98 @@
       "word_count": 12,
       "mnemonic": "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אודות",
       "passphrase": "TREZOR",
-      "seed": "3e6e1ffea02272240ad28d008b7c82c25752d245c5ab232aa3032625e409c2708b6a81df93cfcbee861596a14a75f7e8a085b38ffb17f9f57f82b30199199e2f"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
       "mnemonic": "חוקי זוכה תודה שנה גלים נקניק שווי שימושי חוקי זוכה תודה צהוב",
       "passphrase": "TREZOR",
-      "seed": "ca3849990e39c4aa6d228a223c244d478d29cbdd1ed5985cfdb32a1ecf51429302f787c65d07a4e5103fca58ce20063d635ccda99a664bdf29b26596803f66ea"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
       "mnemonic": "מכתב עצה כלוב אבסורד כמות רופא אקוסטי להימנע מכתב עצה כלוב מעל",
       "passphrase": "TREZOR",
-      "seed": "7d45a66d21f44395feb243fad399ead985c9e811f05dce9eb49a89e6e71d77495976fdfbd92e050dd9ce7744e6139c6aaf74a70d967f0d8ca7b49eed19e0dbe4"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
       "mnemonic": "ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי שגוי",
       "passphrase": "TREZOR",
-      "seed": "412e9994cd0f263b677d756a2ebe697a0825bb216908525c2396fb99a40f06832fe7cdaaf822f427597f6a3e374ecf02a3fdea44ea12be107e4d88e2c9d3b5b8"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
       "mnemonic": "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש סוכן",
       "passphrase": "TREZOR",
-      "seed": "1e8b3f3e0c781c1bdd04163f959579484bc87b10e4da0d2070503405fe55f59bf9cea518b8bb41d2a09977c88759dbc0bcb28b2c34ebaaec19571ff6400cc250"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
       "mnemonic": "חוקי זוכה תודה שנה גלים נקניק שווי שימושי חוקי זוכה תודה שנה גלים נקניק נבון",
       "passphrase": "TREZOR",
-      "seed": "ac39656bc305194acf6576e63985713aafaf230eb83f01e2b7b546922de74b64f03e9a477a14148cfa927eab9bdd87b8512f6eb8348c738e9683c325488bc993"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
       "mnemonic": "מכתב עצה כלוב אבסורד כמות רופא אקוסטי להימנע מכתב עצה כלוב אבסורד כמות רופא אקוסטי להימנע מכתב תמיד",
       "passphrase": "TREZOR",
-      "seed": "59a7ca662311d40dbf83a52563950ffd4c79c1d8c0417075e6b408d3ef61a10daaf68d224d888ca416225fbdee879df7774f5cb39eb23860cd63223842407c36"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
       "mnemonic": "ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ותיק",
       "passphrase": "TREZOR",
-      "seed": "10641d763eaa6ceeb358895b129b0842f4261b48870b442191c59a90124c47c279df65d71fd9b236741d30ee2a9aec5253ecd8a04dba191f43f8cb8a241dcd70"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
       "mnemonic": "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אומנות",
       "passphrase": "TREZOR",
-      "seed": "57dc223fdd399051954df587c79ed6f1ad39a698f7c399f62f9b7923ca5c4babde729641f7d40c60e142b3b078faa19a23d5ce661d33b1a4e9e3972b46f6b828"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
       "mnemonic": "חוקי זוכה תודה שנה גלים נקניק שווי שימושי חוקי זוכה תודה שנה גלים נקניק שווי שימושי חוקי זוכה תודה שנה גלים נקניק שווי כותרת",
       "passphrase": "TREZOR",
-      "seed": "013d8194f09d8d9230284ab8e7c9d5c5c2850dcf528d45c772a341d566905c3f67a0b1bc0a9a3f19d4565d33d7551d94cfc71f5f4db889c2ce0bb0d9aa7d9911"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
       "mnemonic": "מכתב עצה כלוב אבסורד כמות רופא אקוסטי להימנע מכתב עצה כלוב אבסורד כמות רופא אקוסטי להימנע מכתב עצה כלוב אבסורד כמות רופא אקוסטי לברך",
       "passphrase": "TREZOR",
-      "seed": "0a7734a2f0854fa40ae5ef5bfd5aa14a1e546876b4d5e03ae1dbbac22bd81ca27bc6dcbb7d1170496a219535d5461d719dab806ea2cf1f0f56a3589359a67e90"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
       "mnemonic": "ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי ספארי הצבעה",
       "passphrase": "TREZOR",
-      "seed": "49a4158096b6c31930f1a44004c310dbcf0978d2aedc1bef4960f3abdbe7a89525d06265249d2a4e0e4fe386cd0c048500f5e83d485567d84ea0c4ca43af4a40"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
       "mnemonic": "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אודות",
       "passphrase": "",
-      "seed": "af44a8109ae47fafbc5c7a11c781aa4f4d209d608a7236c9786663cf9c453f07cc68228bb1a64ea9c0dbd6b91ab8d1d4337af55ba38f958ac6326667b0f56c4b"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
       "mnemonic": "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אומנות",
       "passphrase": "",
-      "seed": "2852dabaaf2303a418cfa5d6c66f2a61b2cf7bdaa01e06001dcecf6eaeee228d4c654f448bf0d1f3374db345cbe98e3cdfb64e68727b252dfda6c978210d7b7c"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

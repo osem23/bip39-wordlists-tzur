@@ -1,105 +1,105 @@
 {
   "language": "italian",
-  "wordlist": "official-bip39/italian.txt",
+  "wordlist": "tzur-original/italian.txt",
   "vector_count": 14,
   "vectors": [
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abete",
+      "mnemonic": "abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare riguardo",
       "passphrase": "TREZOR",
-      "seed": "d2ae4bbd4efc4aba345b66dc2bfa4ea280d85810945ba4e100707694d5731c5a42ac0d0308ba9ad176966879328f1aa014fbcbeb46d671d9475c38254bf1eeb7"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
-      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zircone",
+      "mnemonic": "legale vincitore ringraziare anno onda salsiccia valore utile legale vincitore ringraziare giallo",
       "passphrase": "TREZOR",
-      "seed": "f8c609647319a50116e9b7d1a0ec5535c6d08d6c958911fd2c8b2dfd55a61e63e9c6c60c22b5c3aec725acb41980e63cb3ed75fb80648092dee1bbbeab476a6d"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
-      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura abisso",
+      "mnemonic": "lettera consiglio gabbia assurdo importo dottore acustico evitare lettera consiglio gabbia sopra",
       "passphrase": "TREZOR",
-      "seed": "4025269bc4f7550bbc3c61592944946b0d4ac855a5e4582bf86069cc0c9429455cc40d84ba215ed1cec28e27ffc88460c38b9c4e8c486ae878d7c85e95b222bf"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
-      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zerbino",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo sbagliato",
       "passphrase": "TREZOR",
-      "seed": "24182cf43f956410b5def9df90e3db0d6f3199c2ebd26e7ddef888ee3bece9101d132e449bb9e1c23dd9ccc6131d2f649c021ee591e88cef8d17cb434ef69efb"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
-      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco agitare",
+      "mnemonic": "abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare agente",
       "passphrase": "TREZOR",
-      "seed": "2161a4b869f98778b6321714e2502adb11ea120c12163b46fa34e36442ad1981b911a2f9ec82b497e7cd206fa7af2f21a94bb6e4a90159965854784e1558658b"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
-      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare vivido",
+      "mnemonic": "legale vincitore ringraziare anno onda salsiccia valore utile legale vincitore ringraziare anno onda salsiccia sapiente",
       "passphrase": "TREZOR",
-      "seed": "2a7351f252234b95340b8a1e61594c5be06bbc4461cbfa2ac97883255de9a95e659094e18d51df22b72dbc63898a9464de0778526d4e53f38b76a836b7cd4d6b"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
-      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare allievo",
+      "mnemonic": "lettera consiglio gabbia assurdo importo dottore acustico evitare lettera consiglio gabbia assurdo importo dottore acustico evitare lettera sempre",
       "passphrase": "TREZOR",
-      "seed": "cfb1f800cd5a0f7a8cffb12231fc61739f5f87c963ead5e205dd48221c3417eb1173d3209d9a8ffc4f00ab291bc22c1480b4a0a4fdeef9a1f3916d0ccbed5591"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
-      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa vacante",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veterano",
       "passphrase": "TREZOR",
-      "seed": "576fa10b95fe23a2e2f82062e6ee950a8d7d85152c6748d53f8919f879b899d30a8cad64e6c3f3991f9cca9cfcc5c962baa0ac8672283e01e14b897b6979150a"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco angelo",
+      "mnemonic": "abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare arte",
       "passphrase": "TREZOR",
-      "seed": "84055239f41c182bbfe6ede6db2e8bc4a97cf86746643b7ea6910c71d67bb2a678a97ecd378cfbf59e30db720b1cfde0faaee73afd3c5deef2188e307d04442c"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
-      "mnemonic": "mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare zattera ulisse mimosa vita sussurro zinco vero saltare zattera tarpare",
+      "mnemonic": "legale vincitore ringraziare anno onda salsiccia valore utile legale vincitore ringraziare anno onda salsiccia valore utile legale vincitore ringraziare anno onda salsiccia valore titolo",
       "passphrase": "TREZOR",
-      "seed": "f0e226efcd929216020a9e8f879f06b146d28fecd2856bd401a62ecc0ece8bc6ea717e3f9df523a6a00bd4ca8965e0498d63e779e3156dbf174ebac74ad7be31"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
-      "mnemonic": "misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico arazzo misurare afoso bravura accadere alogeno dottore acrilico baco",
+      "mnemonic": "lettera consiglio gabbia assurdo importo dottore acustico evitare lettera consiglio gabbia assurdo importo dottore acustico evitare lettera consiglio gabbia assurdo importo dottore acustico benedire",
       "passphrase": "TREZOR",
-      "seed": "ef549c1e44a7b183031b41f9f692795406de605e43ecc628911a38d7c92f392660c48313a08cf1a055a420d4a8c6b12bef7ff354c903303bc3a5dc12948ff5be"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
-      "mnemonic": "zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa zuppa vedetta",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo votare",
       "passphrase": "TREZOR",
-      "seed": "5089f33aee7852d86a01e8afbfdc8a0ad5af51538e62e3f007d098fa4fc9817ddc990fa87b7235273798e2df52228b62738df923bc2d711fed9cc0558b3ebfec"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abete",
+      "mnemonic": "abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare riguardo",
       "passphrase": "",
-      "seed": "9c010f0a2aeb286c2f3d1750795677697c4c350cc1b8539f54655b5ebdf42a5b9726ba0092b6579e792e8118f53a62b0d74fc878dff2c96dd2549df86810b61c"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco abaco angelo",
+      "mnemonic": "abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare abbandonare arte",
       "passphrase": "",
-      "seed": "cbda07ec2ff567c93b1777de30b468da16768d053d2fc1b9f206b10106bfa0744bfa469554ec40ead097f9ede9b77192562ce16ef89290b33de8971befe9053f"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

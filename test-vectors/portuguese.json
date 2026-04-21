@@ -1,105 +1,105 @@
 {
   "language": "portuguese",
-  "wordlist": "official-bip39/portuguese.txt",
+  "wordlist": "tzur-original/portuguese.txt",
   "vector_count": 14,
   "vectors": [
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abater",
+      "mnemonic": "abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar sobre",
       "passphrase": "TREZOR",
-      "seed": "ab9742b024a1e8bd241b76f8b3a157e9d442da60277bc8f36b8b23afe163de79414fb49fd1a8dd26f4ea7f0dc965c760b3b80727557bdca61e1f0b0f069952f2"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
-      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xingar",
+      "mnemonic": "legal vencedor agradecer ano onda linguiça valor útil legal vencedor agradecer amarelo",
       "passphrase": "TREZOR",
-      "seed": "298d1614ff06ae803709f5be5331135cb74e6cc77fa09e07a3e887c2e370401f9a73a409dadf58b5a5197b27ffb3fa5dd528aad9a1a8750d7669ce950ee60c2c"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
-      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abduzir",
+      "mnemonic": "carta conselho gaiola absurdo quantia médico acústico evitar carta conselho gaiola acima",
       "passphrase": "TREZOR",
-      "seed": "800fd4e7691fbc3ceed246c211a38949c3607fe269a35829e40ca9d3e26515a4ebd64d8bfe9b66b49543fe9dab78bde7cb7102968ce669f55293bcc02e26ba0e"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
-      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido xeque",
+      "mnemonic": "zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico errado",
       "passphrase": "TREZOR",
-      "seed": "7fb404372815ea28ef97a64249acd71a293ea0437b3dac8f7e193a10f3584e2055753cc8d6f025229f65e61318fc4e10d4017bd3cc3496f535eca3247d26acd6"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
-      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate acumular",
+      "mnemonic": "abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar agente",
       "passphrase": "TREZOR",
-      "seed": "81c66b6789e8b91c169335be4436fd9736ca9c06425acd09b0525e1d6836383130f7f7d31378aaef8b7109503972f40d42f6c6b9f99765827bea762515d3404d"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
-      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar virtude",
+      "mnemonic": "legal vencedor agradecer ano onda linguiça valor útil legal vencedor agradecer ano onda linguiça sábio",
       "passphrase": "TREZOR",
-      "seed": "b2ec61449d52a58be15943870100373adc0efcfa62d43ceab982adedc0b39d5e28ad731116fadd254cce9d7a5b5f225305c9e8c8fd47089b93252372645db481"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
-      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador afastar",
+      "mnemonic": "carta conselho gaiola absurdo quantia médico acústico evitar carta conselho gaiola absurdo quantia médico acústico evitar carta sempre",
       "passphrase": "TREZOR",
-      "seed": "0f637bf3a487c26fb73f6a464f62ef1f6ca73a6ae083e220374c82881bf4ed2dafd874956ce368c4441e6269759c5864197e87421fbcdb7f6d63df17b4f7df81"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
-      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido turma",
+      "mnemonic": "zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico veterano",
       "passphrase": "TREZOR",
-      "seed": "7093f7031cff03edc3a38edb221293edaba280c7aeaf51508cfc4824edfe4cc74edaad25b734f11b74da30ea48f1b7c9f960ece6c18c2c908d3d6b845f01bfef"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate alinhar",
+      "mnemonic": "abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar arte",
       "passphrase": "TREZOR",
-      "seed": "8fe67c9f53a30f75513830e18f6bd0950354297a4977393fae3577363393e679cc13452bcfc9460b28a913ab8de9efc55f5901d1ba77e5eec791afd967768607"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
-      "mnemonic": "imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar volumoso tratador imitador vinheta sogro xerife veleiro pomar volumoso sucata",
+      "mnemonic": "legal vencedor agradecer ano onda linguiça valor útil legal vencedor agradecer ano onda linguiça valor útil legal vencedor agradecer ano onda linguiça valor título",
       "passphrase": "TREZOR",
-      "seed": "feac9ad4e1a4a4399a7d57fe47bf64b404a7588eca1025abfa299365f7a75639317e2c89a94812db33405aa0213846bfd6d53dfd02743e2cf3b6984eb9fcf19f"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
-      "mnemonic": "inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre amostra inalador acirrar barulho abotoar afivelar coruja abutre asilado",
+      "mnemonic": "carta conselho gaiola absurdo quantia médico acústico evitar carta conselho gaiola absurdo quantia médico acústico evitar carta conselho gaiola absurdo quantia médico acústico abençoar",
       "passphrase": "TREZOR",
-      "seed": "32c8feae6a0bee33166468a770cb28459727e10f4f5ffef64977d5ef52a68ec51d832751a10c025058612ab256052cdfa9d8c5c87560de0453efe5a7d4597771"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
-      "mnemonic": "zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido zumbido validade",
+      "mnemonic": "zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico zoológico voto",
       "passphrase": "TREZOR",
-      "seed": "739a6edd208d09e28fa97f8e8709aaf185e173125b1b427c04d1539173c88b78e81610a759e14f97a2038dcdc2c466a072788e3d7c88cc9bf36b96cb29510e77"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abater",
+      "mnemonic": "abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar sobre",
       "passphrase": "",
-      "seed": "27d75c14dc6727f0ef475a82b7c6903b74b706310784ca8eb9e605b5c1828bf55960de685cfebeab3ad9485c71cc737a5476b56a18d338513e328987306820ba"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate abacate alinhar",
+      "mnemonic": "abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar abandonar arte",
       "passphrase": "",
-      "seed": "b2bcf5fc13330f221305a8abfb409b9739630a978d697fdc8c92152969633cb433e8bc678617a007ebc75459bb57662e296808fa15e07650c628816ecd04b2b7"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

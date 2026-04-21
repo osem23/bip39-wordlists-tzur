@@ -1,105 +1,105 @@
 {
   "language": "czech",
-  "wordlist": "official-bip39/czech.txt",
+  "wordlist": "tzur-original/czech.txt",
   "vector_count": 14,
   "vectors": [
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace agrese",
+      "mnemonic": "opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit o",
       "passphrase": "TREZOR",
-      "seed": "872501bed75c98fbf943a67907bf394995f337e9adfa23687282d1135c262421715a0bcccfe2d3f5f8b72c8e2fa12a7a7267f8047b744557f4a9d49d11ccc75f"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
-      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubr",
+      "mnemonic": "právní vítězka uznat rok vlna klobása hodnotu užitečný právní vítězka uznat žlutý",
       "passphrase": "TREZOR",
-      "seed": "68e1bd31ed5f20c9ab108c03b524e85209b0b27af80cb5d48fa71d03dbb528b73c2349bb8576f9b68825272984061594f520e54605a4898ba61c433d06bf5de7"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
-      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma akce",
+      "mnemonic": "dopis radu klec absurdní množství lékař akustický vyhnout dopis radu klec výše",
       "passphrase": "TREZOR",
-      "seed": "067089f8edbbb8bc8ab6d0f3e29f250d136955745797a20b63fd4372627c51c4576ebd5fb6c6d4825d21f448cc24b342ce3b0117fedf41369cb5a6be77494aa7"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
-      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zticha",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo špatný",
       "passphrase": "TREZOR",
-      "seed": "04d0a733d43c640a4492b670a9549c60a358a681891cc2337a01a3c8288cd2941b7e057dbcf2dffd1e614cf5fcc9d38d9228fbd3ea5ceb508b8aacac5f35ccd9"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
-      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace balonek",
+      "mnemonic": "opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit činidlo",
       "passphrase": "TREZOR",
-      "seed": "b5eb0b74cb5f2c616e7136182597ab61dd94594d22f15ce6c94e04eb7336a56d3e445ec1279c1f04b861de5f7c6b2fc95227db53be4996de3ba87d6d76b09098"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
-      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zobrazit",
+      "mnemonic": "právní vítězka uznat rok vlna klobása hodnotu užitečný právní vítězka uznat rok vlna klobása moudrý",
       "passphrase": "TREZOR",
-      "seed": "14bafa535e64b3aa4766e61f9c69dd5e16442bbb301aee7d79ed942d68f86af3cb75c84b9ab077f0fad3f05be38cffb367e0414890423d35b25ddba4c3139416"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
-      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance butik obvinit bezinka",
+      "mnemonic": "dopis radu klec absurdní množství lékař akustický vyhnout dopis radu klec absurdní množství lékař akustický vyhnout dopis vždy",
       "passphrase": "TREZOR",
-      "seed": "1843be39a115dad287e10d256d2e9bb81244cefda2b7ead8a762f53033512abc7b6db26e2ebe8053fb82e313c24bcf62ae84ba4aa2900ca0fcdcb1affc38887a"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
-      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zajistit",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo veterán",
       "passphrase": "TREZOR",
-      "seed": "0424e8a22e8c56b114691300e27e088fcf32febf9d8afff83d0e0b27c70835be1af3c2937c927efb0c2ced1878c4e99c4927c9c76aaf4f8ea13bfd2dfefc50dc"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace branka",
+      "mnemonic": "opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit umění",
       "passphrase": "TREZOR",
-      "seed": "dd2a9f662649585707dadc6e8b2df2c0e0e2691d53bacea2212aff4063ab4fdc79b703a7ce6744da31cd2ee12e56b9ee0f430a238b892fa660ed0ce879f2c472"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
-      "mnemonic": "obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zrcadlo vzchopit obrazec znak uznat zubovina zeman skupina zrcadlo veskrze",
+      "mnemonic": "právní vítězka uznat rok vlna klobása hodnotu užitečný právní vítězka uznat rok vlna klobása hodnotu užitečný právní vítězka uznat rok vlna klobása hodnotu titul",
       "passphrase": "TREZOR",
-      "seed": "f4e4e2d8817cbb3925d6a0e8a2a466dbe1353a5885ec203030722607b8b5f229c71066c18681fda4291d0e323e4f6ba099b5b7efff442adfa14124fd07147fa8"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
-      "mnemonic": "obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance butik obvinit bageta doma amputace bidlo jedle arogance cihla",
+      "mnemonic": "dopis radu klec absurdní množství lékař akustický vyhnout dopis radu klec absurdní množství lékař akustický vyhnout dopis radu klec absurdní množství lékař akustický žehnat",
       "passphrase": "TREZOR",
-      "seed": "bb8b82baced0db7764e102d1d1f68035269e84ec6c1ed0e09b2a31094330967aff9e1a490a407fef736fb8719c60bfb8cb0be9b27fce97c3b619409c195e2f1d"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
-      "mnemonic": "zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zvyk zavolat",
+      "mnemonic": "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo hlasovat",
       "passphrase": "TREZOR",
-      "seed": "3991e1ccc78af78d58cae577b786f7c950e1f23311d0c5f6d51b884d6142a6b4fc91a227c895313bf3d35731682678653101f51546717d60438d54dead32f834"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace agrese",
+      "mnemonic": "opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit o",
       "passphrase": "",
-      "seed": "c1e6342228919bb2110b9a56e38cf13012923fe04f37fdcb33a4afdb45d4e0c3d586ec3e946a73687299fa6f0c95f88d9dba8290852f2982449a9df26a7b20f3"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace abdikace branka",
+      "mnemonic": "opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit opustit umění",
       "passphrase": "",
-      "seed": "7a5b3b71af74d80feb27e236156c71e5020145e3ffc09aabd60a654a200dd83e1d593424a12b6fb5b073afe7720a669aa2c28826e60397659faa924cb4942a17"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

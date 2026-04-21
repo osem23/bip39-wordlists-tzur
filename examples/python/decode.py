@@ -31,23 +31,15 @@ WORDLISTS = REPO_ROOT / "wordlists"
 MAPPINGS = REPO_ROOT / "mappings"
 
 # Directory layout matches the repository README.
-LANG_TO_PATH = {
-    "english":             "official-bip39/english.txt",
-    "chinese_simplified":  "official-bip39/chinese_simplified.txt",
-    "chinese_traditional": "official-bip39/chinese_traditional.txt",
-    "czech":               "official-bip39/czech.txt",
-    "french":              "official-bip39/french.txt",
-    "italian":             "official-bip39/italian.txt",
-    "japanese":            "official-bip39/japanese.txt",
-    "korean":              "official-bip39/korean.txt",
-    "portuguese":          "official-bip39/portuguese.txt",
-    "spanish":             "official-bip39/spanish.txt",
-    "hindi":               "community/hindi.txt",
-}
+# English is the canonical BIP-39 source; all 30 non-English languages ship
+# as TZUR Original display wordlists (index-paired translations of English).
+LANG_TO_PATH = {"english": "reference-canonical/english.txt"}
 for tzur in [
-    "arabic", "bengali", "danish", "dutch", "estonian", "farsi", "filipino",
-    "german", "hebrew", "indonesian", "malay", "polish", "romanian", "russian",
-    "swedish", "thai", "turkish", "ukrainian", "urdu", "vietnamese",
+    "arabic", "bengali", "chinese_simplified", "chinese_traditional", "czech",
+    "danish", "dutch", "estonian", "farsi", "filipino", "french", "german",
+    "hebrew", "hindi", "indonesian", "italian", "japanese", "korean", "malay",
+    "polish", "portuguese", "romanian", "russian", "spanish", "swedish",
+    "thai", "turkish", "ukrainian", "urdu", "vietnamese",
 ]:
     LANG_TO_PATH[tzur] = f"tzur-original/{tzur}.txt"
 
@@ -105,7 +97,9 @@ def main() -> None:
     passphrase = sys.argv[3] if len(sys.argv) > 3 else ""
 
     english = native_to_english(mnemonic, language)
-    seed = mnemonic_to_seed(mnemonic, passphrase)
+    # Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
+    # not on the native-language display form. See docs/BIP-display-layer-wordlists.md.
+    seed = mnemonic_to_seed(english, passphrase)
 
     print(json.dumps({
         "language": language,

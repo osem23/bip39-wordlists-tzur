@@ -1,105 +1,105 @@
 {
   "language": "japanese",
-  "wordlist": "official-bip39/japanese.txt",
+  "wordlist": "tzur-original/japanese.txt",
   "vector_count": 14,
   "vectors": [
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あおぞら",
+      "mnemonic": "放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　について",
       "passphrase": "TREZOR",
-      "seed": "5a6c23b5abdd5c3e1f7d77ad25ecd715647bdafb44dab324c730a76a45d7421daccee1a4ff0739715a2c56a8a9f1e527a5e3496224d91293bfcd9b5393bfff83"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
-      "mnemonic": "そつう　れきだい　ほんやく　わかす　りくつ　ばいか　ろせん　やちん　そつう　れきだい　ほんやく　わかめ",
+      "mnemonic": "法的な　勝者　感謝する　年　波　ソーセージ　価値　有用な　法的な　勝者　感謝する　黄色い",
       "passphrase": "TREZOR",
-      "seed": "9d269b22155b3c915b09abfefd4e1104573c528f6977cde89c6a68152c3c714dc6c7e0e62f221c322f3f76e4d0bcca66c06e3d2f6a8d70d612c87dd6dee63976"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
-      "mnemonic": "そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　いよく　そとづら　あまど　おおう　あかちゃん",
+      "mnemonic": "手紙　助言　檻　不条理な　金額　医者　音響の　避ける　手紙　助言　檻　上に",
       "passphrase": "TREZOR",
-      "seed": "17914bd3fe4b9e1224c968ec6b967fc6144a5795adbb2636a17f77da9b6b118200ad788672fd06096ca62683940523f5178f6ce3845c967cbd4ad2b3643cc660"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
-      "mnemonic": "われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　ろんぶん",
+      "mnemonic": "動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　間違った",
       "passphrase": "TREZOR",
-      "seed": "4bd21b75de4f262b0771a97d6fc877ee19329236ced6e974c4c81a094a5f896758033f7eae270216d727539eee3bc9ba5cad21132a1c6e41a50820e0ac928e83"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
-      "mnemonic": "あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あらいぐま",
+      "mnemonic": "放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　代理人",
       "passphrase": "TREZOR",
-      "seed": "a59401a14bb821cce86ec32add8f273a3e07e9c8b1ed430d5d1a06dbf3c083ff2ffb4bb26a384b8faecb58f6cb4c07cfbf2c91108385f6773f2fefd1581926b5"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
-      "mnemonic": "そつう　れきだい　ほんやく　わかす　りくつ　ばいか　ろせん　やちん　そつう　れきだい　ほんやく　わかす　りくつ　ばいか　れんさい",
+      "mnemonic": "法的な　勝者　感謝する　年　波　ソーセージ　価値　有用な　法的な　勝者　感謝する　年　波　ソーセージ　賢明な",
       "passphrase": "TREZOR",
-      "seed": "1a86c351d62dca36c5eb7a4d7bb6a77e1594529ad53da6504057d6c2b673282a7ad4fdf0d73eb19c31b53b3fdd530f0be4bb812dd3a5d028beaf8b6abf752e12"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
-      "mnemonic": "そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　いよく　そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　いよく　そとづら　いきなり",
+      "mnemonic": "手紙　助言　檻　不条理な　金額　医者　音響の　避ける　手紙　助言　檻　不条理な　金額　医者　音響の　避ける　手紙　常に",
       "passphrase": "TREZOR",
-      "seed": "01187da93480d0369fff3fc5331284ad6a60cd3ce1f60dbec60899191afa2a2b807cd030038a93ddaf14d4f75d6de4a0e049ee58c92197eb9ca995770b558486"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
-      "mnemonic": "われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　ようじ",
+      "mnemonic": "動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　退役軍人",
       "passphrase": "TREZOR",
-      "seed": "e3c2d176bc2e925d166637750517cd73409650ab75aff8f4f75d8e96bf0d88537a1de8ff9fb6e61f3977b7ba1c209b900b016bcfd92499eeaff412c7f28b4f67"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　いってい",
+      "mnemonic": "放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　芸術",
       "passphrase": "TREZOR",
-      "seed": "c91afc204a8b098524c5e2134bf4955b9a9ddd5d4bb78c2184bb4378a306e851b60f3e4032fc910ecb48acfb9e441dd3ceaaab9e14700b11396b94e27e8ac2da"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
-      "mnemonic": "そつう　れきだい　ほんやく　わかす　りくつ　ばいか　ろせん　やちん　そつう　れきだい　ほんやく　わかす　りくつ　ばいか　ろせん　やちん　そつう　れきだい　ほんやく　わかす　りくつ　ばいか　ろせん　まんきつ",
+      "mnemonic": "法的な　勝者　感謝する　年　波　ソーセージ　価値　有用な　法的な　勝者　感謝する　年　波　ソーセージ　価値　有用な　法的な　勝者　感謝する　年　波　ソーセージ　価値　題名",
       "passphrase": "TREZOR",
-      "seed": "79aff5bc7868b9054f6c35bb3fa286c72a6931d5999c6c45a029ad31da550b71c8db72e594875e1d61788371b31a03b70fe1d9484840d403e56a1a2783bf9d7e"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
-      "mnemonic": "そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　いよく　そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　いよく　そとづら　あまど　おおう　あこがれる　いくぶん　けいけん　あたえる　うめる",
+      "mnemonic": "手紙　助言　檻　不条理な　金額　医者　音響の　避ける　手紙　助言　檻　不条理な　金額　医者　音響の　避ける　手紙　助言　檻　不条理な　金額　医者　音響の　祝福する",
       "passphrase": "TREZOR",
-      "seed": "0f46c02350b3f1227c3566dea2ff0f2caf716495a95725b320a31a3058d5d62596fdb816be75909d2c5f7094beb171dc504ea8ea60f5e2e40bd8aa0d9339aab0"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
-      "mnemonic": "われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　われる　らいう",
+      "mnemonic": "動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　動物園　投票する",
       "passphrase": "TREZOR",
-      "seed": "a0705c2feebefb61509dcc49c57586c35379c1981c688fc1d452da44443d9a651a374f1ad2ee3d7847b50655cf9241d7e607be436c0df7c8bac42f2a82985a79"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あおぞら",
+      "mnemonic": "放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　について",
       "passphrase": "",
-      "seed": "646f1a38134c556e948e6daef213609a62915ef568edb07ffa6046c87638b4b140fef2e0c6d7233af640c4a63de6d1a293288058c8ac1d113255d0504e63f301"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　あいこくしん　いってい",
+      "mnemonic": "放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　放棄する　芸術",
       "passphrase": "",
-      "seed": "f716073729e1c622bd2b023d644269637610a0d0b14ec43290e789b1647165da710681a7096b9e2b36f7ff48418c228ce4c7226dcd57c53cce8023edf7fce2c3"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

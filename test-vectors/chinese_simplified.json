@@ -1,105 +1,105 @@
 {
   "language": "chinese_simplified",
-  "wordlist": "official-bip39/chinese_simplified.txt",
+  "wordlist": "tzur-original/chinese_simplified.txt",
   "vector_count": 14,
   "vectors": [
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 在",
+      "mnemonic": "放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 关于",
       "passphrase": "TREZOR",
-      "seed": "7f7c7f91ef81f0fb6a3b95b346c50e6472c1d554f8ba90637bad8afce4a4de87c322c1acafa2f6f5e9a8f9b2d2c40e9d389efdc2adbe4445c21a0939fb39e91f"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
-      "mnemonic": "枪 疫 霉 尝 俩 闹 饿 贤 枪 疫 霉 卿",
+      "mnemonic": "合法的 赢家 感谢 年份 波浪 香肠 价值 有用的 合法的 赢家 感谢 黄色的",
       "passphrase": "TREZOR",
-      "seed": "816a69d6866891b246b4d33f54d6d2be624470141754396205d039bdd8003949fec4340253dde4c8e11437a181ad992f56d5b976eb9fbe48f4c5e5fec60a27e1"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
-      "mnemonic": "壤 对 据 人 三 谈 我 表 壤 对 据 不",
+      "mnemonic": "信件 建议 笼子 荒谬 数量 医生 声学 避免 信件 建议 笼子 上方",
       "passphrase": "TREZOR",
-      "seed": "07b6eada2601141ef9748bdf5af296a134f0f9215a946813b84338dcfba93c8247b0c3429a91e0a1b85a93bd9f1275a9524acecadc9b516c3cf4c8990f44052c"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
-      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 逻",
+      "mnemonic": "动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 错误的",
       "passphrase": "TREZOR",
-      "seed": "08ac5d9bed9441013b32bc317aaddeb8310011f219b48239faa4adeeb8b79cb0a3e4d1cb460d2dd37888c0a19bef6edd90ced0fd613d48899eab9ee649d77fcd"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
-      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 动",
+      "mnemonic": "放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 代理人",
       "passphrase": "TREZOR",
-      "seed": "b8fb8047e84951d846dbfbbce3edd0c9e316dc40f35b39f03a837db85f5587ac209088e883b5d924a0a43ad154a636fb65df28fdae821226f0f014a49e773356"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
-      "mnemonic": "枪 疫 霉 尝 俩 闹 饿 贤 枪 疫 霉 尝 俩 闹 沫",
+      "mnemonic": "合法的 赢家 感谢 年份 波浪 香肠 价值 有用的 合法的 赢家 感谢 年份 波浪 香肠 明智的",
       "passphrase": "TREZOR",
-      "seed": "7a4b7dac5bd23ef84593f5870e5dd6874b8086cf41ce609c6bb3938e9e3efd42979d758a0f3cd896a377e8b18fc8290e92764241ec3befb524c0c75b0c43e219"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
-      "mnemonic": "壤 对 据 人 三 谈 我 表 壤 对 据 人 三 谈 我 表 壤 民",
+      "mnemonic": "信件 建议 笼子 荒谬 数量 医生 声学 避免 信件 建议 笼子 荒谬 数量 医生 声学 避免 信件 总是",
       "passphrase": "TREZOR",
-      "seed": "e3629a601f4b87101c4bb36496e3dbd146063351f5e47c048211faddab78efdb91910f0eea5c8e53cfb851aa3e156b0bb5c501b83baaf5f5d4a1679a5bb7d885"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
-      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 躺",
+      "mnemonic": "动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 老兵",
       "passphrase": "TREZOR",
-      "seed": "11b29a59f6f49553de667b728445eb5f2ea91998ed5cd4574ca2e5355e63bd6f3199d1a8acef411d05289f965d130f80f1e54b43239035f26807f8e9e64413d0"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 性",
+      "mnemonic": "放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 艺术",
       "passphrase": "TREZOR",
-      "seed": "1981c3e3ddfd80f6e9ee1c5ef27ba2697df3d1468496f1d56ae3d8e0b3f0677bbbdfca954e48eb86fe6a36fc0f597bf18ea00248757a01e82182badff94abbbd"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
-      "mnemonic": "枪 疫 霉 尝 俩 闹 饿 贤 枪 疫 霉 尝 俩 闹 饿 贤 枪 疫 霉 尝 俩 闹 饿 搭",
+      "mnemonic": "合法的 赢家 感谢 年份 波浪 香肠 价值 有用的 合法的 赢家 感谢 年份 波浪 香肠 价值 有用的 合法的 赢家 感谢 年份 波浪 香肠 价值 标题",
       "passphrase": "TREZOR",
-      "seed": "b1eb831927f1c488e233725f9c409dd9bdb9342324393fa56d958e8842623d222510c322f5ba2899428ae08ece8bd87788748c67bdfa73588669ab816c5f3555"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
-      "mnemonic": "壤 对 据 人 三 谈 我 表 壤 对 据 人 三 谈 我 表 壤 对 据 人 三 谈 我 五",
+      "mnemonic": "信件 建议 笼子 荒谬 数量 医生 声学 避免 信件 建议 笼子 荒谬 数量 医生 声学 避免 信件 建议 笼子 荒谬 数量 医生 声学 祝福",
       "passphrase": "TREZOR",
-      "seed": "470e61f7e976fa18c7d559e842ba7f39849b2f72ef15428f4276c5160002f36416cd22c2a86bb686d69f6b91818538aa57ae1aab27b3181b92132c59be2b329b"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
-      "mnemonic": "歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 歇 佳",
+      "mnemonic": "动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 动物园 投票",
       "passphrase": "TREZOR",
-      "seed": "8e6607a07fa664d6e4ead23fcc08caf72216d6f078c3b2e5be94e4b6e8d64c784d36bf9b70144fa05840e9a49899128111be5093a2b552b6ab76c0906e9b0e65"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
-      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 在",
+      "mnemonic": "放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 关于",
       "passphrase": "",
-      "seed": "c015b86e4b208402bb0bdd0febb746708b869bb6e433cb227fd66d444f3ccdc360fee9ca9271014c2a684df380fcc40bd80a37eaa41a8061a52a18d319cdd899"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
-      "mnemonic": "的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 的 性",
+      "mnemonic": "放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 放弃 艺术",
       "passphrase": "",
-      "seed": "bc2bac655c789079ec34be4ac7d8b1fa184d5e72b67592b759bf708198a00d0f0fa2664af6215cc5f8ac810d5cdd4d5aee96ef46d54de69e198373e44af953ac"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }

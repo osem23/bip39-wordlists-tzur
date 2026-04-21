@@ -8,98 +8,98 @@
       "word_count": 12,
       "mnemonic": "ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک متعلق",
       "passphrase": "TREZOR",
-      "seed": "b3c0f3961c55e41fd9257402ff6dc48ff375d22f7fa44e1b28591e16d56d7286a5abd465a42e962b53998643e61fa5d43dadc7f925695143a159c4bebf1fa09a"
+      "seed": "c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 12,
       "mnemonic": "قانونی فاتح شکر سال موج ساسیج قابلقدر مفید قانونی فاتح شکر پیلا",
       "passphrase": "TREZOR",
-      "seed": "c7c51b64fea6753d75eeaee8f05bd038700333cf4ab238856e3ece0bf70d56d25ea33ec5322968831e896a611d21035aca80de41085a20b319ebf8b7d569ab30"
+      "seed": "2e8905819b8723fe2c1d161860e5ee1830318dbf49a83bd451cfb8440c28bd6fa457fe1296106559a3c80937a1c1069be3a3a5bd381ee6260e8d9739fce1f607"
     },
     {
       "entropy": "80808080808080808080808080808080",
       "word_count": 12,
       "mnemonic": "خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی اجتناب خط مشورہ پنجرہ اوپر",
       "passphrase": "TREZOR",
-      "seed": "d9bf82c7fa66dab941efca57664390773a861db3f9b4d6e7ede5453f3ffc0a2d40197343016032d5f61629b6efe99d50cbf16bd08663dea4157738b96d1792fa"
+      "seed": "d71de856f81a8acc65e6fc851a38d4d7ec216fd0796d0a6827a3ad6ed5511a30fa280f12eb2e47ed2ac03b5c462a0358d18d69fe4f985ec81778c1b370b652a8"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffff",
       "word_count": 12,
       "mnemonic": "چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر غلط",
       "passphrase": "TREZOR",
-      "seed": "f4cfc259ab87fb0d9fb247dc3c891267d5385f6ed4bbca1ef96078a35e9d24e8f1c6819dd63d04cd471fe6373e268305f7ecc3cc3ad23e82e86e8ac5f9c45d7d"
+      "seed": "ac27495480225222079d7be181583751e86f571027b0497b5b5d11218e0a8a13332572917f0f8e5a589620c6f15b11c61dee327651a14c34e18231052e48c069"
     },
     {
       "entropy": "000000000000000000000000000000000000000000000000",
       "word_count": 18,
       "mnemonic": "ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ایجنٹ",
       "passphrase": "TREZOR",
-      "seed": "1b990ae2a1e5e719eebb69b5bc6984d8f60501f18aad337698a9a6bfe8f983941fdf4ec940d06ea37536e7565be08770871defaa74ef6600def6ac64e15c78a9"
+      "seed": "035895f2f481b1b0f01fcf8c289c794660b289981a78f8106447707fdd9666ca06da5a9a565181599b79f53b844d8a71dd9f439c52a3d7b3e8a79c906ac845fa"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 15,
       "mnemonic": "قانونی فاتح شکر سال موج ساسیج قابلقدر مفید قانونی فاتح شکر سال موج ساسیج دانا",
       "passphrase": "TREZOR",
-      "seed": "62ca42f27230264bad47b77f7518945cb15bcf3bc1b064811c7bf39988a99591a5c0b3ac782750740fe4c4891627c73afb8fb94dd6c873aa825a60d9e50a5ce3"
+      "seed": "f938c2f3ebd11f1c9057b713d977b5260e4282a57811ab163a9708c4ce15307983ac24c4451c7cb353b2002d0a1ee8a404fa59f0f6aa8323fa9bb61248cf4808"
     },
     {
       "entropy": "808080808080808080808080808080808080808080808080",
       "word_count": 18,
       "mnemonic": "خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی اجتناب خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی اجتناب خط ہمیشہ",
       "passphrase": "TREZOR",
-      "seed": "08c241a4db478eba433fae0f9aa8e67a0355632ee1afcd46f046d7b4860905b11f7298cc4713967d641aeeec1b6c49daacb62eec574f229c3b08ef07f810a672"
+      "seed": "107d7c02a5aa6f38c58083ff74f04c607c2d2c0ecc55501dadd72d025b751bc27fe913ffb796f841c49b1d33b610cf0e91d3aa239027f5e99fe4ce9e5088cd65"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 21,
       "mnemonic": "چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر سابق",
       "passphrase": "TREZOR",
-      "seed": "edc6a72a2003606b95e0d0768355889f0aa999cce3c6f1c7f21886454e1b1e87194024dd90091dbf3ff8ed42a2facd8ad9f4236851abdf311028307c1a19296d"
+      "seed": "4aa0af4ca02ef1d9fa675cd02aa06d318425564e7fadd3d51b6165cc56d77398f28d8522073cd036c2a4a24a83e919211c84500d96cb120084e613ff5fcd96c1"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
       "mnemonic": "ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک فن",
       "passphrase": "TREZOR",
-      "seed": "0950f7b0952230cab3e4caa62c39c476c2023b7c0d0383df75645571204a6e62f54a1f21b80955dbfdd7bfe89b99365eaa6b91b41741f33a56b9f8342961cb5f"
+      "seed": "bda85446c68413707090a52022edd26a1c9462295029f2e60cd7c4f2bbd3097170af7a4d73245cafa9c3cca8d561a7c3de6f5d4a10be8ed2a5e608d68f92fcc8"
     },
     {
       "entropy": "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
       "word_count": 24,
       "mnemonic": "قانونی فاتح شکر سال موج ساسیج قابلقدر مفید قانونی فاتح شکر سال موج ساسیج قابلقدر مفید قانونی فاتح شکر سال موج ساسیج قابلقدر لقب",
       "passphrase": "TREZOR",
-      "seed": "08e8c3e3ed4fe99870ee3de46c7a98a1f2a62cc35f1967741e41aa5acb26b9ef98b785aee1bcebcc960e803c9cb02165c11c962e23cf61c6c62128530a936615"
+      "seed": "bc09fca1804f7e69da93c2f2028eb238c227f2e9dda30cd63699232578480a4021b146ad717fbb7e451ce9eb835f43620bf5c514db0f8add49f5d121449d3e87"
     },
     {
       "entropy": "8080808080808080808080808080808080808080808080808080808080808080",
       "word_count": 24,
       "mnemonic": "خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی اجتناب خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی اجتناب خط مشورہ پنجرہ مہمل مقدار ڈاکٹر صوتی برکت",
       "passphrase": "TREZOR",
-      "seed": "3ed20cec4c2739311714e078c8fb59c5e3e010afabc4ca76faf7e29c2d94388e109607a7fd8f0a75b5103c7f6c31cf1cf89607638f8355eca63c2dfc464f9105"
+      "seed": "c0c519bd0e91a2ed54357d9d1ebef6f5af218a153624cf4f2da911a0ed8f7a09e2ef61af0aca007096df430022f7a2b6fb91661a9589097069720d015e4e982f"
     },
     {
       "entropy": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "word_count": 24,
       "mnemonic": "چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر چڑیاگھر ووٹ",
       "passphrase": "TREZOR",
-      "seed": "d2411b9ec32021305ac5cb7431234574191052dee3f929010f65daeb99e96fe906a21a819e00ce1b7eaf970113e21e5e5ec1358db08ae08e1be1e7a6bb21510e"
+      "seed": "dd48c104698c30cfe2b6142103248622fb7bb0ff692eebb00089b32d22484e1613912f0a5b694407be899ffd31ed3992c456cdf60f5d4564b8ba3f05a69890ad"
     },
     {
       "entropy": "00000000000000000000000000000000",
       "word_count": 12,
       "mnemonic": "ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک متعلق",
       "passphrase": "",
-      "seed": "46102cef2ba6080093b43720afbc1c0856c818c44331b51f4fe69ec8c9e2f5b4e1e2ceb162a9c1639902e428684b550e7fa5f2b74894528bf4ed6a4d0d6ab19b"
+      "seed": "5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
     },
     {
       "entropy": "0000000000000000000000000000000000000000000000000000000000000000",
       "word_count": 24,
       "mnemonic": "ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک ترک فن",
       "passphrase": "",
-      "seed": "11882d0e839d5260666021cc72b2ab38b2e94c801786fbfe1d1f01856e8013dcf93bda4b6d4f0d780a0696c3a6a7780054249e6118667ebb54b67413984d9ad9"
+      "seed": "408b285c123836004f4b8842c89324c1f01382450c0d439af345ba7fc49acf705489c6fc77dbd4e3dc1dd8cc6bc9f043db8ada1e243c4a0eafb290d399480840"
     }
   ]
 }
