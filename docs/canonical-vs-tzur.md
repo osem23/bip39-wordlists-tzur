@@ -25,6 +25,33 @@ This document compares each of the 9 non-English canonical BIP-39 wordlists (spe
 
 "Coincidentally identical" counts positions where the canonical word and the TZUR Original word at the same index happen to be the same token. This is pure coincidence; the canonical list is alphabetized and the TZUR Original is index-paired translation. The one exception is Czech, where the unusually-high 602 matches reflect construction history: positions where the back-translate and LLM-verdict audit has not yet run land on the canonical Czech word at that index as a placeholder, so the TZUR Original coincides with canonical there until the audit replaces them with genuine translations. The Czech translation-accuracy pass is a scheduled follow-up; numbers in this document reflect the current state and will drop substantially after that pass lands.
 
+## Word-set comparison (ignoring index)
+
+The table above compares words at matching positions. The table below compares the word *sets*: how many distinct tokens the two files share at all, regardless of where each appears. A word counted as "shared" may still be at different indices in the two lists. Both files always hold exactly 2048 entries; the interesting figures are how much the token sets overlap and how much is unique to each side.
+
+| Language | Canonical words | TZUR words | Shared (in both) | Only in canonical | Only in TZUR |
+|---|---:|---:|---:|---:|---:|
+| Spanish | 2048 | 2048 | 705 | 1343 | 1343 |
+| French | 2048 | 2048 | 495 | 1553 | 1553 |
+| Italian | 2048 | 2048 | 430 | 1618 | 1618 |
+| Portuguese | 2048 | 2048 | 422 | 1626 | 1626 |
+| Czech | 2048 | 2048 | 844 | 1204 | 1204 |
+| Japanese | 2048 | 2048 | 11 | 2037 | 2037 |
+| Korean | 2048 | 2048 | 0 | 2048 | 2048 |
+| Chinese (Simplified) | 2048 | 2048 | 75 | 1973 | 1973 |
+| Chinese (Traditional) | 2048 | 2048 | 45 | 2003 | 2003 |
+| **Combined** | **18432** | **18432** | **3027** | **15405** | **15405** |
+
+Reading the figures:
+
+- **Korean: 0 shared.** The canonical spec list is alphabetized Korean common words. The TZUR Original is a semantic translation of the English BIP-39 vocabulary. The two sets are disjoint — every one of the 2048 tokens appears in exactly one list.
+- **Japanese: 11 shared.** Same reason as Korean, but hiragana-only canonical versus kanji + kana TZUR Original leaves minimal incidental overlap.
+- **Chinese (Simplified 75, Traditional 45).** The canonical lists are single-character ordering dictionaries drawn from very common characters, while the TZUR Original is multi-character semantic translation. Overlap is the set of simple words (e.g., translation, language, action) that happen in both spaces.
+- **Latin-script languages (Spanish, French, Italian, Portuguese).** 400–700 shared tokens reflects the vocabulary both sources draw from: the canonical list samples common single-morpheme native words, and the TZUR Original often lands on the same common native word when translating a common English concept.
+- **Czech: 844 shared.** Highest among the Latin-script languages. As noted above, part of this overlap is an artifact of the initial build: positions not yet replaced by the back-translate + LLM-verdict audit still carry the canonical Czech word as a placeholder. The number will drop once that audit completes.
+
+The "Only in canonical" / "Only in TZUR" columns are symmetric per row because both lists hold exactly 2048 entries: whatever one list contributes that the other does not, the other must also contribute in equal measure on its side.
+
 ## Spanish
 
 - Different: **2046/2048** (99.9%)
