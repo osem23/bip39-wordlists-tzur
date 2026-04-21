@@ -77,7 +77,7 @@ Seeds produced under this convention are bit-identical to seeds produced by any 
 
 ## Reference Implementation
 
-- Wordlist registry: <https://github.com/osem23/bip39-wordlists-tzur>, pinned to release tag `v1.0.0`. Contains the 10 official BIP-39 wordlists, 1 community wordlist, and 20 display wordlists, all paired with bidirectional mappings and a reference validator.
+- Wordlist registry: <https://github.com/osem23/bip39-wordlists-tzur>. Contains 30 index-paired display wordlists with bidirectional mappings, plus the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison, plus a reference validator. Release tags track the display wordlist version; tag `v1.0.0` pins the initial 20-language set and `v1.1.0` adds the remaining 10 to reach 30.
 - Construction notes: `docs/CONSTRUCTION.md` in the registry documents how each display wordlist was built, the disambiguation rules enforced, and the review status per language.
 - Example decoders: `examples/python/`, `examples/javascript/`, and `examples/swift/` in the registry provide minimal reference implementations that convert a display mnemonic to its canonical English form and derive the BIP-39 seed. All three produce byte-identical seeds for the same input.
 - Wallet implementation: <https://github.com/osem23/tzur-wallet>. The seed-derivation path resolves any display mnemonic to the canonical English mnemonic before computing PBKDF2; tests cover the paper-backup tokenization round trip per language.

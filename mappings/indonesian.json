@@ -1,7 +1,8 @@
 {
   "language": "indonesian",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Indonesian",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Indonesian.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "tinggalkan",
     "ability": "kemampuan",

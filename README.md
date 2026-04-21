@@ -1,6 +1,6 @@
 # BIP-39 Wordlists
 
-> Most wallets only support BIP-39 seed phrases in English. This repository provides BIP-39 compliant wordlists in 31 languages, including **20 original wordlists** built from scratch by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://tzur.live) and founder of [BlockSight.Live](https://blocksight.live). 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) had no prior BIP-39 wordlist known at time of publication. The English wordlist works with any BIP-39 wallet. The 30 native-language wordlists currently work with TZUR Wallet; other wallets can integrate them using the provided mappings.
+> Most wallets only support BIP-39 seed phrases in English. This repository provides **30 native-language BIP-39 display wordlists** built as index-paired translations of the canonical English BIP-39 wordlist by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://tzur.live) and founder of [BlockSight.Live](https://blocksight.live). 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese) had no prior BIP-39 wordlist known at time of publication. The English wordlist works with any BIP-39 wallet. The 30 native-language wordlists currently work with TZUR Wallet; other wallets can integrate them using the provided mappings. The 10 canonical BIP-39 wordlists from the spec (Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese) are preserved at `wordlists/reference-canonical/` as spec reference.
 
 ## Why this exists
 
@@ -10,13 +10,13 @@ Those 10 cover approximately 35% of the world by native language.
 
 The remaining 65%, roughly 5 billion people, have no canonical BIP-39 wordlist in their language.
 
-This repository ships BIP-39 compliant wordlists for 31 languages. Seeds commit to canonical English. Keys derive via PBKDF2 on the English form. The native-language wordlists are a display and input layer over that floor.
+This repository ships 30 display wordlists, each an index-paired semantic translation of the canonical English BIP-39 wordlist. Seeds commit to canonical English. Keys derive via PBKDF2 on the English form. The native-language wordlists are a display and input layer over that floor.
 
-A seed phrase in Bengali is the same key as in English.
+A seed phrase in Bengali is the same key as in English. So is a seed phrase in Spanish rendered against this Spanish display wordlist.
 
 ## How the wordlists are built
 
-Strict, deterministic BIP-39 wordlists and bidirectional mappings for 31 languages. Each TZUR Original wordlist is built by translating the canonical English BIP-39 wordlist into the target language and storing an index-paired mapping. A seed phrase generated against any language remains recoverable as English (and therefore portable to any BIP-39 wallet) via the mapping.
+Strict, deterministic BIP-39 display wordlists and bidirectional mappings for 30 non-English languages, plus the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison. Each TZUR Original wordlist is built by translating the canonical English BIP-39 wordlist into the target language and storing an index-paired mapping. A seed phrase generated against any TZUR Original wordlist remains recoverable as English (and therefore portable to any BIP-39 wallet) via the mapping.
 
 Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each mapping provides a bidirectional English-to-native lookup, ready for use in any BIP-39 compliant wallet.
 
@@ -24,59 +24,50 @@ Each wordlist contains exactly 2048 words, one per line, UTF-8 encoded. Each map
 
 ### Wordlists
 
-This repository contains three categories of wordlists:
+This repository contains 30 TZUR Original display wordlists plus the 10 canonical BIP-39 wordlists preserved as spec reference.
 
 #### TZUR Original Wordlists
 
-These wordlists were created from scratch by [osem23](https://github.com/osem23), builder of TZUR Wallet. For 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), no prior BIP-39 compliant wordlist was known to us at time of publication. For Dutch, German, Indonesian, Russian, and Turkish, prior BIP-39 lists exist from other projects; ours were created independently. Any vocabulary overlap with those reflects the natural frequency of common words in the language rather than derivation.
+All 30 TZUR Original wordlists are index-paired semantic translations of the canonical English BIP-39 wordlist. They were built by [osem23](https://github.com/osem23), builder of TZUR Wallet. For 15 of them (Arabic, Bengali, Danish, Estonian, Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu, Vietnamese), no prior BIP-39 compliant wordlist was known to us at time of publication. For Dutch, German, Indonesian, Russian, and Turkish, prior BIP-39 lists exist from other projects; ours were created independently. For Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, and Traditional Chinese, canonical non-translation wordlists are defined by the BIP-39 specification and preserved here at `wordlists/reference-canonical/`; the TZUR Originals for those nine are proper semantic translations, which the canonical spec lists are not. Hindi has no canonical BIP-39 spec entry.
+
+See [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md) for a per-language diff between the canonical and the TZUR Original wordlists at all 2048 indices.
 
 | Language | Wordlist | Mapping | Script |
 |----------|----------|---------|--------|
 | Arabic | [`wordlists/tzur-original/arabic.txt`](wordlists/tzur-original/arabic.txt) | [`mappings/arabic.json`](mappings/arabic.json) | Arabic |
-| Bengali | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali (U+0980-U+09FF) |
+| Bengali | [`wordlists/tzur-original/bengali.txt`](wordlists/tzur-original/bengali.txt) | [`mappings/bengali.json`](mappings/bengali.json) | Bengali |
+| Chinese (Simplified) | [`wordlists/tzur-original/chinese_simplified.txt`](wordlists/tzur-original/chinese_simplified.txt) | [`mappings/chinese_simplified.json`](mappings/chinese_simplified.json) | Han (Simplified) |
+| Chinese (Traditional) | [`wordlists/tzur-original/chinese_traditional.txt`](wordlists/tzur-original/chinese_traditional.txt) | [`mappings/chinese_traditional.json`](mappings/chinese_traditional.json) | Han (Traditional) |
+| Czech | [`wordlists/tzur-original/czech.txt`](wordlists/tzur-original/czech.txt) | [`mappings/czech.json`](mappings/czech.json) | Latin (with diacritics) |
 | Danish | [`wordlists/tzur-original/danish.txt`](wordlists/tzur-original/danish.txt) | [`mappings/danish.json`](mappings/danish.json) | Latin (with æ ø å) |
 | Dutch | [`wordlists/tzur-original/dutch.txt`](wordlists/tzur-original/dutch.txt) | [`mappings/dutch.json`](mappings/dutch.json) | Latin |
 | Estonian | [`wordlists/tzur-original/estonian.txt`](wordlists/tzur-original/estonian.txt) | [`mappings/estonian.json`](mappings/estonian.json) | Latin (with ä ö ü õ) |
 | Farsi (Persian) | [`wordlists/tzur-original/farsi.txt`](wordlists/tzur-original/farsi.txt) | [`mappings/farsi.json`](mappings/farsi.json) | Arabic (with پ چ ژ گ) |
 | Filipino | [`wordlists/tzur-original/filipino.txt`](wordlists/tzur-original/filipino.txt) | [`mappings/filipino.json`](mappings/filipino.json) | Latin |
+| French | [`wordlists/tzur-original/french.txt`](wordlists/tzur-original/french.txt) | [`mappings/french.json`](mappings/french.json) | Latin |
 | German | [`wordlists/tzur-original/german.txt`](wordlists/tzur-original/german.txt) | [`mappings/german.json`](mappings/german.json) | Latin (with ä ö ü ß) |
 | Hebrew | [`wordlists/tzur-original/hebrew.txt`](wordlists/tzur-original/hebrew.txt) | [`mappings/hebrew.json`](mappings/hebrew.json) | Hebrew |
+| Hindi | [`wordlists/tzur-original/hindi.txt`](wordlists/tzur-original/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Devanagari |
 | Indonesian | [`wordlists/tzur-original/indonesian.txt`](wordlists/tzur-original/indonesian.txt) | [`mappings/indonesian.json`](mappings/indonesian.json) | Latin |
+| Italian | [`wordlists/tzur-original/italian.txt`](wordlists/tzur-original/italian.txt) | [`mappings/italian.json`](mappings/italian.json) | Latin |
+| Japanese | [`wordlists/tzur-original/japanese.txt`](wordlists/tzur-original/japanese.txt) | [`mappings/japanese.json`](mappings/japanese.json) | Kanji + Kana |
+| Korean | [`wordlists/tzur-original/korean.txt`](wordlists/tzur-original/korean.txt) | [`mappings/korean.json`](mappings/korean.json) | Hangul |
 | Malay | [`wordlists/tzur-original/malay.txt`](wordlists/tzur-original/malay.txt) | [`mappings/malay.json`](mappings/malay.json) | Latin |
 | Polish | [`wordlists/tzur-original/polish.txt`](wordlists/tzur-original/polish.txt) | [`mappings/polish.json`](mappings/polish.json) | Latin (with ą ć ę ł ń ó ś ź ż) |
-| Romanian | [`wordlists/tzur-original/romanian.txt`](wordlists/tzur-original/romanian.txt) | [`mappings/romanian.json`](mappings/romanian.json) | Latin (with ă â î ș ț, comma-below, not cedilla) |
+| Portuguese | [`wordlists/tzur-original/portuguese.txt`](wordlists/tzur-original/portuguese.txt) | [`mappings/portuguese.json`](mappings/portuguese.json) | Latin |
+| Romanian | [`wordlists/tzur-original/romanian.txt`](wordlists/tzur-original/romanian.txt) | [`mappings/romanian.json`](mappings/romanian.json) | Latin (with ă â î ș ț, comma-below) |
 | Russian | [`wordlists/tzur-original/russian.txt`](wordlists/tzur-original/russian.txt) | [`mappings/russian.json`](mappings/russian.json) | Cyrillic |
+| Spanish | [`wordlists/tzur-original/spanish.txt`](wordlists/tzur-original/spanish.txt) | [`mappings/spanish.json`](mappings/spanish.json) | Latin |
 | Swedish | [`wordlists/tzur-original/swedish.txt`](wordlists/tzur-original/swedish.txt) | [`mappings/swedish.json`](mappings/swedish.json) | Latin (with å ä ö) |
 | Thai | [`wordlists/tzur-original/thai.txt`](wordlists/tzur-original/thai.txt) | [`mappings/thai.json`](mappings/thai.json) | Thai |
 | Turkish | [`wordlists/tzur-original/turkish.txt`](wordlists/tzur-original/turkish.txt) | [`mappings/turkish.json`](mappings/turkish.json) | Latin (with ç ğ ı ö ş ü) |
 | Ukrainian | [`wordlists/tzur-original/ukrainian.txt`](wordlists/tzur-original/ukrainian.txt) | [`mappings/ukrainian.json`](mappings/ukrainian.json) | Cyrillic (with ї є і ґ) |
-| Urdu | [`wordlists/tzur-original/urdu.txt`](wordlists/tzur-original/urdu.txt) | [`mappings/urdu.json`](mappings/urdu.json) | Perso-Arabic RTL (with ٹ ڈ ڑ ں ھ ے) |
+| Urdu | [`wordlists/tzur-original/urdu.txt`](wordlists/tzur-original/urdu.txt) | [`mappings/urdu.json`](mappings/urdu.json) | Perso-Arabic RTL |
 | Vietnamese | [`wordlists/tzur-original/vietnamese.txt`](wordlists/tzur-original/vietnamese.txt) | [`mappings/vietnamese.json`](mappings/vietnamese.json) | Latin (with diacritics) |
 
-#### Community Wordlists
+#### Reference canonical wordlists
 
-Wordlists derived from existing community sources. Attribution is verified against the cited source.
-
-| Language | Wordlist | Mapping | Notes |
-|----------|----------|---------|-------|
-| Hindi | [`wordlists/community/hindi.txt`](wordlists/community/hindi.txt) | [`mappings/hindi.json`](mappings/hindi.json) | Derived from [devnagri_wordlist](https://github.com/ujjwali2s/devnagri_wordlist) (98% match) |
-
-#### Official BIP-39 Wordlists
-
-Standard wordlists from the [BIP-39 specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Included here for completeness with mappings. These wordlists are not our work.
-
-| Language | Wordlist | Mapping |
-|----------|----------|---------|
-| Chinese (Simplified) | [`wordlists/official-bip39/chinese_simplified.txt`](wordlists/official-bip39/chinese_simplified.txt) | [`mappings/chinese_simplified.json`](mappings/chinese_simplified.json) |
-| Chinese (Traditional) | [`wordlists/official-bip39/chinese_traditional.txt`](wordlists/official-bip39/chinese_traditional.txt) | [`mappings/chinese_traditional.json`](mappings/chinese_traditional.json) |
-| Czech | [`wordlists/official-bip39/czech.txt`](wordlists/official-bip39/czech.txt) | [`mappings/czech.json`](mappings/czech.json) |
-| English | [`wordlists/official-bip39/english.txt`](wordlists/official-bip39/english.txt) | - (reference language) |
-| French | [`wordlists/official-bip39/french.txt`](wordlists/official-bip39/french.txt) | [`mappings/french.json`](mappings/french.json) |
-| Italian | [`wordlists/official-bip39/italian.txt`](wordlists/official-bip39/italian.txt) | [`mappings/italian.json`](mappings/italian.json) |
-| Japanese | [`wordlists/official-bip39/japanese.txt`](wordlists/official-bip39/japanese.txt) | [`mappings/japanese.json`](mappings/japanese.json) |
-| Korean | [`wordlists/official-bip39/korean.txt`](wordlists/official-bip39/korean.txt) | [`mappings/korean.json`](mappings/korean.json) |
-| Portuguese | [`wordlists/official-bip39/portuguese.txt`](wordlists/official-bip39/portuguese.txt) | [`mappings/portuguese.json`](mappings/portuguese.json) |
-| Spanish | [`wordlists/official-bip39/spanish.txt`](wordlists/official-bip39/spanish.txt) | [`mappings/spanish.json`](mappings/spanish.json) |
+The 10 canonical BIP-39 wordlists defined by the [BIP-39 specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) are preserved under [`wordlists/reference-canonical/`](wordlists/reference-canonical/) for spec comparison. English is the universal BIP-39 reference; the other nine (Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese) are alphabetized independent wordlists in their languages, not semantic translations of English. TZUR uses the TZUR Original translations above as its display layer; the canonical files here are for anyone who wants to cite or compare against the spec.
 
 ### Mappings
 
@@ -132,7 +123,7 @@ Each wordlist in this repository satisfies:
 Load the appropriate file, split by newline, and index by position (0-2047). The word at index `i` corresponds to the 11-bit value `i` in BIP-39 entropy encoding.
 
 ```python
-words = open("wordlists/official-bip39/english.txt").read().strip().split("\n")
+words = open("wordlists/reference-canonical/english.txt").read().strip().split("\n")
 assert len(words) == 2048
 mnemonic_word = words[entropy_bits]
 ```
@@ -183,7 +174,8 @@ Corrections and independent reviews land via issues and PRs.
 
 ## Documentation
 
-- [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). How the 20 TZUR Original wordlists were built, disambiguation rules, review status per language, reproducibility statement.
+- [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). How the 30 TZUR Original wordlists were built, disambiguation rules, review status per language, reproducibility statement.
+- [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Per-language diff between the canonical BIP-39 wordlists and the TZUR Original translations.
 - [`docs/BIP-display-layer-wordlists.md`](docs/BIP-display-layer-wordlists.md). Informational BIP draft describing the convention this repository implements: a native-language display wordlist is index-parallel to the canonical English BIP-39 wordlist, used by wallet software for rendering and input while the English mnemonic remains the sole PBKDF2 input.
 - [`validation/encoding-notes.md`](validation/encoding-notes.md). UTF-8, NFKD normalization, ZWNJ handling for Farsi, and per-language normalization impact.
 - [`test-vectors/`](test-vectors/). BIP-39 conformance test vectors per language. Integrators should reproduce every vector in the target language's file before shipping.

@@ -1,7 +1,8 @@
 {
   "language": "thai",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Thai",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Thai.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "ละทิ้ง",
     "ability": "ความสามารถ",

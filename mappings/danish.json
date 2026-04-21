@@ -1,7 +1,8 @@
 {
   "language": "danish",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Danish",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Danish.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "forlade",
     "ability": "evne",

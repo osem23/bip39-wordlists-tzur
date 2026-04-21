@@ -1,7 +1,8 @@
 {
   "language": "swedish",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Swedish",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Swedish.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "överge",
     "ability": "förmåga",

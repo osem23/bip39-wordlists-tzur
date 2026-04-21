@@ -1,7 +1,8 @@
 {
   "language": "farsi",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Farsi (Persian). World's first Farsi BIP-39 wordlist, created by TZUR Wallet.",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Farsi.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "رهاکردن",
     "ability": "توانایی",

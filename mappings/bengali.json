@@ -1,7 +1,8 @@
 {
   "language": "bengali",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Bengali",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Bengali.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "পরিত্যাগ",
     "ability": "সামর্থ্য",

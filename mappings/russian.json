@@ -1,7 +1,8 @@
 {
   "language": "russian",
   "word_count": 2048,
-  "description": "Bidirectional BIP-39 mapping between English and Russian",
+  "description": "Index-paired translation between English BIP-39 and TZUR Original Russian.",
+  "pairing_type": "translation",
   "english_to_native": {
     "abandon": "покинуть",
     "ability": "способность",

@@ -16,17 +16,16 @@ This document describes how the wordlists in this repository were constructed, t
 
 ## Scope and claims
 
-This repository contains 31 BIP-39 wordlists across three categories:
+This repository contains:
 
-- **10 Official BIP-39 wordlists** (`wordlists/official-bip39/`). Sourced verbatim from the BIP-39 specification. Not our work.
-- **1 Community wordlist** (`wordlists/community/hindi.txt`). Derived from an existing public source with attribution verified.
-- **20 TZUR Original wordlists** (`wordlists/tzur-original/`). Built by [osem23](https://github.com/osem23), builder of TZUR Wallet. The construction process below describes these.
+- **30 TZUR Original display wordlists** (`wordlists/tzur-original/`). Built by [osem23](https://github.com/osem23), builder of TZUR Wallet. Each is an index-paired semantic translation of the canonical English BIP-39 wordlist. The construction process below describes these.
+- **10 canonical BIP-39 wordlists** (`wordlists/reference-canonical/`). Sourced verbatim from the BIP-39 specification. Preserved here for spec comparison; not used by TZUR as a display layer, since the canonical non-English wordlists are alphabetized independent selections in their languages, not translations of English.
 
 This document does not claim linguistic perfection. It describes what we did, how we did it, and which constraints we enforced.
 
 ## Design principles
 
-The 20 TZUR Original wordlists follow four design principles:
+The 30 TZUR Original wordlists follow four design principles:
 
 1. **Index-paired translation.** For every index `N` in `0..2047`, the native word at line `N` is a direct semantic translation of `english.txt` line `N`. This property is what makes the bidirectional mapping deterministic: you do not need a lookup table to derive it; you just read both wordlists in parallel.
 
