@@ -17,9 +17,9 @@ Built by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://t
 
 ## Why this exists
 
-The BIP-39 specification ships canonical wordlists for 10 languages (English plus Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese). The non-English wordlists are **not translations of the English list**. They are independent wordlists in each language, selected for 4-char prefix uniqueness and common vocabulary, then alphabetized by native-script collation.
+**The language coverage gap.** BIP-39 ships canonical wordlists for 10 languages (English plus Spanish, French, Italian, Portuguese, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese). Those 10 cover roughly 35% of humanity by native language. The remaining 65%, around 5 billion people, have no canonical BIP-39 wordlist in their native language. They either work in English or don't use Bitcoin at all. This repository extends first-class display-layer coverage to 30 languages, adding Arabic, Hindi, Bengali, Urdu, Farsi, Turkish, Vietnamese, Thai, Hebrew, Polish, Ukrainian, Romanian, Swedish, Danish, Filipino, Malay, Indonesian, Russian, Dutch, German, and Estonian. For 15 of those no prior BIP-39 wordlist was known to exist at time of publication.
 
-That is a valid design choice and the spec is explicit about it for readers who look closely. In practice most readers do not, and reasonably assume the Spanish word at index 5 is the Spanish translation of the English word at index 5. It is not. At most indices the two have no semantic relationship at all.
+**The translation gap.** The 9 non-English canonical BIP-39 wordlists are **not translations of the English list**. They are independent wordlists in each language, selected for 4-char prefix uniqueness and common vocabulary, then alphabetized by native-script collation. That is a valid design choice and the spec is explicit about it for readers who look closely. In practice most readers do not, and reasonably assume the Spanish word at index 5 is the Spanish translation of the English word at index 5. It is not. At most indices the two have no semantic relationship at all.
 
 The data makes the gap explicit (per-language numbers in [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md)):
 
