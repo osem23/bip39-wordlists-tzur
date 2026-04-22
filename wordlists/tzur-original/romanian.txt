@@ -1145,8 +1145,8 @@ moment
 monitor
 maimuță
 monstru
-calendar
 lună
+selenă
 moralitate
 mai-mult
 dimineață
@@ -1260,7 +1260,7 @@ exterior
 producție
 afară-de-casă
 oval
-tigaie
+cuptoraș
 peste
 propriu
 stăpân
