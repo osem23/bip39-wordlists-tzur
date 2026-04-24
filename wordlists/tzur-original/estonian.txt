@@ -73,7 +73,7 @@ vihane
 loom
 pahkluu
 teatama
-iga-aastane
+igaaastane
 teine
 vastus
 antenn

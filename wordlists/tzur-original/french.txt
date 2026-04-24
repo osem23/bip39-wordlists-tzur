@@ -864,7 +864,7 @@ indice
 hanche
 embaucher
 histoire
-passe-temps
+passetemps
 hockey
 tenir
 trou
@@ -983,7 +983,7 @@ royaume
 baiser
 trousse
 cuisine
-cerf-volant
+cerfvolant
 chaton
 kiwi
 genou
@@ -1261,7 +1261,7 @@ production
 dehors
 ovale
 four
-par-dessus
+pardessus
 posséder
 propriétaire
 oxygène
@@ -1397,7 +1397,7 @@ objectif
 bourse
 pousser
 poser
-casse-tête
+cassetête
 pyramide
 qualité
 quantique
@@ -1932,7 +1932,7 @@ disparaître
 vapeur
 divers
 vaste
-coffre-fort
+coffrefort
 véhicule
 velours
 vendeur
@@ -1990,7 +1990,7 @@ belette
 météo
 internet
 noces
-week-end
+weekend
 bizarre
 bienvenue
 ouest

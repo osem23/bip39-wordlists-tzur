@@ -13,7 +13,7 @@ Downstream wallets can use this dataset to show a small hint when a displayed se
 An entry is flagged as a compound by one of three mechanisms:
 
 1. **Exact curated list.** Hebrew uses a manually reviewed list of 7 indices, built during the 2026-04-24 Hebrew compound audit. All other Hebrew entries were either replaced with single-word alternatives or confirmed as single words.
-2. **Exact known set.** Romanian uses the exact 76 indices whose entries previously contained hyphens. Hyphens were normalized away to match the repository-wide no-separator convention; the set of pre-hyphenation compounds is definitionally the compound set.
+2. **Exact known set.** Romanian, French, Portuguese, Hindi, Ukrainian, and Estonian use the exact indices whose entries previously contained hyphens. Hyphens were normalized away to match the repository-wide no-separator convention; the set of pre-hyphenation compounds is definitionally the compound set (Romanian 76, French 6, Hindi 6, Ukrainian 2, Portuguese 1, Estonian 1 exact entries). Languages may include additional threshold-based entries beyond the exact set.
 3. **Grapheme-length threshold.** For all other languages, entries whose grapheme-cluster length exceeds a language-calibrated threshold are flagged. Threshold values reflect each language's typical single-word length and morphology.
 
 Thresholds used (grapheme clusters):
@@ -48,23 +48,23 @@ Length-threshold detection admits false positives (long but single dictionary wo
 | Indonesian | id | 13 | 7.4% | Threshold (>11 graphemes) |
 | Vietnamese | vi | 12 | 6.8% | Threshold (>11 graphemes) |
 | Hebrew | he | 7 | 4.0% | Curated |
+| French | fr | 6 | 3.5% | Exact (6 pre-dehyphenation indices) |
+| Hindi | hi | 6 | 3.5% | Exact (6 pre-dehyphenation indices) |
 | Urdu | ur | 6 | 3.5% | Threshold (>10 graphemes) |
 | Turkish | tr | 4 | 2.3% | Threshold (>14 graphemes) |
+| Ukrainian | uk | 3 | 1.7% | Exact (2) + threshold (>15 graphemes) |
 | Filipino | fil | 2 | 1.2% | Threshold (>15 graphemes) |
 | Polish | pl | 2 | 1.2% | Threshold (>15 graphemes) |
+| Estonian | et | 2 | 1.2% | Exact (1) + threshold (>15 graphemes) |
 | Russian | ru | 1 | 0.6% | Threshold (>15 graphemes) |
+| Portuguese | pt | 1 | 0.6% | Exact (1 pre-dehyphenation index) |
 | Thai | th | 1 | 0.6% | Threshold (>12 graphemes) |
-| Ukrainian | uk | 1 | 0.6% | Threshold (>15 graphemes) |
-| Estonian | et | 1 | 0.6% | Threshold (>15 graphemes) |
 | Swedish | sv | 1 | 0.6% | Threshold (>15 graphemes) |
 | Spanish | es | 0 | 0.0% | Threshold |
-| Portuguese | pt | 0 | 0.0% | Threshold |
 | German | de | 0 | 0.0% | Threshold |
-| French | fr | 0 | 0.0% | Threshold |
 | Italian | it | 0 | 0.0% | Threshold |
 | Dutch | nl | 0 | 0.0% | Threshold |
 | Arabic | ar | 0 | 0.0% | Threshold |
-| Hindi | hi | 0 | 0.0% | Threshold |
 | Bengali | bn | 0 | 0.0% | Threshold |
 | Czech | cs | 0 | 0.0% | Threshold |
 | Danish | da | 0 | 0.0% | Threshold |
@@ -73,7 +73,7 @@ Length-threshold detection admits false positives (long but single dictionary wo
 | Chinese (Simplified) | zh-Hans | — | — | Skipped (character-based) |
 | Chinese (Traditional) | zh-Hant | — | — | Skipped (character-based) |
 
-Total flagged across all languages: **174 entries**.
+Total flagged across all languages: **190 entries**.
 
 The "trigger rate" column is the probability that a freshly generated 12-word BIP-39 mnemonic in that language contains at least one compound entry: `1 - ((2048 - count) / 2048) ** 12`.
 
@@ -85,7 +85,7 @@ The exact index list per language is in [`validation/compound-entries.json`](../
 {
   "audit_date": "2026-04-24",
   "audit_method": "...",
-  "total_flagged": 174,
+  "total_flagged": 190,
   "languages": {
     "hebrew": {"locale": "he", "count": 7, "indices": [468, 904, ...]},
     ...

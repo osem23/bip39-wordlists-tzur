@@ -1,7 +1,7 @@
 {
   "audit_date": "2026-04-24",
   "audit_method": "Per-language grapheme-length threshold + curated overrides. See docs/compound-entries.md.",
-  "total_flagged": 174,
+  "total_flagged": 190,
   "languages": {
     "hebrew": {
       "locale": "he",
@@ -30,8 +30,10 @@
     },
     "portuguese": {
       "locale": "pt",
-      "count": 0,
-      "indices": []
+      "count": 1,
+      "indices": [
+        1889
+      ]
     },
     "german": {
       "locale": "de",
@@ -40,8 +42,15 @@
     },
     "french": {
       "locale": "fr",
-      "count": 0,
-      "indices": []
+      "count": 6,
+      "indices": [
+        866,
+        985,
+        1263,
+        1399,
+        1934,
+        1992
+      ]
     },
     "turkish": {
       "locale": "tr",
@@ -84,8 +93,15 @@
     },
     "hindi": {
       "locale": "hi",
-      "count": 0,
-      "indices": []
+      "count": 6,
+      "indices": [
+        741,
+        1281,
+        1324,
+        1597,
+        1754,
+        1801
+      ]
     },
     "arabic": {
       "locale": "ar",
@@ -216,15 +232,18 @@
     },
     "ukrainian": {
       "locale": "uk",
-      "count": 1,
+      "count": 3,
       "indices": [
+        81,
+        314,
         1809
       ]
     },
     "estonian": {
       "locale": "et",
-      "count": 1,
+      "count": 2,
       "indices": [
+        75,
         300
       ]
     },

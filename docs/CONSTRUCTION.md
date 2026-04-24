@@ -118,7 +118,7 @@ The convention is uniform across every wordlist in this repository: no space, no
 
 Languages where this convention applies most often: Hebrew, Turkish, Indonesian, Malay, Vietnamese, Urdu, Ukrainian, Bengali, Romanian. Languages where it is rare or absent: Spanish, Russian, German, French, Italian, Dutch, Polish, Czech, Filipino, Estonian, Swedish, Danish, English. Where a language has a single-word option, it is used; where it does not, the multi-word term is glued.
 
-Romanian is a specific case worth naming. Earlier revisions of the Romanian wordlist preserved hyphens in compound entries (for example `broască-țestoasă`, `frate-sau-soră`). Hyphens were normalized away in a subsequent revision so the entire repository follows one rule. Romanian hyphen usage is orthographically valid in the language; removing it here is a repository-consistency choice, not a claim about Romanian spelling.
+Six languages historically used hyphens in some entries: Romanian (76), French (6), Hindi (6), Ukrainian (2), Estonian (1), Portuguese (1). Examples: Romanian `broască-țestoasă`, French `cerf-volant`, Hindi `भाई-बहन`, Portuguese `guarda-chuva`. Hyphens were normalized away so the entire repository follows one rule. Hyphen usage is orthographically valid in each of these languages; removing it here is a repository-consistency choice, not a claim about native spelling.
 
 Per-language counts and exact index lists of flagged compound entries are in [`docs/compound-entries.md`](compound-entries.md) and [`validation/compound-entries.json`](../validation/compound-entries.json). Downstream wallets use this dataset to hint users against inserting whitespace when re-typing a compound-containing seed in another wallet.
 
