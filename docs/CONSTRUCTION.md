@@ -9,6 +9,7 @@ This document describes how the wordlists in this repository were constructed, t
 - [Construction process](#construction-process)
 - [Structural rules enforced on every wordlist](#structural-rules-enforced-on-every-wordlist)
 - [Disambiguation and collision resolution](#disambiguation-and-collision-resolution)
+- [Multi-word concepts](#multi-word-concepts)
 - [Per-language construction notes](#per-language-construction-notes)
 - [Review status matrix](#review-status-matrix)
 - [Reproducibility](#reproducibility)
@@ -41,7 +42,7 @@ Every TZUR Original wordlist passed through the same pipeline:
 
 ### Step 1. Baseline translation
 
-For each index `N` in `0..2047`, the canonical English word at line `N` of `english.txt` was translated into the target language. The translation targets semantic equivalence of the single-word concept, not idiomatic phrasing. Compound or multi-word translations were rejected; every entry is a single orthographic word in the target language.
+For each index `N` in `0..2047`, the canonical English word at line `N` of `english.txt` was translated into the target language. The translation targets semantic equivalence of the single-word concept. Where the target language has a single-word equivalent, it is preferred. Where it does not, the idiomatic multi-word term is stored as a single glued token with no space, no hyphen, no internal separator. See [Multi-word concepts](#multi-word-concepts).
 
 ### Step 2. Length and character constraints
 
@@ -107,6 +108,18 @@ Several languages required specific disambiguation rules beyond the generic bije
 - **Arabic, Hebrew, Urdu (RTL scripts).** Wordlists are stored in logical (memory) order, not visual order. Do not rely on editor display. Hebrew final-form letters (כ/ך, מ/ם, נ/ן, פ/ף, צ/ץ) are distinct codepoints and are not conflated.
 - **Vietnamese.** Uses precomposed NFC forms. 97.7% of entries are affected by NFKD decomposition. Implementations must apply NFKD before PBKDF2; failure to do so will produce different seeds.
 
+## Multi-word concepts
+
+A subset of BIP-39 English entries names a concept that several target languages express only as a multi-word term: a noun phrase, a spaced compound, or a particle construction. "Dentist", "walnut", "coconut", "zoo", "wrist", "weather", "illegal" are common examples. The single-word claim in Step 1 does not hold in every language; morphology does not permit it.
+
+Where a language offers no single-word equivalent, the idiomatic multi-word term is stored as one orthographic token with no space, no hyphen, no internal separator. Hebrew `רופא שיניים` (dentist) is stored as `רופאשיניים`. Turkish `hindistan cevizi` (coconut) is stored as `hindistancevizi`. Indonesian `kebun binatang` (zoo) is stored as `kebunbinatang`. Romanian `broască-țestoasă` (turtle) is stored as `broascățestoasă`. Ukrainian `волоський горіх` (walnut) is stored as `волоськийгоріх`.
+
+The convention is uniform across every wordlist in this repository: no space, no hyphen, no separator anywhere. `validation/validate_all.py` enforces this mechanically. The rationale is BIP-39 itself: encoding splits a mnemonic on whitespace, so any multi-word token would be parsed as two entries and break derivation. A glued token is the only form that round-trips through any BIP-39 implementation.
+
+Languages where this convention applies most often: Hebrew, Turkish, Indonesian, Malay, Vietnamese, Urdu, Ukrainian, Bengali, Romanian. Languages where it is rare or absent: Spanish, Russian, German, French, Italian, Dutch, Polish, Czech, Filipino, Estonian, Swedish, Danish, English. Where a language has a single-word option, it is used; where it does not, the multi-word term is glued.
+
+Romanian is a specific case worth naming. Earlier revisions of the Romanian wordlist preserved hyphens in compound entries (for example `broască-țestoasă`, `frate-sau-soră`). Hyphens were normalized away in a subsequent revision so the entire repository follows one rule. Romanian hyphen usage is orthographically valid in the language; removing it here is a repository-consistency choice, not a claim about Romanian spelling.
+
 ## Per-language construction notes
 
 | Language | Source | Canonical BIP-39? | Notes |
@@ -132,7 +145,7 @@ Several languages required specific disambiguation rules beyond the generic bije
 | Malay | Translation | No prior known | Latin. |
 | Polish | Translation | No prior known | Latin with ą/ć/ę/ł/ń/ó/ś/ź/ż. |
 | Portuguese | Translation | Canonical exists | Canonical spec list is an alphabetized independent Portuguese word set, not translation. TZUR Original is a semantic translation of English. |
-| Romanian | Translation | No prior known | Comma-below ș/ț, not legacy cedilla. |
+| Romanian | Translation | No prior known | Comma-below ș/ț, not legacy cedilla. Multi-word compounds stored as glued tokens without hyphen, matching the repository-wide convention. |
 | Russian | Translation | No canonical, prior lists exist from other projects | Ours was independently constructed. 8.8% NFKD-affected. |
 | Spanish | Translation | Canonical exists | Canonical spec list is an alphabetized independent Spanish word set, not translation. TZUR Original is a semantic translation of English. |
 | Swedish | Translation | No prior known | Latin with å/ä/ö. Disambiguated from Danish via ä/ö. |
