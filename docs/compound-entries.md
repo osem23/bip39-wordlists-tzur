@@ -10,13 +10,27 @@ Downstream wallets use this dataset to show a small hint when a displayed seed p
 
 ## Detection
 
-An entry is flagged as a compound by three converging signals:
+A glued compound is a native entry that would normally carry a whitespace, hyphen, or Zero-Width Non-Joiner separator in everyday orthography, but is stored here as a single orthographic token to satisfy the repository's no-separator rule. Detection combines three independent signals. An entry is flagged when any signal confirms it; the set is a union, not an intersection.
 
-1. **Azure forward-translation match.** For every English BIP-39 word, Microsoft Azure Translator is asked for the native translation. If Azure's native output contains whitespace, a hyphen, or a ZWNJ, and removing those separators yields exactly the stored native word (case-insensitive, NFC-normalized), the entry is a glued multi-word compound. This is the primary signal.
-2. **Exact hyphen sets** for languages whose native orthography uses hyphens in compound entries. Hyphens are not permitted in the stored form, so the hyphen-bearing set is definitionally the compound set for that language: Romanian, French, Hindi, Ukrainian, Estonian, Portuguese.
-3. **Manual curation** for Hebrew, supplementing the Azure signal where Azure translated the English to a Hebrew synonym the filter could not match byte-for-byte.
+### Signal 1 — translation dictionary
 
-The filter runs on all 30 languages. Japanese, Simplified Chinese, and Traditional Chinese return zero hits by filter, because their writing systems do not use word-level spaces; there is no "would be spaced in normal orthography" concept to detect. Korean does use word-level spaces and carries 5 compound entries.
+For every English BIP-39 word, Microsoft Azure Translator is queried for the native-language translation. When Azure's output contains an inline whitespace, hyphen, or Zero-Width Non-Joiner, the English concept maps to a multi-word native term in Azure's dictionary. Stripping those separators from Azure's output and comparing byte-for-byte against the stored entry (NFC-normalized, case-folded) confirms that the stored entry is the glued form of the same concept. This signal runs uniformly across all 30 languages and accounts for most of the flagged set. It is exact rather than heuristic: a flag fires only when the two forms are byte-identical modulo the stripped separator.
+
+### Signal 2 — orthographic ground truth from the hyphen transition
+
+Romanian, French, Hindi, Ukrainian, Estonian, and Portuguese formerly stored their compound entries with hyphens. The repository's structural rules forbid hyphens inside any entry; the hyphen-bearing set was therefore removed and replaced with glued forms. The set of entries that lost their hyphen is by construction the compound set for those languages. These indices are included even when Azure's dictionary happens to return a single-token synonym for the same concept.
+
+### Signal 3 — native-speaker review for Hebrew
+
+Hebrew received a full native-speaker review of its compound entries. Seven indices flagged during that review are carried in the dataset and merged with the Azure-filter output for Hebrew. Native review handles the residual cases where Azure's chosen synonym for an English concept is morphologically distinct from the stored compound and therefore does not match the filter byte-for-byte (for example, Azure renders "illegal" as `לא חוקי` while the stored entry is `בלתיחוקי`, a semantically equivalent but morphologically different compound).
+
+### Scripts without word-level spacing
+
+Japanese, Simplified Chinese, and Traditional Chinese do not delimit words with whitespace in their native orthography. The filter returns zero hits for those languages by construction; there is no separator for the filter to strip, so no compound concept in the sense defined above applies. Korean does delimit words with whitespace and is included in the dataset with five compounds.
+
+### What the dataset does not claim
+
+The flagged set is a lower bound, not a complete enumeration. A compound entry that Azure's dictionary does not translate with a separator, and that is not covered by the hyphen-transition set or by Hebrew's native review, is not captured by the current pipeline. Remaining gaps close through native-speaker contributions per language; corrections land via issue or pull request and are merged into the published dataset.
 
 ## Per-language counts
 
