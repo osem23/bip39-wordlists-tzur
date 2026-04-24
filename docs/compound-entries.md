@@ -10,79 +10,61 @@ Downstream wallets use this dataset to show a small hint when a displayed seed p
 
 ## Detection
 
-An entry is flagged as a compound by:
+An entry is flagged as a compound by two converging signals:
 
-1. **Curated list** for languages where a full native-speaker review of compound entries is available (Hebrew).
-2. **Exact known set** for languages whose native orthography uses hyphens in compound entries. Since entries are stored without hyphens per repository convention, the set of hyphen-bearing entries is definitionally the compound set (Romanian, French, Hindi, Ukrainian, Estonian, Portuguese).
-3. **Grapheme-length threshold** for other languages. Entries whose grapheme-cluster length exceeds a language-calibrated threshold are flagged. Thresholds reflect each language's typical single-word length and morphology.
+1. **Azure forward-translation match.** For every English BIP-39 word, Microsoft Azure Translator is asked for the native translation. If Azure's native output contains whitespace, a hyphen, or a ZWNJ, and removing those separators yields exactly the stored native word (case-insensitive, NFC-normalized), the entry is a glued multi-word compound. This is the primary signal. It catches compounds independent of our curation choices, across all 26 non-CJK languages.
+2. **Exact hyphen sets** for languages whose native orthography uses hyphens in compound entries. Hyphens are not permitted in the stored form, so the set of previously-hyphenated entries is definitionally the compound set for that language: Romanian (76), French, Hindi, Ukrainian, Estonian, Portuguese.
+3. **Manual curation** for Hebrew, supplementing the Azure signal where Azure translated the English to a Hebrew synonym that the filter could not match byte-for-byte.
 
-Length-threshold detection admits false positives (long single dictionary words flagged as compound) and false negatives (short compounds below threshold). Curated and exact-set detection is precise within the compound category. Native-speaker corrections land via issue or pull request.
-
-Chinese, Japanese, and Korean are not included: their morphology is character-based, and the multi-word-compound concern that motivates this dataset does not map onto them.
+Chinese, Japanese, and Korean are not in scope. Their morphology is character-based and the multi-word-compound concern that motivates this dataset does not map onto them, with the exception of a handful of Korean spaced compounds that Azure flags (dinner, kitten, tonight, etc).
 
 ## Per-language counts
 
 | Language | Locale | Compound count | 12-word seed trigger rate |
 |---|---|---:|---:|
-| Farsi | fa | 215 | 73.6% |
+| Vietnamese | vi | 886 | 99.9% |
 | Romanian | ro | 76 | 36.5% |
-| Filipino | fil | 67 | 32.9% |
-| Estonian | et | 39 | 20.6% |
-| French | fr | 27 | 14.7% |
-| Dutch | nl | 26 | 14.2% |
-| Malay | ms | 24 | 13.2% |
-| Danish | da | 22 | 12.2% |
-| Indonesian | id | 13 | 7.4% |
-| Vietnamese | vi | 12 | 6.8% |
-| Hebrew | he | 7 | 4.0% |
-| Hindi | hi | 6 | 3.5% |
-| Urdu | ur | 6 | 3.5% |
-| Czech | cs | 6 | 3.5% |
-| Turkish | tr | 4 | 2.3% |
-| Arabic | ar | 4 | 2.3% |
-| Ukrainian | uk | 3 | 1.7% |
-| Polish | pl | 2 | 1.2% |
-| Russian | ru | 1 | 0.6% |
-| Portuguese | pt | 1 | 0.6% |
+| Malay | ms | 57 | 28.7% |
+| Urdu | ur | 45 | 23.4% |
+| Indonesian | id | 29 | 15.7% |
+| Farsi | fa | 22 | 12.2% |
+| Turkish | tr | 20 | 11.1% |
+| Hebrew | he | 17 | 9.5% |
+| Filipino | fil | 10 | 5.7% |
+| Hindi | hi | 9 | 5.1% |
+| French | fr | 7 | 4.0% |
+| Korean | ko | 5 | 2.9% |
+| Ukrainian | uk | 4 | 2.3% |
+| Danish | da | 4 | 2.3% |
+| Portuguese | pt | 2 | 1.2% |
+| Estonian | et | 2 | 1.2% |
+| Bengali | bn | 2 | 1.2% |
+| Arabic | ar | 1 | 0.6% |
 | Thai | th | 1 | 0.6% |
-| Bengali | bn | 1 | 0.6% |
-| Swedish | sv | 1 | 0.6% |
+| Dutch | nl | 1 | 0.6% |
 | Spanish | es | 0 | 0.0% |
 | German | de | 0 | 0.0% |
 | Italian | it | 0 | 0.0% |
+| Russian | ru | 0 | 0.0% |
+| Polish | pl | 0 | 0.0% |
+| Czech | cs | 0 | 0.0% |
+| Swedish | sv | 0 | 0.0% |
 | Japanese | ja | — | — |
-| Korean | ko | — | — |
 | Chinese (Simplified) | zh-Hans | — | — |
 | Chinese (Traditional) | zh-Hant | — | — |
 
-Total flagged across all languages: **564 entries**.
+Total flagged: **1200 entries**.
 
-## Thresholds
-
-| Family | Threshold | Languages |
-|---|---|---|
-| RTL Semitic | 10 | ar, ur |
-| Persian | 11 | fa |
-| Indic | 11 | hi, bn |
-| SE Asian | 11-12 | th, vi, id, ms |
-| Philippine | 15 | fil |
-| Turkic | 14 | tr |
-| Germanic long-compound | 17-18 | de, nl |
-| Slavic | 14-15 | ru, uk, pl, cs |
-| Nordic | 15 | sv, da |
-| Finno-Ugric | 15 | et |
-| Romance | 15 | es, pt, fr, it |
-
-Hebrew and Romanian are curated and exact respectively; thresholds do not apply to them.
+**Vietnamese note.** Vietnamese natively separates syllables with spaces. Almost every multi-syllable Vietnamese entry in this repository is stored as one glued token while Azure's Vietnamese dictionary stores it with spaces. The count of 886 reflects the language's nature, not an error in the wordlist. Implementations should treat the "no extra spaces" hint as a near-certain signal for Vietnamese seeds.
 
 ## Dataset format
 
 ```json
 {
-  "total_flagged": 190,
+  "total_flagged": 1200,
   "languages": {
-    "hebrew": {"locale": "he", "count": 7, "indices": [468, 904, ...]},
-    "romanian": {"locale": "ro", "count": 76, "indices": [...]},
+    "hebrew": {"locale": "he", "count": 17, "indices": [44, 395, 468, ...]},
+    "vietnamese": {"locale": "vi", "count": 886, "indices": [...]},
     "...": "..."
   }
 }
@@ -94,4 +76,4 @@ The trigger rate for a 12-word BIP-39 seed in a given language is `1 - ((2048 - 
 
 ## Regeneration
 
-The dataset is generated from the current `bip39-wordlists.json` source. Regenerating replaces the file entirely; it is not hand-edited.
+The dataset is generated by applying the Azure forward-translation match against the current `bip39-wordlists.json` source and the exact hyphen sets. Regenerating replaces the file entirely; it is not hand-edited.
