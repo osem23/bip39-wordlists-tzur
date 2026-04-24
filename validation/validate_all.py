@@ -88,6 +88,18 @@ def validate_wordlist(path: Path):
         if any(ch in word for ch in (" ", "\t", "\u3000")):
             error(f"{name}: Line {i + 1} contains embedded whitespace (loss-of-funds class): '{word}'")
 
+        # Embedded hyphen or dash: forbidden for paper-backup clarity.
+        # Visually-similar codepoints (ASCII hyphen-minus, en-dash, em-dash,
+        # non-breaking hyphen, soft hyphen) would cause silent lookup failures
+        # on restore when the user transcribes a paper backup.
+        for ch, name_ch in (("-", "U+002D hyphen-minus"),
+                            ("\u2013", "U+2013 en-dash"),
+                            ("\u2014", "U+2014 em-dash"),
+                            ("\u2011", "U+2011 non-breaking hyphen"),
+                            ("\u00ad", "U+00AD soft hyphen")):
+            if ch in word:
+                error(f"{name}: Line {i + 1} contains {name_ch}: '{word}'")
+
         # Duplicates
         if word in seen:
             error(f"{name}: Duplicate word at line {i + 1}: '{word}'")

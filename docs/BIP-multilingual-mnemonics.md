@@ -52,7 +52,7 @@ A display wordlist MUST:
 1. Contain exactly 2048 entries, one per line, UTF-8 encoded with no byte-order mark and Unix line endings (`\n`).
 2. Have no duplicate entries.
 3. Have no leading or trailing whitespace on any entry.
-4. Have no embedded ASCII whitespace (`U+0020`) or ideographic space (`U+3000`) inside any entry. Mnemonic words are space-separated; an entry containing whitespace cannot survive the tokenization round trip required for paper-backup recovery.
+4. Have no embedded whitespace and no hyphen or dash character inside any entry. Forbidden characters include ASCII space (`U+0020`), ideographic space (`U+3000`), any other character with the Unicode `White_Space` property, ASCII hyphen-minus (`U+002D`), en-dash (`U+2013`), em-dash (`U+2014`), non-breaking hyphen (`U+2011`), and soft hyphen (`U+00AD`). Mnemonic words are tokenized on whitespace; an entry containing whitespace cannot survive the paper-backup round trip. Hyphens and dashes are forbidden because on paper they are easily confused across visually-similar codepoints (hyphen-minus vs en-dash vs em-dash) and would cause silent lookup failures on restore.
 5. Be paired with a bidirectional mapping (`english_to_native` and `native_to_english`) that is bijective across all 2048 entries. This is the property that makes display-mnemonic to canonical-English-mnemonic resolution unambiguous in either direction.
 6. Be stored in Unicode Normalization Form C (NFC). NFKD normalization is applied only to the canonical English mnemonic and the salt before PBKDF2, as BIP-39 already requires. The display wordlist itself never reaches PBKDF2.
 
@@ -69,14 +69,20 @@ A wallet that accepts a display mnemonic on restore tokenizes it on whitespace b
 
 1. Tokenize on Unicode whitespace (characters with the Unicode `White_Space` property) plus the ideographic space (`U+3000`) used by the official Japanese BIP-39 mnemonic.
 2. Normalize every token and the display wordlist to the same Unicode form (NFC) before comparison. Mismatched normalization between input and wordlist causes silent lookup failures on precomposed/decomposed accent pairs.
-3. Preserve Zero-Width Non-Joiner characters (`U+200C`) during tokenization of languages that use them (Persian/Farsi contains ZWNJ in a significant fraction of its entries). Strip ZWNJ for index lookup only when the wordlist's stored entries have been stripped; otherwise preserve ZWNJ in both directions. The choice MUST be consistent with how the wordlist was authored.
+3. Preserve Zero-Width Non-Joiner characters (`U+200C`) during tokenization of languages that use them (Persian/Farsi contains ZWNJ in a significant fraction of its entries). ZWNJ handling MUST match wordlist authorship: wallets whose stored wordlist preserves ZWNJ MUST preserve ZWNJ during input-to-wordlist lookup; wallets whose stored wordlist strips ZWNJ MUST strip ZWNJ during lookup. Mixing the two across storage and lookup causes silent restore failures.
 4. Look up each token in the display wordlist's `native_to_english` mapping.
 5. If any token is not present in the mapping, the input is invalid; the wallet does not silently substitute, partial-match, or fall through to a different wordlist.
 6. After resolution, the resulting English token sequence is validated and used per BIP-39.
 
 ### Validation
 
-Every MUST clause above is mechanically enforceable. A reference validator at `validation/validate_all.py` in the reference registry checks each: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace inside any entry, NFC form, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status) are not enforced by the validator and are tracked separately in the registry's construction notes.
+Every MUST clause above is mechanically enforceable. A reference validator at `validation/validate_all.py` in the reference registry checks each: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace or hyphen/dash inside any entry, NFC form, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status) are not enforced by the validator and are tracked separately in the registry's construction notes.
+
+### Multi-word native concepts
+
+Some languages express a single BIP-39 concept only as a multi-word native term: Hebrew `רופא שיניים` (dentist), Turkish `hindistan cevizi` (coconut), Indonesian `kebun binatang` (zoo), Vietnamese multi-syllable words that use native word-spacing. Requirement 4 forbids embedded whitespace, so a conformant wordlist stores such entries as a single glued orthographic token (e.g., `רופאשיניים`, `hindistancevizi`, `kebunbinatang`). This is a structural consequence of the tokenization rule, not an independent requirement.
+
+Implementations SHOULD expose a per-language dataset of glued-compound indices to the user at backup and restore time, so users writing the seed on paper do not insert a separator that would fail the tokenization round trip. The reference registry publishes such a dataset at `validation/compound-entries.json` with per-language counts and index lists; implementations may consume it or generate their own.
 
 ## Backwards Compatibility
 
@@ -92,7 +98,7 @@ Seeds produced under this convention are bit-identical to seeds produced by any 
 
 ## Test Vectors
 
-The reference registry ships per-language conformance vectors under `test-vectors/`. Each file contains 14 vectors across the five canonical BIP-39 entropy lengths (128, 160, 192, 224, and 256 bits), each with a display-language mnemonic and the derived seed. Under this convention the display-language seed for a given entropy equals the English seed for the same entropy, by construction; this is the property that defines the convention. An implementation that reproduces every vector in a target language's file has a conformant encoding and PBKDF2 pipeline for that language.
+The reference registry ships per-language conformance vectors under `test-vectors/`. Each file contains 14 vectors covering the five canonical BIP-39 entropy lengths, distributed 5 / 1 / 2 / 1 / 5 across 128, 160, 192, 224, and 256 bits respectively. Coverage is weighted toward the 12-word and 24-word mnemonics, which are the common deployment sizes; the three middle lengths carry at least one vector each. Every vector pairs a display-language mnemonic with the derived seed. Under this convention the display-language seed for a given entropy equals the English seed for the same entropy, by construction; this is the property that defines the convention. An implementation that reproduces every vector in a target language's file has a conformant encoding and PBKDF2 pipeline for that language.
 
 The canonical English vector for 128-bit zero entropy with an empty passphrase is:
 
