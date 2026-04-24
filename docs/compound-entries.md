@@ -10,13 +10,13 @@ Downstream wallets use this dataset to show a small hint when a displayed seed p
 
 ## Detection
 
-An entry is flagged as a compound by two converging signals:
+An entry is flagged as a compound by three converging signals:
 
-1. **Azure forward-translation match.** For every English BIP-39 word, Microsoft Azure Translator is asked for the native translation. If Azure's native output contains whitespace, a hyphen, or a ZWNJ, and removing those separators yields exactly the stored native word (case-insensitive, NFC-normalized), the entry is a glued multi-word compound. This is the primary signal. It catches compounds independent of our curation choices, across all 26 non-CJK languages.
-2. **Exact hyphen sets** for languages whose native orthography uses hyphens in compound entries. Hyphens are not permitted in the stored form, so the set of previously-hyphenated entries is definitionally the compound set for that language: Romanian (76), French, Hindi, Ukrainian, Estonian, Portuguese.
-3. **Manual curation** for Hebrew, supplementing the Azure signal where Azure translated the English to a Hebrew synonym that the filter could not match byte-for-byte.
+1. **Azure forward-translation match.** For every English BIP-39 word, Microsoft Azure Translator is asked for the native translation. If Azure's native output contains whitespace, a hyphen, or a ZWNJ, and removing those separators yields exactly the stored native word (case-insensitive, NFC-normalized), the entry is a glued multi-word compound. This is the primary signal.
+2. **Exact hyphen sets** for languages whose native orthography uses hyphens in compound entries. Hyphens are not permitted in the stored form, so the hyphen-bearing set is definitionally the compound set for that language: Romanian, French, Hindi, Ukrainian, Estonian, Portuguese.
+3. **Manual curation** for Hebrew, supplementing the Azure signal where Azure translated the English to a Hebrew synonym the filter could not match byte-for-byte.
 
-Chinese, Japanese, and Korean are not in scope. Their morphology is character-based and the multi-word-compound concern that motivates this dataset does not map onto them, with the exception of a handful of Korean spaced compounds that Azure flags (dinner, kitten, tonight, etc).
+The filter runs on all 30 languages. Japanese, Simplified Chinese, and Traditional Chinese return zero hits by filter, because their writing systems do not use word-level spaces; there is no "would be spaced in normal orthography" concept to detect. Korean does use word-level spaces and carries 5 compound entries.
 
 ## Per-language counts
 
@@ -49,9 +49,9 @@ Chinese, Japanese, and Korean are not in scope. Their morphology is character-ba
 | Polish | pl | 0 | 0.0% |
 | Czech | cs | 0 | 0.0% |
 | Swedish | sv | 0 | 0.0% |
-| Japanese | ja | — | — |
-| Chinese (Simplified) | zh-Hans | — | — |
-| Chinese (Traditional) | zh-Hant | — | — |
+| Japanese | ja | 0 | 0.0% |
+| Chinese (Simplified) | zh-Hans | 0 | 0.0% |
+| Chinese (Traditional) | zh-Hant | 0 | 0.0% |
 
 Total flagged: **1200 entries**.
 
