@@ -12,15 +12,15 @@ Downstream wallets use this dataset to show a small hint when a displayed seed p
 
 A glued compound is a native entry that would normally carry a whitespace, hyphen, or Zero-Width Non-Joiner separator in everyday orthography, but is stored here as a single orthographic token to satisfy the repository's no-separator rule. Detection combines three independent signals. An entry is flagged when any signal confirms it; the set is a union, not an intersection.
 
-### Signal 1 — translation dictionary
+### Signal 1. Translation dictionary
 
 For every English BIP-39 word, Microsoft Azure Translator is queried for the native-language translation. When Azure's output contains an inline whitespace, hyphen, or Zero-Width Non-Joiner, the English concept maps to a multi-word native term in Azure's dictionary. Stripping those separators from Azure's output and comparing byte-for-byte against the stored entry (NFC-normalized, case-folded) confirms that the stored entry is the glued form of the same concept. This signal runs uniformly across all 30 languages and accounts for most of the flagged set. It is exact rather than heuristic: a flag fires only when the two forms are byte-identical modulo the stripped separator.
 
-### Signal 2 — orthographic ground truth from the hyphen transition
+### Signal 2. Orthographic ground truth from the hyphen transition
 
 Romanian, French, Hindi, Ukrainian, Estonian, and Portuguese formerly stored their compound entries with hyphens. The repository's structural rules forbid hyphens inside any entry; the hyphen-bearing set was therefore removed and replaced with glued forms. The set of entries that lost their hyphen is by construction the compound set for those languages. These indices are included even when Azure's dictionary happens to return a single-token synonym for the same concept.
 
-### Signal 3 — native-speaker review for Hebrew
+### Signal 3. Native-speaker review for Hebrew
 
 Hebrew received a full native-speaker review of its compound entries. Seven indices flagged during that review are carried in the dataset and merged with the Azure-filter output for Hebrew. Native review handles the residual cases where Azure's chosen synonym for an English concept is morphologically distinct from the stored compound and therefore does not match the filter byte-for-byte (for example, Azure renders "illegal" as `לא חוקי` while the stored entry is `בלתיחוקי`, a semantically equivalent but morphologically different compound).
 
