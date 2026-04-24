@@ -1,7 +1,5 @@
 {
-  "audit_date": "2026-04-24",
-  "audit_method": "Per-language grapheme-length threshold + curated overrides. See docs/compound-entries.md.",
-  "total_flagged": 190,
+  "total_flagged": 231,
   "languages": {
     "hebrew": {
       "locale": "he",
@@ -62,11 +60,6 @@
         1895
       ]
     },
-    "japanese": {
-      "locale": "ja",
-      "count": 0,
-      "indices": []
-    },
     "indonesian": {
       "locale": "id",
       "count": 13,
@@ -86,11 +79,6 @@
         2047
       ]
     },
-    "korean": {
-      "locale": "ko",
-      "count": 0,
-      "indices": []
-    },
     "hindi": {
       "locale": "hi",
       "count": 6,
@@ -105,8 +93,13 @@
     },
     "arabic": {
       "locale": "ar",
-      "count": 0,
-      "indices": []
+      "count": 4,
+      "indices": [
+        291,
+        1278,
+        1874,
+        1895
+      ]
     },
     "farsi": {
       "locale": "fa",
@@ -219,8 +212,17 @@
     },
     "dutch": {
       "locale": "nl",
-      "count": 0,
-      "indices": []
+      "count": 8,
+      "indices": [
+        162,
+        239,
+        595,
+        736,
+        754,
+        773,
+        918,
+        981
+      ]
     },
     "polish": {
       "locale": "pl",
@@ -249,13 +251,22 @@
     },
     "bengali": {
       "locale": "bn",
-      "count": 0,
-      "indices": []
+      "count": 1,
+      "indices": [
+        1809
+      ]
     },
     "czech": {
       "locale": "cs",
-      "count": 0,
-      "indices": []
+      "count": 6,
+      "indices": [
+        26,
+        173,
+        204,
+        326,
+        1011,
+        1797
+      ]
     },
     "romanian": {
       "locale": "ro",
@@ -348,18 +359,31 @@
     },
     "danish": {
       "locale": "da",
-      "count": 0,
-      "indices": []
-    },
-    "simplifiedChinese": {
-      "locale": "zh-Hans",
-      "count": 0,
-      "indices": []
-    },
-    "traditionalChinese": {
-      "locale": "zh-Hant",
-      "count": 0,
-      "indices": []
+      "count": 22,
+      "indices": [
+        160,
+        491,
+        700,
+        809,
+        847,
+        884,
+        985,
+        1015,
+        1018,
+        1058,
+        1074,
+        1118,
+        1159,
+        1210,
+        1390,
+        1399,
+        1649,
+        1651,
+        1842,
+        1853,
+        1879,
+        1968
+      ]
     }
   }
 }

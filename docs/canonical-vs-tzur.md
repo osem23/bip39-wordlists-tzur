@@ -31,6 +31,6 @@ Reading the figures:
 - **Japanese: 11 shared.** Same reason as Korean, but hiragana-only canonical versus kanji + kana TZUR Original leaves minimal incidental overlap.
 - **Chinese (Simplified 75, Traditional 45).** The canonical lists are single-character frequency-ordered dictionaries, while the TZUR Original is multi-character semantic translation. Overlap is the set of simple words (e.g., translation, language, action) that appear in both spaces.
 - **Latin-script languages (Spanish, French, Italian, Portuguese).** 400-700 shared tokens reflects common-word overlap: the canonical list samples frequent single-morpheme native words, and the TZUR Original often lands on the same common native word when translating a common English concept.
-- **Czech: 303 shared.** In line with the other Latin-script languages after the back-translate + LLM-verdict audit replaced the initial canonical-fallback placeholders with proper translations. Before the audit this figure was 844; the drop is the audit's effect.
+- **Czech: 303 shared.** In line with the other Latin-script languages. Common-word overlap between the canonical spec list and the semantic translation of English.
 
 The "Only in canonical" / "Only in TZUR" columns are symmetric per row because both lists hold exactly 2048 entries: whatever one list contributes that the other does not, the other must contribute in equal measure on its side.

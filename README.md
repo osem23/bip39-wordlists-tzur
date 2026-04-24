@@ -4,9 +4,7 @@ Index-paired, audited, multi-script display wordlists for BIP-39 mnemonics in 30
 
 [![Validate](https://github.com/osem23/bip39-wordlists-tzur/actions/workflows/validate.yml/badge.svg)](https://github.com/osem23/bip39-wordlists-tzur/actions/workflows/validate.yml)
 ![Languages](https://img.shields.io/badge/Languages-30-blue)
-![Entries audited](https://img.shields.io/badge/Entries%20audited-61%2C440-blue)
-![Refinements applied](https://img.shields.io/badge/Refinements%20applied-2%2C405-blue)
-![Known errors post-audit](https://img.shields.io/badge/Known%20errors%20post--audit-0-brightgreen)
+![Entries per language](https://img.shields.io/badge/Entries%20per%20language-2%2C048-blue)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Tag](https://img.shields.io/badge/Tag-v1.0-informational)
 
@@ -44,52 +42,50 @@ This repository implements the display-layer convention explicitly: the native w
 
 > This repository is the reference implementation for [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md), an Informational BIP draft specifying the native-language display wordlist convention. The seed of record remains the canonical English mnemonic. Display wordlists are a UX layer with no new cryptographic surface. The draft defines MUST/SHOULD rules for wordlist structure, input parsing, test vectors, and security considerations.
 
-## Audit and Validation
+## Validation
 
-Every TZUR Original wordlist passes three validation layers. Aggregate: 61,440 entries audited (30 languages × 2048). 1,450 entries flagged WRONG by translation-accuracy verdicts and replaced. An additional script-normalization pass against the Traditional Chinese wordlist replaced 955 simplified-character entries with their Traditional-character equivalents. Total refinements: 2,405. Post-fix known error rate: 0% against every completed audit layer for every language.
+Every TZUR Original wordlist passes three validation layers.
 
-Method:
-
-- **Layer 1. Structural validation.** Exactly 2048 entries, UTF-8 without BOM, no duplicates, no whitespace, Unix line endings, bijective mapping round-trip.
-- **Layer 2. Back-translation pass.** Each native word is back-translated to English via Google Translate. Divergences are flagged as suspects. An LLM verdict agent compares native directly to English and replaces WRONG entries.
-- **Layer 3. Forward-translation pass.** Each English word is forward-translated to the native language via Microsoft Azure Translator. Same LLM verdict layer. Catches false friends, homonym sense-shifts, and cases back-translation would miss.
+- **Structural.** Exactly 2048 entries, UTF-8 without BOM, no duplicates, no whitespace, no hyphen or space within a word, Unix line endings, bijective mapping round-trip.
+- **Back-translation.** Native-to-English translation via Google Translate with an LLM verdict layer comparing native directly to English at each index.
+- **Forward-translation.** English-to-native translation via Microsoft Azure Translator with the same verdict layer. Catches false friends and homonym sense-shifts back-translation misses.
 
 Per-language status:
 
-| Language | Structural | Back-translation | Forward-translation | Refinements | Native-speaker review |
-|---|---|---|---|---:|---|
-| Arabic | Clean | Complete | Complete | 4 | Pending |
-| Bengali | Clean | Complete | Complete | 0 | Pending |
-| Chinese (Simplified) | Clean | Complete | Complete | 86 | Pending |
-| Chinese (Traditional) | Clean | Complete | Complete | 1,037 | Pending |
-| Czech | Clean | Complete | Complete | 625 | Pending |
-| Danish | Clean | Complete | Complete | 0 | Pending |
-| Dutch | Clean | Complete | Complete | 1 | Pending |
-| Estonian | Clean | Complete | Complete | 36 | Pending |
-| Farsi | Clean | Complete | Complete | 0 | Pending |
-| Filipino | Clean | Complete | Complete | 23 | Pending |
-| French | Clean | Complete | Complete | 2 | Pending |
-| German | Clean | Complete | Complete | 1 | Pending |
-| **Hebrew** | Clean | Complete | Complete | 5 | **Complete (native he)** |
-| Hindi | Clean | Complete | Complete | 181 | Pending |
-| Indonesian | Clean | Complete | Complete | 9 | Pending |
-| Italian | Clean | Complete | Complete | 49 | Pending |
-| Japanese | Clean | Complete | Complete | 42 | Pending |
-| Korean | Clean | Complete | Complete | 43 | Pending |
-| Malay | Clean | Complete | Complete | 3 | Pending |
-| Polish | Clean | Complete | Complete | 4 | Pending |
-| **Portuguese** | Clean | Complete | Complete | 3 | **Peer-reviewed (native pt-BR)** |
-| Romanian | Clean | Complete | Complete | 0 | Pending |
-| Russian | Clean | Complete | Complete | 4 | Pending |
-| **Spanish** | Clean | Complete | Complete | 109 | **Peer-reviewed (native es-AR)** |
-| Swedish | Clean | Complete | Complete | 0 | Pending |
-| Thai | Clean | Complete | Complete | 3 | Pending |
-| Turkish | Clean | Complete | Complete | 24 | Pending |
-| Ukrainian | Clean | Complete | Complete | 35 | Pending |
-| Urdu | Clean | Complete | Complete | 63 | Pending |
-| Vietnamese | Clean | Complete | Complete | 13 | Pending |
+| Language | Structural | Back-translation | Forward-translation | Native-speaker review |
+|---|---|---|---|---|
+| Arabic | Clean | Complete | Complete | Pending |
+| Bengali | Clean | Complete | Complete | Pending |
+| Chinese (Simplified) | Clean | Complete | Complete | Pending |
+| Chinese (Traditional) | Clean | Complete | Complete | Pending |
+| Czech | Clean | Complete | Complete | Pending |
+| Danish | Clean | Complete | Complete | Pending |
+| Dutch | Clean | Complete | Complete | Pending |
+| Estonian | Clean | Complete | Complete | Pending |
+| Farsi | Clean | Complete | Complete | Pending |
+| Filipino | Clean | Complete | Complete | Pending |
+| French | Clean | Complete | Complete | Pending |
+| German | Clean | Complete | Complete | Pending |
+| **Hebrew** | Clean | Complete | Complete | **Complete (native he)** |
+| Hindi | Clean | Complete | Complete | Pending |
+| Indonesian | Clean | Complete | Complete | Pending |
+| Italian | Clean | Complete | Complete | Pending |
+| Japanese | Clean | Complete | Complete | Pending |
+| Korean | Clean | Complete | Complete | Pending |
+| Malay | Clean | Complete | Complete | Pending |
+| Polish | Clean | Complete | Complete | Pending |
+| **Portuguese** | Clean | Complete | Complete | **Peer-reviewed (native pt-BR)** |
+| Romanian | Clean | Complete | Complete | Pending |
+| Russian | Clean | Complete | Complete | Pending |
+| **Spanish** | Clean | Complete | Complete | **Peer-reviewed (native es-AR)** |
+| Swedish | Clean | Complete | Complete | Pending |
+| Thai | Clean | Complete | Complete | Pending |
+| Turkish | Clean | Complete | Complete | Pending |
+| Ukrainian | Clean | Complete | Complete | Pending |
+| Urdu | Clean | Complete | Complete | Pending |
+| Vietnamese | Clean | Complete | Complete | Pending |
 
-Full methodology, per-language construction notes, and reproducibility statement live at [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Translation-engine validation is not a substitute for native-speaker review. Hebrew, Spanish, and Portuguese carry native-speaker signals today; the other 27 have the three-layer translation-accuracy audit above and are pending native review. Contributions land via issues and PRs and are acknowledged in the matrix as they arrive.
+Methodology and per-language construction notes live at [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Translation-engine validation is not a substitute for native-speaker review. Hebrew, Spanish, and Portuguese carry native-speaker signals today; the other 27 have the three validation layers above and are open to native-speaker contributions via issue or pull request.
 
 ## Wordlists and Mappings
 
@@ -164,16 +160,17 @@ Each mapping file contains `language`, `word_count`, `description`, `pairing_typ
 - 4-char prefix uniqueness is not guaranteed across all scripts. Wallets relying on prefix autocomplete should fall back to full-word matching.
 - Run [`validation/validate_all.py`](validation/validate_all.py) to re-verify every wordlist and mapping.
 
-## Remaining Limitations
+## Limitations
 
-- Native-speaker review pending for 27 of 30 languages. Hebrew has full review; Spanish and Portuguese are peer-reviewed by native speakers. The other 27 carry the three-layer translation-accuracy audit above but not yet native-speaker validation.
-- "No prior known wordlist" for 15 languages is a best-effort claim at time of publication. If a pre-existing wordlist surfaces, it will be acknowledged.
+- Native-speaker review is complete for Hebrew, peer-reviewed for Spanish and Portuguese, and open for the other 27 languages.
+- "No prior known wordlist" for 15 languages is a best-effort claim at time of publication.
 - No external cryptographic or linguistic audit has been performed. Independent review is welcome via PR.
 
 ## Documentation
 
 - [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, test vectors, security considerations.
-- [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Construction methodology, disambiguation rules, per-language construction notes, review status matrix, reproducibility statement.
+- [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Construction rules, disambiguation, per-language notes, reproducibility.
+- [`docs/compound-entries.md`](docs/compound-entries.md). Per-language dataset of entries stored as glued multi-word compounds, for downstream input-UX hints.
 - [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Word-set difference between canonical BIP-39 and TZUR Original for the nine languages with a canonical counterpart.
 - [`validation/encoding-notes.md`](validation/encoding-notes.md). UTF-8, NFKD normalization, ZWNJ handling for Farsi, per-language normalization impact.
 - [`test-vectors/`](test-vectors/). BIP-39 conformance vectors per language. Integrators reproduce every vector in the target language before shipping.
