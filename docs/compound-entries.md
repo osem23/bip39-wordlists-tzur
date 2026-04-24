@@ -20,6 +20,43 @@ Length-threshold detection admits false positives (long single dictionary words 
 
 Chinese, Japanese, and Korean are not included: their morphology is character-based, and the multi-word-compound concern that motivates this dataset does not map onto them.
 
+## Per-language counts
+
+| Language | Locale | Compound count | 12-word seed trigger rate |
+|---|---|---:|---:|
+| Farsi | fa | 215 | 73.6% |
+| Romanian | ro | 76 | 36.5% |
+| Filipino | fil | 67 | 32.9% |
+| Estonian | et | 39 | 20.6% |
+| French | fr | 27 | 14.7% |
+| Dutch | nl | 26 | 14.2% |
+| Malay | ms | 24 | 13.2% |
+| Danish | da | 22 | 12.2% |
+| Indonesian | id | 13 | 7.4% |
+| Vietnamese | vi | 12 | 6.8% |
+| Hebrew | he | 7 | 4.0% |
+| Hindi | hi | 6 | 3.5% |
+| Urdu | ur | 6 | 3.5% |
+| Czech | cs | 6 | 3.5% |
+| Turkish | tr | 4 | 2.3% |
+| Arabic | ar | 4 | 2.3% |
+| Ukrainian | uk | 3 | 1.7% |
+| Polish | pl | 2 | 1.2% |
+| Russian | ru | 1 | 0.6% |
+| Portuguese | pt | 1 | 0.6% |
+| Thai | th | 1 | 0.6% |
+| Bengali | bn | 1 | 0.6% |
+| Swedish | sv | 1 | 0.6% |
+| Spanish | es | 0 | 0.0% |
+| German | de | 0 | 0.0% |
+| Italian | it | 0 | 0.0% |
+| Japanese | ja | — | — |
+| Korean | ko | — | — |
+| Chinese (Simplified) | zh-Hans | — | — |
+| Chinese (Traditional) | zh-Hant | — | — |
+
+Total flagged across all languages: **564 entries**.
+
 ## Thresholds
 
 | Family | Threshold | Languages |
