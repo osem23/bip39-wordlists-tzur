@@ -20,40 +20,40 @@ The filter runs on all 30 languages. Japanese, Simplified Chinese, and Tradition
 
 ## Per-language counts
 
-| Language | Locale | Compound count | 12-word seed trigger rate |
-|---|---|---:|---:|
-| Vietnamese | vi | 886 | 99.9% |
-| Romanian | ro | 76 | 36.5% |
-| Malay | ms | 57 | 28.7% |
-| Urdu | ur | 45 | 23.4% |
-| Indonesian | id | 29 | 15.7% |
-| Farsi | fa | 22 | 12.2% |
-| Turkish | tr | 20 | 11.1% |
-| Hebrew | he | 17 | 9.5% |
-| Filipino | fil | 10 | 5.7% |
-| Hindi | hi | 9 | 5.1% |
-| French | fr | 7 | 4.0% |
-| Korean | ko | 5 | 2.9% |
-| Ukrainian | uk | 4 | 2.3% |
-| Danish | da | 4 | 2.3% |
-| Portuguese | pt | 2 | 1.2% |
-| Estonian | et | 2 | 1.2% |
-| Bengali | bn | 2 | 1.2% |
-| Arabic | ar | 1 | 0.6% |
-| Thai | th | 1 | 0.6% |
-| Dutch | nl | 1 | 0.6% |
-| Spanish | es | 0 | 0.0% |
-| German | de | 0 | 0.0% |
-| Italian | it | 0 | 0.0% |
-| Russian | ru | 0 | 0.0% |
-| Polish | pl | 0 | 0.0% |
-| Czech | cs | 0 | 0.0% |
-| Swedish | sv | 0 | 0.0% |
-| Japanese | ja | 0 | 0.0% |
-| Chinese (Simplified) | zh-Hans | 0 | 0.0% |
-| Chinese (Traditional) | zh-Hant | 0 | 0.0% |
+| Language | Locale | Count | % of wordlist | 12-word seed trigger rate |
+|---|---|---:|---:|---:|
+| Vietnamese | vi | 886 | 43.3% | 99.9% |
+| Romanian | ro | 76 | 3.7% | 36.5% |
+| Malay | ms | 57 | 2.8% | 28.7% |
+| Urdu | ur | 45 | 2.2% | 23.4% |
+| Indonesian | id | 29 | 1.4% | 15.7% |
+| Farsi | fa | 22 | 1.1% | 12.2% |
+| Turkish | tr | 20 | 1.0% | 11.1% |
+| Hebrew | he | 17 | 0.8% | 9.5% |
+| Filipino | fil | 10 | 0.5% | 5.7% |
+| Hindi | hi | 9 | 0.4% | 5.1% |
+| French | fr | 7 | 0.3% | 4.0% |
+| Korean | ko | 5 | 0.2% | 2.9% |
+| Ukrainian | uk | 4 | 0.2% | 2.3% |
+| Danish | da | 4 | 0.2% | 2.3% |
+| Portuguese | pt | 2 | 0.1% | 1.2% |
+| Estonian | et | 2 | 0.1% | 1.2% |
+| Bengali | bn | 2 | 0.1% | 1.2% |
+| Arabic | ar | 1 | 0.0% | 0.6% |
+| Thai | th | 1 | 0.0% | 0.6% |
+| Dutch | nl | 1 | 0.0% | 0.6% |
+| Spanish | es | 0 | 0.0% | 0.0% |
+| German | de | 0 | 0.0% | 0.0% |
+| Italian | it | 0 | 0.0% | 0.0% |
+| Russian | ru | 0 | 0.0% | 0.0% |
+| Polish | pl | 0 | 0.0% | 0.0% |
+| Czech | cs | 0 | 0.0% | 0.0% |
+| Swedish | sv | 0 | 0.0% | 0.0% |
+| Japanese | ja | 0 | 0.0% | 0.0% |
+| Chinese (Simplified) | zh-Hans | 0 | 0.0% | 0.0% |
+| Chinese (Traditional) | zh-Hant | 0 | 0.0% | 0.0% |
 
-Total flagged: **1200 entries**.
+Total flagged: **1200 entries**. **% of wordlist** is compound entries divided by 2048. **Trigger rate** is the probability that a freshly generated 12-word mnemonic contains at least one compound entry: `1 - ((2048 - count) / 2048) ** 12`.
 
 **Vietnamese note.** Vietnamese natively separates syllables with spaces. Almost every multi-syllable Vietnamese entry in this repository is stored as one glued token while Azure's Vietnamese dictionary stores it with spaces. The count of 886 reflects the language's nature, not an error in the wordlist. Implementations should treat the "no extra spaces" hint as a near-certain signal for Vietnamese seeds.
 
