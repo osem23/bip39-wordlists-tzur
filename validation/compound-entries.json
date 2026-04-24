@@ -1,0 +1,346 @@
+{
+  "audit_date": "2026-04-24",
+  "audit_method": "Per-language grapheme-length threshold + curated overrides. See docs/compound-entries.md.",
+  "total_flagged": 174,
+  "languages": {
+    "hebrew": {
+      "locale": "he",
+      "count": 7,
+      "indices": [
+        468,
+        904,
+        1420,
+        1480,
+        1890,
+        1974,
+        1989
+      ]
+    },
+    "spanish": {
+      "locale": "es",
+      "count": 0,
+      "indices": []
+    },
+    "russian": {
+      "locale": "ru",
+      "count": 1,
+      "indices": [
+        1668
+      ]
+    },
+    "portuguese": {
+      "locale": "pt",
+      "count": 0,
+      "indices": []
+    },
+    "german": {
+      "locale": "de",
+      "count": 0,
+      "indices": []
+    },
+    "french": {
+      "locale": "fr",
+      "count": 0,
+      "indices": []
+    },
+    "turkish": {
+      "locale": "tr",
+      "count": 4,
+      "indices": [
+        138,
+        359,
+        600,
+        1895
+      ]
+    },
+    "japanese": {
+      "locale": "ja",
+      "count": 0,
+      "indices": []
+    },
+    "indonesian": {
+      "locale": "id",
+      "count": 13,
+      "indices": [
+        293,
+        295,
+        378,
+        486,
+        632,
+        864,
+        1015,
+        1032,
+        1278,
+        1545,
+        1903,
+        2035,
+        2047
+      ]
+    },
+    "korean": {
+      "locale": "ko",
+      "count": 0,
+      "indices": []
+    },
+    "hindi": {
+      "locale": "hi",
+      "count": 0,
+      "indices": []
+    },
+    "arabic": {
+      "locale": "ar",
+      "count": 0,
+      "indices": []
+    },
+    "farsi": {
+      "locale": "fa",
+      "count": 23,
+      "indices": [
+        512,
+        554,
+        602,
+        696,
+        707,
+        710,
+        853,
+        858,
+        866,
+        923,
+        953,
+        1139,
+        1199,
+        1313,
+        1594,
+        1751,
+        1780,
+        1782,
+        1854,
+        1938,
+        1941,
+        1953,
+        2032
+      ]
+    },
+    "urdu": {
+      "locale": "ur",
+      "count": 6,
+      "indices": [
+        1009,
+        1215,
+        1434,
+        1439,
+        1459,
+        1820
+      ]
+    },
+    "vietnamese": {
+      "locale": "vi",
+      "count": 12,
+      "indices": [
+        50,
+        268,
+        273,
+        324,
+        357,
+        427,
+        760,
+        837,
+        1276,
+        1580,
+        1668,
+        1819
+      ]
+    },
+    "thai": {
+      "locale": "th",
+      "count": 1,
+      "indices": [
+        923
+      ]
+    },
+    "malay": {
+      "locale": "ms",
+      "count": 24,
+      "indices": [
+        22,
+        66,
+        589,
+        723,
+        789,
+        793,
+        796,
+        912,
+        932,
+        979,
+        1000,
+        1015,
+        1019,
+        1026,
+        1032,
+        1065,
+        1072,
+        1075,
+        1278,
+        1654,
+        1715,
+        1903,
+        1920,
+        1992
+      ]
+    },
+    "italian": {
+      "locale": "it",
+      "count": 0,
+      "indices": []
+    },
+    "filipino": {
+      "locale": "fil",
+      "count": 2,
+      "indices": [
+        1919,
+        1938
+      ]
+    },
+    "dutch": {
+      "locale": "nl",
+      "count": 0,
+      "indices": []
+    },
+    "polish": {
+      "locale": "pl",
+      "count": 2,
+      "indices": [
+        443,
+        1688
+      ]
+    },
+    "ukrainian": {
+      "locale": "uk",
+      "count": 1,
+      "indices": [
+        1809
+      ]
+    },
+    "estonian": {
+      "locale": "et",
+      "count": 1,
+      "indices": [
+        300
+      ]
+    },
+    "bengali": {
+      "locale": "bn",
+      "count": 0,
+      "indices": []
+    },
+    "czech": {
+      "locale": "cs",
+      "count": 0,
+      "indices": []
+    },
+    "romanian": {
+      "locale": "ro",
+      "count": 76,
+      "indices": [
+        682,
+        734,
+        746,
+        1123,
+        1150,
+        1170,
+        1180,
+        1189,
+        1242,
+        1260,
+        1307,
+        1317,
+        1349,
+        1420,
+        1426,
+        1447,
+        1529,
+        1551,
+        1575,
+        1576,
+        1582,
+        1588,
+        1592,
+        1594,
+        1595,
+        1597,
+        1599,
+        1609,
+        1618,
+        1660,
+        1667,
+        1678,
+        1686,
+        1697,
+        1700,
+        1703,
+        1704,
+        1708,
+        1722,
+        1724,
+        1736,
+        1744,
+        1746,
+        1758,
+        1760,
+        1770,
+        1774,
+        1803,
+        1816,
+        1819,
+        1820,
+        1831,
+        1836,
+        1837,
+        1851,
+        1857,
+        1861,
+        1867,
+        1875,
+        1879,
+        1882,
+        1886,
+        1894,
+        1910,
+        1915,
+        1939,
+        1943,
+        1966,
+        1970,
+        1976,
+        1984,
+        1990,
+        1994,
+        1998,
+        2014,
+        2025
+      ]
+    },
+    "swedish": {
+      "locale": "sv",
+      "count": 1,
+      "indices": [
+        474
+      ]
+    },
+    "danish": {
+      "locale": "da",
+      "count": 0,
+      "indices": []
+    },
+    "simplifiedChinese": {
+      "locale": "zh-Hans",
+      "count": 0,
+      "indices": []
+    },
+    "traditionalChinese": {
+      "locale": "zh-Hant",
+      "count": 0,
+      "indices": []
+    }
+  }
+}

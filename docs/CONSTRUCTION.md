@@ -120,6 +120,8 @@ Languages where this convention applies most often: Hebrew, Turkish, Indonesian,
 
 Romanian is a specific case worth naming. Earlier revisions of the Romanian wordlist preserved hyphens in compound entries (for example `broască-țestoasă`, `frate-sau-soră`). Hyphens were normalized away in a subsequent revision so the entire repository follows one rule. Romanian hyphen usage is orthographically valid in the language; removing it here is a repository-consistency choice, not a claim about Romanian spelling.
 
+Per-language counts and exact index lists of flagged compound entries are in [`docs/compound-entries.md`](compound-entries.md) and [`validation/compound-entries.json`](../validation/compound-entries.json). Downstream wallets use this dataset to hint users against inserting whitespace when re-typing a compound-containing seed in another wallet.
+
 ## Per-language construction notes
 
 | Language | Source | Canonical BIP-39? | Notes |
