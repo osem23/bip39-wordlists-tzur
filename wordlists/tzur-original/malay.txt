@@ -7,7 +7,7 @@ ponteng
 serap
 abstrak
 karut
-dera
+penyalahgunaan
 akses
 kemalangan
 akaun
@@ -113,7 +113,7 @@ anggap
 asma
 atlet
 atom
-rempuh
+serangan
 hadir
 sikap
 pikat
@@ -465,7 +465,7 @@ tunda
 hantar
 tuntut
 kemangkatan
-sangkal
+penafian
 doktorgigi
 nafi
 berlepas
@@ -542,7 +542,7 @@ gendang
 kering
 itik
 bisu
-bukitpasir
+gumuk
 semasa
 debu
 belanda
@@ -829,7 +829,7 @@ teka
 panduan
 bersalah
 gitar
-pembedil
+bedil
 gim
 tabiat
 rambut
@@ -889,12 +889,12 @@ rendah
 jenaka
 ratus
 lapar
-buru
+memburu
 halangan
 cepat
 lukai
 suami
-kacuk
+hibrid
 ais
 ikon
 idea
@@ -941,7 +941,7 @@ pasangkan
 utuh
 minat
 kedalam
-labur
+melabur
 jemput
 libat
 besi
@@ -1357,7 +1357,7 @@ latihan
 puji
 ramal
 suka
-persiap
+sediakan
 persembahan
 cantik
 cegah
@@ -1373,7 +1373,7 @@ masalah
 proses
 hasil
 untung
-atucara
+program
 projek
 galak
 pembuktian
@@ -1514,7 +1514,7 @@ tikar
 peraturan
 lari
 landasan
-luarbandar
+pedalaman
 sedih
 pelana
 kesedihan
@@ -1653,7 +1653,7 @@ suria
 askar
 pejal
 penyelesaian
-rungkai
+menyelesaikan
 seseorang
 lagu
 segera
@@ -1801,7 +1801,7 @@ fikiran
 tiga
 subur
 baling
-ibujari
+jempol
 guruh
 tiket
 pasangsurut
@@ -1875,7 +1875,7 @@ yuran
 terjatuh
 tuna
 terowong
-ayambelanda
+kalkun
 belok
 penyu
 duabelas
