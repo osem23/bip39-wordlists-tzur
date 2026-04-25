@@ -45,7 +45,8 @@ Farsi uses the Arabic script extended with four additional characters: پ چ ژ 
 
 Implementers must be aware:
 
-- ZWNJ is an invisible character that will be **stripped by NFKD normalization**.
+- ZWNJ (U+200C) is **preserved by NFC and NFKD**. Standard Unicode canonical and compatibility normalization does not strip it. An earlier revision of this document stated the opposite; that was a factual error.
+- Stripping ZWNJ for input handling is therefore an explicit transformation, not a normalization side effect. Implementations that strip it must do so by an explicit rule applied to both the wordlist keys and user input.
 - When performing word lookup or validation against the Farsi wordlist, implementations must compare using the **same form** - either both with ZWNJ or both without.
 - The recommended approach: strip ZWNJ from both the wordlist keys and user input before comparison, then use the original (ZWNJ-containing) form only for display.
 
