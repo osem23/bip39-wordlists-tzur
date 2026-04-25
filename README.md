@@ -168,7 +168,8 @@ Each mapping file contains `language`, `word_count`, `description`, `pairing_typ
 
 ## Documentation
 
-- [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, test vectors, security considerations.
+- [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, backup and portability policy, conformance profile, security considerations.
+- [`docs/IMPLEMENTER_NOTES.md`](docs/IMPLEMENTER_NOTES.md). Non-normative companion. Wallet-side operational guidance: backup-screen copy, restore-time input handling, compound-entry hints, ZWNJ strategies, wordlist governance, test fixtures.
 - [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Construction rules, disambiguation, per-language notes, reproducibility.
 - [`docs/compound-entries.md`](docs/compound-entries.md). Per-language dataset of entries stored as glued multi-word compounds, for downstream input-UX hints.
 - [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Word-set difference between canonical BIP-39 and TZUR Original for the nine languages with a canonical counterpart.
