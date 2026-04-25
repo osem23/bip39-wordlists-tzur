@@ -586,7 +586,7 @@ bemyndige
 tom
 muliggøre
 vedtage
-slut
+ende
 uendelig
 bifalde
 fjende
@@ -1547,7 +1547,7 @@ skorpion
 spejder
 skrot
 skærm
-manus
+manuskript
 skrubbe
 hav
 søge
@@ -1575,7 +1575,7 @@ syv
 skygge
 skakt
 lavvandet
-fordele
+andel
 skur
 skal
 sheriff
@@ -1849,7 +1849,7 @@ tragisk
 tog
 overføre
 fælde
-uhumskhed
+skrammel
 færdes
 serveringsbakke
 behandle

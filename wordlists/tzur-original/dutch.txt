@@ -90,7 +90,7 @@ boog
 arctisch
 gebied
 arena
-ruziën
+redetwisten
 arm
 gewapend
 wapenrusting
@@ -1632,7 +1632,7 @@ dun
 slogan
 gleuf
 langzaam
-smeltwater
+slush
 klein
 pienter
 glimlach
@@ -1677,7 +1677,7 @@ bol
 kruid
 spin
 piek
-tollen
+spinnen
 geest
 splitsen
 bederven
