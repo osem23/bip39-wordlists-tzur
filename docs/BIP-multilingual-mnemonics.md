@@ -60,6 +60,7 @@ A display wordlist SHOULD:
 
 1. Maximize 4-character prefix uniqueness within the constraints of the target script. Realized uniqueness varies widely across scripts; wallets relying on prefix-based autocomplete fall back to full-word matching whenever prefix uniqueness is below 2048/2048.
 2. Be reviewed by a fluent native speaker of the target language before publication. Native-speaker review catches register, idiom, and cultural-neutrality issues that mechanical validation cannot.
+3. Carry a stable identifier triple of (language code, version string, SHA-256 of the wordlist file) so that a display backup can be matched on restore to the exact wordlist that produced it. The reference registry publishes this triple in each mapping JSON under the keys `language`, `version`, and `sha256`, with a `normalization_form` field set to `"NFC"` for TZUR Original wordlists. Wallets that bundle wordlists SHOULD persist this triple alongside wallet metadata.
 
 Note on ordering: a display wordlist is stored in index-parallel order with the canonical English wordlist, not sorted by native-language collation. The two orderings coincide only when the English wordlist happens to match the target script's collation, which is never the case in practice. Lookup efficiency is provided by a hashmap over the 2048-entry native-to-English mapping; sorting by native collation is not a requirement of this convention.
 
@@ -74,9 +75,25 @@ A wallet that accepts a display mnemonic on restore tokenizes it on whitespace b
 5. If any token is not present in the mapping, the input is invalid; the wallet does not silently substitute, partial-match, or fall through to a different wordlist.
 6. After resolution, the resulting English token sequence is validated and used per BIP-39.
 
+### Backup and portability policy
+
+Display mnemonics introduce a portability concern that does not exist in single-language BIP-39: a backup recorded only in the display language depends on the receiving wallet supporting the same display wordlist on restore. The canonical English mnemonic remains universally portable across every BIP-39 implementation. This section defines the wallet-level obligations that follow.
+
+A wallet that exposes a display mnemonic to the user MUST:
+
+1. Make the canonical English mnemonic available to the user as part of any backup or recovery flow that exposes a display mnemonic. "Available" means the user can view, copy, or export the canonical English mnemonic within the same flow, without leaving it.
+
+A wallet that exposes a display mnemonic to the user SHOULD:
+
+1. Surface a portability notice at backup time stating that only the canonical English mnemonic is guaranteed restorable in any BIP-39 wallet, and that a display-only backup depends on the receiving wallet supporting the same display wordlist.
+2. Require explicit user confirmation that the canonical English mnemonic was recorded before finalizing wallet setup.
+3. Persist the display wordlist's stable identifier triple (language code, version string, SHA-256 of the wordlist file) alongside wallet metadata, so that a wordlist-version mismatch on restore can be detected and either resolved by loading the matching version or recovered via canonical English input.
+
+Wallet-level MUSTs and SHOULDs in this section are not mechanically enforceable from a wordlist artifact alone; they are exercised in the wallet implementation's test suite.
+
 ### Validation
 
-Every MUST clause above is mechanically enforceable. A reference validator at `validation/validate_all.py` in the reference registry checks each: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace or hyphen/dash inside any entry, NFC form, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status) are not enforced by the validator and are tracked separately in the registry's construction notes.
+Every wordlist MUST clause above is mechanically enforceable. A reference validator at `validation/validate_all.py` in the reference registry checks each: exactly 2048 entries per file, UTF-8 encoding without BOM, absence of duplicates, absence of leading or trailing whitespace, absence of embedded whitespace under the full Unicode `White_Space` property, absence of hyphen or dash codepoints inside any entry, NFC form for TZUR Original wordlists and for the native-side fields of mappings, test vectors, and compound-entry datasets, and round-trip consistency of the bidirectional mapping against the canonical English wordlist. SHOULD-clause metrics (4-character prefix uniqueness, native-speaker review status, wordlist identifier triple) are not enforced as errors by the validator and are tracked separately in the registry's construction notes and the per-mapping JSON metadata.
 
 ### Multi-word native concepts
 
@@ -95,6 +112,7 @@ Seeds produced under this convention are bit-identical to seeds produced by any 
 - **Canonical comparison.** `docs/canonical-vs-tzur.md` reports the word-set overlap between the 9 canonical non-English BIP-39 wordlists and their TZUR Original counterparts. The two are independent sources: Korean canonical and TZUR Original share zero tokens; Japanese shares 11; Latin-script languages share 400 to 700.
 - **Example decoders.** `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift`. Each resolves a display mnemonic to its canonical English form, applies NFKD, and derives the BIP-39 seed via PBKDF2. All three produce byte-identical seeds for the same input.
 - **Wallet implementation.** <https://github.com/osem23/tzur-wallet>. The seed-derivation path resolves any display mnemonic to the canonical English mnemonic before computing PBKDF2; tests cover the paper-backup tokenization round trip per language.
+- **Implementer notes.** `docs/IMPLEMENTER_NOTES.md` is a non-normative companion that captures wallet-side operational guidance (backup-screen copy, restore-time input handling, compound-entry hints, ZWNJ strategies, wordlist governance, test fixtures). Nothing in that document is required for BIP conformance; it captures lessons that recur across implementations.
 
 ## Test Vectors
 
@@ -109,6 +127,26 @@ seed     = 5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac
 ```
 
 Per-language paper-backup round trips are exercised in the wallet implementation's test suite.
+
+## Conformance Profile
+
+Every wordlist-level MUST clause in this specification maps to an executable check in the reference validator at `validation/validate_all.py`. The mapping below lets implementers confirm that a candidate wordlist artifact satisfies the spec by running the validator and observing zero errors.
+
+| Spec clause | Test ID | Validator function | Check |
+|---|---|---|---|
+| §Display wordlist requirements MUST 1 | TEST-W-01 | `validate_wordlist` | Word count is exactly 2048, file is UTF-8 without BOM, lines split on `\n` |
+| §Display wordlist requirements MUST 2 | TEST-W-02 | `validate_wordlist` | No duplicate entries within a wordlist |
+| §Display wordlist requirements MUST 3 | TEST-W-03 | `validate_wordlist` | No leading or trailing whitespace on any entry |
+| §Display wordlist requirements MUST 4 | TEST-W-04 | `validate_wordlist` | No embedded whitespace under the full Unicode `White_Space` property and no embedded hyphen-minus, en-dash, em-dash, non-breaking hyphen, or soft hyphen |
+| §Display wordlist requirements MUST 5 | TEST-M-01 | `validate_mapping` | `english_to_native` and `native_to_english` are bijective across 2048 entries |
+| §Display wordlist requirements MUST 6 (NFC at rest, wordlists) | TEST-W-05 | `validate_wordlist` | Each entry equals its NFC normalization (TZUR Original wordlists only; reference-canonical lists are excluded because the BIP-39 spec ships them in NFKD-equivalent form for some languages) |
+| §Display wordlist requirements MUST 6 (NFC at rest, mappings) | TEST-M-02 | `validate_mapping` | Each native-side string in `english_to_native` values and `native_to_english` keys equals its NFC normalization |
+| §Display wordlist requirements MUST 6 (NFC at rest, test vectors) | TEST-T-01 | `validate_test_vector` | Every `mnemonic` field in every test-vector entry equals its NFC normalization |
+| §Display wordlist requirements MUST 6 (NFC at rest, compound entries) | TEST-C-01 | `validate_compound_entries` | Every native-script string in `validation/compound-entries.json` equals its NFC normalization |
+| §Input parsing MUST 1-6 | TEST-X-01 | reference decoders | `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift` reproduce every vector in `test-vectors/*.json` byte-for-byte |
+| §Backup and portability policy MUST 1 | not validator-checkable | wallet test suite | The wallet's backup and recovery flow exposes the canonical English mnemonic to the user when a display mnemonic is shown |
+
+A wordlist artifact that passes every `TEST-W-*`, `TEST-M-*`, `TEST-T-*`, and `TEST-C-*` check is structurally conformant. Conformance against `TEST-X-01` confirms encoding and PBKDF2 parity for that artifact in a reference language. Backup-policy MUSTs are wallet-level behavior and are out of scope for the wordlist validator; conformant wallets exercise them in their own test suites.
 
 ## Rationale
 
@@ -126,7 +164,7 @@ The 9 non-English canonical BIP-39 wordlists are alphabetized independent word s
 
 - **PBKDF2 input is invariant under this convention.** Only the canonical English mnemonic reaches PBKDF2-HMAC-SHA512. An implementation that feeds the display mnemonic directly to PBKDF2 is non-conformant and produces incompatible seeds. The conformance test vectors in the reference registry exercise the resolve-to-English path for every supported language.
 - **Strict single-wordlist tokenization.** On restore, every token in the display mnemonic MUST resolve within a single display wordlist. Wallets MUST NOT silently accept mnemonics whose tokens span multiple wordlists, partial-match across wordlists, or fall through to the canonical English wordlist when a display token is unrecognized. Mixed-wordlist input is malformed and is rejected.
-- **Only the canonical English mnemonic guarantees cross-wallet recovery.** A user whose wallet supports a display wordlist can always recover the seed in any BIP-39 wallet by entering the canonical English mnemonic. A user who backs up only the display mnemonic and then needs to restore in a wallet that does not support the same display wordlist cannot recover without the mapping. Wallets SHOULD make this property clear at backup time and SHOULD offer to display the canonical English mnemonic on demand.
+- **Only the canonical English mnemonic guarantees cross-wallet recovery.** A user whose wallet supports a display wordlist can always recover the seed in any BIP-39 wallet by entering the canonical English mnemonic. A user who backs up only the display mnemonic and then needs to restore in a wallet that does not support the same display wordlist cannot recover without the mapping. The normative wallet-level obligations that follow from this property are defined in §Backup and portability policy above.
 - **Paper-backup corruption.** A single transcription error in the display mnemonic fails the BIP-39 checksum just as it would in English. The display layer does not introduce new recovery paths and does not relax the checksum requirement.
 - **Wordlist integrity.** If an attacker substitutes the display wordlist stored on disk with a different list, the user's displayed mnemonic on restore will differ from what was backed up. Wallets SHOULD treat bundled wordlists as integrity-critical assets and verify them against a signed manifest at load time.
 - **Native-speaker review is a UX risk, not a cryptographic risk.** Display wordlists without native-speaker review may contain culturally awkward, offensive, or regionally-inappropriate tokens. This affects user trust and backup legibility, not cryptographic correctness. Wordlist maintainers SHOULD publish native-speaker review status and accept corrections via pull request.
