@@ -443,7 +443,7 @@ húmedo
 danza
 peligro
 audaz
-ráfaga
+arrojo
 hija
 amanecer
 día
@@ -1329,7 +1329,7 @@ astro
 plástico
 platillo
 jugar
-ruego
+porfavor
 promesa
 arrancar
 enchufe
