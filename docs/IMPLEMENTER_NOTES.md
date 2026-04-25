@@ -63,7 +63,7 @@ The dataset in `validation/compound-entries.json` lists which indices in each la
 
 Vietnamese is the worst-case input language under this convention. Of the 2048 entries, around 99.9% of 12-word mnemonics will contain at least one entry with a tone mark or compound diacritic, and around 43% of entries are glued compounds. Practical implications:
 
-- **Input keyboard.** Use the platform Vietnamese keyboard, not a Latin fallback. The platform keyboard handles Telex/VNI/VIQR composition; a Latin keyboard forces the user to enter precomposed glyphs by codepoint, which is unworkable.
+- **Input keyboard.** Rely on the user's system keyboard. iOS and Android Vietnamese keyboards handle Telex/VNI/VIQR composition correctly when the user has the language keyboard installed, and they route through any plain text field by default. Do not override `keyboardType` to a fixed mode that blocks the user's installed input methods, since doing so prevents the user from typing Vietnamese characters at all. The reference TZUR wallet does not pin a `keyboardType` and lets the system route the active keyboard through.
 - **NFC normalization.** Apply NFC after every keystroke, not only on submit. Vietnamese input commonly arrives as a base + combining-mark sequence that needs to be composed before display.
 - **Compound warnings.** With ~43% of Vietnamese entries glued, a 12-word backup nearly always contains 4-6 compound words. Show the compound hint inline at backup and have the user tap each one to confirm before advancing.
 
