@@ -103,7 +103,7 @@ přijet
 umění
 artefakt
 umělec
-umělecké
+dílo
 požádat
 aspekt
 útok
@@ -663,7 +663,7 @@ slavný
 větrák
 fantazie
 fantazijní
-hospodařit
+farma
 móda
 tuk
 fatální
@@ -819,7 +819,7 @@ velký
 zelený
 mřížka
 smutek
-štěrk
+odhodlání
 potraviny
 skupina
 růst
@@ -947,7 +947,7 @@ zahrnovat
 železo
 ostrov
 izolovat
-problém
+vydání
 položka
 slonová
 bunda
@@ -1246,7 +1246,7 @@ oponovat
 volba
 pomerančový
 obíhat
-ovocný
+sad
 objednávka
 obyčejný
 orgán
@@ -1413,7 +1413,7 @@ závod
 stojan
 radar
 rádio
-kolej
+kolejnice
 déšť
 pozvednout
 srocení
@@ -1667,7 +1667,7 @@ jih
 prostor
 náhradní
 prostorový
-tření
+plodit
 mluvit
 speciální
 rychlost
@@ -1863,7 +1863,7 @@ zastřihnout
 výlet
 trofej
 potíž
-nákladní
+kamion
 pravdivý
 skutečně
 polnice
@@ -1935,7 +1935,7 @@ rozlehlý
 klenba
 vehikl
 samet
-prodavač
+dodavatel
 podnik
 dějiště
 sloveso
