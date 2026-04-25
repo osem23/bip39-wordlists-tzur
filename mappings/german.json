@@ -1,6 +1,9 @@
 {
   "language": "german",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "88af816876263050066ee615d863b54352a4bebd3183ecce303b8999e4ac5b56",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original German.",
   "pairing_type": "translation",
   "english_to_native": {

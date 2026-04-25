@@ -28,6 +28,7 @@ German, Russian, Arabic, Farsi, Thai). NFKD is applied at PBKDF2 time per
 BIP-39, not at storage time, so it is not flagged here.
 """
 
+import hashlib
 import json
 import os
 import sys
@@ -203,6 +204,21 @@ def validate_mapping(path: Path):
             nfc_bad += 1
     if nfc_bad:
         error(f"{name}: {nfc_bad} native-side strings not in NFC at rest")
+
+    # Optional integrity fields (BIP §Display wordlist requirements SHOULD 3).
+    # If present, sha256 must match the corresponding TZUR Original wordlist
+    # file, and normalization_form must equal "NFC".
+    if "sha256" in data:
+        lang = data.get("language", path.stem)
+        wl_path = REPO_ROOT / "wordlists" / "tzur-original" / f"{lang}.txt"
+        if not wl_path.is_file():
+            error(f"{name}: sha256 declared but no matching wordlist at {wl_path.relative_to(REPO_ROOT)}")
+        else:
+            actual = hashlib.sha256(wl_path.read_bytes()).hexdigest()
+            if actual != data["sha256"]:
+                error(f"{name}: sha256 mismatch (declared {data['sha256'][:16]}..., actual {actual[:16]}...)")
+    if "normalization_form" in data and data["normalization_form"] != "NFC":
+        error(f"{name}: normalization_form is '{data['normalization_form']}', expected 'NFC'")
 
 
 def validate_test_vector(path: Path):

@@ -1,6 +1,9 @@
 {
   "language": "filipino",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "95f2af04b0d1817e0b28a118a2dcfc54a1b1f33ef0ec6bd9f0c1e15a8595963e",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Filipino.",
   "pairing_type": "translation",
   "english_to_native": {

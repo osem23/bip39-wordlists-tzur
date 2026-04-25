@@ -1,6 +1,9 @@
 {
   "language": "chinese_simplified",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "6cbca3ce149724ad79c578400272f402e82ce85bae1e17d9a1ca52c25be1e06b",
+  "normalization_form": "NFC",
   "description": "Bidirectional BIP-39 mapping between English and Chinese Simplified",
   "pairing_type": "translation",
   "english_to_native": {

@@ -1,6 +1,9 @@
 {
   "language": "hindi",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "0e2fd83ee2121111b79cf0195485b2e3f83a3b33929b29cb9f4f8f51134f732b",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Hindi.",
   "pairing_type": "translation",
   "english_to_native": {

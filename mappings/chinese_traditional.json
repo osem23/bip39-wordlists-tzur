@@ -1,6 +1,9 @@
 {
   "language": "chinese_traditional",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "b6c032e96234077f086d040445b89b91d2fc9dae7d3e1a77e0d3f682bf26057a",
+  "normalization_form": "NFC",
   "description": "Bidirectional BIP-39 mapping between English and Chinese Traditional",
   "pairing_type": "translation",
   "english_to_native": {

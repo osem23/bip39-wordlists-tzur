@@ -1,6 +1,9 @@
 {
   "language": "french",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "58f757b610cedb294d690486c5a0e10df5e7d014fa54a18c8b3d7cd33df755be",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original French.",
   "pairing_type": "translation",
   "english_to_native": {

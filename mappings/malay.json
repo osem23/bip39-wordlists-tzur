@@ -1,6 +1,9 @@
 {
   "language": "malay",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "56cbd05d642638b489203db0cb5166c5183a89c78db4431638abfbd558f13932",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Malay.",
   "pairing_type": "translation",
   "english_to_native": {

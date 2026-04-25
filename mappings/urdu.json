@@ -1,6 +1,9 @@
 {
   "language": "urdu",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "d852dc36a4b5c074a52c697c1bf78b8475f8e7629eda564d0bdbb81bc36a00b2",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Urdu.",
   "pairing_type": "translation",
   "english_to_native": {

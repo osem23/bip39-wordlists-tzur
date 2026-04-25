@@ -1,6 +1,9 @@
 {
   "language": "czech",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "5e9bed2bd96d8043613f90c640df153217ff1b785e2aaf445c2d1fbe4fdba83b",
+  "normalization_form": "NFC",
   "description": "Bidirectional BIP-39 mapping between English and Czech",
   "pairing_type": "translation",
   "english_to_native": {

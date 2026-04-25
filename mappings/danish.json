@@ -1,6 +1,9 @@
 {
   "language": "danish",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "509752166f5f12f0b3903046a9f849e8628279fecc14679bcfffb16dee0b0078",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Danish.",
   "pairing_type": "translation",
   "english_to_native": {

@@ -1,6 +1,9 @@
 {
   "language": "swedish",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "72c7868ac3b24909d0c40f32593d24f9c606b8dfb2816ff66e18df6144059dab",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Swedish.",
   "pairing_type": "translation",
   "english_to_native": {

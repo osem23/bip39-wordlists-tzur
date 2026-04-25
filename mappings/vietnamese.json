@@ -1,6 +1,9 @@
 {
   "language": "vietnamese",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "26ee4ac532625c5b88c95d4f69d528c1fc0494a58afb4ffb06e74f8da8e136cd",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Vietnamese.",
   "pairing_type": "translation",
   "english_to_native": {

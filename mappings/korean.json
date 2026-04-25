@@ -1,6 +1,9 @@
 {
   "language": "korean",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "867c0e7e6e581abb3164420201340fd8efe7060a56e9cca5ed668ba6efba188c",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Korean.",
   "pairing_type": "translation",
   "english_to_native": {

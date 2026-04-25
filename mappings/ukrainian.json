@@ -1,6 +1,9 @@
 {
   "language": "ukrainian",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "787d7865e1d9f1dfa072a67bf5ba6c6377dc2fd50487b9501bab8ab2f91ce1f6",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Ukrainian.",
   "pairing_type": "translation",
   "english_to_native": {

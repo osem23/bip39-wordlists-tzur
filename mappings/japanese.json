@@ -1,6 +1,9 @@
 {
   "language": "japanese",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "c988f781018a5c1209658cd9280b2f806900f53d0b86f532b1a1d0f926121ed6",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Japanese.",
   "pairing_type": "translation",
   "english_to_native": {

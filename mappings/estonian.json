@@ -1,6 +1,9 @@
 {
   "language": "estonian",
   "word_count": 2048,
+  "version": "v1.0",
+  "sha256": "2d3fa9a32771531b70a8bf5839516946b886dd3c6a3e199b2a02d5c2cd8ac41d",
+  "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Estonian.",
   "pairing_type": "translation",
   "english_to_native": {
