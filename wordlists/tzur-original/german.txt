@@ -79,7 +79,7 @@ antwort
 antenne
 antik
 angst
-irgend
+irgendein
 abseits
 entschuldigung
 erscheinen
@@ -673,7 +673,7 @@ fehler
 favorit
 merkmal
 februar
-bundes
+föderal
 gebühr
 füttern
 fühlen
@@ -845,7 +845,7 @@ lese
 hut
 haben
 falke
-tücke
+Gefahr
 kopf
 gesundheit
 herz
@@ -952,7 +952,7 @@ gegenstand
 elfenbein
 jacke
 jaguar
-gefäßglas
+Glas
 jazz
 eifersüchtig
 jeans
@@ -1037,7 +1037,7 @@ heben
 licht
 mögen
 glied
-schranke
+Grenze
 verbindung
 löwe
 flüssigkeit
@@ -1045,7 +1045,7 @@ liste
 klein
 wohnen
 eidechse
-beladen
+Last
 darlehen
 hummer
 örtlich
@@ -1067,7 +1067,7 @@ mittagessen
 luxus
 liedtext
 maschine
-wahnhaft
+irre
 zauber
 magnet
 magd
@@ -1091,7 +1091,7 @@ markt
 ehe
 maske
 massenstoff
-lehrmeister
+Meister
 streichholz
 material
 mathe
@@ -1517,7 +1517,7 @@ landebahn
 ländlich
 traurig
 sattel
-trauer
+Traurigkeit
 geborgen
 segeln
 salat
@@ -1678,7 +1678,7 @@ gewürz
 spinne
 spitze
 kreiseln
-gemüt
+Geist
 aufspalten
 verderben
 sponsor
@@ -1741,7 +1741,7 @@ sonnig
 sonnenuntergang
 super
 vorrat
-oberst
+oberster
 gewiss
 oberfläche
 anstieg
@@ -1753,7 +1753,7 @@ unterhalten
 schlucken
 sumpf
 tauschen
-bienenschwarm
+Schwarm
 schwören
 süß
 flink
@@ -1920,7 +1920,7 @@ gebraucht
 nützlich
 nutzlos
 üblich
-versorgung
+Nützlichkeit
 frei
 staubsauger
 vage
