@@ -1388,7 +1388,7 @@ dra
 fruktkött
 puls
 pumpa
-knytnävsslag
+slag
 elev
 valp
 köp
@@ -1667,7 +1667,7 @@ söder
 rymd
 reserv
 rumslig
-fortplanta
+yngel
 tala
 speciell
 fart
@@ -1779,7 +1779,7 @@ smak
 tatuering
 taxi
 undervisa
-lagspel
+team
 berätta
 tio
 hyresgäst
@@ -1821,7 +1821,7 @@ småbarn
 tå
 tillsammans
 toalett
-polett
+pollett
 tomat
 imorgon
 ton
