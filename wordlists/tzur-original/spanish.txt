@@ -242,7 +242,7 @@ volumen
 bala
 paquete
 búnker
-carga
+gravamen
 hamburguesa
 estallar
 colectivo
@@ -721,7 +721,7 @@ volar
 espuma
 enfoque
 niebla
-papel
+papelaluminio
 plegar
 seguir
 comida
@@ -1045,7 +1045,7 @@ lista
 pequeño
 vivir
 lagartija
-bultos
+carga
 préstamo
 langosta
 local
@@ -1055,7 +1055,7 @@ solitario
 largo
 bucle
 lotería
-fuerte
+ruidoso
 salón
 amor
 leal
@@ -1277,7 +1277,7 @@ panda
 panel
 pánico
 pantera
-pliego
+papel
 desfile
 progenitor
 parque
@@ -1719,7 +1719,7 @@ estufa
 estrategia
 calle
 golpe
-recio
+fuerte
 lucha
 estudiante
 sustancia
