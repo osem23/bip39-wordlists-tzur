@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "wordlist_size": 2048,
+  "languages": {
+    "arabic": {
+      "back_translation": {
+        "suspect_count": 550,
+        "CORRECT": 402,
+        "CLOSE": 147,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1636,
+        "CORRECT": 1527,
+        "CLOSE": 104,
+        "WRONG": 3,
+        "OTHER": 2,
+        "source_run": "initial"
+      }
+    },
+    "bengali": {
+      "back_translation": {
+        "suspect_count": 525,
+        "CORRECT": 359,
+        "CLOSE": 119,
+        "WRONG": 46,
+        "OTHER": 1,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 1035,
+        "CORRECT": 943,
+        "CLOSE": 87,
+        "WRONG": 5,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "chinese_simplified": {},
+    "chinese_traditional": {},
+    "czech": {
+      "back_translation": {
+        "suspect_count": 764,
+        "CORRECT": 120,
+        "CLOSE": 29,
+        "WRONG": 615,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 972,
+        "CORRECT": 846,
+        "CLOSE": 116,
+        "WRONG": 10,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "danish": {
+      "back_translation": {
+        "suspect_count": 207,
+        "CORRECT": 184,
+        "CLOSE": 23,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 885,
+        "CORRECT": 850,
+        "CLOSE": 35,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "dutch": {
+      "back_translation": {
+        "suspect_count": 262,
+        "CORRECT": 223,
+        "CLOSE": 39,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 834,
+        "CORRECT": 814,
+        "CLOSE": 17,
+        "WRONG": 1,
+        "OTHER": 2,
+        "source_run": "initial"
+      }
+    },
+    "estonian": {
+      "back_translation": {
+        "suspect_count": 408,
+        "CORRECT": 279,
+        "CLOSE": 100,
+        "WRONG": 28,
+        "OTHER": 1,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 948,
+        "CORRECT": 803,
+        "CLOSE": 78,
+        "WRONG": 66,
+        "OTHER": 1,
+        "source_run": "initial"
+      }
+    },
+    "farsi": {
+      "back_translation": {
+        "suspect_count": 504,
+        "CORRECT": 466,
+        "CLOSE": 37,
+        "WRONG": 0,
+        "OTHER": 1,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 1188,
+        "CORRECT": 910,
+        "CLOSE": 177,
+        "WRONG": 79,
+        "OTHER": 22,
+        "source_run": "initial"
+      }
+    },
+    "filipino": {
+      "back_translation": {
+        "suspect_count": 497,
+        "CORRECT": 385,
+        "CLOSE": 80,
+        "WRONG": 20,
+        "OTHER": 12,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1136,
+        "CORRECT": 1053,
+        "CLOSE": 36,
+        "WRONG": 3,
+        "OTHER": 44,
+        "source_run": "initial"
+      }
+    },
+    "french": {
+      "back_translation": {
+        "suspect_count": 230,
+        "CORRECT": 189,
+        "CLOSE": 40,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 772,
+        "CORRECT": 751,
+        "CLOSE": 21,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "german": {
+      "back_translation": {
+        "suspect_count": 250,
+        "CORRECT": 228,
+        "CLOSE": 22,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 820,
+        "CORRECT": 805,
+        "CLOSE": 14,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "hebrew": {
+      "back_translation": {
+        "suspect_count": 369,
+        "CORRECT": 293,
+        "CLOSE": 68,
+        "WRONG": 8,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 881,
+        "CORRECT": 596,
+        "CLOSE": 281,
+        "WRONG": 4,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "hindi": {
+      "back_translation": {
+        "suspect_count": 400,
+        "CORRECT": 297,
+        "CLOSE": 78,
+        "WRONG": 25,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1280,
+        "CORRECT": 1237,
+        "CLOSE": 43,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "indonesian": {
+      "back_translation": {
+        "suspect_count": 408,
+        "CORRECT": 324,
+        "CLOSE": 78,
+        "WRONG": 6,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 964,
+        "CORRECT": 835,
+        "CLOSE": 125,
+        "WRONG": 3,
+        "OTHER": 1,
+        "source_run": "initial"
+      }
+    },
+    "italian": {
+      "back_translation": {
+        "suspect_count": 258,
+        "CORRECT": 216,
+        "CLOSE": 42,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 816,
+        "CORRECT": 796,
+        "CLOSE": 20,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "japanese": {
+      "back_translation": {
+        "suspect_count": 246,
+        "CORRECT": 197,
+        "CLOSE": 7,
+        "WRONG": 42,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1195,
+        "CORRECT": 1140,
+        "CLOSE": 32,
+        "WRONG": 2,
+        "OTHER": 21,
+        "source_run": "initial"
+      }
+    },
+    "korean": {
+      "back_translation": {
+        "suspect_count": 333,
+        "CORRECT": 260,
+        "CLOSE": 44,
+        "WRONG": 29,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1152,
+        "CORRECT": 1121,
+        "CLOSE": 31,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "malay": {
+      "back_translation": {
+        "suspect_count": 399,
+        "CORRECT": 284,
+        "CLOSE": 110,
+        "WRONG": 3,
+        "OTHER": 2,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 903,
+        "CORRECT": 832,
+        "CLOSE": 71,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "polish": {
+      "back_translation": {
+        "suspect_count": 256,
+        "CORRECT": 193,
+        "CLOSE": 38,
+        "WRONG": 25,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 982,
+        "CORRECT": 964,
+        "CLOSE": 0,
+        "WRONG": 3,
+        "OTHER": 15,
+        "source_run": "initial"
+      }
+    },
+    "portuguese": {
+      "back_translation": {
+        "suspect_count": 246,
+        "CORRECT": 208,
+        "CLOSE": 37,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 673,
+        "CORRECT": 618,
+        "CLOSE": 54,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "romanian": {
+      "back_translation": {
+        "suspect_count": 313,
+        "CORRECT": 242,
+        "CLOSE": 69,
+        "WRONG": 2,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 1027,
+        "CORRECT": 910,
+        "CLOSE": 50,
+        "WRONG": 1,
+        "OTHER": 66,
+        "source_run": "initial"
+      }
+    },
+    "russian": {
+      "back_translation": {
+        "suspect_count": 203,
+        "CORRECT": 160,
+        "CLOSE": 37,
+        "WRONG": 4,
+        "OTHER": 2,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 937,
+        "CORRECT": 933,
+        "CLOSE": 4,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "spanish": {
+      "back_translation": {
+        "suspect_count": 251,
+        "CORRECT": 217,
+        "CLOSE": 32,
+        "WRONG": 2,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 781,
+        "CORRECT": 749,
+        "CLOSE": 31,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "swedish": {
+      "back_translation": {
+        "suspect_count": 189,
+        "CORRECT": 152,
+        "CLOSE": 37,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 848,
+        "CORRECT": 845,
+        "CLOSE": 3,
+        "WRONG": 0,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "thai": {
+      "back_translation": {
+        "suspect_count": 378,
+        "CORRECT": 314,
+        "CLOSE": 62,
+        "WRONG": 2,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 893,
+        "CORRECT": 885,
+        "CLOSE": 7,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "turkish": {
+      "back_translation": {
+        "suspect_count": 436,
+        "CORRECT": 298,
+        "CLOSE": 115,
+        "WRONG": 23,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 941,
+        "CORRECT": 784,
+        "CLOSE": 133,
+        "WRONG": 24,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "ukrainian": {
+      "back_translation": {
+        "suspect_count": 314,
+        "CORRECT": 221,
+        "CLOSE": 52,
+        "WRONG": 41,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 983,
+        "CORRECT": 948,
+        "CLOSE": 21,
+        "WRONG": 14,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "urdu": {
+      "back_translation": {
+        "suspect_count": 580,
+        "CORRECT": 478,
+        "CLOSE": 92,
+        "WRONG": 10,
+        "OTHER": 0,
+        "source_run": "rerun_20260419"
+      },
+      "forward_translation": {
+        "suspect_count": 1087,
+        "CORRECT": 1024,
+        "CLOSE": 0,
+        "WRONG": 63,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "vietnamese": {
+      "back_translation": {
+        "suspect_count": 401,
+        "CORRECT": 337,
+        "CLOSE": 55,
+        "WRONG": 9,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 905,
+        "CORRECT": 893,
+        "CLOSE": 0,
+        "WRONG": 12,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    }
+  }
+}

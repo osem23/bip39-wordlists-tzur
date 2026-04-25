@@ -44,11 +44,11 @@ This repository implements the display-layer convention explicitly: the native w
 
 ## Validation
 
-Every TZUR Original wordlist passes three validation layers.
+Every TZUR Original wordlist is validated in three layers. Reproducibility differs between them, and this section is explicit about which is enforced in CI versus published as a frozen artifact.
 
-- **Structural.** Exactly 2048 entries, UTF-8 without BOM, no duplicates, no whitespace, no hyphen or space within a word, Unix line endings, bijective mapping round-trip.
-- **Back-translation.** Native-to-English translation via Google Translate with an LLM verdict layer comparing native directly to English at each index.
-- **Forward-translation.** English-to-native translation via Microsoft Azure Translator with the same verdict layer. Catches false friends and homonym sense-shifts back-translation misses.
+- **Structural (CI-enforced).** [`validation/validate_all.py`](validation/validate_all.py) is run by GitHub Actions on every push and pull request. It checks: exactly 2048 entries, UTF-8 without BOM, Unix line endings, no duplicates, no leading or trailing whitespace, no embedded whitespace under the full Unicode `White_Space` property, no embedded hyphen or dash, NFC at rest for TZUR Original wordlists, and round-trip bijective consistency for every mapping. Re-runnable locally by anyone with Python 3.
+- **Back-translation (published report).** Native to English via Google Translate, with an LLM verdict layer comparing native to canonical English at each index. Per-language results (suspect counts and `CORRECT`/`CLOSE`/`WRONG`/`OTHER` verdict tallies) are published at [`validation/translation-validation-report.json`](validation/translation-validation-report.json) with a human summary at [`validation/translation-validation-report.md`](validation/translation-validation-report.md). The pipeline lives in the wallet repository and depends on external translation APIs and an LLM endpoint, so its outputs are not reproducible from this repository alone. The published report is the audit artifact; the wordlists themselves remain reproducible.
+- **Forward-translation (published report).** English to native via Microsoft Azure Translator, same verdict layer. Catches false friends and homonym sense-shifts that back-translation can miss when the native term back-translates to a synonym of the original English. Same publication and reproducibility properties as the back-translation pass.
 
 Per-language status:
 
@@ -85,7 +85,7 @@ Per-language status:
 | Urdu | Clean | Complete | Complete | Pending |
 | Vietnamese | Clean | Complete | Complete | Pending |
 
-Methodology and per-language construction notes live at [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Translation-engine validation is not a substitute for native-speaker review. Hebrew, Spanish, and Portuguese carry native-speaker signals today; the other 27 have the three validation layers above and are open to native-speaker contributions via issue or pull request.
+Per-language suspect and `WRONG` counts for both translation passes are in [`validation/translation-validation-report.md`](validation/translation-validation-report.md). Construction methodology lives at [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Translation-engine validation is not a substitute for native-speaker review. Hebrew, Spanish, and Portuguese carry native-speaker signals today; the other 27 have the structural and translation layers above and are open to native-speaker contributions via issue or pull request.
 
 ## Wordlists and Mappings
 
