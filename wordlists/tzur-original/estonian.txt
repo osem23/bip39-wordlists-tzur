@@ -298,7 +298,7 @@ seller
 tsement
 loendus
 sajand
-hommikusöögihelbed
+teravili
 kindel
 tool
 kriit
@@ -547,7 +547,7 @@ vältel
 tolm
 hollandi
 kohustus
-päkapikk
+kääbus
 dünaamiline
 innukas
 kotkas
@@ -745,7 +745,7 @@ sõber
 ääris
 konn
 esikülg
-pakane
+härmatis
 kulmu
 külmutatud
 puuvili
@@ -957,7 +957,7 @@ džäss
 armukade
 teksad
 tarretis
-ehiskivi
+kalliskivi
 töö
 liituma
 nali
@@ -1243,7 +1243,7 @@ avatud
 ooper
 arvamus
 vastu
-suvand
+valikuvõimalus
 apelsin
 orbiit
 viljapuuaed
@@ -1632,7 +1632,7 @@ kõhn
 loosung
 vahe
 aeglane
-lobjakas
+lörts
 suuruselt
 taibukas
 naeratus
@@ -1697,7 +1697,7 @@ staadion
 personal
 etapp
 trepp
-pitser
+pitsat
 seisma
 start
 seisund
@@ -1968,7 +1968,7 @@ maht
 hääletama
 merereis
 palk
-vankri
+vanker
 ootel
 jalutama
 sein
