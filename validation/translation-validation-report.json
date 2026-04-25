@@ -38,8 +38,42 @@
         "source_run": "initial"
       }
     },
-    "chinese_simplified": {},
-    "chinese_traditional": {},
+    "chinese_simplified": {
+      "back_translation": {
+        "suspect_count": 248,
+        "CORRECT": 146,
+        "CLOSE": 17,
+        "WRONG": 85,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 996,
+        "CORRECT": 956,
+        "CLOSE": 39,
+        "WRONG": 1,
+        "OTHER": 0,
+        "source_run": "initial"
+      }
+    },
+    "chinese_traditional": {
+      "back_translation": {
+        "suspect_count": 249,
+        "CORRECT": 145,
+        "CLOSE": 23,
+        "WRONG": 81,
+        "OTHER": 0,
+        "source_run": "initial"
+      },
+      "forward_translation": {
+        "suspect_count": 1491,
+        "CORRECT": 533,
+        "CLOSE": 953,
+        "WRONG": 1,
+        "OTHER": 4,
+        "source_run": "initial"
+      }
+    },
     "czech": {
       "back_translation": {
         "suspect_count": 764,
