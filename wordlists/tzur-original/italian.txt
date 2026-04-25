@@ -719,7 +719,7 @@ fluido
 sciacquare
 volare
 schiuma
-mirino
+focalizzare
 nebbia
 foglio
 piegare
@@ -912,7 +912,7 @@ impatto
 imporre
 miglioramento
 impulso
-pollicata
+pollice
 includere
 reddito
 aumento
@@ -1962,7 +1962,7 @@ vitale
 vivido
 vocale
 voce
-vacuita
+nullo
 vulcano
 volume
 votare
