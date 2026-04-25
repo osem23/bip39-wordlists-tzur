@@ -735,7 +735,7 @@ forum
 naprzód
 skamielina
 wspierać
-ustanawiać
+założyć
 lis
 kruchy
 rama
@@ -792,7 +792,7 @@ zerknąć
 szkło
 ślizgać
 przebłysk
-ziemska
+glob
 mrok
 chwała
 rękawiczka
@@ -1372,7 +1372,7 @@ nagroda
 problem
 proces
 produkować
-intrata
+przychód
 program
 plan
 promować

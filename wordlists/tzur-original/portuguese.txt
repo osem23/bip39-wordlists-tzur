@@ -443,7 +443,7 @@ dano
 dança
 perigo
 ousado
-disparar
+traço
 filha
 amanhecer
 dia
