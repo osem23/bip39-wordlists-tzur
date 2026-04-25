@@ -11,7 +11,7 @@ abuso
 akses
 aksidente
 kuwenta
-akusa
+pagbintangan
 kamtin
 asido
 akustiko
@@ -29,7 +29,7 @@ tirahan
 ayos
 amin
 matanda
-sulong
+sumulong
 payo
 erobiko
 usapin
@@ -132,8 +132,8 @@ alam
 layo
 galing
 pangit
-sablay
-ehe
+asiwa
+aksis
 sanggol
 binata
 bakon
@@ -180,7 +180,7 @@ gapos
 biyolohiya
 ibon
 silang
-pait
+mapait
 itim
 talim
 sisi
@@ -206,7 +206,7 @@ aklat
 angat
 hangganan
 nakababagot
-hiram
+hiramin
 amo
 puwit
 talbog
@@ -242,7 +242,7 @@ dami
 bala
 bigkis
 bunker
-pasan
+pasanin
 burger
 sabog
 bus
@@ -361,7 +361,7 @@ niyog
 kodigo
 kape
 ikid
-sensilyo
+barya
 tipon
 kulay
 haligi
@@ -379,7 +379,7 @@ ugnay
 palagay
 supilin
 himukin
-lutuin
+magluto
 lamig
 tanso
 sipi
@@ -395,7 +395,7 @@ magkabiyak
 kurso
 pinsan
 takpan
-asong
+koyote
 basag
 duyan
 yari
@@ -438,7 +438,7 @@ kaugalian
 kyut
 ikot
 tatay
-sinira
+kapinsalaan
 mamasa
 sayaw
 panganib
@@ -533,10 +533,10 @@ iguhit
 panaginip
 damit
 aanod
-bumbarol
+barena
 inumin
 tulo
-paandarin
+magmaneho
 patakin
 tambol
 tuyo
@@ -645,7 +645,7 @@ matapos
 ipaliwanag
 ibunyag
 ipahayag
-haba
+pahabain
 ekstra
 mata
 kilay
@@ -721,7 +721,7 @@ lupad
 espuma
 tutok
 ambon
-pilakan
+palara
 tiklop
 sumunod
 pagkain
@@ -941,7 +941,7 @@ luklukin
 hindimagalaw
 interes
 pasok
-puhunanin
+mamuhunan
 anyayahan
 sangkutin
 bakal
@@ -1091,7 +1091,7 @@ pamilihan
 kasal
 maskara
 bunton
-kabisa
+maestro
 tugma
 materyal
 matematika
@@ -1115,7 +1115,7 @@ menu
 awa
 pagsamahin
 karapatdapat
-ligaya
+maligaya
 lambat
 mensahe
 metal
@@ -1161,7 +1161,7 @@ sine
 sobra
 mafin
 mola
-imultiplika
+magparami
 kalamnan
 museo
 kabute
@@ -1483,7 +1483,7 @@ kanin
 mayaman
 sumakay
 gulod
-pusilin
+riple
 kanan
 matigas
 singsing
@@ -1498,7 +1498,7 @@ ihawin
 robot
 matatag
 roket
-pagsuyo
+romansa
 bubong
 rookie
 silid
@@ -1644,7 +1644,7 @@ hablot
 singhot
 niyebe
 sabon
-saker
+putbol
 panlipunan
 medyas
 sosa
@@ -1658,7 +1658,7 @@ sinuman
 himig
 kagyat
 pasensya
-uriin
+klase
 kaluluwa
 tunog
 sabaw
@@ -1713,7 +1713,7 @@ kagat
 stock
 tiyan
 bayunan
-bangketa
+taburete
 kuwento
 kalan
 estratehiya
@@ -1752,7 +1752,7 @@ pinaghihinalaan
 panatilihin
 lunukin
 latian
-baliktad
+magpalitan
 kuyog
 sumpa
 matamis
@@ -1849,7 +1849,7 @@ trahedya
 tren
 ilipatin
 bitag
-sukal
+kalat
 lakbay
 bandehado
 pagamot
@@ -1934,7 +1934,7 @@ ibaiba
 malawak
 imbakan
 behikulo
-belbet
+pelus
 tindero
 pakikipagsapalaran
 tanghalan
@@ -1972,7 +1972,7 @@ karwahe
 maghintay
 maglakad
 dingding
-pili
+nogales
 nais
 digmaan
 mainit

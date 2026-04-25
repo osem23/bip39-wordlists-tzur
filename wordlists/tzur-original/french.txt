@@ -368,7 +368,7 @@ colonne
 combiner
 venir
 confort
-bande
+comique
 commun
 entreprise
 concert
@@ -1397,7 +1397,7 @@ objectif
 bourse
 pousser
 poser
-cassetête
+énigme
 pyramide
 qualité
 quantique
@@ -1932,7 +1932,7 @@ disparaître
 vapeur
 divers
 vaste
-coffrefort
+voûte
 véhicule
 velours
 vendeur
