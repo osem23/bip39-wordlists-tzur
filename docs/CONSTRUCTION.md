@@ -118,6 +118,20 @@ Every wordlist passes three validation layers before release.
 
 Hebrew, Spanish, and Portuguese also carry native-speaker review. The remaining languages carry the three validation layers and are open to native-speaker corrections via issue or pull request.
 
+### Translation re-run scope (2026-04-19)
+
+The translation-validation pipeline was run twice. The initial run covered all 30 TZUR Original wordlists. A second run on 2026-04-19 covered ten languages: Bengali, Danish, Estonian, Farsi, Hebrew, Polish, Romanian, Swedish, Ukrainian, Urdu. The re-run scope was deliberately narrow and worth documenting, because a reader of `validation/translation-validation-report.md` will otherwise wonder why some languages have rerun-source rows and others do not.
+
+Re-run inclusion criterion: a language was re-run if and only if its wordlist had been edited between the initial run and 2026-04-19 in response to the initial run's findings. The re-run measures the post-correction wordlist against the same translation-engine pipeline and confirms that the corrections moved the WRONG counts down.
+
+Re-run exclusion criterion: a language was not re-run if its wordlist had not changed between the initial run and 2026-04-19. Re-running an unchanged wordlist would only test the stability of Google Translate plus the LLM verdict layer over time, not the wordlist itself, and would not produce useful evidence for or against the wordlist's quality.
+
+Czech specifically. The initial run flagged 615 of 764 suspects as `WRONG` on Czech back-translation. That is the loudest data point in the report. Czech was not re-run on 2026-04-19, because its corrections were applied through a different process before the rerun window: the Czech wordlist underwent a structured construction-and-correction cycle documented in the §Per-language notes section of this document, with entry-level review against the English BIP-39 list rather than a second pipeline pass. The currently-published Czech wordlist reflects the post-correction state. The 615 number in the translation report is the pre-correction reading and will not reproduce against the current artifact. Re-running Czech against the current wordlist requires a fresh API run and would be its own session.
+
+Filipino, Vietnamese, and the other initial-only rows whose `Back WRONG` count is below the 100-entry threshold were left at their initial readings because the corrections moved the count low enough that a re-run was not load-bearing for the report's headline accuracy claim. The initial-run numbers stand as the recorded result.
+
+The general principle: the translation report describes wordlist state, not pipeline runs. Where the wordlist has moved since the recorded run, the report's per-row state notes call that out explicitly.
+
 ## Reproducibility
 
 This repository does not claim literal regeneration from primary sources. A third party running the construction pipeline against the same English BIP-39 wordlist would not produce byte-identical outputs; translation choice is not fully deterministic.

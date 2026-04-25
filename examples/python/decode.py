@@ -80,6 +80,43 @@ def native_to_english(mnemonic: str, language: str) -> str:
     return " ".join(translated)
 
 
+def validate_checksum(english_mnemonic: str) -> None:
+    """Verify the BIP-39 checksum bits embedded in the final word.
+
+    BIP-39 mnemonics carry CS = ENT/32 checksum bits at the tail of the
+    concatenated 11-bit word indices. CS = SHA-256(ENT)[:CS_bits]. A reference
+    decoder must reject any mnemonic whose checksum does not verify, otherwise
+    a single transcription error on the final word silently produces a
+    valid-looking-but-wrong seed.
+    """
+    words = english_mnemonic.strip().split()
+    n = len(words)
+    if n not in (12, 15, 18, 21, 24):
+        raise ValueError(f"invalid mnemonic length: {n} words (must be 12/15/18/21/24)")
+    english = load_wordlist("english")
+    english_index = {w: i for i, w in enumerate(english)}
+    indices = []
+    for w in words:
+        if w not in english_index:
+            raise ValueError(f"word not in English BIP-39 wordlist: {w!r}")
+        indices.append(english_index[w])
+    bits = "".join(f"{i:011b}" for i in indices)
+    ent_len = n * 32 // 3   # 128, 160, 192, 224, 256
+    cs_len = ent_len // 32  # 4, 5, 6, 7, 8
+    assert len(bits) == ent_len + cs_len
+    ent_bits = bits[:ent_len]
+    cs_bits = bits[ent_len:]
+    ent_bytes = bytes(int(ent_bits[i:i + 8], 2) for i in range(0, ent_len, 8))
+    digest = hashlib.sha256(ent_bytes).digest()
+    digest_bits = "".join(f"{b:08b}" for b in digest)
+    expected_cs = digest_bits[:cs_len]
+    if cs_bits != expected_cs:
+        raise ValueError(
+            "BIP-39 checksum mismatch: the mnemonic does not satisfy BIP-39 "
+            "integrity. A single mistyped word commonly causes this."
+        )
+
+
 def mnemonic_to_seed(mnemonic: str, passphrase: str = "") -> bytes:
     """BIP-39 seed derivation. NFKD + PBKDF2-HMAC-SHA512, 2048 iterations."""
     norm_mnemonic = unicodedata.normalize("NFKD", mnemonic).encode("utf-8")
@@ -97,6 +134,9 @@ def main() -> None:
     passphrase = sys.argv[3] if len(sys.argv) > 3 else ""
 
     english = native_to_english(mnemonic, language)
+    # Verify the BIP-39 checksum on the canonical English form. Catches
+    # transcription errors before they propagate into the derived seed.
+    validate_checksum(english)
     # Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
     # not on the native-language display form. See docs/BIP-multilingual-mnemonics.md.
     seed = mnemonic_to_seed(english, passphrase)

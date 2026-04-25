@@ -57,6 +57,8 @@ enum DecodeError: Error {
     case unsupportedLanguage(String)
     case unknownWord(String, String)
     case invalidWordlist(String)
+    case invalidMnemonicLength(Int)
+    case checksumMismatch
 }
 
 func loadWordlist(_ language: String) throws -> [String] {
@@ -102,6 +104,81 @@ func nativeToEnglish(_ mnemonic: String, language: String) throws -> String {
         out.append(english[i])
     }
     return out.joined(separator: " ")
+}
+
+// MARK: - BIP-39 checksum
+
+func sha256Digest(_ data: Data) -> Data {
+    var digest = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
+    digest.withUnsafeMutableBytes { dbuf in
+        data.withUnsafeBytes { ibuf in
+            _ = CC_SHA256(
+                ibuf.baseAddress,
+                CC_LONG(data.count),
+                dbuf.bindMemory(to: UInt8.self).baseAddress
+            )
+        }
+    }
+    return digest
+}
+
+func validateChecksum(_ englishMnemonic: String) throws {
+    // BIP-39 CS = ENT/32 checksum bits at the tail of concatenated 11-bit
+    // word indices. CS must equal SHA-256(ENT)[:CS_bits]. A reference decoder
+    // must reject any mnemonic whose checksum does not verify; otherwise a
+    // single mistyped word silently produces a wrong seed.
+    let words = englishMnemonic
+        .trimmingCharacters(in: .whitespacesAndNewlines)
+        .split { $0.isWhitespace }
+        .map(String.init)
+    let n = words.count
+    guard [12, 15, 18, 21, 24].contains(n) else {
+        throw DecodeError.invalidMnemonicLength(n)
+    }
+    let english = try loadWordlist("english")
+    var indexMap: [String: Int] = [:]
+    indexMap.reserveCapacity(english.count)
+    for (i, w) in english.enumerated() { indexMap[w] = i }
+    var indices: [Int] = []
+    indices.reserveCapacity(n)
+    for w in words {
+        guard let i = indexMap[w] else {
+            throw DecodeError.unknownWord(w, "english")
+        }
+        indices.append(i)
+    }
+    var bits = ""
+    bits.reserveCapacity(n * 11)
+    for idx in indices {
+        let raw = String(idx, radix: 2)
+        bits.append(String(repeating: "0", count: 11 - raw.count) + raw)
+    }
+    let entLen = (n * 32) / 3   // 128, 160, 192, 224, 256
+    let csLen = entLen / 32     // 4, 5, 6, 7, 8
+    let entBits = String(bits.prefix(entLen))
+    let csBits = String(bits.suffix(csLen))
+    var entBytes = Data(capacity: entLen / 8)
+    var i = 0
+    while i < entLen {
+        let start = entBits.index(entBits.startIndex, offsetBy: i)
+        let end = entBits.index(start, offsetBy: 8)
+        guard let byte = UInt8(String(entBits[start..<end]), radix: 2) else {
+            throw DecodeError.checksumMismatch
+        }
+        entBytes.append(byte)
+        i += 8
+    }
+    let digest = sha256Digest(entBytes)
+    var digestBits = ""
+    digestBits.reserveCapacity(digest.count * 8)
+    for b in digest {
+        let raw = String(b, radix: 2)
+        digestBits.append(String(repeating: "0", count: 8 - raw.count) + raw)
+    }
+    let expected = String(digestBits.prefix(csLen))
+    if csBits != expected {
+        throw DecodeError.checksumMismatch
+    }
 }
 
 // MARK: - PBKDF2-HMAC-SHA512
@@ -157,6 +234,9 @@ do {
     let passphrase = args.count >= 4 ? args[3] : ""
 
     let english = try nativeToEnglish(mnemonic, language: language)
+    // Verify the BIP-39 checksum on the canonical English form. Catches
+    // transcription errors before they propagate into the derived seed.
+    try validateChecksum(english)
     // Display-layer convention: PBKDF2 runs on the canonical English mnemonic,
     // not on the native-language display form. See docs/BIP-multilingual-mnemonics.md.
     let seed = mnemonicToSeed(english, passphrase: passphrase)
