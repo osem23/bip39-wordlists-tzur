@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Validate all BIP-39 wordlists and mappings in this repository.
+Validate all BIP-39 wordlists, mappings, test vectors, and compound entries
+in this repository.
 
 Checks:
   - UTF-8 encoding without BOM, Unix line endings
@@ -11,8 +12,16 @@ Checks:
     White_Space property (loss-of-funds class under space-tokenized
     paper-backup restore)
   - No embedded hyphen or dash characters
-  - NFC at rest (stored form must equal its NFC normalization)
+  - NFC at rest for TZUR Original wordlists, all mappings, all test-vector
+    display mnemonics, and the native-string fields of compound-entries.json
   - Mapping files have correct word count and bidirectional consistency
+
+NFC at rest is enforced wherever a wallet might key into a wordlist or
+mapping with NFC-normalized user input. The reference-canonical wordlists
+under wordlists/reference-canonical/ are excluded from the NFC check
+because the BIP-39 spec ships some of them (French, Spanish, Japanese,
+Korean) in NFKD-equivalent form, and this repository preserves them
+byte-for-byte.
 
 NFKD changes at rest are expected for many languages (Vietnamese, Turkish,
 German, Russian, Arabic, Farsi, Thai). NFKD is applied at PBKDF2 time per
@@ -32,8 +41,14 @@ if sys.platform == "win32":
 REPO_ROOT = Path(__file__).resolve().parent.parent
 WORDLISTS_DIR = REPO_ROOT / "wordlists"
 MAPPINGS_DIR = REPO_ROOT / "mappings"
+TEST_VECTORS_DIR = REPO_ROOT / "test-vectors"
+COMPOUND_ENTRIES_PATH = REPO_ROOT / "validation" / "compound-entries.json"
 
 EXPECTED_WORD_COUNT = 2048
+
+
+def is_nfc(s: str) -> bool:
+    return s == unicodedata.normalize("NFC", s)
 
 errors = []
 warnings = []
@@ -176,6 +191,81 @@ def validate_mapping(path: Path):
     else:
         print(f"  Bidirectional: {mismatches} mismatches")
 
+    # NFC at rest on the native side. e2n values and n2e keys carry the
+    # native-script form a wallet would key into after NFC-normalizing
+    # user input. A non-NFC entry here would cause silent lookup failures.
+    nfc_bad = 0
+    for native in e2n.values():
+        if not is_nfc(native):
+            nfc_bad += 1
+    for native in n2e.keys():
+        if not is_nfc(native):
+            nfc_bad += 1
+    if nfc_bad:
+        error(f"{name}: {nfc_bad} native-side strings not in NFC at rest")
+
+
+def validate_test_vector(path: Path):
+    global checked
+    checked += 1
+    name = path.relative_to(REPO_ROOT)
+    print(f"\nValidating test vectors: {name}")
+
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        error(f"{name}: Failed to parse: {e}")
+        return
+
+    vectors = data.get("vectors", [])
+    if not isinstance(vectors, list):
+        error(f"{name}: 'vectors' is not a list")
+        return
+
+    bad = 0
+    for i, v in enumerate(vectors):
+        mnemonic = v.get("mnemonic", "") if isinstance(v, dict) else ""
+        if mnemonic and not is_nfc(mnemonic):
+            bad += 1
+            if bad <= 3:
+                error(f"{name}: vector {i} mnemonic not in NFC at rest")
+    if bad == 0:
+        print(f"  Vectors: {len(vectors)}, NFC: OK")
+
+
+def validate_compound_entries(path: Path):
+    global checked
+    checked += 1
+    name = path.relative_to(REPO_ROOT)
+    print(f"\nValidating compound entries: {name}")
+
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        error(f"{name}: Failed to parse: {e}")
+        return
+
+    bad = 0
+    def walk(node):
+        nonlocal bad
+        if isinstance(node, str):
+            if not is_nfc(node):
+                bad += 1
+        elif isinstance(node, dict):
+            for k, v in node.items():
+                if not is_nfc(k):
+                    bad += 1
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(data)
+    if bad:
+        error(f"{name}: {bad} strings not in NFC at rest")
+    else:
+        print(f"  Strings: NFC OK")
+
 
 def main():
     print("=" * 60)
@@ -192,6 +282,15 @@ def main():
     # Validate all mappings
     for mapping in sorted(MAPPINGS_DIR.glob("*.json")):
         validate_mapping(mapping)
+
+    # Validate all test-vector files
+    if TEST_VECTORS_DIR.is_dir():
+        for tv in sorted(TEST_VECTORS_DIR.glob("*.json")):
+            validate_test_vector(tv)
+
+    # Validate compound-entries.json
+    if COMPOUND_ENTRIES_PATH.is_file():
+        validate_compound_entries(COMPOUND_ENTRIES_PATH)
 
     # Summary
     print("\n" + "=" * 60)
