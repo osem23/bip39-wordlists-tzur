@@ -117,7 +117,7 @@ saldırmak
 katılmak
 tutum
 çekmek
-açıkartırma
+müzayede
 denetim
 ağustos
 teyze
@@ -588,7 +588,7 @@ olanaklamak
 çıkarmak
 bitiş
 sonsuz
-tasdik
+imzalamak
 düşman
 enerji
 uygulamak
@@ -1100,7 +1100,7 @@ madde
 azami
 labirent
 çayır
-vasat
+kastetmek
 ölçüm
 et
 tamirci
@@ -1278,7 +1278,7 @@ panel
 panik
 panter
 kağıt
-geçittören
+alay
 ebeveyn
 park
 papağan
@@ -1327,7 +1327,7 @@ pizza
 yer
 gezegen
 plastik
-çanak
+plaka
 oynamak
 lütfen
 yemin
@@ -1372,7 +1372,7 @@ hapishane
 sorun
 süreç
 üretmek
-kar
+kazanç
 program
 proje
 tanıtmak
@@ -1615,7 +1615,7 @@ konumlamak
 altı
 boyut
 paten
-müsvedde
+eskiz
 kayak
 beceri
 cilt
@@ -1662,7 +1662,7 @@ sıralamak
 ruh
 ses
 çorba
-menba
+memba
 güney
 uzay
 yedek
@@ -1807,7 +1807,7 @@ bilet
 gelgit
 kaplan
 eğilmek
-tomruk
+ahşap
 zaman
 minik
 uç
@@ -1947,7 +1947,7 @@ gazi
 uygulanabilir
 hareketli
 vahşice
-şan
+galibiyet
 video
 görünüm
 köy
@@ -2027,7 +2027,7 @@ odun
 yün
 kelime
 iş
-yerküre
+âlem
 tasa
 değer
 sarmak

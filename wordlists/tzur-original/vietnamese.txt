@@ -51,7 +51,7 @@ cảnhgiác
 ngoàihànhtinh
 tấtcả
 hẻm
-chophép
+cho
 hầunhư
 mộtmình
 alpha
@@ -65,7 +65,7 @@ trongsố
 sốlượng
 thíchthú
 nhàphântích
-mỏneo
+neo
 cổxưa
 tứcgiận
 góc
@@ -110,7 +110,7 @@ hànhhung
 tàisản
 hỗtrợ
 giảđịnh
-henphếquản
+hen
 vậnđộngviên
 nguyêntử
 tấncông
@@ -120,7 +120,7 @@ thuhút
 đấugiá
 kiểmtoán
 thángtám
-côdì
+dì
 tácgiả
 xehơi
 mùathu
@@ -142,7 +142,7 @@ túi
 cânbằng
 bancông
 quảbóng
-trexanh
+tre
 chuối
 biểungữ
 quầybar
@@ -162,8 +162,8 @@ thịtbò
 trướckhi
 bắtđầu
 cưxử
-đằngsau
-tinchắc
+sau
+tin
 bêndưới
 thắtlưng
 ghếdài
@@ -190,7 +190,7 @@ uám
 banphước
 mù
 máu
-hoanở
+nở
 áosơmi
 xanhlam
 mờ
@@ -239,7 +239,7 @@ trâu
 xâydựng
 bóngđèn
 khốilượng
-viênđạn
+đạn
 bóhàng
 hầmngầm
 gánhnặng
@@ -265,7 +265,7 @@ cóthể
 kênhđào
 hủybỏ
 kẹongọt
-đạibác
+pháo
 thuyềnđộcmộc
 vảibạt
 hẻmnúi
@@ -274,7 +274,7 @@ thủđô
 thuyềntrưởng
 ôtô
 cácbon
-láthẻ
+thẻ
 hànghóa
 thảm
 mang
@@ -358,7 +358,7 @@ lyhợp
 huấnluyệnviên
 bờbiển
 dừa
-mãhóa
+mã
 càphê
 cuộndây
 đồngxu
@@ -369,7 +369,7 @@ kếthợp
 đến
 thoảimái
 truyệntranh
-chungchung
+chung
 côngty
 hòanhạc
 dẫndắt
@@ -400,16 +400,16 @@ nứtvỡ
 nôi
 thủcông
 nhồinhét
-cầntrục
+sếu
 đụngxe
 miệngnúi
-bòtrườn
+bò
 điênrồ
 kem
 tíndụng
-lạchnước
+lạch
 độithủy
-dếmèn
+dế
 tộiphạm
 giòn
 phêbình
@@ -470,7 +470,7 @@ nhasĩ
 phủnhận
 khởihành
 phụthuộc
-kýthác
+gửi
 độsâu
 phóthủ
 rútra
@@ -504,7 +504,7 @@ bấtđồng
 khámphá
 bệnhtật
 món
-sathải
+đuổi
 rốiloạn
 trưngbày
 khoảngcách
@@ -535,7 +535,7 @@ mơ
 trôidạt
 khoan
 uống
-nhỏgiọt
+rỉ
 láixe
 rơi
 trống
@@ -605,7 +605,7 @@ vàotrong
 toànbộ
 lốivào
 phongbì
-tậpphim
+tập
 bằng
 trangbị
 thờiđại
@@ -654,7 +654,7 @@ mặt
 khoa
 phainhạt
 ngấtđi
-đứctin
+tín
 ngã
 sai
 danhtiếng
@@ -664,7 +664,7 @@ quạtmáy
 ưathích
 tưởngtượng
 nôngtrại
-thờitrang
+mốt
 béo
 chếtngười
 cha
@@ -689,7 +689,7 @@ cánhđồng
 hìnhthể
 tệptin
 điệnảnh
-bộlọc
+lọc
 cuốicùng
 tìmthấy
 tốt
@@ -700,7 +700,7 @@ vữngvàng
 đầutiên
 tàichính
 cá
-vừavặn
+vừa
 thểlực
 vábíu
 lácờ
@@ -712,7 +712,7 @@ chạytrốn
 chuyếnbay
 lật
 nổi
-đànchim
+đàn
 sàn
 bônghoa
 lỏng
@@ -797,7 +797,7 @@ uámbuồn
 vinhquang
 găngtay
 phátsáng
-hồdán
+keo
 dê
 nữthần
 vàng
@@ -811,7 +811,7 @@ caitrị
 chộplấy
 duyêndáng
 hạtcốc
-cấpcho
+cấp
 nhoquả
 cỏ
 trọnglực
@@ -841,7 +841,7 @@ vui
 bếncảng
 cứng
 khắcnghiệt
-gặthái
+gặt
 mũnón
 cómặt
 diềuhâu
@@ -954,7 +954,7 @@ ngàvoi
 báođốm
 lọ
 nhạcjazz
-ghentị
+ghen
 quầnjean
 thạch
 trangsức
@@ -1024,7 +1024,7 @@ chanh
 chovay
 chiềudài
 ốngkính
-báogấm
+báo
 bàihọc
 láthư
 mứcđộ
@@ -1036,7 +1036,7 @@ cuộcsống
 nânglên
 ánhsáng
 thích
-chitay
+chi
 giớihạn
 liênkết
 sưtử
@@ -1055,7 +1055,7 @@ côđơn
 dài
 vònglặp
 xổsố
-tovang
+to
 phòngchờ
 yêu
 trungthành
@@ -1078,11 +1078,11 @@ làm
 loàithú
 đànông
 quảnlý
-sắclệnh
+lệnh
 xoài
 biệtthự
 cẩmnang
-câyphong
+phong
 cẩmthạch
 hànhquân
 lềlối
@@ -1091,7 +1091,7 @@ chợbúa
 hônnhân
 mặtnạ
 trọnglượng
-bậcthầy
+chủ
 trậnđấu
 vậtliệu
 toánhọc
@@ -1160,7 +1160,7 @@ dichuyển
 phim
 nhiều
 bánhxốp
-lalừa
+la
 nhân
 bắpthịt
 bảotàng
@@ -1168,7 +1168,7 @@ nấm
 âmnhạc
 phải
 lẫnnhau
-bảnthân
+mình
 bíẩn
 thầnthoại
 ngâythơ
@@ -1186,7 +1186,7 @@ bỏbê
 chẳng
 cháutrai
 dâythần
-tổchim
+tổ
 lưới
 mạnglưới
 trunglập
@@ -1209,7 +1209,7 @@ chúý
 tiểuthuyết
 ngaybâygiờ
 hạtnhân
-consố
+số
 ytá
 hạtdẻ
 câysồi
@@ -1225,7 +1225,7 @@ xảyra
 thángmười
 mùihôi
 tắt
-chàomời
+hiến
 vănphòng
 nhiềulần
 dầu
@@ -1233,7 +1233,7 @@ dầu
 già
 ôliu
 ôlympic
-lượcbỏ
+lược
 mộtlần
 một
 hànhtây
@@ -1260,7 +1260,7 @@ phíangoài
 đầura
 bênngoài
 bầudục
-lònung
+lò
 trùmlên
 sởhữu
 chủnhân
@@ -1268,7 +1268,7 @@ chủnhân
 hàu
 ôzôn
 hiệpước
-máichèo
+chèo
 trang
 cặp
 cungđiện
@@ -1329,12 +1329,12 @@ hànhtinh
 nhựa
 đĩa
 chơi
-vuilòng
+xin
 camkết
 nhổ
 phíchcắm
 laoxuống
-bàithơ
+thơ
 nhàthơ
 điểm
 địacực
@@ -1363,10 +1363,10 @@ xinhxắn
 ngănngừa
 giá
 tựhào
-sơcấp
+chính
 in
 ưutiên
-nhàtù
+tù
 riêngtư
 giảithưởng
 vấnđề
@@ -1390,11 +1390,11 @@ mạchđập
 bíngô
 đấm
 họcsinh
-cúncon
+cún
 muasắm
 tinhkhiết
 mụcđích
-víxách
+ví
 đẩy
 đặt
 câuđố
@@ -1415,7 +1415,7 @@ rađa
 đài
 đườngray
 mưa
-dângcao
+nuôi
 tụhội
 đườngdốc
 trạichăn
@@ -1425,7 +1425,7 @@ mauchóng
 hiếm
 tỉlệ
 thayvì
-quạđen
+quạ
 thôsơ
 daocạo
 sẵnsàng
@@ -1450,8 +1450,8 @@ thưgiãn
 pháthành
 cứutrợ
 dựavào
-cònlại
-nhớlại
+còn
+nhớ
 nhắcnhở
 loạibỏ
 kếtxuất
@@ -1475,7 +1475,7 @@ trởvề
 họpmặt
 tiếtlộ
 duyệtlại
-phầnthưởng
+thưởng
 nhịpđiệu
 xươngsườn
 dảiruybăng
@@ -1607,7 +1607,7 @@ ngớngẩn
 bạc
 tươngtự
 đơngiản
-từkhi
+từ
 hát
 còihú
 chịgái
@@ -1664,7 +1664,7 @@ tiếngđộng
 xúp
 nguồn
 phíanam
-khônggian
+khoảng
 dựphòng
 khônggiantính
 đẻtrứng
@@ -1689,7 +1689,7 @@ phun
 lanrộng
 mùaxuân
 giánđiệp
-hìnhvuông
+vuông
 bópchặt
 sóc
 ổnđịnh
@@ -1758,7 +1758,7 @@ thềthốt
 ngọt
 maulẹ
 bơi
-đuđưa
+đu
 côngtắc
 thanhkiếm
 biểutượng
@@ -1776,7 +1776,7 @@ băngdán
 mụctiêu
 nhiệmvụ
 nếmthử
-hìnhxăm
+xăm
 tắcxi
 dạyhọc
 độinhóm
@@ -1803,7 +1803,7 @@ hưngthịnh
 némđi
 ngóncái
 sấmsét
-vévào
+vé
 thủytriều
 hổbáo
 nghiêngngả
@@ -1812,7 +1812,7 @@ thờigian
 tíhon
 đầumút
 uểoải
-mômềm
+mô
 tiêuđề
 bánhnướng
 thuốclá
@@ -1869,7 +1869,7 @@ thậtsự
 kènđồng
 tintưởng
 sựthật
-cốgắng
+thử
 ốnghút
 họcphí
 lănngã
@@ -1887,7 +1887,7 @@ hai
 kiểuloại
 điểnhình
 xấuxí
-ôdù
+ô
 khôngthể
 khôngbiết
 chúbác
@@ -1926,7 +1926,7 @@ chânkhông
 mơhồ
 hợplệ
 thunglũng
-vanmáy
+van
 xevan
 biếnmất
 hơinước
@@ -1964,7 +1964,7 @@ thanhquản
 giọngnói
 trốngkhông
 núilửa
-âmlượng
+quyển
 biểuquyết
 viễnhành
 tiềncông
@@ -1999,15 +1999,15 @@ cávoi
 cáigì
 lúamì
 bánhxe
-khinào
+khi
 ởđâu
-roida
+roi
 thìthầm
 rộngrãi
 chiềungang
 vợcả
 hoangdã
-ýchí
+sẽ
 thắng
 cửasổ
 rượuvang
