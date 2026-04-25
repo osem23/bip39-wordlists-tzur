@@ -2,7 +2,7 @@
   "language": "indonesian",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "8ff6f9d32ed169b67228e506418110c71ae32a55f337593957746f24bc76a51d",
+  "sha256": "9f0e75369658eca31045aefd978d22bf8bb1d24c642ce5f0221f51f8082df652",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Indonesian.",
   "pairing_type": "translation",

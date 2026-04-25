@@ -2,7 +2,7 @@
   "language": "arabic",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "87c3f5312cd9b3e06283b78671e80a0f35786afe6660e0377684d980a02da54e",
+  "sha256": "08c0025fd2f9fe42578e3df72c78a8f169acb41178b6c200d3172d53713a8cd7",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Arabic.",
   "pairing_type": "translation",

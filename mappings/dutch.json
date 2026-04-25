@@ -2,7 +2,7 @@
   "language": "dutch",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "1b1ac93a824bda2d18d6f91998302879a6e5e712994fea439268d65802f80fc7",
+  "sha256": "55eb8472fb4e541b0feb0c0453b7b0b9356b77d1c4f7039bf19bfcad55b22b30",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Dutch.",
   "pairing_type": "translation",

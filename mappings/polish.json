@@ -2,7 +2,7 @@
   "language": "polish",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "79d0b4a79c260df7daf55ff428bab7fcfd06cf644550a90b42be89f4ff185596",
+  "sha256": "86a32fb84bd3dc06ef966b1be47c6182c8a4b41efc4c349a3b705c9f8f38f5c9",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Polish.",
   "pairing_type": "translation",

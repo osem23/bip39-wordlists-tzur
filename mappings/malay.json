@@ -2,7 +2,7 @@
   "language": "malay",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "ed353da3af6e54addaa5692dc6af1c2262aac7f101d3d0372408714d9297ce44",
+  "sha256": "a31c257974633927364c84f97e0c174343332fc228aa54116bd5d9ddc61217f3",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Malay.",
   "pairing_type": "translation",

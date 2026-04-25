@@ -2,7 +2,7 @@
   "language": "turkish",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "8e1d3b93c6ba6c0758a932f4c86f61219e08815b121b8bcd34b03e20b7ba1bef",
+  "sha256": "cf9cf0afb5937771b30145ccd5e7a72d4b307351aa5cf98cbbf73a1d1f57adeb",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Turkish.",
   "pairing_type": "translation",

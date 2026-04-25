@@ -2,7 +2,7 @@
   "language": "romanian",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "694f5a36fe568167e0dfcd2be7a928de867572c7f308df1cdfac8f6f3a730e65",
+  "sha256": "1ab35be3c777dc0865e5399435f0552206772c4956c79b5f6b22e6de47bbd0b0",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Romanian.",
   "pairing_type": "translation",

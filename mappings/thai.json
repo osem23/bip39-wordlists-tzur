@@ -2,7 +2,7 @@
   "language": "thai",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "ba8b9694104a503caf100134668bdef0e125eb6cd1744be72fff73fae9858466",
+  "sha256": "5325b6ed048fcace871a4eb85d70736385451f6fa023013822d3731b126603cc",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Thai.",
   "pairing_type": "translation",

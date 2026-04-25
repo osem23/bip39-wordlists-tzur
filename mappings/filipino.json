@@ -2,7 +2,7 @@
   "language": "filipino",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "f271d927f6c00a0c58ad9883ab68c031f4c4c4975f85cb27242ef92b0366e8f0",
+  "sha256": "ba8a0ed6fecab0bd23d53d567f22524c772c0154d8051572eea4c999a3cd845d",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Filipino.",
   "pairing_type": "translation",

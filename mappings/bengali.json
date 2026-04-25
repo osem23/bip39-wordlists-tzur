@@ -2,7 +2,7 @@
   "language": "bengali",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "8d8cc4efe99fb34008fbfac02271fb91eb9fd57d0c73281bba71429eb704ec6e",
+  "sha256": "d8938514b5b3826a64fd53a1651ec6708f6570be1c52ff0ab5cb9eaae68fcd3c",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Bengali.",
   "pairing_type": "translation",

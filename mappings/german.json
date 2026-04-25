@@ -2,7 +2,7 @@
   "language": "german",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "329ade0179ed8b337394b339913e1dca79cc395721a08c3e5c974478abb83032",
+  "sha256": "823c10779ea695552a0bf563b752f5c752e4d3b9b39313853e0c85d1522b44a6",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original German.",
   "pairing_type": "translation",

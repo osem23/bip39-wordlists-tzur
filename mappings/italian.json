@@ -2,7 +2,7 @@
   "language": "italian",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "2426e0c0339608ea4d1163f4cca37558c18ab84feaa31b8b3f8d29ddd5207f47",
+  "sha256": "40b8dc899bddde1673bfc4c06e5555ae4ec7b835092281f57f83e78591033e72",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Italian.",
   "pairing_type": "translation",

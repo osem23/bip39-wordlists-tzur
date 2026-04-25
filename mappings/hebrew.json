@@ -2,7 +2,7 @@
   "language": "hebrew",
   "word_count": 2048,
   "version": "v1.0",
-  "sha256": "7b0f6f36664086ffb9839c1187dbf57cf8650257a0b228eb126d007b87347635",
+  "sha256": "5d813d4a5d5f1b105c16b0b4565bc29bbc8181b9b0e9ac770aefcce8079a4e30",
   "normalization_form": "NFC",
   "description": "Index-paired translation between English BIP-39 and TZUR Original Hebrew.",
   "pairing_type": "translation",
