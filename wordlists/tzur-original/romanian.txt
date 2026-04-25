@@ -909,7 +909,7 @@ imita
 imens
 imun
 impact
-silire
+dicta
 ameliora
 impuls
 țol
@@ -1590,7 +1590,7 @@ tragecuarma
 magazin
 scund
 umăr
-împingeputernic
+îmbrânci
 creveți
 ridicădinumeri
 amestecarecărți
@@ -1667,11 +1667,11 @@ sud
 spațiu
 extraderezervă
 spațial
-ivire
+icre
 vorbi
 special
 viteză
-vrăji
+vrajă
 cheltui
 sferă
 mirodenie
@@ -1702,7 +1702,7 @@ staînpicioare
 pornire
 stare
 rămânepeloc
-fripturădevită
+friptură
 oțel
 tulpină
 pas
@@ -1758,7 +1758,7 @@ jura
 dulce
 iuterapid
 înota
-leagăncopii
+balans
 comutator
 sabie
 simbol
@@ -1834,7 +1834,7 @@ problematică
 răsturna
 torță
 vârtej
-broascățestoasă
+țestoasă
 aruncaușor
 total
 turist
@@ -1859,7 +1859,7 @@ procesjudiciar
 trib
 păcăli
 declanșator
-ajustatunde
+tăia
 excursie
 trofeu
 necaz
@@ -1968,7 +1968,7 @@ volumsunet
 vota
 voiaj
 salariu
-căruțătras
+car
 răbdare
 merge
 zid
