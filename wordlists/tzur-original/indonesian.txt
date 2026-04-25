@@ -342,7 +342,7 @@ cerdas
 klik
 klien
 tebing
-panjat
+mendaki
 klinik
 jepit
 arloji
@@ -432,7 +432,7 @@ lemari
 penasaran
 arus
 tirai
-tekukan
+kurva
 bantal
 adat
 imut
@@ -457,13 +457,13 @@ turun
 hias
 susut
 rusa
-bela
+pertahanan
 artikan
 tantang
 derajat
 tunda
 antar
-tuntut
+permintaan
 wafat
 penolakan
 dentis
@@ -632,9 +632,9 @@ girang
 kecuali
 pengecualian
 jalankan
-latih
+latihan
 kuras
-pamer
+pameran
 pengasingan
 ada
 keluar
@@ -826,7 +826,7 @@ tumbuh
 dengus
 jaga
 tebak
-pandu
+panduan
 bersalah
 gitar
 senapan
@@ -844,7 +844,7 @@ garang
 panen
 topi
 punya
-alap
+rajawali
 risikonya
 kepala
 kesehatan
@@ -1077,7 +1077,7 @@ mayor
 buat
 mamalia
 pria
-kelola
+menangani
 perintah
 mangga
 vila
@@ -1144,7 +1144,7 @@ ibu
 saat
 pengawas
 monyet
-gergasi
+monster
 bulanan
 rembulan
 moral
@@ -1278,7 +1278,7 @@ panel
 panik
 macankumbang
 kertas
-arakan
+parade
 induk
 tamankota
 nuri
@@ -1431,7 +1431,7 @@ silet
 siap
 nyata
 alasan
-berontak
+pemberontak
 bangunulang
 kenang
 terima
@@ -1474,7 +1474,7 @@ mundur
 kembali
 reuni
 ungkap
-ulas
+ulasan
 ganjaran
 irama
 iga
@@ -1598,7 +1598,7 @@ malu
 saudara
 sakit
 sisi
-kepung
+pengepungan
 lihat
 tanda
 diam
@@ -1918,11 +1918,11 @@ pakai
 gunakan
 terpakai
 guna
-siasia
+percuma
 lazimnya
 fasilitas
 nganggur
-sedot
+vakum
 ambigu
 sah
 lembah
@@ -1938,7 +1938,7 @@ beludru
 penjaja
 usaha
 lokasi
-katakerja
+verba
 verifikasi
 versi
 amat
