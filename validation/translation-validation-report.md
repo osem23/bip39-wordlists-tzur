@@ -74,3 +74,11 @@ All entries judged `WRONG` in either pass were corrected before publication. The
 ## Native-speaker review
 
 Translation-engine validation is not a substitute for native-speaker review. Native-speaker review status per language is tracked in the README. Hebrew is complete (native he); Spanish and Portuguese are peer-reviewed (native es-AR, native pt-BR); the other 27 languages have the two translation passes above and are open to native-speaker contributions via issue or pull request.
+
+## v2 multi-signal validation
+
+In response to a 2026-04-25 external review that flagged v1's audit trail as opaque on two specific points (single-judge LLM verdicts and bulk application of LLM `suggested_replacement` fields), a v2 multi-signal validation pipeline was run over all 30 wordlists. v2 evaluates each entry by three independent mechanisms (blind LLM top-8 generation, LaBSE multilingual embedding similarity, Wiktionary cross-reference) and ranks entries by how many signals confirm them. Full methodology, per-language results, and reviewer-process documentation are in [`docs/V2_VALIDATION.md`](../docs/V2_VALIDATION.md).
+
+The v2 pass produced a per-language tier distribution (HIGH / MEDIUM / LOW / FAIL) and a reviewer-applied correction count. Across the languages where per-entry maintainer review was possible, approximately one in five gate-passing candidates were rejected as polysemy traps or wrong-sense picks; the rate ranges from 0% to roughly 50% per language. For languages outside the maintainer's review territory, the algorithmic gate decided directly. The rate is documented as the known limit of automated cross-validation and the reason v2 does not auto-apply.
+
+The v2 corrections that were applied are reflected in the currently published wordlists. The `WRONG` counts in the v1 table above remain unchanged because they describe historical state at the time of those passes, not the current state of the inputs.
