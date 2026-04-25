@@ -53,38 +53,38 @@ Every TZUR Original wordlist is validated in three layers. Reproducibility diffe
 
 Per-language status:
 
-| Language | Structural | Back-translation | Forward-translation | Native-speaker review |
-|---|---|---|---|---|
-| Arabic | Clean | Complete | Complete | Pending |
-| Bengali | Clean | Complete | Complete | Pending |
-| Chinese (Simplified) | Clean | Complete | Complete | Pending |
-| Chinese (Traditional) | Clean | Complete | Complete | Pending |
-| Czech | Clean | Complete | Complete | Pending |
-| Danish | Clean | Complete | Complete | Pending |
-| Dutch | Clean | Complete | Complete | Pending |
-| Estonian | Clean | Complete | Complete | Pending |
-| Farsi | Clean | Complete | Complete | Pending |
-| Filipino | Clean | Complete | Complete | Pending |
-| French | Clean | Complete | Complete | Pending |
-| German | Clean | Complete | Complete | Pending |
-| **Hebrew** | Clean | Complete | Complete | **Complete (native he)** |
-| Hindi | Clean | Complete | Complete | Pending |
-| Indonesian | Clean | Complete | Complete | Pending |
-| Italian | Clean | Complete | Complete | Pending |
-| Japanese | Clean | Complete | Complete | Pending |
-| Korean | Clean | Complete | Complete | Pending |
-| Malay | Clean | Complete | Complete | Pending |
-| Polish | Clean | Complete | Complete | Pending |
-| **Portuguese** | Clean | Complete | Complete | **Peer-reviewed (native pt-BR)** |
-| Romanian | Clean | Complete | Complete | Pending |
-| Russian | Clean | Complete | Complete | Pending |
-| **Spanish** | Clean | Complete | Complete | **Peer-reviewed (native es-AR)** |
-| Swedish | Clean | Complete | Complete | Pending |
-| Thai | Clean | Complete | Complete | Pending |
-| Turkish | Clean | Complete | Complete | Pending |
-| Ukrainian | Clean | Complete | Complete | Pending |
-| Urdu | Clean | Complete | Complete | Pending |
-| Vietnamese | Clean | Complete | Complete | Pending |
+| Language | Structural | Back-translation | Forward-translation | v2 multi-signal | Native-speaker review |
+|---|---|---|---|---|---|
+| Arabic | Clean | Complete | Complete | Complete | Pending |
+| Bengali | Clean | Complete | Complete | Complete | Pending |
+| Chinese (Simplified) | Clean | Complete | Complete | Complete | Pending |
+| Chinese (Traditional) | Clean | Complete | Complete | Complete | Pending |
+| Czech | Clean | Complete | Complete | Complete | Pending |
+| Danish | Clean | Complete | Complete | Complete | Pending |
+| Dutch | Clean | Complete | Complete | Complete | Pending |
+| Estonian | Clean | Complete | Complete | Complete | Pending |
+| Farsi | Clean | Complete | Complete | Complete | Pending |
+| Filipino | Clean | Complete | Complete | Complete | Pending |
+| French | Clean | Complete | Complete | Complete | Pending |
+| German | Clean | Complete | Complete | Complete | Pending |
+| **Hebrew** | Clean | Complete | Complete | Complete | **Complete (native he)** |
+| Hindi | Clean | Complete | Complete | Complete | Pending |
+| Indonesian | Clean | Complete | Complete | Complete | Pending |
+| Italian | Clean | Complete | Complete | Complete | Pending |
+| Japanese | Clean | Complete | Complete | Complete | Pending |
+| Korean | Clean | Complete | Complete | Complete | Pending |
+| Malay | Clean | Complete | Complete | Complete | Pending |
+| Polish | Clean | Complete | Complete | Complete | Pending |
+| **Portuguese** | Clean | Complete | Complete | Complete | **Peer-reviewed (native pt-BR)** |
+| Romanian | Clean | Complete | Complete | Complete | Pending |
+| Russian | Clean | Complete | Complete | Complete | Pending |
+| **Spanish** | Clean | Complete | Complete | Complete | **Peer-reviewed (native es-AR)** |
+| Swedish | Clean | Complete | Complete | Complete | Pending |
+| Thai | Clean | Complete | Complete | Complete | Pending |
+| Turkish | Clean | Complete | Complete | Complete | Pending |
+| Ukrainian | Clean | Complete | Complete | Complete | Pending |
+| Urdu | Clean | Complete | Complete | Complete | Pending |
+| Vietnamese | Clean | Complete | Complete | Complete | Pending |
 
 Per-language suspect and `WRONG` counts for both translation passes are in [`validation/translation-validation-report.md`](validation/translation-validation-report.md). Construction methodology lives at [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Translation-engine validation is not a substitute for native-speaker review. Hebrew, Spanish, and Portuguese carry native-speaker signals today; the other 27 have the structural and translation layers above and are open to native-speaker contributions via issue or pull request.
 
