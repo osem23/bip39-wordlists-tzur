@@ -3,14 +3,20 @@
 Validate all BIP-39 wordlists and mappings in this repository.
 
 Checks:
-  - Each wordlist has exactly 2048 words
+  - UTF-8 encoding without BOM, Unix line endings
+  - Exactly 2048 words per wordlist
   - No duplicate words within a wordlist
   - No leading or trailing whitespace
-  - **No embedded whitespace within a word** (loss-of-funds class under
-    space-tokenized paper-backup restore)
-  - UTF-8 encoding
-  - NFKD normalization stability
+  - No embedded whitespace within a word, using the full Unicode
+    White_Space property (loss-of-funds class under space-tokenized
+    paper-backup restore)
+  - No embedded hyphen or dash characters
+  - NFC at rest (stored form must equal its NFC normalization)
   - Mapping files have correct word count and bidirectional consistency
+
+NFKD changes at rest are expected for many languages (Vietnamese, Turkish,
+German, Russian, Arabic, Farsi, Thai). NFKD is applied at PBKDF2 time per
+BIP-39, not at storage time, so it is not flagged here.
 """
 
 import json
@@ -48,6 +54,11 @@ def validate_wordlist(path: Path):
     global checked
     checked += 1
     name = path.relative_to(REPO_ROOT)
+    # NFC at rest is a TZUR Original requirement. The reference-canonical
+    # wordlists are preserved byte-for-byte as the BIP-39 spec ships them,
+    # which for some languages (French, Spanish, Japanese, Korean) is the
+    # NFKD-equivalent form, not NFC.
+    enforce_nfc = "tzur-original" in path.parts
     print(f"\nValidating wordlist: {name}")
 
     try:
@@ -79,13 +90,13 @@ def validate_wordlist(path: Path):
             error(f"{name}: Line {i + 1} has leading/trailing whitespace: '{word}'")
 
         # Embedded whitespace inside a word is a loss-of-funds class bug:
-        # BIP-39 mnemonics are space-tokenized on paper-backup restore, so a
-        # single wordlist entry containing an internal space fragments into
-        # multiple "words" during restore and the seed becomes unrecoverable.
-        # Check for ASCII space, tab, and the ideographic space (used in the
-        # canonical Japanese BIP-39 wordlist context but never inside a single
-        # entry).
-        if any(ch in word for ch in (" ", "\t", "\u3000")):
+        # mnemonics are whitespace-tokenized on paper-backup restore, so an
+        # internal whitespace character fragments the entry into multiple
+        # tokens and the seed becomes unrecoverable. str.isspace() in Python
+        # is defined over the full Unicode White_Space property, so this
+        # check covers ASCII space, tab, NBSP (U+00A0), the ideographic
+        # space (U+3000), and every other White_Space codepoint.
+        if any(ch.isspace() for ch in word):
             error(f"{name}: Line {i + 1} contains embedded whitespace (loss-of-funds class): '{word}'")
 
         # Embedded hyphen or dash: forbidden for paper-backup clarity.
@@ -109,10 +120,12 @@ def validate_wordlist(path: Path):
         if not word:
             error(f"{name}: Empty line at {i + 1}")
 
-        # NFKD stability
-        normalized = unicodedata.normalize("NFKD", word)
-        if word != normalized:
-            warn(f"{name}: Line {i + 1} changes under NFKD: '{word}' -> '{normalized}'")
+        # NFC at rest. Stored form must equal its NFC normalization, so that
+        # input normalized to NFC before lookup matches without ambiguity.
+        if enforce_nfc:
+            nfc = unicodedata.normalize("NFC", word)
+            if word != nfc:
+                error(f"{name}: Line {i + 1} not in NFC at rest: '{word}'")
 
     print(f"  Words: {len(lines)}, Unique: {len(seen)}")
 
