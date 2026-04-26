@@ -36,7 +36,7 @@ Coverage: 2,390 / 8,000 = **29.9%, rounded to "roughly 30%".**
 
 Non-coverage: **70.1%, rounded to "roughly 70%".**
 
-The README's "roughly 35% / 65%" framing is on the optimistic side of this calculation (it implicitly counts some L2 capability or a smaller world-population denominator). We are choosing to round to "roughly 30% / 70%" in this methodology doc and to keep the README at "roughly 35% / 65%" as a generous interpretation that survives Ethnologue revisions in either direction. Both numbers are estimates; the order of magnitude is the substantive claim.
+The README's "roughly a third / two thirds" framing is the conservative reading of this calculation. The methodology rounds to 30% / 70% from the explicit sum, and the README and BIP draft round to "a third / two thirds" because the specific percentage shifts by several points across reasonable definitional choices (L1 vs L1+L2, world-population vs counted-L1 denominator, Ethnologue revisions). The order of magnitude is the substantive claim: roughly a third covered, roughly two thirds not.
 
 ## What TZUR Original adds (30 languages)
 

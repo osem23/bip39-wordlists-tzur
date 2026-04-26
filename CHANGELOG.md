@@ -7,24 +7,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-Unified display wordlists at 30 TZUR Original index-paired translations. Tag `v1.0` remains pinned to its original commit; these changes sit on `main` above the tag.
+Post-v1.0 work sitting on `main` above the `v1.0` tag. Per `docs/GOVERNANCE.md`, the tag is force-moveable and SHA-256 is the load-bearing identifier; `v1.0` is force-moved to a new commit when each wordlist correction or addition lands.
 
 ### Structure
 
-- All 30 non-English wordlists under `wordlists/tzur-original/` are index-paired semantic translations of canonical English BIP-39.
-- Canonical BIP-39 wordlists from the spec are preserved at `wordlists/reference-canonical/` for comparison. They are reference material, not the display source.
-- Mappings at `mappings/*.json` declare `"pairing_type": "translation"`.
+- All 30 non-English wordlists unified under `wordlists/tzur-original/` as index-paired semantic translations of canonical English BIP-39.
+- Canonical BIP-39 wordlists from the spec preserved at `wordlists/reference-canonical/` for spec comparison; reference material, not the display source.
+- Mappings at `mappings/*.json` declare `"pairing_type": "translation"` and carry a stable identifier triple `language`, `version`, `sha256`, plus `normalization_form`.
 
 ### Added
 
+- [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention, MUST/SHOULD rules, input parsing, backup and portability policy, conformance profile, and security considerations.
+- [`docs/V2_VALIDATION.md`](docs/V2_VALIDATION.md). v2 multi-signal validation methodology: blind LLM top-8 generation, multilingual embedding similarity (LaBSE), Wiktionary cross-reference. Per-language tier distribution and reviewer process.
+- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Versioning model, breaking-change policy, communication channel, change-management process for wordlist updates.
+- [`docs/IMPLEMENTER_NOTES.md`](docs/IMPLEMENTER_NOTES.md). Non-normative wallet-side guidance for backup, restore, input handling, ZWNJ strategies, wordlist artifact governance, test fixtures.
+- [`docs/COVERAGE_METHODOLOGY.md`](docs/COVERAGE_METHODOLOGY.md). Per-language calculation behind the "roughly a third / two thirds" coverage framing, with definitional choices and sensitivity range.
 - [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Word-set comparison between canonical BIP-39 and TZUR Original for the nine languages with a canonical counterpart.
 - [`docs/compound-entries.md`](docs/compound-entries.md) and [`validation/compound-entries.json`](validation/compound-entries.json). Per-language dataset of entries stored as glued multi-word compounds, for downstream input-UX hints.
 
+### Changed
+
+- v2 multi-signal sweep applied corrections across all 30 TZUR Original wordlists. Per-language counts in [`docs/V2_VALIDATION.md`](docs/V2_VALIDATION.md). Recurring patterns: glued-compound de-gluing, POS sharpening, loanword adoption, modern-vs-archaic register, polysemy-trap rejections.
+- Reference decoders enforce BIP-39 checksum at the resolved English step.
+- BIP draft adds homograph supply-chain section, discovery framing, portability SHOULDs.
+- Encoding notes corrected on ZWNJ behavior under NFKD (preserved, not stripped).
+
 ### Validation
 
-All 30 wordlists pass `validation/validate_all.py`: 2048 entries, UTF-8 without BOM, no duplicates, no whitespace, no hyphen or space within a word, bidirectional mapping round-trip consistent. The English cryptographic floor is unchanged. A seed produced under any TZUR Original wordlist derives bit-identical keys to the equivalent English phrase.
+- `validation/validate_all.py` extends NFC-at-rest enforcement to mappings, test vectors, and compound entries. Embedded whitespace is checked under the full Unicode `White_Space` property. Validator verifies the `sha256` field in each mapping matches the corresponding wordlist file byte-for-byte.
+- All 30 wordlists pass `validation/validate_all.py` on every push (CI-enforced). The English cryptographic floor is unchanged: a seed produced under any TZUR Original wordlist derives bit-identical keys to the equivalent English phrase.
 
 ## [1.0] - 2026-04-18
+
+First public release. Tag `v1.0` was force-moved on 2026-04-22 to pin a Romanian wordlist sync; per `docs/GOVERNANCE.md`, the tag is force-moveable by design and SHA-256 is the load-bearing identifier for any consumer detecting change.
 
 First public release.
 

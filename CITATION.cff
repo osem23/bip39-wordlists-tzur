@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use these wordlists in academic work or a software project, please cite this repository."
+message: "Citation metadata for this repository. Cite when used in academic work or a software project."
 title: "BIP-39 Display Wordlists (TZUR): 30 native-language index-paired translations of the canonical English BIP-39 wordlist"
 abstract: >-
   BIP-39 compliant display wordlists and bidirectional English-to-native mappings for

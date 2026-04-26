@@ -4,7 +4,7 @@ This document describes the v2 validation methodology used on all 30 TZUR Origin
 
 ## Why v2 exists
 
-An external review on 2026-04-25 ([record in commit history](https://github.com/osem23/bip39-wordlists-tzur/commits/main)) flagged v1's audit trail as opaque on two specific points:
+External feedback in 2026-04 flagged v1's audit trail as opaque on two specific points:
 
 - v1 used a single LLM (Anthropic Claude) as the verdict layer over Google and Azure translation passes. A single judge against a single bar is structurally weaker than independent signals against independent bars.
 - v1 applied many `WRONG`-tier corrections in bulk from the LLM's `suggested_replacement` field. Some of those replacements were sense-shifts the LLM picked because the English word was polysemous (the canonical example: Czech `sister → sestřenice` where `sestřenice` is actually *cousin*).

@@ -4,7 +4,7 @@ The repository is public. If you want to contribute a correction or a new langua
 
 ## New Language Wordlists
 
-Before starting work on a new language, **open an issue first** to discuss it. This prevents duplicate effort and lets us coordinate on linguistic decisions.
+New languages start with a GitHub issue describing the language and approach. The issue is the coordination point: it prevents duplicate effort and surfaces linguistic decisions early.
 
 ### Requirements
 

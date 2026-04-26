@@ -2,15 +2,15 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security issue in these wordlists, please report it responsibly. Examples include a word that is not BIP-39 compliant, a mapping that fails round-trip consistency, an encoding or normalization issue that could cause funds loss in a consuming wallet, or any other defect with safety implications.
+Security issues in these wordlists are reported through GitHub's private vulnerability reporting, not public issues. Examples include a word that is not BIP-39 compliant, a mapping that fails round-trip consistency, an encoding or normalization issue that could cause funds loss in a consuming wallet, or any other defect with safety implications.
 
 **Do not open a public GitHub issue.**
 
-Use GitHub's private vulnerability reporting:
+Private vulnerability report:
 
 https://github.com/osem23/bip39-wordlists-tzur/security/advisories/new
 
-Please include:
+A useful report includes:
 
 - The language and the specific word(s) or mapping entry affected (with line number or index if possible)
 - The nature of the issue (encoding, duplication, non-compliance, normalization mismatch, etc.)

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Minimal reference implementation: decode a BIP-39 mnemonic in any supported
  * language into its English equivalent and derive the 64-byte seed.
