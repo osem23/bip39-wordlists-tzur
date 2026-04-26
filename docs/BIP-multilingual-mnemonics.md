@@ -43,7 +43,7 @@ A wallet that uses a display wordlist derives the BIP-39 seed exclusively from t
 4. Show the display mnemonic to the user for backup.
 5. On restore, accept the display mnemonic, look up each token in the display wordlist's reverse mapping to recover the canonical English mnemonic, then derive the seed per BIP-39.
 
-The NFKD-normalized canonical English mnemonic from step 2 is the only input that ever reaches PBKDF2.
+The NFKD-normalized canonical English mnemonic from step 2 is the only input that ever reaches PBKDF2 as the password. The passphrase argument to PBKDF2 (via the salt `"mnemonic" + passphrase` per BIP-39) is unchanged by this convention: it is supplied by the user as-is and is not translated, mapped, or otherwise modified by the display wordlist.
 
 ### Display wordlist requirements
 
@@ -60,7 +60,7 @@ A display wordlist SHOULD:
 
 1. Maximize 4-character prefix uniqueness within the constraints of the target script. Realized uniqueness varies widely across scripts; wallets relying on prefix-based autocomplete fall back to full-word matching whenever prefix uniqueness is below 2048/2048.
 2. Be reviewed by a fluent native speaker of the target language before publication. Native-speaker review catches register, idiom, and cultural-neutrality issues that mechanical validation cannot.
-3. Carry a stable identifier triple of (language code, version string, SHA-256 of the wordlist file) so that a display backup can be matched on restore to the exact wordlist that produced it. The reference registry publishes this triple in each mapping JSON under the keys `language`, `version`, and `sha256`, with a `normalization_form` field set to `"NFC"` for TZUR Original wordlists. Wallets that bundle wordlists SHOULD persist this triple alongside wallet metadata.
+3. Carry a stable identifier triple of (language code, version string, SHA-256 of the wordlist file) so that a display backup can be matched on restore to the exact wordlist that produced it. The reference registry publishes this triple in each mapping JSON under the keys `language`, `version`, and `sha256`, with a `normalization_form` field set to `"NFC"` for TZUR Original wordlists. Wallets that bundle wordlists SHOULD persist this triple alongside wallet metadata. In registries that use a single force-moveable version tag (the reference registry's model, documented at `docs/GOVERNANCE.md`), the version string is not load-bearing; integrators pin the SHA-256 of the wordlist file as the change-detection identifier.
 
 Note on ordering: a display wordlist is stored in index-parallel order with the canonical English wordlist, not sorted by native-language collation. The two orderings coincide only when the English wordlist happens to match the target script's collation, which is never the case in practice. Lookup efficiency is provided by a hashmap over the 2048-entry native-to-English mapping; sorting by native collation is not a requirement of this convention.
 
@@ -129,7 +129,15 @@ mnemonic = "abandon abandon abandon abandon abandon abandon abandon abandon aban
 seed     = 5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4
 ```
 
-Per-language paper-backup round trips are exercised in the wallet implementation's test suite.
+The same entropy and passphrase rendered through the Hebrew display wordlist produces a byte-identical seed:
+
+```
+entropy  = 0x00000000000000000000000000000000
+mnemonic = "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אודות"
+seed     = 5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4
+```
+
+This is the property that defines the convention: the seed is a function of the canonical English mnemonic and the passphrase, never of the display rendering. Per-language test-vector files at `test-vectors/<language>.json` exercise this property across all 30 languages and all five canonical BIP-39 entropy lengths.
 
 ## Conformance Profile
 
