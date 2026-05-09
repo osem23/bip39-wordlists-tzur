@@ -68,10 +68,13 @@ func loadWordlist(_ language: String) throws -> [String] {
     }
     let url = wordlistsDir.appendingPathComponent(rel)
     let text = try String(contentsOf: url, encoding: .utf8)
+    // NFC-normalize on load so lookup keys match the form a wallet
+    // produces after NFC-normalizing user input. See the BIP draft,
+    // "Input parsing" MUST 2.
     let words = text.replacingOccurrences(of: "\r", with: "")
                     .trimmingCharacters(in: .whitespacesAndNewlines)
                     .split(separator: "\n")
-                    .map(String.init)
+                    .map { String($0).precomposedStringWithCanonicalMapping }
     guard words.count == 2048 else {
         throw DecodeError.invalidWordlist(rel)
     }
@@ -99,7 +102,9 @@ func nativeToEnglish(_ mnemonic: String, language: String) throws -> String {
 
     var out: [String] = []
     for word in splitMnemonic(mnemonic) {
-        guard let i = index[word] else {
+        // Match the wordlist's stored Unicode form (NFC) before lookup.
+        let key = word.precomposedStringWithCanonicalMapping
+        guard let i = index[key] else {
             throw DecodeError.unknownWord(word, language)
         }
         out.append(english[i])

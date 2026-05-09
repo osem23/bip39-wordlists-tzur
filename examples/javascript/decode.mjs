@@ -40,7 +40,10 @@ function loadWordlist(language) {
   const rel = LANG_TO_PATH[language];
   if (!rel) throw new Error(`unsupported language: ${language}`);
   const text = readFileSync(resolve(WORDLISTS, rel), "utf8");
-  return text.replace(/\r/g, "").trim().split("\n");
+  // NFC-normalize on load so lookup map keys match the form a wallet
+  // produces after NFC-normalizing user input. See the BIP draft,
+  // "Input parsing" MUST 2.
+  return text.replace(/\r/g, "").trim().split("\n").map(w => w.normalize("NFC"));
 }
 
 function splitMnemonic(mnemonic) {
@@ -56,7 +59,8 @@ function nativeToEnglish(mnemonic, language) {
   const nativeIndex = new Map(native.map((w, i) => [w, i]));
 
   return splitMnemonic(mnemonic).map(w => {
-    const idx = nativeIndex.get(w);
+    // Match the wordlist's stored Unicode form (NFC) before lookup.
+    const idx = nativeIndex.get(w.normalize("NFC"));
     if (idx === undefined) throw new Error(`word not in ${language} wordlist: ${w}`);
     return english[idx];
   }).join(" ");

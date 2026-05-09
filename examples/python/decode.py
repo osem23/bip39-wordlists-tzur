@@ -49,7 +49,13 @@ def load_wordlist(language: str) -> list[str]:
     if language not in LANG_TO_PATH:
         raise ValueError(f"unsupported language: {language}")
     path = WORDLISTS / LANG_TO_PATH[language]
-    return path.read_text(encoding="utf-8").strip().split("\n")
+    # NFC-normalize on load so the lookup map keys match the form a wallet
+    # produces after NFC-normalizing user input. See the BIP draft, "Input
+    # parsing" MUST 2: input tokens and the display wordlist must compare
+    # in the same Unicode form to avoid silent restore failures on
+    # precomposed/decomposed accent pairs.
+    return [unicodedata.normalize("NFC", w)
+            for w in path.read_text(encoding="utf-8").strip().split("\n")]
 
 
 def split_mnemonic(mnemonic: str, language: str) -> list[str]:
@@ -75,9 +81,11 @@ def native_to_english(mnemonic: str, language: str) -> str:
 
     translated = []
     for word in split_mnemonic(mnemonic, language):
-        if word not in native_to_index:
+        # Match the wordlist's stored Unicode form (NFC) before lookup.
+        word_nfc = unicodedata.normalize("NFC", word)
+        if word_nfc not in native_to_index:
             raise ValueError(f"word not in {language} wordlist: {word!r}")
-        translated.append(english_words[native_to_index[word]])
+        translated.append(english_words[native_to_index[word_nfc]])
     return " ".join(translated)
 
 
