@@ -1,4 +1,4 @@
-# BIP-39 Wordlists. TZUR Originals.
+# BIP-39 Display Wordlists. TZUR Originals.
 
 Index-paired, audited, multi-script display wordlists for BIP-39 mnemonics in 30 languages.
 
