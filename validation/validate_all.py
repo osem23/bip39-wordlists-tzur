@@ -45,6 +45,36 @@ MAPPINGS_DIR = REPO_ROOT / "mappings"
 TEST_VECTORS_DIR = REPO_ROOT / "test-vectors"
 COMPOUND_ENTRIES_PATH = REPO_ROOT / "validation" / "compound-entries.json"
 
+# Reuse the canonical entropy->mnemonic->seed pipeline from the generator so
+# this validator and `test-vectors/generate.py` cannot drift apart.
+sys.path.insert(0, str(TEST_VECTORS_DIR))
+from generate import (  # noqa: E402  (path injection above is intentional)
+    entropy_to_indices,
+    indices_to_mnemonic,
+    mnemonic_to_seed,
+)
+
+ENGLISH_WORDLIST_REL = "reference-canonical/english.txt"
+_ENGLISH_WORDS_CACHE: list[str] | None = None
+
+
+def _load_english_words() -> list[str]:
+    global _ENGLISH_WORDS_CACHE
+    if _ENGLISH_WORDS_CACHE is None:
+        path = WORDLISTS_DIR / ENGLISH_WORDLIST_REL
+        words = path.read_text(encoding="utf-8").strip().split("\n")
+        if len(words) != EXPECTED_WORD_COUNT:
+            raise RuntimeError(
+                f"english wordlist at {ENGLISH_WORDLIST_REL} has {len(words)} entries, "
+                f"expected {EXPECTED_WORD_COUNT}"
+            )
+        _ENGLISH_WORDS_CACHE = words
+    return _ENGLISH_WORDS_CACHE
+
+
+# BIP-39 entropy length in bytes -> word count
+_ENTROPY_BYTES_TO_WORDS = {16: 12, 20: 15, 24: 18, 28: 21, 32: 24}
+
 EXPECTED_WORD_COUNT = 2048
 
 
@@ -222,6 +252,14 @@ def validate_mapping(path: Path):
 
 
 def validate_test_vector(path: Path):
+    """Recompute every test vector from declared entropy and wordlist.
+
+    A committed vector is valid only if it reproduces from the entropy +
+    declared wordlist + display-layer convention (PBKDF2 over canonical
+    English). The earlier NFC-only check passed even when a vector contained
+    a word missing from its declared wordlist; that gap is closed here by
+    full recomputation.
+    """
     global checked
     checked += 1
     name = path.relative_to(REPO_ROOT)
@@ -238,15 +276,107 @@ def validate_test_vector(path: Path):
         error(f"{name}: 'vectors' is not a list")
         return
 
-    bad = 0
+    language = data.get("language")
+    wordlist_rel = data.get("wordlist")
+    if not isinstance(language, str) or not isinstance(wordlist_rel, str):
+        error(f"{name}: missing or invalid 'language'/'wordlist' fields")
+        return
+
+    wl_path = WORDLISTS_DIR / wordlist_rel
+    if not wl_path.is_file():
+        error(f"{name}: declared wordlist not found at {wordlist_rel}")
+        return
+
+    try:
+        wordlist_words = wl_path.read_text(encoding="utf-8").strip().split("\n")
+    except UnicodeDecodeError:
+        error(f"{name}: declared wordlist {wordlist_rel} is not valid UTF-8")
+        return
+    if len(wordlist_words) != EXPECTED_WORD_COUNT:
+        error(f"{name}: {wordlist_rel} has {len(wordlist_words)} entries, "
+              f"expected {EXPECTED_WORD_COUNT}")
+        return
+
+    english_words = _load_english_words()
+    wordset = set(wordlist_words)
+
+    nfc_bad = 0
+    mismatches = 0
     for i, v in enumerate(vectors):
-        mnemonic = v.get("mnemonic", "") if isinstance(v, dict) else ""
-        if mnemonic and not is_nfc(mnemonic):
-            bad += 1
-            if bad <= 3:
+        if not isinstance(v, dict):
+            error(f"{name}: vector {i} is not an object")
+            mismatches += 1
+            continue
+
+        entropy_hex = v.get("entropy")
+        passphrase = v.get("passphrase", "")
+        committed_mnemonic = v.get("mnemonic", "")
+        committed_word_count = v.get("word_count")
+        committed_seed = v.get("seed", "")
+
+        if not isinstance(entropy_hex, str) or not isinstance(committed_mnemonic, str) \
+                or not isinstance(passphrase, str) or not isinstance(committed_seed, str):
+            error(f"{name}: vector {i} missing/invalid required string fields")
+            mismatches += 1
+            continue
+
+        try:
+            entropy_bytes = bytes.fromhex(entropy_hex)
+        except ValueError:
+            error(f"{name}: vector {i} entropy is not valid hex")
+            mismatches += 1
+            continue
+
+        expected_word_count = _ENTROPY_BYTES_TO_WORDS.get(len(entropy_bytes))
+        if expected_word_count is None:
+            error(f"{name}: vector {i} entropy length {len(entropy_bytes)} bytes is not 16/20/24/28/32")
+            mismatches += 1
+            continue
+        if committed_word_count != expected_word_count:
+            error(f"{name}: vector {i} word_count {committed_word_count} != expected {expected_word_count}")
+            mismatches += 1
+            continue
+
+        # Recompute display-language mnemonic.
+        try:
+            indices = entropy_to_indices(entropy_hex)
+            expected_mnemonic = indices_to_mnemonic(indices, wordlist_words, language)
+        except Exception as e:
+            error(f"{name}: vector {i} mnemonic recompute failed: {e}")
+            mismatches += 1
+            continue
+
+        if committed_mnemonic != expected_mnemonic:
+            error(f"{name}: vector {i} mnemonic does not match recomputed value from entropy")
+            mismatches += 1
+            continue
+
+        # Tokenize the committed mnemonic and verify every token is in the wordlist.
+        # Whitespace tokenization covers ASCII space and U+3000; both are produced
+        # by indices_to_mnemonic depending on language.
+        tokens = committed_mnemonic.replace("\u3000", " ").split()
+        unknown = [t for t in tokens if t not in wordset]
+        if unknown:
+            error(f"{name}: vector {i} contains tokens missing from {wordlist_rel}: {unknown[:3]}")
+            mismatches += 1
+            continue
+
+        # Recompute seed via PBKDF2-NFKD over canonical English mnemonic
+        # (display-layer convention: PBKDF2 never sees the native form).
+        english_mnemonic = indices_to_mnemonic(indices, english_words, "english")
+        recomputed_seed = mnemonic_to_seed(english_mnemonic, passphrase).hex()
+        if recomputed_seed != committed_seed.lower():
+            error(f"{name}: vector {i} seed does not match recomputed PBKDF2 over English mnemonic")
+            mismatches += 1
+            continue
+
+        if not is_nfc(committed_mnemonic):
+            nfc_bad += 1
+            if nfc_bad <= 3:
                 error(f"{name}: vector {i} mnemonic not in NFC at rest")
-    if bad == 0:
-        print(f"  Vectors: {len(vectors)}, NFC: OK")
+
+    if mismatches == 0 and nfc_bad == 0:
+        print(f"  Vectors: {len(vectors)}, recomputed mnemonic + seed: OK, NFC: OK")
 
 
 def validate_compound_entries(path: Path):
