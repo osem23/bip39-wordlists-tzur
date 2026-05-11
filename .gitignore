@@ -24,3 +24,7 @@ venv/
 # Logs / scratch
 *.log
 *.bak
+
+# Local agent / tooling artifacts
+CLAUDE.md
+.claude/
