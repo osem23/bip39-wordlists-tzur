@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-Post-v1.0 work sitting on `main` above the `v1.0` tag. Per `docs/GOVERNANCE.md`, the tag is force-moveable and SHA-256 is the load-bearing identifier; `v1.0` is force-moved to a new commit when each wordlist correction or addition lands.
+Post-v1.0 work sitting on `main` above the pinned `v1.0` tag. Documentation, validator, and reference tooling evolve here; the shipped wordlist corpus stays frozen at `v1.0`. Per `docs/GOVERNANCE.md`, SHA-256 in each `mappings/*.json` is the load-bearing identifier for integrators.
 
 ### Structure
 
@@ -19,7 +19,7 @@ Post-v1.0 work sitting on `main` above the `v1.0` tag. Per `docs/GOVERNANCE.md`,
 
 - [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention, MUST/SHOULD rules, input parsing, backup and portability policy, conformance profile, and security considerations.
 - [`docs/V2_VALIDATION.md`](docs/V2_VALIDATION.md). v2 multi-signal validation methodology: blind LLM top-8 generation, multilingual embedding similarity (LaBSE), Wiktionary cross-reference. Per-language tier distribution and reviewer process.
-- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Versioning model, breaking-change policy, communication channel, change-management process for wordlist updates.
+- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Versioning model, breaking-change policy, communication channel, change-management process for non-wordlist updates.
 - [`docs/IMPLEMENTER_NOTES.md`](docs/IMPLEMENTER_NOTES.md). Non-normative wallet-side guidance for backup, restore, input handling, ZWNJ strategies, wordlist artifact governance, test fixtures.
 - [`docs/COVERAGE_METHODOLOGY.md`](docs/COVERAGE_METHODOLOGY.md). Per-language calculation behind the "roughly a third / two thirds" coverage framing, with definitional choices and sensitivity range.
 - [`docs/canonical-vs-tzur.md`](docs/canonical-vs-tzur.md). Word-set comparison between canonical BIP-39 and TZUR Original for the nine languages with a canonical counterpart.
@@ -39,7 +39,7 @@ Post-v1.0 work sitting on `main` above the `v1.0` tag. Per `docs/GOVERNANCE.md`,
 
 ## [1.0] - 2026-04-18
 
-First public release. Tag `v1.0` was force-moved on 2026-04-22 to pin a Romanian wordlist sync; per `docs/GOVERNANCE.md`, the tag is force-moveable by design and SHA-256 is the load-bearing identifier for any consumer detecting change.
+First public release. The `v1.0` tag was last moved on 2026-04-22 to pin a Romanian wordlist sync; under the current pinned-tag policy in `docs/GOVERNANCE.md`, the tag stays anchored at the shipped commit going forward. SHA-256 in each `mappings/*.json` remains the load-bearing identifier for any consumer detecting change.
 
 First public release.
 

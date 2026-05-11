@@ -166,7 +166,7 @@ The reviewer process is, by construction, not reproducible. Human judgment about
 
 - **v1 results**: [`validation/translation-validation-report.md`](../validation/translation-validation-report.md). Back-translation and forward-translation passes against the pre-v2 wordlist state.
 - **Construction notes**: [`docs/CONSTRUCTION.md`](CONSTRUCTION.md). Per-language construction process, structural rules, multi-word-concept handling.
-- **Governance**: [`docs/GOVERNANCE.md`](GOVERNANCE.md). Versioning model, breaking-change policy, change-management process for wordlist updates.
+- **Governance**: [`docs/GOVERNANCE.md`](GOVERNANCE.md). Versioning model (pinned `v1.0`), breaking-change policy, change-management process for non-wordlist updates.
 - **Implementer notes**: [`docs/IMPLEMENTER_NOTES.md`](IMPLEMENTER_NOTES.md). Wallet-side guidance for backup, restore, input handling.
 - **BIP draft**: [`docs/BIP-multilingual-mnemonics.md`](BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention.
 - **Pipeline source** (wallet repository): `audit/translation_pass_v2/` at <https://github.com/osem23/tzur-wallet>. Scripts: `1_blind_generation.py`, `2_embedding_similarity.py`, `3_wiktionary_lookup.py`, `4_aggregate.py`, `5_report.py`.

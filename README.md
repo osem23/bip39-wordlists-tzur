@@ -171,7 +171,7 @@ Each mapping file contains `language`, `word_count`, `description`, `pairing_typ
 
 - [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). Informational BIP draft specifying the display-layer wordlist convention: MUST/SHOULD rules, input parsing, backup and portability policy, conformance profile, security considerations.
 - [`docs/IMPLEMENTER_NOTES.md`](docs/IMPLEMENTER_NOTES.md). Non-normative companion. Wallet-side operational guidance: backup-screen copy, restore-time input handling, compound-entry hints, ZWNJ strategies, wordlist governance, test fixtures.
-- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Repository versioning model, SHA-256 as load-bearing identifier, what constitutes a breaking change for integrators, communication channel for wordlist updates, migration path for versioned tags.
+- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Repository versioning model (pinned `v1.0`), SHA-256 as load-bearing identifier, what can change post-ship, communication channel for repository updates, and the path for any future versioned corpus.
 - [`docs/COVERAGE_METHODOLOGY.md`](docs/COVERAGE_METHODOLOGY.md). Per-language calculation behind the "roughly a third / two thirds" coverage framing.
 - [`docs/CONSTRUCTION.md`](docs/CONSTRUCTION.md). Construction rules, disambiguation, per-language notes, reproducibility.
 - [`docs/V2_VALIDATION.md`](docs/V2_VALIDATION.md). v2 multi-signal validation methodology, per-language tier distribution, reviewer process, polysemy-filter rate, recurring patterns observed during the 2026-04 sweep.

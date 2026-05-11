@@ -4,75 +4,73 @@ This document defines how the registry handles versioning, change management, an
 
 ## Versioning model
 
-The registry uses a single force-moveable tag, `v1.0`. The tag is moved to a new commit whenever a wordlist correction or addition is merged. There is no `v1.1`, `v2.0`, or any other tag at the time of writing.
+The registry uses a single pinned tag, `v1.0`. The tag anchors the commit whose 30 TZUR Original wordlists shipped in the TZUR wallet's first public release and does not move. There is no `v1.0.1`, no `v1.1`, no `v2.0` at the time of writing.
 
-This is deliberate. The repository has a single maintainer. Cutting versioned tags for every correction creates integration friction (each integrator must decide whether a given correction is worth migrating to) without proportional benefit while the repository is small. The single-tag model keeps the human cost of accepting corrections low.
+The wordlist tokens at each English index are frozen once they ship in a released wallet build. Users who wrote their backup phrase against those tokens rely on the displayed words matching their handwritten record on restore. Editing a token at a given index after ship would break that contract for any user who created a wallet on the prior corpus. The cryptographic floor (canonical English BIP-39 + PBKDF2-NFKD) keeps funds safe regardless, but the display-layer contract that wallets advertise to users is preserved by treating the shipped corpus as immutable.
 
-The model has one important consequence: the version string is decorative, not load-bearing. A correction to the Romanian wordlist on 2026-04-22 did not move the version string from `v1.0` to `v1.1`. It moved the SHA-256 of `wordlists/tzur-original/romanian.txt`. **SHA-256 is the load-bearing identifier for any consumer that needs to detect change.** The mapping schema's `sha256` field is the canonical place to read it.
+This means the `v1.0` SHA-256 values in `mappings/*.json` are stable for integrators that pinned them. Wallets persisting `(language, version, sha256)` alongside seed metadata will see the same triple on every future restore.
 
-## What changes the SHA-256
+If a future TZUR build ever needs a different corpus (a fully reviewed alternative wordlist for a language, a new language addition that requires re-cutting the set, or any other ship-shaping reason), the right move is a new tag (`v2.0`) anchored at a new commit; the existing `v1.0` tag still pins the original corpus for backward compatibility.
 
-Any byte-level change to a wordlist file produces a new SHA-256. Concrete change classes:
+## What can still change in this repository
 
-- **Single-token correction.** A native-speaker review or an audit identifies a wrong, awkward, or culturally inappropriate token at index N. The token is replaced. Every other entry stays unchanged. The wordlist file's SHA-256 changes.
-- **Full-wordlist replacement.** The wordlist for a language is regenerated from scratch (e.g., a contributor proposes a fully reviewed alternative). All 2048 entries can change. The SHA-256 changes.
-- **Normalization-form change.** An entry that was stored in a non-NFC form is normalized. The bytes change. The SHA-256 changes. The CI validator catches non-NFC entries before merge, so this should not happen post-2026-04-25, but the change class is listed for completeness.
-- **Line-ending change.** The repository uses LF (`\n`) line endings. A regression that introduces CR-LF would change the SHA-256. The CI validator catches this as a structural error.
-- **Mapping-only change.** A change to the JSON mapping file without a wordlist change does not change the wordlist's SHA-256, but it does change the mapping's own JSON. The mapping carries its own integrity field; verify both.
+Wordlist token files at `wordlists/tzur-original/*.txt` do not change post-ship. Everything else in the repository may evolve without touching `v1.0`:
 
-For each change, the corresponding entry in `mappings/<language>.json` is updated so the `sha256` field matches the new wordlist file. The validator at `validation/validate_all.py` enforces this match on every push.
+- Documentation: BIP draft, governance, construction notes, implementer notes, coverage methodology, README.
+- Validator and tooling: `validation/validate_all.py`, CI workflows, the test-vector generator.
+- Reference decoders under `examples/`.
+- Audit reports, candidate queues, and errata documents.
+- Test vectors under `test-vectors/`. These regenerate deterministically from the frozen wordlists; CI enforces byte-identity.
+- The `sha256` field in `mappings/*.json` may be recomputed against LF-normalized wordlist bytes if a prior commit captured a hash against CRLF or another non-canonical encoding; that is a documentation correction, not a wordlist change.
+
+A commit that touches the documentation, validator, or example decoders does not move `v1.0`. The tag stays where it is.
+
+## Audit findings on the shipped corpus
+
+Findings from periodic LLM or native-speaker audits that flag wrong-sense or POS-drift entries in shipped wordlists are tracked in writing (audit reports under `docs/`, machine-readable candidate queues under `validation/` when used) but are not applied as token swaps. They become input to a future versioned wordlist re-cut.
+
+The repository's public framing is a gift to the Bitcoin community. Honest documentation of known imperfections, without batch-replacement, is the correct posture; it invites native-speaker pull requests and downstream native-language review without breaking shipped wallets.
 
 ## What constitutes a breaking change for integrators
 
-**Any SHA-256 change is breaking for any wallet that pinned the previous SHA-256.** There is no in-band way for the registry to declare a change non-breaking. The registry cannot know which entries any given wallet displayed to which users. Even a correction that fixes a long-standing bug can break a user who backed up the old display token on paper.
+Under the pinned-tag model, the `v1.0` SHA-256 values are stable for the lifetime of the tag. An integrator that pinned the SHA-256 in `mappings/<language>.json` at v1.0 ship time will see the same SHA-256 on every subsequent fetch.
 
-This is why the BIP draft at `docs/BIP-multilingual-mnemonics.md` recommends that wallets persist `(language, version, sha256)` alongside encrypted seed metadata at wallet creation, and surface a mismatch on restore. The user-facing safety net is the canonical English mnemonic, made available by every conformant wallet, which restores in any BIP-39 implementation regardless of wordlist version.
+Two narrow cases can still change a mapping's `sha256` field:
 
-Integrators should pin **the SHA-256, not the version string**. Pinning the version string under the current single-tag model is equivalent to pinning nothing.
+- **Mapping integrity correction.** The committed hash was computed against non-canonical bytes (e.g., CRLF on a Windows checkout) and a subsequent commit re-records the hash against the canonical LF form. The wordlist bytes are unchanged; the recorded hash is corrected.
+- **Mapping schema change.** A field is added or renamed in the mapping JSON itself (not the wordlist file). The wordlist's SHA-256 does not change; the mapping's own JSON does.
+
+Both are documented in `CHANGELOG.md`. Neither involves a token swap. Integrators that pin both the wordlist file's SHA-256 (computed directly from the `.txt`) and the commit hash will see no drift from documentation-only edits.
 
 ## Communication channel
 
-When the registry's `v1.0` tag is force-moved, the change is announced through three channels in order of priority:
+Repository changes are announced through:
 
-1. **`CHANGELOG.md`.** A new entry at the top describes the change, lists the affected languages and the before-and-after SHA-256 for each affected wordlist, and explains the rationale. Integrators watching the repository should treat any commit that touches a wordlist file as a `CHANGELOG.md` update obligation; PRs that change wordlists without updating the changelog should be sent back.
-2. **GitHub release notes.** Once cutting GitHub releases is part of the workflow, each force-move of `v1.0` produces a release note pointing at the relevant `CHANGELOG.md` section.
-3. **The TZUR wallet release notes.** Because TZUR is the reference implementation, every wordlist change that lands here also lands in TZUR's bundle. TZUR's release notes record the wordlist-version change date and the before-and-after SHA-256 for any affected language.
+1. **`CHANGELOG.md`.** Every commit that touches documentation, the validator, or auxiliary tooling adds a brief entry when the change is integrator-visible.
+2. **GitHub release notes.** The `v1.0` release notes describe the shipped corpus; future release notes describe any future versioned corpus.
+3. **The TZUR wallet release notes.** TZUR is the reference implementation. The wallet's release notes record any wordlist-corpus change date and corresponding SHA-256 values per language.
 
-Wallets watching the registry can compare the persisted `wordlistSha256` against the registry's current SHA-256 on each app launch (or each restore) and surface a version-mismatch dialog. The BIP draft `§Backup and portability policy` SHOULD 3 spells out this expectation.
+Wallets watching the registry can compare the persisted `wordlistSha256` against the registry's current SHA-256 on each app launch and surface a version-mismatch dialog. Under the pinned-tag model, that check should be quiet for the lifetime of `v1.0`; it remains wired in as defense against accidental drift.
 
-## Forward compatibility
+## Process for non-wordlist changes
 
-If the repository's scale, contributor base, or change frequency outgrows the single-tag model, the migration to versioned tags follows this pattern:
+Documentation, validator, tooling, and reference-decoder changes follow the normal PR flow:
 
-1. The current `v1.0` tag is renamed to `v1.0-final` (or similar) and pinned to its current commit.
-2. A new versioning policy is added to this document specifying the semantics: e.g., MAJOR for non-backward-compatible mapping schema changes, MINOR for new languages, PATCH for wordlist corrections.
-3. New tags follow the new policy.
-4. Integrators using `wordlistSha256` continue to work without changes; integrators using only the version string see explicit version transitions instead of silent force-moves.
-
-Until that migration happens, every consumer pins the SHA-256, and no integration code paths should depend on the version string being immutable.
-
-## Process for wordlist changes
-
-A change to any wordlist file lands through the following process:
-
-1. **Issue or PR opened.** The proposer describes the change, the affected language, the affected indices, and the rationale.
-2. **Native-speaker review preferred.** For languages with a documented native-speaker reviewer (`README.md` per-language status table), the reviewer signs off on PR. For languages without, the maintainer applies the change with a clearly stated reasoning, and the per-language status remains "pending native review."
-3. **Structural validator passes.** `validation/validate_all.py` runs on the PR (CI-enforced). The PR cannot merge if any check fails. This includes the SHA-256 match between the wordlist file and the mapping's `sha256` field.
-4. **Mapping updated in lockstep.** Any wordlist change requires a corresponding mapping JSON update. CI fails the PR if the SHA-256 in the mapping does not match the wordlist file's actual SHA-256.
-5. **Translation validation report regenerated when warranted.** If the change is large enough to materially affect the translation report (typically a multi-token correction or a full-wordlist replacement), the report is regenerated. Single-token corrections do not require regeneration; the methodology in `validation/translation-validation-report.md` accommodates this.
-6. **`CHANGELOG.md` entry added.** A new entry at the top describes the change as defined under "Communication channel" above.
-7. **Maintainer approval.** The maintainer (currently @osem23) merges. The `v1.0` tag is force-moved to point at the new HEAD.
-8. **TZUR sync.** If the change is significant enough to warrant a wallet update, the TZUR repository pulls in the change in its next release cycle.
+1. **Issue or PR opened.** The proposer describes the change, the affected files, and the rationale.
+2. **Structural validator passes.** `validation/validate_all.py` runs on the PR (CI-enforced). The PR cannot merge if any check fails.
+3. **Test vectors unchanged.** Test vectors regenerate from the frozen wordlists; any non-wordlist change that produces a test-vector diff is a defect to investigate, not an expected outcome.
+4. **`CHANGELOG.md` entry added when the change is integrator-visible.** Internal validator refactors do not always need a changelog entry; documentation or schema changes do.
+5. **Maintainer approval.** The maintainer (currently @osem23) merges. `v1.0` is not moved.
 
 ## Adding a new language
 
-A new language addition follows the wordlist-change process above, plus:
+A new language is a corpus-shaping change and cannot land under `v1.0`. The path is:
 
 1. The new language's wordlist passes structural validation.
 2. The new language has a mapping JSON with the same schema as existing mappings (including `version`, `sha256`, `normalization_form`).
-3. The new language is added to `validation/validate_all.py`'s implicit coverage (the validator iterates the directory, so no code change is required, but the list of expected languages in the README and BIP draft is updated).
-4. Test vectors are added at `test-vectors/<language>.json` covering the 5/1/2/1/5 distribution across canonical BIP-39 entropy lengths.
-5. The new language appears in `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift` as a recognized language string.
+3. Test vectors are added at `test-vectors/<language>.json` covering the 5/1/2/1/5 distribution across canonical BIP-39 entropy lengths.
+4. The new language appears in `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift` as a recognized language string.
+5. A new tag (`v2.0` or similar) is cut to anchor the expanded corpus; `v1.0` continues to pin the original 30-language ship.
 
 ## Out of scope
 

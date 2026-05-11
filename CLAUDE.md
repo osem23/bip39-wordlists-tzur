@@ -22,7 +22,9 @@ Native wordlists are a **display and input layer** over canonical English BIP-39
 
 ## Single-Tag Governance
 
-`v1.0` is the only tag. No patch tags (no `v1.0.1`, no `v1.1.0`). The tag is force-moveable when the repo state shifts; sha256 hashes in the mapping manifests are the load-bearing identifier, not the tag.
+`v1.0` is the only tag and it is **pinned**. It anchors the commit whose wordlists shipped in TZUR 3.1 and does not move. No patch tags (no `v1.0.1`, no `v1.1.0`). sha256 hashes in the mapping manifests are the load-bearing identifier for integrators; the tag is the human-readable anchor for the shipped corpus.
+
+Once a TZUR Original wordlist has shipped in a released wallet build, the literal native tokens at each English index are frozen. Users wrote their backup phrases against those tokens; later edits would break the display-layer contract on restore. Audit findings that flag wrong-sense or POS-drift entries are handled structurally (documentation, candidate queues, governance notes) without changing the shipped tokens themselves.
 
 ## Validator + CI
 
