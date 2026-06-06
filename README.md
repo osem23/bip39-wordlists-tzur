@@ -8,11 +8,13 @@ Index-paired, audited, multi-script display wordlists for BIP-39 mnemonics in 30
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Tag](https://img.shields.io/badge/Tag-v1.0-informational)
 
+> A gift to the Bitcoin ecosystem. Released under the MIT license, free for any wallet to adopt. These wordlists let a person back up and restore a BIP-39 recovery phrase in their own language, in any of 31 languages (English plus 30 native), without changing a single byte of the BIP-39 cryptographic chain. The seed of record stays the canonical English mnemonic, so a wallet created in one language is recoverable in any BIP-39 wallet.
+
 ## Overview
 
-This repository publishes 30 TZUR Original BIP-39 display wordlists in non-English languages, each index-paired to the canonical English BIP-39 wordlist. The 10 canonical BIP-39 wordlists from the spec are preserved at [`wordlists/reference-canonical/`](wordlists/reference-canonical/) for reference. Seeds commit to canonical English; PBKDF2 derivation runs on the English form, so native-language wordlists are a display and input layer with no new cryptographic surface.
+This repository publishes 30 TZUR Original BIP-39 display wordlists in non-English languages, each index-paired to the canonical English BIP-39 wordlist. With the canonical English list that is 31 languages in total. The 10 canonical BIP-39 wordlists from the spec are preserved at [`wordlists/reference-canonical/`](wordlists/reference-canonical/) for reference. Seeds commit to canonical English; PBKDF2 derivation runs on the English form, so native-language wordlists are a display and input layer with no new cryptographic surface.
 
-Built by [osem23](https://github.com/osem23), builder of [TZUR Wallet](https://tzur.live) and founder of [BlockSight.Live](https://blocksight.live). TZUR Wallet ships these wordlists to iOS; any BIP-39 wallet can integrate them using the bidirectional mappings in [`mappings/`](mappings/).
+Built by [osem23](https://github.com/osem23), maker of the [TZUR Wallet](https://tzur.live) suite (iPhone, Windows, and Agents) and founder of [BlockSight.Live](https://blocksight.live). The TZUR suite ships these wordlists in production; they are published here as a public good, free for any BIP-39 wallet to integrate using the bidirectional mappings in [`mappings/`](mappings/).
 
 ## Why this exists
 
@@ -181,6 +183,26 @@ Each mapping file contains `language`, `word_count`, `description`, `pairing_typ
 - [`test-vectors/`](test-vectors/). BIP-39 conformance vectors per language. Integrators reproduce every vector in the target language before shipping.
 - [`examples/`](examples/). Reference decoders in Python, JavaScript, and Swift. Byte-identical seeds across all three.
 
+## FAQ
+
+**Does a native-language wordlist change the Bitcoin seed or weaken security?**
+No. The seed of record is always the canonical English BIP-39 mnemonic, and only that English form is fed to PBKDF2. A display wordlist is a presentation and input layer with no new cryptographic surface. The same entropy produces the same seed and the same addresses in every language.
+
+**Which languages are covered?**
+31 in total: the canonical English BIP-39 wordlist plus 30 native-language display wordlists (Arabic, Bengali, Chinese Simplified, Chinese Traditional, Czech, Danish, Dutch, Estonian, Farsi, Filipino, French, German, Hebrew, Hindi, Indonesian, Italian, Japanese, Korean, Malay, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese). For 15 of these, no prior BIP-39 wordlist was known to exist at time of publication.
+
+**Can any wallet use these, or only TZUR?**
+Any BIP-39 wallet. The data is MIT licensed and self-contained: each language ships a 2048-entry wordlist and a bidirectional English-to-native mapping. The TZUR Wallet suite is the reference implementation, but nothing here is TZUR-specific.
+
+**Is a wallet created in a native language, such as Hebrew or Arabic, recoverable in other wallets?**
+Yes, through the canonical English mnemonic. A display-only backup depends on the receiving wallet supporting the same wordlist, so conformant wallets always make the canonical English mnemonic available at backup time. See the backup and portability policy in [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md).
+
+**Are these the official BIP-39 wordlists?**
+The 10 wordlists defined by the BIP-39 specification are preserved unchanged at [`wordlists/reference-canonical/`](wordlists/reference-canonical/). The 30 TZUR Originals are a separate display layer, index-paired as a semantic translation at each index, specified by the Informational BIP draft in [`docs/BIP-multilingual-mnemonics.md`](docs/BIP-multilingual-mnemonics.md). The canonical non-English lists are independent alphabetized selections, not translations, which is why they cannot serve as a display layer over an English mnemonic.
+
+**How do I verify the data?**
+Run [`validation/validate_all.py`](validation/validate_all.py). It checks 2048 entries, encoding, normalization, absence of duplicates or stray whitespace, and round-trip bijective consistency for every mapping. Per-language conformance test vectors are in [`test-vectors/`](test-vectors/).
+
 ## Security
 
 This repository contains reference data only. It does not implement a wallet, generate seeds, derive keys, or sign transactions. Use at your own risk. Report security issues via GitHub's private vulnerability reporting; see [`SECURITY.md`](SECURITY.md).
@@ -195,4 +217,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md). Corrections, native-speaker reviews, a
 
 ---
 
-Maintained by [osem23](https://github.com/osem23). Builder of [TZUR Wallet](https://tzur.live). Founder of [BlockSight.Live](https://blocksight.live).
+Maintained by [osem23](https://github.com/osem23). Maker of the [TZUR Wallet](https://tzur.live) suite for iPhone, Windows, and Agents. Founder of [BlockSight.Live](https://blocksight.live).

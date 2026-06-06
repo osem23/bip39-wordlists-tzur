@@ -4,7 +4,7 @@ title: "BIP-39 Display Wordlists (TZUR): 30 native-language index-paired transla
 abstract: >-
   BIP-39 compliant display wordlists and bidirectional English-to-native mappings for
   30 non-English languages, each an index-paired semantic translation of the canonical
-  English BIP-39 wordlist. Built by osem23, builder of TZUR Wallet. 15 of the 30 had no
+  English BIP-39 wordlist. Built by osem23, maker of the TZUR Wallet suite. 15 of the 30 had no
   prior BIP-39 wordlist known at time of publication (Arabic, Bengali, Danish, Estonian,
   Farsi, Filipino, Hebrew, Malay, Polish, Romanian, Swedish, Thai, Ukrainian, Urdu,
   Vietnamese). The 10 canonical BIP-39 wordlists defined by the specification (Spanish,
@@ -14,7 +14,7 @@ abstract: >-
   semantic translations of English. All 31 wordlists contain exactly 2048 words, are
   UTF-8 encoded, and validate round-trip through bidirectional mappings. The English
   wordlist works with any BIP-39 wallet; the 30 native-language display wordlists
-  currently work with TZUR Wallet and become cross-wallet portable as other wallets
+  currently ship in the TZUR Wallet suite and become cross-wallet portable as other wallets
   integrate the provided mappings.
 type: dataset
 authors:
