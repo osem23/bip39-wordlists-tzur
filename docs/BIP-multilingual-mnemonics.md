@@ -3,13 +3,13 @@
   Layer: Applications
   Title: Multilingual mnemonic display and input conventions
   Author: Daniel Osemberg <ceo@blocksight.live>
-  Discussions-To:
+  Discussions-To: https://groups.google.com/g/bitcoindev/c/Rwo7P5pTA0c
   Comments-Summary: No comments yet.
   Comments-URI: https://github.com/bitcoin/bips/wiki/Comments:BIP-?
   Status: Draft
   Type: Informational
   Created: 2026-04-19
-  Post-History:
+  Post-History: 2026-06-13: https://groups.google.com/g/bitcoindev/c/Rwo7P5pTA0c (bitcoin-dev: Proposal discussion: BIP39 native-language display wordlists)
   License: BSD-2-Clause
 </pre>
 
