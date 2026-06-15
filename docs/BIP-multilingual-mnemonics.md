@@ -19,6 +19,16 @@ This document specifies a convention for rendering and accepting BIP-39 mnemonic
 
 The seed of record remains the canonical English BIP-39 mnemonic. A display wordlist is a UX layer; it adds no new cryptographic surface, and any seed produced under this convention remains restorable in any BIP-39 wallet using its English form.
 
+## Relationship to BIP-39
+
+This document does **not** replace BIP-39, does not deprecate any existing BIP-39 wordlist, and does not change the canonical seed-derivation flow. It defines only a display and backup layer that sits above an unchanged BIP-39 core. The following points hold throughout this specification:
+
+- **English BIP-39 remains canonical.** The English BIP-39 mnemonic is the only mnemonic fed to PBKDF2-HMAC-SHA512, and the only artifact that determines the derived seed and cross-wallet compatibility. This document does not alter BIP-39 entropy, checksum, Unicode normalization, or PBKDF2 rules.
+- **Localized wordlists are a display and backup layer only.** A display wordlist is never the password input to PBKDF2. It exists so a user can read and write their backup in their own language.
+- **The mapping is by word index.** The display token at index `i` corresponds to the English BIP-39 word at index `i`, and to nothing else. There is no per-language entropy, checksum, or key derivation.
+- **The localized mnemonic is always reversible to the canonical English mnemonic.** The bidirectional mapping is bijective across all 2048 entries (§Display wordlist requirements), so a conformant display mnemonic resolves back to exactly one English BIP-39 mnemonic, deterministically.
+- **Wallets must give users access to the canonical English mnemonic.** In any flow that exposes a display mnemonic, a standard wallet MUST let the user view, copy, or export the canonical English BIP-39 mnemonic, so the backup is recoverable in any BIP-39 implementation (§Backup and portability policy).
+
 ## Motivation
 
 A wallet that wants to show or accept the seed phrase in a language other than the ten currently shipped with BIP-39 (English plus nine non-English canonical wordlists) has two practical options: ship a parallel display wordlist that maps to English position-for-position, or ask the user to write down and later transcribe an English phrase in a language they may not read. The latter is error-prone at the point of backup. A single misspelling on paper, or a single mis-read during restore, fails the BIP-39 checksum and can render the seed unrecoverable. Many multilingual wallets already solve this internally by rendering the mnemonic in the user's native script. This document specifies the format and the integrity rules so that such display wordlists are interoperable across wallets and so that the cryptographic chain remains identical to a single-language BIP-39 implementation.
@@ -105,6 +115,40 @@ Implementations SHOULD expose a per-language dataset of glued-compound indices t
 
 Seeds produced under this convention are bit-identical to seeds produced by any BIP-39 implementation given the same entropy, because the canonical English mnemonic is the only PBKDF2 input in both cases. A user whose wallet supports a display wordlist can recover the seed in any BIP-39 wallet by entering the canonical English mnemonic.
 
+## Compatibility and Legacy Mnemonic Distinction
+
+BIP-39 already defines nine non-English canonical wordlists (Japanese, Korean, Spanish, Chinese Simplified, Chinese Traditional, French, Italian, Czech, Portuguese). For those languages, a non-English phrase may be a *legacy BIP-39 mnemonic*: under BIP-39, the non-English words themselves — NFKD-normalized — are the PBKDF2 password, and the seed is derived directly from them. A *locale-mapped* (display) mnemonic under this proposal behaves differently: the non-English tokens are resolved by index to their English BIP-39 counterparts, and PBKDF2 is run on the resolved English mnemonic.
+
+Consequently, for any language that has both a canonical BIP-39 wordlist and a display wordlist, the same sequence of non-English words admits two distinct interpretations that derive **different seeds**:
+
+1. **Legacy BIP-39 interpretation.** The words are a BIP-39 mnemonic in their own language; PBKDF2 runs on those words directly (BIP-39, "Generating the mnemonic" and "From mnemonic to seed").
+2. **Locale-mapped interpretation.** The words are a display rendering; they are mapped by index to English, and PBKDF2 runs on the resolved English mnemonic.
+
+These interpretations are not interchangeable, and they cannot in general be told apart by inspecting the words: for the nine overlap languages a phrase can be structurally valid under both. A wallet that assumes the wrong interpretation derives the wrong seed and presents an empty or incorrect wallet; if the user then funds that wallet or relies on it for recovery, the result can be permanent loss of funds. This risk was raised on the bitcoin-dev mailing list (see Discussions-To): given, for example, a French 12-word phrase, software must not silently decide whether to run PBKDF2 on the French words (legacy BIP-39) or to map the indices to English first (this proposal).
+
+This proposal does not, and cannot, resolve that ambiguity by examining the words alone. It is resolved by explicit mode selection and by labeling — never by silent auto-detection. Software must not automatically assume that a non-English BIP-39 phrase is locale-mapped under this proposal.
+
+### Wallet implementation guidance
+
+A wallet that implements this proposal:
+
+1. **MUST distinguish legacy BIP-39 localized mnemonics from locale-mapped display mnemonics.** The two are different inputs that derive different seeds; a wallet MUST track which interpretation applies to a given phrase rather than inferring it from the words.
+2. **MUST NOT silently reinterpret an existing non-English BIP-39 seed phrase.** A phrase entered as a legacy BIP-39 mnemonic (in any of the nine canonical non-English languages) MUST be derived per BIP-39 from those words directly. A wallet MUST NOT map it by index to English and re-derive unless the user has explicitly selected the locale-mapped interpretation.
+3. **SHOULD ask, on import/restore, what kind of mnemonic the user is restoring** when the input could be either a legacy BIP-39 non-English mnemonic or a locale-mapped display mnemonic — for example by offering an explicit choice of "BIP-39 mnemonic in &lt;language&gt;" versus "display backup (maps to English)" — rather than auto-detecting.
+4. **SHOULD label locale-mapped mnemonics clearly in the UI** at creation, backup, and restore, so that a user (and any future wallet) can tell a display backup apart from a legacy BIP-39 mnemonic. The wordlist identifier triple (language code, version string, SHA-256 of the wordlist file; §Backup and portability policy SHOULD 3) is the recommended machine-readable label.
+5. **MUST keep the canonical English mnemonic exportable or viewable by the user** (§Backup and portability policy MUST 1). The English mnemonic is the unambiguous, universally portable form and the safety net against any interpretation error.
+6. **MUST avoid creating ambiguity that could lead to loss of funds.** Where the type of a phrase cannot be established, a wallet MUST require explicit user input rather than guessing, and MUST surface the distinction between the two interpretations before deriving a seed.
+
+A wallet generating a *new* wallet under this proposal does not face this ambiguity: it generates a canonical English BIP-39 mnemonic and renders it for display. The ambiguity arises only on import of a pre-existing non-English phrase, which is why the obligations above are concentrated at the import/restore boundary.
+
+### Coexistence with the canonical non-English wordlists
+
+This convention is additive and does not deprecate the nine canonical non-English BIP-39 wordlists. They remain required indefinitely, because existing seeds derive their PBKDF2 password directly from the native words; no display convention can retire a wordlist that funds depend on.
+
+For new wallets, a wallet that adopts this convention need not derive seeds through the nine canonical non-English paths: the display layer renders one canonical-English seed in any supported language — including those nine — by index mapping. This does not make the canonical nine redundant. They offer native-language portability across wallets that implement them (a canonical-Japanese seed restores natively in any canonical-Japanese wallet); a display backup is portable only through its English form. That is the trade this convention makes for uniform coverage, and the reason the two models coexist rather than one superseding the other.
+
+A wallet supporting one of the nine overlap languages SHOULD therefore support both paths and keep them explicitly separated: the legacy canonical derivation for importing a pre-existing native seed, and this convention for new wallets, with the interpretation chosen explicitly by the user (§Wallet implementation guidance) and never inferred from the words.
+
 ## Reference Implementation
 
 - **Wordlist registry.** <https://github.com/osem23/bip39-wordlists-tzur>, `main` branch. Ships 30 index-paired display wordlists with bidirectional mappings at `wordlists/tzur-original/`, the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison, and a reference validator at `validation/validate_all.py`. Tag `v1.0` pins a stable snapshot for citation continuity.
@@ -138,6 +182,40 @@ seed     = 5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac
 ```
 
 This is the property that defines the convention: the seed is a function of the canonical English mnemonic and the passphrase, never of the display rendering. Per-language test-vector files at `test-vectors/<language>.json` exercise this property across all 30 languages and all five canonical BIP-39 entropy lengths.
+
+### Round-trip and address vectors
+
+To let implementations prove the full pipeline — encoding, resolution back to English, and key derivation — each conformance vector SHOULD additionally carry the round trip and a derived-address check. A vector has these fields:
+
+- `english_canonical` — the canonical English BIP-39 mnemonic.
+- `display_mnemonic` — `english_canonical` rendered through the target language's display wordlist (mapped by index).
+- `recovered_english` — the English mnemonic recovered from `display_mnemonic` via the wordlist's `native_to_english` mapping. It MUST equal `english_canonical`.
+- `passphrase` — the BIP-39 passphrase (may be empty).
+- `seed` — the BIP-39 seed (hex) derived from `english_canonical` and `passphrase`.
+- `first_bip84_address` — the first native-SegWit (BIP-84) receive address at `m/84'/0'/0'/0/0` derived from `seed`. It is included so that a vector exercises derivation past the seed, and it is identical for `display_mnemonic` and `english_canonical` by construction.
+
+Worked example (128-bit zero entropy, empty passphrase, Hebrew display wordlist):
+
+```
+english_canonical   = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+display_mnemonic    = "נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש נטוש אודות"
+recovered_english   = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+passphrase          = ""
+seed                = 5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4
+derivation          = m/84'/0'/0'/0/0
+first_bip84_address = bc1qcr8te4kr609gcawutmrza0j4xv80jy8z306fyu
+```
+
+Per-language files at `test-vectors/<language>.json` are to be extended with the `recovered_english` and `first_bip84_address` fields. The template below is a placeholder; values for each language and entropy length are to be generated and verified by the reference tooling before publication, and MUST NOT be hand-authored:
+
+```
+english_canonical   = <canonical English BIP-39 mnemonic>
+display_mnemonic    = <english_canonical rendered through the target display wordlist>
+recovered_english   = <recovered from display_mnemonic; MUST equal english_canonical>
+passphrase          = <BIP-39 passphrase, may be empty>
+seed                = <BIP-39 seed, hex — to be generated and verified>
+first_bip84_address = <first m/84'/0'/0'/0/0 address — to be generated and verified>
+```
 
 ## Conformance Profile
 
@@ -180,6 +258,10 @@ A related concern is *display wordlist discovery* on cross-wallet restore: when 
 - **PBKDF2 input is invariant under this convention.** Only the canonical English mnemonic reaches PBKDF2-HMAC-SHA512. An implementation that feeds the display mnemonic directly to PBKDF2 is non-conformant and produces incompatible seeds. The conformance test vectors in the reference registry exercise the resolve-to-English path for every supported language.
 - **Strict single-wordlist tokenization.** On restore, every token in the display mnemonic MUST resolve within a single display wordlist. Wallets MUST NOT silently accept mnemonics whose tokens span multiple wordlists, partial-match across wordlists, or fall through to the canonical English wordlist when a display token is unrecognized. Mixed-wordlist input is malformed and is rejected.
 - **Only the canonical English mnemonic guarantees cross-wallet recovery.** A user whose wallet supports a display wordlist can always recover the seed in any BIP-39 wallet by entering the canonical English mnemonic. A user who backs up only the display mnemonic and then needs to restore in a wallet that does not support the same display wordlist cannot recover without the mapping. The normative wallet-level obligations that follow from this property are defined in §Backup and portability policy above.
+- **Incorrect mnemonic interpretation (legacy vs locale-mapped).** For the nine languages that have both a canonical BIP-39 wordlist and a display wordlist, the same non-English words can be interpreted as a legacy BIP-39 mnemonic (PBKDF2 on those words directly) or as a locale-mapped display mnemonic (mapped by index to English, then PBKDF2). The two derive different seeds. A wallet that auto-detects the interpretation can derive the wrong seed and cause loss of funds. Wallets MUST resolve this by explicit mode selection and labeling, never by inspecting the words (§Compatibility and Legacy Mnemonic Distinction).
+- **Display-only backups misunderstood as portable.** A user who records only the display mnemonic, without understanding that only the canonical English mnemonic is universally portable, may be unable to restore in a wallet that does not support the same display wordlist. Wallets MUST make the canonical English mnemonic available, and SHOULD warn at backup time, so that a display-only backup is never mistaken for a portable BIP-39 backup.
+- **Clear wallet warnings are required.** A wallet that shows display mnemonics MUST present clear warnings that distinguish a locale-mapped display backup from a legacy BIP-39 mnemonic and that identify the canonical English mnemonic as the portable form. Silent behavior at the backup or restore boundary is the principal way this convention could contribute to fund loss, and is what these warnings exist to prevent.
+- **Deterministic, testable mapping.** The index mapping MUST be deterministic and reproducible: the same display wordlist and the same English mnemonic MUST always produce the same display mnemonic, and the display mnemonic MUST always resolve back to the same English mnemonic. This round-trip property MUST be covered by test vectors (§Test Vectors) so that any implementation can prove its encoding, resolution, and PBKDF2 pipeline against published reference values.
 - **Paper-backup corruption.** A single transcription error in the display mnemonic fails the BIP-39 checksum just as it would in English. The display layer does not introduce new recovery paths and does not relax the checksum requirement.
 - **Wordlist integrity.** If an attacker substitutes the display wordlist stored on disk with a different list, the user's displayed mnemonic on restore will differ from what was backed up. Wallets SHOULD treat bundled wordlists as integrity-critical assets and verify them against a signed manifest at load time.
 - **Wordlist supply-chain attacks (homograph substitution).** Distributing display wordlists for many languages introduces an attack surface that does not exist when a wallet relies only on canonical English. A malicious wordlist could substitute a homograph at a specific index: a Cyrillic `а` (U+0430) replacing a Latin `a` (U+0061), an Arabic `ا` (U+0627) replacing a Persian `ا` from a different code-point, or a CJK compatibility variant replacing the canonical glyph. The substituted entry passes structural validation (still 2048 entries, still bijective in the mapping, still unique under exact-match comparison) but produces a backup that the user cannot transcribe correctly across keyboards or scripts without detection. Wallets SHOULD verify wordlist integrity at load time against the SHA-256 published in the corresponding mapping JSON's `sha256` field, and SHOULD treat any character outside the wordlist's expected script block as a build-time error. The mapping schema's `sha256` and `normalization_form` fields are intended to make this verification a one-line check at integration.
