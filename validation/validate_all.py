@@ -14,6 +14,17 @@ Checks:
   - No embedded hyphen or dash characters
   - NFC at rest for TZUR Original wordlists, all mappings, all test-vector
     display mnemonics, and the native-string fields of compound-entries.json
+  - No NFKD collisions within a TZUR Original wordlist: two distinct entries
+    must never collapse to the same string under NFKD. NFKD is the BIP-39
+    PBKDF2 normalization, so an NFKD collision would be a loss-of-funds-class
+    ambiguity at the derivation boundary. This is a hard error.
+  - Lossy-fold ambiguities are reported as warnings, not errors: distinct
+    entries that become identical when a wallet strips diacritics or
+    case-folds user input for "forgiving" entry. These are not wordlist
+    defects (the entries are distinct under exact NFC match) but flag the
+    languages where a wallet MUST NOT silently strip accents or case on
+    input without rejecting the now-ambiguous token (BIP draft, Input
+    parsing).
   - Mapping files have correct word count and bidirectional consistency
 
 NFC at rest is enforced wherever a wallet might key into a wordlist or
@@ -80,6 +91,18 @@ EXPECTED_WORD_COUNT = 2048
 
 def is_nfc(s: str) -> bool:
     return s == unicodedata.normalize("NFC", s)
+
+
+def strip_diacritics(s: str) -> str:
+    """NFKD-decompose and drop combining marks.
+
+    Approximates what a wallet does if it strips accents/diacritics for
+    "forgiving" input. Used only for the lossy-fold collision WARNING, never
+    for derivation or exact-match lookup.
+    """
+    return "".join(
+        ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch)
+    )
 
 errors = []
 warnings = []
@@ -174,6 +197,62 @@ def validate_wordlist(path: Path):
                 error(f"{name}: Line {i + 1} not in NFC at rest: '{word}'")
 
     print(f"  Words: {len(lines)}, Unique: {len(seen)}")
+
+
+def validate_normalization_collisions(path: Path):
+    """Check for normalization collisions within a TZUR Original wordlist.
+
+    NFKD collisions are a hard error: NFKD is the normalization BIP-39 applies
+    before PBKDF2, so two distinct entries that collapse under NFKD would be a
+    loss-of-funds-class ambiguity at the derivation boundary. This check is
+    expected to pass at zero across all languages and exists as a permanent
+    regression guard.
+
+    Diacritic-fold and case-fold collisions are warnings: distinct entries that
+    become identical only when a wallet applies a lossy transform (stripping
+    accents or case-folding) to user input. They are not wordlist defects; they
+    mark the languages where a wallet MUST NOT silently strip accents/case on
+    restore without rejecting the now-ambiguous token.
+    """
+    global checked
+    if "tzur-original" not in path.parts:
+        return
+    checked += 1
+    name = path.relative_to(REPO_ROOT)
+    print(f"\nValidating normalization collisions: {name}")
+
+    words = path.read_text(encoding="utf-8").strip().split("\n")
+
+    def groups(key):
+        buckets: dict[str, list[str]] = {}
+        for w in words:
+            buckets.setdefault(key(w), []).append(w)
+        return [members for members in buckets.values() if len(set(members)) > 1]
+
+    nfkd_groups = groups(lambda w: unicodedata.normalize("NFKD", w))
+    if nfkd_groups:
+        for g in nfkd_groups[:3]:
+            error(f"{name}: NFKD collision (loss-of-funds class): {' / '.join(sorted(set(g)))}")
+    else:
+        print("  NFKD collisions: none")
+
+    diac_groups = groups(strip_diacritics)
+    if diac_groups:
+        sample = diac_groups[0]
+        warn(
+            f"{name}: {len(diac_groups)} diacritic-fold collision group(s) "
+            f"(e.g. {' / '.join(sorted(set(sample)))}); a wallet that strips diacritics "
+            f"on input must reject the ambiguous token, not silently pick one"
+        )
+
+    case_groups = groups(lambda w: w.lower())
+    if case_groups:
+        sample = case_groups[0]
+        warn(
+            f"{name}: {len(case_groups)} case-fold collision group(s) "
+            f"(e.g. {' / '.join(sorted(set(sample)))}); a wallet that case-folds input "
+            f"must reject the ambiguous token, not silently pick one"
+        )
 
 
 def validate_mapping(path: Path):
@@ -424,6 +503,7 @@ def main():
             continue
         for wl in sorted(category.glob("*.txt")):
             validate_wordlist(wl)
+            validate_normalization_collisions(wl)
 
     # Validate all mappings
     for mapping in sorted(MAPPINGS_DIR.glob("*.json")):

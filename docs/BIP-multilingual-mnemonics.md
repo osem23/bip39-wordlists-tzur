@@ -35,6 +35,8 @@ A wallet that wants to show or accept the seed phrase in a language other than t
 
 The 10 canonical BIP-39 wordlists cover roughly a third of humanity by native language. The remaining two thirds, around 5 billion native speakers, have no canonical wordlist in their language. A portable display-layer convention lets any wallet extend coverage without diverging from the BIP-39 cryptographic chain.
 
+Coverage in deployed wallets is uneven in a second way that motivates anchoring on English. English BIP-39 is supported essentially universally across the wallet ecosystem, while support for the nine non-English canonical wordlists is partial and varies by wallet; many wallets implement only English. A convention whose seed of record is the English mnemonic therefore inherits the broadest possible restore surface: a seed created in any display language is recoverable in any BIP-39 wallet through its English form, including wallets that ship no non-English wordlist at all.
+
 ## Specification
 
 ### Definitions
@@ -79,11 +81,12 @@ Note on ordering: a display wordlist is stored in index-parallel order with the 
 A wallet that accepts a display mnemonic on restore tokenizes it on whitespace before lookup:
 
 1. Tokenize on Unicode whitespace (characters with the Unicode `White_Space` property) plus the ideographic space (`U+3000`) used by the official Japanese BIP-39 mnemonic.
-2. Normalize every token and the display wordlist to the same Unicode form (NFC) before comparison. Mismatched normalization between input and wordlist causes silent lookup failures on precomposed/decomposed accent pairs.
-3. Preserve Zero-Width Non-Joiner characters (`U+200C`) during tokenization of languages that use them (Persian/Farsi contains ZWNJ in a significant fraction of its entries). ZWNJ handling MUST match wordlist authorship: wallets whose stored wordlist preserves ZWNJ MUST preserve ZWNJ during input-to-wordlist lookup; wallets whose stored wordlist strips ZWNJ MUST strip ZWNJ during lookup. Mixing the two across storage and lookup causes silent restore failures.
-4. Look up each token in the display wordlist's `native_to_english` mapping.
-5. If any token is not present in the mapping, the input is invalid; the wallet does not silently substitute, partial-match, or fall through to a different wordlist.
-6. After resolution, the resulting English token sequence is validated and used per BIP-39.
+2. Normalize every token and the display wordlist to the same Unicode form (NFC) before comparison. Mismatched normalization between input and wordlist causes silent lookup failures on precomposed/decomposed accent pairs. NFC, and the NFKD that BIP-39 applies before PBKDF2, are both safe: they never merge two distinct entries in a conformant wordlist (there are zero NFKD collisions across the reference wordlists).
+3. If a wallet applies any *lossy* fold to input as a convenience — stripping diacritics, case-folding, or similar — and that fold maps a token to more than one wordlist entry, the wallet MUST reject the token and ask the user to disambiguate. It MUST NOT silently pick one entry. Distinct entries can collapse under accent stripping (for example Vietnamese `được` and `đuốc`, or Swedish `läger` and `lager`), and an arbitrary pick selects the wrong index and derives the wrong seed. Lossy folds are not required by this convention; a wallet that performs none is always conformant. Per-language collision counts are reported by the reference validator and documented in `validation/encoding-notes.md`.
+4. Preserve Zero-Width Non-Joiner characters (`U+200C`) during tokenization of languages that use them (Persian/Farsi contains ZWNJ in a significant fraction of its entries). ZWNJ handling MUST match wordlist authorship: wallets whose stored wordlist preserves ZWNJ MUST preserve ZWNJ during input-to-wordlist lookup; wallets whose stored wordlist strips ZWNJ MUST strip ZWNJ during lookup. Mixing the two across storage and lookup causes silent restore failures.
+5. Look up each token in the display wordlist's `native_to_english` mapping.
+6. If any token is not present in the mapping, the input is invalid; the wallet does not silently substitute, partial-match, or fall through to a different wordlist.
+7. After resolution, the resulting English token sequence is validated and used per BIP-39.
 
 ### Backup and portability policy
 
@@ -114,6 +117,8 @@ Implementations SHOULD expose a per-language dataset of glued-compound indices t
 ## Backwards Compatibility
 
 Seeds produced under this convention are bit-identical to seeds produced by any BIP-39 implementation given the same entropy, because the canonical English mnemonic is the only PBKDF2 input in both cases. A user whose wallet supports a display wordlist can recover the seed in any BIP-39 wallet by entering the canonical English mnemonic.
+
+The BIP-39 checksum is preserved automatically, because the convention preserves word *indices*. BIP-39 computes its checksum over the entropy and verifies it against the trailing bits encoded by the word indices; the display token at index `i` maps back to the English word at index `i`, so a display mnemonic resolves to the same sequence of indices — and therefore the same English mnemonic and the same checksum — as the phrase it renders. The display layer never recomputes or relaxes the checksum; it inherits it unchanged from the canonical English mnemonic.
 
 ## Compatibility and Legacy Mnemonic Distinction
 
@@ -149,12 +154,15 @@ For new wallets, a wallet that adopts this convention need not derive seeds thro
 
 A wallet supporting one of the nine overlap languages SHOULD therefore support both paths and keep them explicitly separated: the legacy canonical derivation for importing a pre-existing native seed, and this convention for new wallets, with the interpretation chosen explicitly by the user (§Wallet implementation guidance) and never inferred from the words.
 
+For *new* wallets specifically, a wallet that implements this convention SHOULD prefer the display-layer path over generating a fresh backup whose seed of record is one of the nine legacy non-English canonical wordlists, when both are available for the same language. The reason is interoperability, not correctness: a display-layer wallet always exposes the universally portable canonical English mnemonic (§Backup and portability policy MUST 1), whereas a newly minted legacy non-English seed is only restorable in wallets that implement that specific non-English wordlist, which is a smaller and less predictable set. This is a recommendation about which backup to *create* going forward. It does not deprecate the legacy wordlists, does not invalidate any existing backup, and imposes no obligation to migrate funds: an existing legacy non-English seed remains a valid BIP-39 mnemonic and MUST continue to be importable and derivable exactly as before (§Wallet implementation guidance MUST 2).
+
 ## Reference Implementation
 
 - **Wordlist registry.** <https://github.com/osem23/bip39-wordlists-tzur>, `main` branch. Ships 30 index-paired display wordlists with bidirectional mappings at `wordlists/tzur-original/`, the 10 canonical BIP-39 wordlists preserved at `wordlists/reference-canonical/` for spec comparison, and a reference validator at `validation/validate_all.py`. Tag `v1.0` pins a stable snapshot for citation continuity.
 - **Construction notes.** `docs/CONSTRUCTION.md` documents structural rules, disambiguation rules, multi-word-concept handling, per-language notes, and the three-layer validation methodology (structural, back-translation via Google Translate with LLM verdict, forward-translation via Microsoft Azure Translator with LLM verdict).
 - **v2 multi-signal validation.** `docs/V2_VALIDATION.md` documents the post-v1 verification layer added in 2026-04: blind LLM top-8 generation, multilingual sentence-embedding similarity, and Wiktionary cross-reference, with reviewer process and per-language results.
 - **Canonical comparison.** `docs/canonical-vs-tzur.md` reports the word-set overlap between the 9 canonical non-English BIP-39 wordlists and their TZUR Original counterparts. The two are independent sources: Korean canonical and TZUR Original share zero tokens; Japanese shares 11; Latin-script languages share 400 to 700.
+- **Prefix statistics.** `docs/prefix-statistics.md` reports per-language 2/3/4-character prefix uniqueness and the largest prefix-collision group, generated by `validation/prefix_stats.py`. It quantifies the SHOULD 1 recommendation above: 4-character prefix uniqueness holds for only Korean, so wallets relying on prefix autocomplete fall back to full-word matching for the other languages.
 - **Example decoders.** `examples/python/decode.py`, `examples/javascript/decode.mjs`, and `examples/swift/Decode.swift`. Each resolves a display mnemonic to its canonical English form, applies NFKD, and derives the BIP-39 seed via PBKDF2. All three produce byte-identical seeds for the same input.
 - **Wallet implementation.** <https://github.com/osem23/tzur-wallet>. The TZUR Wallet suite (iPhone, Windows, and an AI-agent build) ships this convention in production. The seed-derivation path resolves any display mnemonic to the canonical English mnemonic before computing PBKDF2; tests cover the paper-backup tokenization round trip per language.
 - **Implementer notes.** `docs/IMPLEMENTER_NOTES.md` is a non-normative companion that captures wallet-side operational guidance (backup-screen copy, restore-time input handling, compound-entry hints, ZWNJ strategies, wordlist governance, test fixtures). Nothing in that document is required for BIP conformance; it captures lessons that recur across implementations.

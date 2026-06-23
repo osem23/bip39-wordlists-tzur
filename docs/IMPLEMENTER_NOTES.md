@@ -47,6 +47,8 @@ The BIP forbids silent substitution, partial matching, and auto-correction on re
 
 The user sees the suggestion, decides, and taps. No background correction.
 
+**Do not strip diacritics or case-fold to match.** A tempting "forgiving" shortcut is to compare the accent-stripped or lowercased forms of input and wordlist. In several languages this merges two distinct entries — Vietnamese `được`/`đuốc`, Swedish `läger`/`lager`, French `armé`/`arme`, German `Grenze`/`grenze` — so an accent-blind match can resolve to the wrong index and derive the wrong seed. NFC and NFKD are safe (they never merge distinct entries; there are zero NFKD collisions). Any lossier fold is not: if it maps a token to more than one entry, reject and ask the user to disambiguate. Per-language collision counts are in [`../validation/encoding-notes.md`](../validation/encoding-notes.md), and the reference validator reports them as warnings. Prefix-autocomplete reliability per language (only Korean has full 4-character prefix uniqueness) is in [`prefix-statistics.md`](prefix-statistics.md); fall back to full-word matching wherever it does not hold.
+
 ## 3. Compound entries and paper backup
 
 Some languages express a single BIP-39 concept as a multi-word native term. The BIP forbids embedded whitespace inside an entry, so such concepts are stored glued (`hindistancevizi`, `kebunbinatang`, `רופאשיניים`, etc.). This is mechanical and correct, but it is a transcription-time hazard: a user writing the seed on paper may instinctively insert a space.
@@ -102,7 +104,25 @@ Recommended fixtures for a wallet test suite, in addition to the canonical vecto
 - **Compound paper-backup hazard.** For each language with glued compounds, construct a vector where the user has erroneously inserted a space inside a compound entry. Confirm the wallet rejects the input cleanly with a useful error, not silently.
 - **Cross-wallet portability.** Confirm that the canonical English mnemonic produced by the wallet for a known display mnemonic matches the English mnemonic that any reference BIP-39 implementation produces for the same entropy. The reference decoders at `examples/` are a starting point.
 
-## 8. Out-of-scope concerns
+## 8. Manual recovery without tooling
+
+A user or support engineer who holds only a display-language phrase can recover the canonical English mnemonic by hand, using nothing but the two plain-text wordlists in this repository. This is the safety net when the original wallet is gone and the new wallet is English-only. Keep this procedure available in support docs; it is the reason the convention is genuinely portable rather than wallet-locked.
+
+The procedure, per word, in order:
+
+1. Find the display word's 1-based line number in `wordlists/tzur-original/<language>.txt`. That line number, minus one, is the BIP-39 index. (Most editors show line numbers; `grep -n` works too.)
+2. Read the word on the same line number in `wordlists/reference-canonical/english.txt`.
+3. The English words, kept in the original order, are the canonical English BIP-39 mnemonic.
+
+Then restore in any BIP-39 wallet:
+
+- Enter the English mnemonic. The checksum is already correct, because the indices are unchanged from the display phrase (the display word at index N and the English word at index N share the same index, so the resolved phrase carries the same checksum).
+- Select the **same derivation path** the original wallet used. The reference TZUR wallet uses BIP-84 (`m/84'/0'/0'`, native SegWit / bech32). A wallet that defaults to a different path (for example BIP-44 legacy) will derive different addresses and show an empty wallet even though the mnemonic is correct.
+- Enter the **same BIP-39 passphrase** if one was set. The passphrase is never translated, mapped, or otherwise touched by this convention; it is the user's original input verbatim. A wrong or missing passphrase silently derives a different, valid-looking wallet.
+
+The `mappings/<language>.json` files collapse steps 1-2 into a single `native_to_english` lookup when tooling is available; the line-number method is the no-tooling fallback. A wallet's restore flow performs exactly this resolution internally — the value of documenting it by hand is that a user is never stranded by the absence of a compatible wallet.
+
+## 9. Out-of-scope concerns
 
 The following are intentionally not addressed by the BIP draft or this document:
 

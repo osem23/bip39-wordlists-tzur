@@ -100,6 +100,39 @@ The official BIP-39 Korean wordlist uses Hangul syllable blocks. NFKD decomposes
 
 All other languages are NFKD-stable.
 
+## Normalization collisions and lossy input folding
+
+A wordlist must never contain two distinct entries that collapse to the same string under the normalization a wallet applies before lookup or derivation. There are two cases, and they are treated very differently.
+
+**NFKD collisions (loss-of-funds class, must be zero).** NFKD is the normalization BIP-39 applies before PBKDF2. If two distinct entries collapsed to the same string under NFKD, the derivation boundary itself would be ambiguous. Across all 30 TZUR Original wordlists there are **zero** NFKD collisions. `validation/validate_all.py` enforces this as a hard error per TZUR Original wordlist, so the property cannot silently regress.
+
+**Lossy-fold ambiguities (input-UX class, reported as warnings).** Some wallets "forgive" input by stripping diacritics or case-folding before matching. That is a lossy transform, and it can merge two genuinely distinct entries. These are not wordlist defects (the entries are distinct under exact NFC match, and distinct under NFKD), but they mark the languages where forgiving input is unsafe. `validation/validate_all.py` reports them as warnings. Examples of distinct entries that merge under diacritic stripping:
+
+| Language | Diacritic-fold collision groups | Example pair |
+|---|---:|---|
+| Vietnamese | 85 | `được` / `đuốc` → `đuoc` |
+| Thai | 46 | `อายุ` / `อาย` |
+| Swedish | 17 | `läger` / `lager` |
+| Arabic | 11 | `إعلان` / `اعلان` |
+| Estonian | 9 | `köök` / `kook` |
+| Romanian | 8 | `derivă` / `deriva` |
+| French | 7 | `armé` / `arme` |
+| Hindi | 5 | `ख़तरा` / `खतरा` |
+| Turkish | 5 | `açı` / `acı` |
+| Czech | 4 | `ulička` / `ulicka` |
+| Japanese | 3 | `まだ` / `また` (combining dakuten) |
+
+(German, Danish, Bengali, Italian, Polish, and Spanish each have 1-2 groups; German has 6 case-fold groups, such as `Grenze` / `grenze`, and Czech 2. Regenerate the current figures by running the validator.)
+
+**The rule for implementers:**
+
+- Wordlists are stored in NFC at rest.
+- A wallet may normalize user input (trim, collapse whitespace, NFC) before lookup. NFC and NFKD are safe: they never merge two distinct entries in these wordlists.
+- A wallet **must not** silently strip diacritics or case-fold on input as a "did-you-mean" shortcut and then auto-pick one entry. If a lossy transform maps the user's token to more than one wordlist entry, the wallet **must reject the input and ask the user to disambiguate** rather than guessing. Picking one silently can select the wrong index and derive the wrong seed.
+- Be especially careful in languages where users habitually type without accents or diacritics (Vietnamese, Thai, the Latin-diacritic languages). A forgiving keyboard layer that drops tone marks is exactly the failure mode these warnings exist to prevent.
+
+This mirrors the BIP draft's Input parsing rule: forgive at the keyboard for unambiguous transforms, never resolve an ambiguous token silently.
+
 ## Validation Checklist
 
 When integrating any wordlist:
