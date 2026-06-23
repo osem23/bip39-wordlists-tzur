@@ -10,6 +10,7 @@
   Type: Informational
   Created: 2026-04-19
   Post-History: 2026-06-13: https://groups.google.com/g/bitcoindev/c/Rwo7P5pTA0c (bitcoin-dev: Proposal discussion: BIP39 native-language display wordlists)
+               2026-06-23: https://delvingbitcoin.org/t/bip39-native-language-display-wordlists-mapped-to-canonical-english/2637 (Delving Bitcoin: BIP39 native-language display wordlists mapped to canonical English)
   License: BSD-2-Clause
 </pre>
 
