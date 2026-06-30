@@ -1,5 +1,6 @@
 {
-  "language": "arabic",
+  "language": "ar",
+  "name": "arabic",
   "word_count": 2048,
   "version": "v1.0",
   "sha256": "08c0025fd2f9fe42578e3df72c78a8f169acb41178b6c200d3172d53713a8cd7",

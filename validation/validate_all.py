@@ -318,8 +318,10 @@ def validate_mapping(path: Path):
     # If present, sha256 must match the corresponding TZUR Original wordlist
     # file, and normalization_form must equal "NFC".
     if "sha256" in data:
-        lang = data.get("language", path.stem)
-        wl_path = REPO_ROOT / "wordlists" / "tzur-original" / f"{lang}.txt"
+        # Wordlist files are named by the language's English name (the `name`
+        # field / filename stem); `language` is the BCP 47 identifier.
+        stem = data.get("name", path.stem)
+        wl_path = REPO_ROOT / "wordlists" / "tzur-original" / f"{stem}.txt"
         if not wl_path.is_file():
             error(f"{name}: sha256 declared but no matching wordlist at {wl_path.relative_to(REPO_ROOT)}")
         else:
@@ -442,7 +444,7 @@ def validate_test_vector(path: Path):
 
         # Recompute seed via PBKDF2-NFKD over canonical English mnemonic
         # (display-layer convention: PBKDF2 never sees the native form).
-        english_mnemonic = indices_to_mnemonic(indices, english_words, "english")
+        english_mnemonic = indices_to_mnemonic(indices, english_words, "en")
         recomputed_seed = mnemonic_to_seed(english_mnemonic, passphrase).hex()
         if recomputed_seed != committed_seed.lower():
             error(f"{name}: vector {i} seed does not match recomputed PBKDF2 over English mnemonic")

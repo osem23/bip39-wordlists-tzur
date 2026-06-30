@@ -1,5 +1,6 @@
 {
-  "language": "chinese_simplified",
+  "language": "zh-Hans",
+  "name": "chinese_simplified",
   "word_count": 2048,
   "version": "v1.0",
   "sha256": "6ee5ce5f5439a99a1522f940f6afd485854105997de4e0918531d689dc8e2a3c",

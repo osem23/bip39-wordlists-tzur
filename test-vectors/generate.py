@@ -109,7 +109,7 @@ def indices_to_mnemonic(indices: list[int], words: list[str], language: str) -> 
     # space for every other language. Implementations that normalize
     # consistently on both sides can use either, but the canonical
     # representation follows this rule.
-    separator = "\u3000" if language == "japanese" else " "
+    separator = "\u3000" if language == "ja" else " "
     return separator.join(words[i] for i in indices)
 
 

@@ -1,5 +1,6 @@
 {
-  "language": "russian",
+  "language": "ru",
+  "name": "russian",
   "word_count": 2048,
   "version": "v1.0",
   "sha256": "6efb98534c8e711b266bb578708a7ffc0baec004f163b2089c415310e5afec2e",

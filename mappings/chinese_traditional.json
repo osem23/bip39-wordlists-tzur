@@ -1,5 +1,6 @@
 {
-  "language": "chinese_traditional",
+  "language": "zh-Hant",
+  "name": "chinese_traditional",
   "word_count": 2048,
   "version": "v1.0",
   "sha256": "41b46da25292b5da7b251e38ec848779d9c5f6e2546bf39cdea644ae684a0422",
